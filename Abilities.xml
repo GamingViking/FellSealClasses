@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XMLAbilities>
+  <active>
+    <Ability HashName="GODP-A1" Name="God Power" Range="40" RangeHeight="60" ZoneHeight="10" Size="3" Power="20" Power3="1" Shape="kCross" Element="kNone" DmgType="kMagical" DmgSource="kAtk" SpecialEffect="kSelfBuffOnKill" ConditionalPositiveEffects="kfHaste" ExtraFlags="kGivesQuickTurnFrowPower3"/>
+
+    <Ability HashName="MONH-A1" Name="Hook Leap" EffectHash="WERE-A3" MinRange="1" Range="3" RangeHeight="9" SpellType="kSkill" ExtraFlags="kTargetsGround kCannotTargetWater kStoreDestination" />
+    <Ability HashName="MONH-A2" Name="Grapple Thrust" EffectHash="EXIL-A2" MinRange="1" Range="1" RangeHeight="7" Size="4" Power="0.9" Shape="kCharge" SpecialEffect2="kIsTreatedAsRegularAttack" SpellType="kSkill" ExtraFlags="kIgnoresCover" />
+    <Ability HashName="MONH-A3" Name="Caltrops" EffectHash="KAW-03-A4" TrapEffect="TRAP-BLAZE" TrapSpell="WORK-TRAP-CALTROP" MinRange="1" Range="3" Size="3" Power="0.5" Shape="kHline" SpecialEffect="kAddsTrapOnRandomSpace" SpellType="kSkill" />
+    <Ability HashName="WORK-TRAP-CALTROP" Name="" Range="0" Power="0.5" Element="kNone" DmgType="kMagical" SpecialEffect="kBypassCounters" SpecialEffect2="kPerfectAccuracy" SpellType="kSkill" TrapType="kTurnEnd" ExtraFlags="kIsSystem" />
+    <Ability HashName="MONH-A4" Name="Trip Wire" EffectHash="PEDD-A1" TrapEffect="TRAP-ROOT" MpCost="8" MinRange="1" Range="3" RangeHeight="1" Element="kNone" DmgType="kNone" SpellType="kSkill" TrapType="kTurnEnd" ExtraFlags="kTargetsGround kCannotTargetWater" AddNegativeEffects="kfSlow" AddNegativeEffectsBaseChance="100" />
+    <Ability HashName="MONH-A5" Name="Reel In" EffectHash="WRAN-A6" MpCost="8" MinRange="1" Range="4" RangeHeight="4" Power2="1" Power3="2" Element="kNone" SpecialEffect="kTeleportOther" SpecialEffect2="kPerfectAccuracy" ExtraFlags="kNoAIUse kIgnoresCover kIgnoreSmartCast" HasExtraBox="kSecondTargetingEmptyGroundNoWater"/>
+    <Ability HashName="MONH-A6" Name="Lasso" EffectHash="BEAS-A7" MinRange="2" Range="4" RangeHeight="5" SpellType="kSkill" Power="0.7" PosStyle="kLine"/>
+    <Ability HashName="MONH-A7" Name="Big Game Trap" EffectHash="PEDD-A2" TrapEffect="TRAP-BLEED" MpCost="16" MinRange="1" Range="3" RangeHeight="1" Element="kNone" DmgType="kNone" SpellType="kSkill" TrapType="kTurnEnd" ExtraFlags="kTargetsGround kCannotTargetWater" AddNegativeEffects="kfBleed kfPoison kfRoot" AddNegativeEffectsBaseChance="100" />
+    <Ability HashName="MONH-A8" Name="Explosive Trap" EffectHash="KAW-03-A4" MpCost="18" TrapEffect="TRAP-BLAZE" TrapSpell="WORK-EXPLOSIVE-TRAP" MinRange="1" Range="3" Power="0" SpecialEffect="kAddsTrapOnRandomSpace" ExtraFlags="kTargetsGround kCannotTargetWater" SpellType="kSkill" />
+    <Ability HashName="WORK-EXPLOSIVE-TRAP" Name="" Range="0" Power="3.5" Element="kFire" DmgType="kMagical" SpecialEffect="kBypassCounters" SpecialEffect2="kPerfectAccuracy" SpellType="kSkill" TrapType="kTurnEnd" ExtraFlags="kIsSystem" />
+
+    <Ability HashName="DANC-A1" Name="Acrobatics" EffectHash="UND-03-A3" Range="0" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpecialEffect="kAutotomize" SpellType="kSkill" />
+    <Ability HashName="DANC-A2" Name="Disarming Step" EffectHash="WORK-SHATTER" MpCost="6" Range="0" RangeHeight="5" ZoneHeight="2" Size="3" Shape="kSquare" SpellType="kSkill" ExtraFlags="kIgnoreSelfAsTarget" AddNegativeEffects="kfMAtkDown kfAtkDown" AddNegativeEffectsBaseChance="75" />
+    <Ability HashName="DANC-A3" Name="Piercing Palm" EffectHash="MERC-A6" MpCost="10" MinRange="1" Range="1" RangeHeight="1" Power="0.6" DmgSource="kAtkMixed" DmgType="kNone" SpellType="kSkill" SpecialEffect="kIgnoreDefense" SpecialEffect2="kIsTreatedAsRegularAttack" ExtraFlags="kIgnoreSelfAsTarget" />
+    <Ability HashName="DANC-A4" EffectHash="REAV-A3" Name="Swift Spin" MpCost="8" Range="0" RangeHeight="5" Size="3" Power="0.75" Shape="kSquare" Element="kNone" DmgSource="kAtkMixed" SpellType="kSkill" SpecialEffect="kBypassCounters" SpecialEffect2="kIsTreatedAsRegularAttack" ExtraFlags="kIgnoreSelfAsTarget" />
+    <Ability HashName="DANC-A5" Name="Alluring Step" EffectHash="GAMB-A7" MpCost="12" Range="0" RangeHeight="5" ZoneHeight="2" Size="3" Shape="kSquare" SpellType="kSkill" ExtraFlags="kIgnoreSelfAsTarget" AddNegativeEffects="kfCharm" AddNegativeEffectsBaseChance="75" />
+    <Ability HashName="DANC-A6" Name="Stunning Spectacle" EffectHash="BLAD-A2" MpCost="14" Range="0" RangeHeight="5" ZoneHeight="2" Size="3" Shape="kSquare" SpellType="kSkill" ExtraFlags="kIgnoreSelfAsTarget" AddNegativeEffects="kfBlind kfDefDown" AddNegativeEffectsBaseChance="75" SpecialEffect="kDelayStrike" />
+    <Ability HashName="DANC-A7" EffectHash="SAMU-A6" Name="Provocative Dance" MpCost="14" Range="0" ZoneHeight="3" Size="5" Power="0.5" Shape="kCross" DmgSource="kAtkMixed" SpellType="kSkill" ExtraFlags="kIgnoreSelfAsTarget" AddNegativeEffects="kfBerserk" AddNegativeEffectsBaseChance="75"/>
+
+    <Ability HashName="CHAN-A1" EffectHash="BLAD-A4" Name="Channel Alpha" MpCost="2" Range="0" RangeHeight="5" ZoneHeight="2.5" Power="0" Power2="1" Power3="0.3" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpellType="kNothing" SpecialEffect="kRandomBuffPerPower2" ExtraFlags="kGivesQuickTurnFrowPower3">
+      <PetEffect PetHash="petniwot" Monster="NIW" />
+    </Ability>
+    <Ability HashName="CHAN-A2" EffectHash="BLAD-A4" Name="Channel Beta" MpCost="4" Range="0" RangeHeight="5" ZoneHeight="2.5" Power="0.3" Power3="0.5" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpellType="kNothing" ExtraFlags="kGivesQuickTurnFrowPower3">
+      <PetEffect PetHash="petniwot" Monster="NIW" />
+    </Ability>
+    <Ability HashName="CHAN-A3" EffectHash="BLAD-A4" Name="Channel Omega" MpCost="6" Range="0" RangeHeight="5" ZoneHeight="2.5" Power="0" Power3="0.7" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpellType="kNothing" RemoveNegativeEffects="kfPoison kfBleed" ExtraFlags="kGivesQuickTurnFrowPower3">
+      <PetEffect PetHash="petniwot" Monster="NIW" />
+    </Ability>
+    <Ability HashName="CHAN-A4" EffectHash="BEAS-A21" Name="Eruption" MpCost="8" MinRange="1" Range="2" RangeHeight="3" Size="3" Power2="1" Shape="kSquare" Element="kEarth" SpecialEffect="kRangeUpPerPetDamageUpPerPower2" SpecialEffect2="kPetDismiss" SpellType="kSkill" ExtraFlags="kTargetsGround kIgnoreSelfAsTarget kCannotTargetWater kIgnoreSides kGroundNeedsTarget kStoreDestination"/>
+    <Ability HashName="CHAN-A5" EffectHash="RANG-A4" Name="Falling Star" MpCost="8" Range="1" RangeHeight="8" Size="3" Power2="1.4" DmgSource="kMAtk" Shape="kSquare" Element="kFire" SpecialEffect="kRangeUpPerPetDamageUpPerPower2" SpecialEffect2="kPetDismiss" SpellType="kSpell">
+      <PetEffect PetHash="petniwot" Monster="NIW" />
+    </Ability>
+    <Ability HashName="CHAN-A6" EffectHash="SMED-A7" Name="Nature's Wrath" MpCost="8" Range="0" RangeHeight="6" Power2="1.3" Shape="kCross" Size="5" DmgSource="kMAtk" DmgType="kMagical" Element="kTerrain" SpecialEffect="kInflictsRandomDebuff" SpecialEffect2="kPetDismissAndDamageUpPerPower2" AddNegativeEffectsBaseChance="65" SpellType="kSpell" ExtraFlags="kIgnoreSelfAsTarget" />
+    <Ability HashName="CHAN-A7" EffectHash="WORK-THRASH" Name="Thrash" Range="0" ZoneHeight="1.5" Size="3" Power="1.2" Shape="kCross" SpellType="kSkill" ExtraFlags="kIgnoreSelfAsTarget kIsSystem" >
+      <PetEffect PetHash="petniwot" Monster="NIW" />
+    </Ability>
+    <Ability HashName="CHAN-A8" EffectHash="MARK-A3" Name="Energy Beam" MpCost="8" MinRange="1" Range="1" RangeHeight="1" Size="4" Power="0.8" Power3="1.6" Shape="kVLine" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" SpellType="kSpell" ExtraFlags="kIgnoreSides" />
+    <Ability HashName="CHAN-A9" EffectHash="GHO-01-A1" Name="Last Breath" MpCost="8" MinRange="1" Range="1" RangeHeight="3" Size="3" Power2="1.6" DmgSource="kMAtk" Shape="kCone" Element="kNone" SpecialEffect="k1QuarterDmgSelf" SpecialEffect2="kPetDismissAndDamageUpPerPower2" SpellType="kNothing"/>
+
+    <Ability HashName="MART-A1" Name="Martial Strike" MpCost="4" MinRange="1" Power="0.85" SpellType="kSkill" DmgSource="kAtkMixed" >
+      <PetEffect PetHash="petniwot" Monster="NIW" />
+    </Ability>
+    <Ability HashName="MART-A2" EffectHash="BLAD-A4" Name="Focus Qi" MpCost="6" Range="0" RangeHeight="5" ZoneHeight="2.5" Power2="1" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpellType="kNothing" SpecialEffect="kRandomBuffPerPower2" SpecialEffect2="kNextActionIs100" >
+      <PetEffect PetHash="petniwot" Monster="NIW" />
+    </Ability>
+    <Ability HashName="MART-A3" EffecHash="KNIG-A6" Name="Pressure Point" MpCost="6" MinRange="1" SpecialEffect="kFourthCurrentHealth" AddNegativeEffects="kfWeaken" AddNegativeEffectsBaseChance="65" >
+      <PetEffect PetHash="petniwot" Monster="NIW" />
+    </Ability>
+    <Ability HashName="MART-A4" Name="Feint" MpCost="4" MinRange="1" Power="0.4" Power3="0.5" SpellType="kSkill" AddNegativeEffects="kfDefDown" AddNegativeEffectsBaseChance="50" ExtraFlags="kGivesQuickTurnFrowPower3" >
+      <PetEffect PetHash="petniwot" Monster="NIW" />
+    </Ability>
+    <Ability HashName="MART-A5" EffectHash="KNIG-A1" Name="Block" Range="0" MpCost="4" Power="0.5" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpecialEffect="kDefend" SpellType="kSkill" ExtraFlags="kIsNotPrimarilyHealing" >
+      <PetEffect PetHash="petniwot" Monster="NIW" />
+    </Ability>
+    <Ability HashName="MART-A6" EffecHash="VAR-SPE-A1" Name="Swift Strike" MpCost="4" MinRange="1" Power="1" Element="kWeapon" DmgSource="kSpd" SpecialEffect2="kIsTreatedAsRegularAttack" SpellType="kSkill" >
+      <PetEffect PetHash="petniwot" Monster="NIW" />
+    </Ability>
+    <Ability HashName="MART-A7" EffectHash="WERE-A3" Name="Finisher - Eagle" MpCost="10" MinRange="1" Range="2" RangeHeight="3" Size="3" Power2="1.15" Shape="kCross" SpecialEffect="kRangeUpPerPetDamageUpPerPower2" SpecialEffect2="kPetDismiss" SpellType="kSkill" ExtraFlags="kTargetsGround kIgnoreSelfAsTarget kCannotTargetWater kIgnoreSides kGroundNeedsTarget kStoreDestination"/>
+    <Ability HashName="MART-A8" EffectHash="LORD-A2" Name="Finisher - Flail" MpCost="12" MinRange="1" Range="1" RangeHeight="1" Size="2" Power2="0.75" Shape="kCone" DmgSource="kAtkMixed" SpellType="kSkill" SpecialEffect2="kPetDismissAndDamageUpPerPower2" AddNegativeEffects="kfAtkDown" AddNegativeEffectsBaseChance="75" />
+    <Ability HashName="MART-A9" EffectHash="NIW-02-A2" Name="Finisher - Qi Blast" MpCost="12" MinRange="1" Range="1" RangeHeight="1" Size="3" Power2="0.85" Shape="kVLine" Element="kNone" DmgType="kMagical" SpecialEffect="kBypassCounters" SpecialEffect2="kPetDismissAndDamageUpPerPower2" />
+    <Ability HashName="MART-A10" EffectHash="FELL-A1" Name="Finisher - Scorpion" MpCost="14" MinRange="1" Range="2" Power2="1" PosStyle="kLine" SpecialEffect="kRandomDebuffPerPower2" SpecialEffect2="kPetDismissAndDamageUpPerPower2" ConditionalPositiveEffects="kfHaste" SpellType="kSkill" AddNegativeEffectsBaseChance="100" />
+    <Ability HashName="MART-A11" EffectHash="BHUN-A4" Name="Finisher - Shadow" MpCost="18" MinRange="1" Power2="1.3" Element="kWeapon" SpecialEffect="kSelfBuffOnKill" SpecialEffect2="kPetDismissAndDamageUpPerPower2" ConditionalPositiveEffects="kfHaste kfMirage" SpellType="kSkill" />
+  
+  </active>
+  <passive>
+    <Ability HashName="MONH-P1" Name="Quick Fingers" CopyFrom="PEDD-P1" />
+    <Ability HashName="MONH-P2" Name="Stampede" CopyFrom="BOL-01-P1" />
+    <Ability HashName="DANC-P1" Name="Shifting Target" CopyFrom="ZOT-02-P1" />
+    <Ability HashName="DANC-P2" Name="Harrier" CopyFrom="VAR-AER-P2" />
+    <Ability HashName="CHAN-P1" Name="Serenity" CopyFrom="BEAS-P2" />
+    <Ability HashName="CHAN-P2" Name="Inhale" CopyFrom="DRA-01-P1" />
+    <Ability HashName="MART-P1" Name="No Flank" CopyFrom="KNIG-P1" />
+    <Ability HashName="MART-P2" Name="Impetus" CopyFrom="BHUN-P2" />
+  </passive>
+  <counter>
+    <Ability HashName="GODP-P1" CopyFrom="GAMB-P1" />
+    <Ability HashName="MONH-C1" CopyFrom="HHU-02-C1" />
+    <Ability HashName="DANC-C1" CopyFrom="ASSA-C1" />
+    <Ability HashName="CHAN-C1" CopyFrom="PHO-01-C1" />
+    <Ability HashName="MART-C1" CopyFrom="VAR-DFT-C1" />
+  </counter>
+</XMLAbilities>
