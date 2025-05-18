@@ -134,7 +134,7 @@
         </learnables>
         <Mastery eva="2" elem="5" />
     </Job>
-    <Job ClassName="CHAN" WeaponsType="kfDagger kfRod kfRapier" ArmorType="kfRobes kfClothHelmet" BonusCrit="2" BaseMove="4" BaseJump="3" CanSwim="false" BonusEvasion="5" SpeedGrowth="1.35" BaseSpeed="105" Hat="shaman" OutfitM="mage1" OutfitF="mage1">
+    <Job ClassName="CHAN" WeaponsType="kfDagger kfRod kfRapier" ArmorType="kfRobes kfClothHelmet" BonusCrit="2" BaseMove="4" CanSwim="false" BonusEvasion="5" SpeedGrowth="1.35" BaseSpeed="105" Hat="shaman" OutfitM="mage1" OutfitF="mage1">
         <StatsGrowth Values="4 3 4 4.4" />
         <HealthGrowth Values="6 2" />
         <BaseStats Values="42 35 42 42" />
@@ -194,7 +194,7 @@
         </learnables>
         <Mastery mind="3" mp="5" />
     </Job>
-    <Job ClassName="MART" WeaponsType="kfSword kfAxe kfMace kfSpear" ArmorType="kfRobes kfClothHelmet kfLightArmor kfLightHelmet kfShield" BonusCrit="2" BaseMove="4" BaseJump="3" BonusEvasion="3" SpeedGrowth="1.15" BaseSpeed="100" Hat="tempest" OutfitM="reaver" OutfitF="reaver">
+    <Job ClassName="MART" WeaponsType="kfSword kfAxe kfMace kfSpear" ArmorType="kfRobes kfClothHelmet kfLightArmor kfLightHelmet kfShield" BonusCrit="2" BaseMove="4" BonusEvasion="3" SpeedGrowth="1.15" BaseSpeed="100" Hat="tempest" OutfitM="reaver" OutfitF="reaver">
         <StatsGrowth Values="4.3 3.8 3.5 3.7" />
         <HealthGrowth Values="7 2" />
         <BaseStats Values="43 38 38 37" />
