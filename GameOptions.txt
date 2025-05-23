@@ -1,0 +1,22 @@
+#version 2
+; *********************************************************************
+; Core options, for balancing/cheating purposes.
+; Obviously, we recommend you play with the default values since those have been tailored for what we think is the best experience,
+; but if something is bugging you, most game parameters can be changed in here.
+
+; Using weird values could have strange effects and possibly break your game.
+; If this file is deleted, it will be re-generated upon starting the game again, with only these comments.
+
+; All possible options are in the file GameOptions.txt that is in "My Documents\Fell Seal\customdata_examples" on Windows and "~/Fell Seal/customdata_examples" on Mac/Linux.
+; *********************************************************************
+
+
+; *** File format ***
+; Should be fairly self obvious in general.
+; lines that start with ';' are comments.
+; [Section] are section names. Entries under a section pertain to that section.
+; Every entry under a section is a name=value combo. Values are a bit all over the place in terms of what they could be. Just use the same type that was there before your changes to make sure nothing weird happens.
+; If a section has #comments right after the section, you can add comments with ';' on the same line as the name=value combo. You probably don't wont to mess with that.
+
+; NOTE:
+; It is recommended to only change the values you want modified in here, rather than copying whole blocks from GameOptions.txt, to limit the chances of our own updates to GameOptions.txt being overriden by stale values.

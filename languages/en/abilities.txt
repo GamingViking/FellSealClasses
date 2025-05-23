@@ -1,0 +1,144 @@
+; ********************************
+; Common strings
+; ********************************
+; Strings that other strings use to build upon.
+; Openers
+charge-qi-opener                =Character charges qi for a finishing move
+expend-qi-opener                =Character expends all qi charges
+
+
+; ********************************
+; Monster Hunter
+; ********************************
+; Job
+MONH-Title	=Monster Hunter
+MONH-Ability=Monster Hunting
+MONH-desc	=Mobile hunters who use specialized grappling hooks to maneuver over difficult terrain as well as displace and dispatch prey. They also employ an array of traps meant for all manner of creatures. 
+
+MONH-A1=Hook Leap
+MONH-A1-desc=Character displaces themselves to the target location {note-cannot-be-water-tile}.
+
+MONH-A2=Grapple Thrust
+MONH-A2-desc={damage-single-opener} and moves character along the path to the tile adjacent to your target. {counts-as-regular}
+
+MONH-A3=Caltrops
+MONH-A3-desc={damage-single-opener} and deploys a trap randomly in the area that will deal the same damage and immediately end the turn of any enemy that steps on it.
+
+MONH-A4=Trip Wire
+MONH-A4-desc={trap-status}
+
+MONH-A5=Reel In
+MONH-A5-desc=Moves the target character to an adjacent tile {note-cannot-be-water-tile}.
+
+MONH-A6=Lasso
+MONH-A6-desc={damage-single-opener} and pulls them 1 tile toward the character.
+
+MONH-A7=Big Game Trap
+MONH-A7-desc={trap-status}
+
+MONH-A8=Explosive Trap
+MONH-A8-desc=Character lays down a trap that deals 3.5x<sprite name="icon-element-fire">{element-fire}(ATK) damage to any enemy that steps on it and immediately ends their turn. 
+
+; ********************************
+; Dancer
+; ********************************
+; Job
+
+DANC-Title  =Dancer
+DANC-Ability=Dancing
+DANC-desc   =Dancers flow gracefully across the battlefield, evading harm, beguiling their enemies, and captivating all who come near. 
+
+DANC-A1=Wind Run
+DANC-A1-desc={status-pos-opener} and removes {removenegative}. {help-posstatus-fleetoffoot-desc}
+
+DANC-A2=Disarming Step
+DANC-A2-desc={status-chance-neg-opener} in a {size} around the character.
+
+DANC-A3=Piercing Palm
+DANC-A3-desc={damage-basic-opener} that ignores the target's defense. {counts-as-regular}
+
+DANC-A4=Swift Spin
+DANC-A4-desc={damage-aoe-opener} around the character. {bypass-counters} {counts-as-regular}
+
+DANC-A5=Alluring Step
+DANC-A5-desc={status-chance-neg-opener} in a {size} around the character.
+
+DANC-A6=Stunning Spectacle
+DANC-A6-desc={status-chance-neg-opener} in a {size} around the character and delays progress towards all targets' next turn by {locterm}% of its current value.
+
+DANC-A7=Provocative Dance
+DANC-A7-desc={damage-around-caster-opener} {add-negative-effect-closer} Also forces targes in the area to change direction to face the character.
+
+; ********************************
+; Martial Artist
+; ********************************
+; Job
+
+MART-Title  =Martial Artist
+MART-Ability=Discipline
+MART-desc   =These skillfull warriors unleash devastating combos by using a series setup techniques to charge their qi before delivering a finishing strike. Qi charges cap at 3. Each setup move can only be used once before a finisher is used. 
+
+MART-A1=Martial Strike
+MART-A1-desc={charge-qi-opener} then deals {powerratio} {elem} ({dmgsource}) damage to the target.
+
+MART-A2=Focus Qi
+MART-A2-desc={charge-qi-opener} then grants 1 random buff. The character's next action has 100% accuracy.
+
+MART-A3=Pressure Point
+MART-A3-desc={charge-qi-opener} then deals damage equal to {percent-damage} of the target's current {HP} {add-negative-effect-closer}
+
+MART-A4=Feint
+MART-A4-desc={charge-qi-opener} then deals {powerratio} {elem} ({dmgsource}) damage to the target {add-negative-effect-closer} {turn-comes-faster}
+
+MART-A5=Block
+MART-A5-desc={charge-qi-opener} then takes half damage from all attacks until their next turn and heals {powerratio} ({dmgsource}) {hp}.
+
+MART-A6=Swift Strike
+MART-A6-desc={charge-qi-opener} then deals {powerratio} {elem} ({dmgsource}) damage to the target. {counts-as-regular}
+
+MART-A7=Finisher - Eagle
+MART-A7-desc={expend-qi-opener} then displaces themselves to the target location (cannot be a water tile) and deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage to the targets in a {size} area around them. Cannot be used if there are no targets in the area. The range is extended by 1 for every qi charge expended.
+
+MART-A8=Finisher - Flail
+MART-A8-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage in a cone {add-negative-effect-closer}
+
+MART-A9=Finisher - Qi Blast
+MART-A9-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage in a line. {bypass-counters}
+
+MART-A10=Finisher - Scorpion
+MART-A10-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage to the target and inflicts {power2} random {debuff} per expended qi charge.
+
+MART-A11=Finisher - Shadow
+MART-A11-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage to the target. If the target is defeated by this ability, character gains {status-mirage-icon}{positive-mirage} and {status-haste-icon}{positive-haste}.
+
+; ********************************
+; Necromancer
+; ********************************
+; Job
+NECR-Title	=Demonologist
+NECR-Ability=Pact Magic
+NECR-desc	=These fanatics' lust for power is unbridled - giving their blood and even sacrificing their friends in order to summon demons and obtain their demonic powers.
+
+NECR-A1=Summon Demon
+NECR-A1-desc=Resurrects a dead enemy as a random demon that will attack foes until it falls. This will prevent the target from being revived by their own allies.
+
+NECR-A2=Devil Wings
+NECR-A2-desc=Grants 1 move and 2 jump for the rest of the battle, but loses 25% of their current {hp}. (Only grants bonus once per battle)
+
+NECR-A3=Reap
+NECR-A3-desc={damage-line-opener} {add-negative-effect-closer} Also {dmg-power3-self}.
+
+NECR-A4=Cull
+NECR-A4-desc={damage-single-opener}. Deals {power2ratio} more damage if target is inflicted with {status-bleed-icon}{negative-bleed}. Also {dmg-power3-self}
+
+NECR-A7=Blood Bond
+NECR-A7-desc={status-chance-negative} If successful, the target is Mind-Controlled for 1 turn {mind-controlled-desc}. Also {dmg-power3-self}.
+
+NECR-A8=Exquisite Pain
+NECR-A8-desc=Deals as much damage as the character is missing {hp} in a {size} area {add-negative-effect-closer}
+
+NECR-P1=Exsnguinate
+NECR-P1-desc=Character restores 20% of max {hp} when killing a unit. 
+
+NECR-P2=Minion Master
+NECR-P2-desc=Damage taken is reduced for every live ally on the field.

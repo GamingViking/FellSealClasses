@@ -1,0 +1,193 @@
+#version 1
+; *********************************************************************
+; This file is used to override patrols on maps.
+; Contrarily to the regular options file, if you change a patrol in this file
+; it will completely replace all patrol information for that map. That way you can start
+; fresh for any map.
+; The base to use as a reference is in 
+; "My Documents\Fell Seal\customdata_examples\Encounters.txt" on Windows
+; "~/Fell Seal/customdata_examples/Encounters.txt" on Mac/Linux
+; *********************************************************************
+
+; File format and such
+;
+; Each map in the game has an entry in the base Encounters.txt and are ordered by "story progression".
+; The model should be fairly intuitive, but roughly, assuming a map named Crossroads01
+; section [Crossroads01]
+; is the information for the story battle. You might want to leave that alone in general.
+
+
+; section [Crossroads01-Patrol] 
+; is general info for all patrols. Currently the optional entries for that section are:
+;    LevelRangeN=x,y  -> set the min(x) and max(y) level of generated enemies for all patrols. N represents the game's chapter (as seen in Gameoptions.txt). eg: LevelRange2=5,35 to have the level range be 5 to 35 for Chapter 2 (after 2nd temple, up to 3rd temple).
+;    AccChance=x      -> the chance of generated enemies to spawn with accessories (assuming you don't specify anything for them)
+;    LootTable=x      -> Which loot table is used by enemies. This is still getting setup.
+;    MinGearCount=x   -> The minimum amount of gear pieces an enemy will spawn with (if you don't specify anything for them). Enemies will always have a weapon though.
+
+; section [Crossroads01-Patrol0] (where 0 is a number from 0 to 9)
+; is the data for Patrol0 (0 to 9). Note that if a patrol number doesn't exist, the game assumes it's the last patrol you made (ie, you have Patrol0, Patrol1, Patrol3, the game only finds Patrol0 and Patrol1 since you skipped 2)
+; the possible entries for this are:
+;    zone0=x,y,width,height		-> creates a 'spawning zone' for the player to place troops. x, y are map coordinates (as seen in game) and width and height is the size of the zone
+;    zone1=x,y,width,height     -> You can have multiple spawn zones if needed
+;    center=x,y                 -> the map position the camera will pan to at the start of the battle to "show the enemy forces".
+;    facing=<directionCode>		-> When the player puts an ally on the map, they will start looking in that direction. If facing is omitted, they will face towards the 'center' zone above.
+;        DirectionCodes: ru: Right-Up
+;                        rd: Right-Down
+;						 lu: Left-Up
+;						 ld: Left-Down
+;    chance=x                   -> the chance of this encounter being selected when doing a patrol. Omitting this will give equal odds to things to have a 100% chance total accross all patrols.
+;
+;
+; ** The next entries pertain to generating enemies on the map and are more complex. There's a lot of options, 
+; ** but really most of it can be omitted. Just look at the current entries under GameOptions.txt to see how simple it actually is.
+;
+; monster0=<MonsterSpawnInfo>	 -> This will spawn a monster. The digit must be different for every monster.
+;    MonsterSpawnInfo: 
+;      eg: monster0=x:1, y:1, dir:ru, class:VAN-01, name:bob, acc0:ABO-01, acc1:ABO-01, behavior:guardian, passive0:KNIG-P1, passive1:KNIG-P2, counter:KNIG-C1, chance=50
+;
+;        x:x, y:y                -> the x, y position of the unit on the map.
+;        dir:<directionCode>     -> the direction the monster will face. If it is omitted, the monster will look at the first tile of zone0.
+;        class:<classname>		 -> the class name of the monster. A list called MonsterClassList follows.
+;        name:<name>		     -> If you feel like giving a special name to the monster, otherwise it will use a randomly generated one.
+;        acc0:<AccessoryCode>    -> the accessory in accessory slot0. Leaving this empty will randomly use or not an appropriate accessory. AccessoryCodeList follows with more details.
+;        acc1:<AccessoryCode>    -> the accessory in accessory slot1. Leaving this empty will randomly use or not an appropriate accessory.
+;        behavior:<BehaviorCode> -> a behavior value to tweak the Ai of the monster. Monsters have a 'baked in' type (melee, ranged, magic, etc) but this is a 'flavor' extra.
+;            BehaviorCode:      guardian: will use protect on casters as needed.
+;                               guardianall: will use protect on any ally as needed.
+;                               killer: will favor trying to land the last hit on weak enemies.
+;                               alwaysoptimal: will always do the most damage/heal it can do (normally, there's a chance the AI will be 'happy enough' with something that might not be the absolute best)
+;                               default: default value used if nothing is specified. It's the regular ai with no tweaks.
+;        passive0:<PassiveCode>   -> The monster will have the given passive equipped. All passives are named <CLASSNAME>-P1 or <CLASSNAME>-P2. eg: Knight passive is KNIG-P1 and KNIG-P2. The classes are listed
+;                                    in GameOptions.txt if needed and you can figure out the passives in game.
+;        passive1:<PassiveCode>   -> Like above, but 2nd passive.
+;        counter:<CounterCode>    -> The monster will have the given counter equipped. Counters are named <CLASSNAME>-C1. eg: Knight counter: KNIG-C1. Classes are listed in GameOptions.txt and you can see counters in game.
+;        chance:x                 -> The chance of this enemy spawning. Default is 100 (100%). Value can be 0-100.
+;		 weight:<AbilityCode>|<bonusChance> -> This allows you to give weights to specific abilities.
+;											   eg: weight:MERC-A2|15  will make that character value the Mercenary Forceful Strike ability 15% higher than normal, which makes it more likely to favor it.
+;											   AbilityCode could also be: attack (eg: weight: attack|20) for the regular attack.
+;		 weightstyle:<WeightPresetName>     -> Sets the base weights presets for the character. By default the character will use presets that befit their main class.
+;											   These base presets are for "groups of things" (like doing damage, healing, using debuffs, buffs, etc) and will be combined with individual weights multiplicatively.
+;											   You can see all the presets' details in GameOptions.txt under the group [AI-WeightPreset]. You can add new presets in that group and use them here. The base presets are:
+;											   WeightPresetName options: dps, magicdps, rangeddps, dpsdebuffer, trapper, item, protector, healer, raiser, buffer, debuffer and none (for 100% on everything)
+;
+;
+; human0=<HumanSpawnInfo>         -> This will spawn a human unit. The digit must be different for every human.
+;   HumanSpawnInfo: 
+;     eg: human0=x:10, y: 8, dir:lu, ai:melee, class:ROGUE, subclass:MERC, behavior:killer, wptype:bow, wpstyle:meleeonehanded, name:Robert, passive0:MERC-P1, passive1:MERC-P2, counter:MERC-C1, gender:female, minabilities:1|1|3|1, minsubabilities:1, gearpieces:3
+;
+;        x:x, y:y                -> the x, y position of the unit on the map.
+;        dir:<directionCode>     -> the direction the monster will face. If it is omitted, the unit will look at the first tile of zone0.
+;        ai:<AICode>             -> The AI general behavior of the unit. A random one will be selected if omitted.
+;            AICode:       melee
+;                          range
+;						   magic
+;                          healer
+;                          trapper
+;        class:<classname>       -> the class of the unit. Class list can be found in GameOptions.txt. If nothing is specified, a class that matches the AI will be selected.
+;        subclass:<classname>    -> the subclass of the unit. Class list can be found in GameOptions.txt. If nothing is specified, a subclass is selected following rules in GameOptions.txt. value 'null' eg: subclass:null will have no subclass.
+;        behavior:<BehaviorCode> -> a behavior value to tweak the Ai of the monster. Monsters have a 'baked in' type (melee, ranged, magic, etc) but this is a 'flavor' extra.
+;            BehaviorCode: see the codes under the above monster section.
+;        acc0:<AccessoryCode>    -> the accessory in accessory slot0. Leaving this empty will randomly use or not an appropriate accessory. AccessoryCodeList follows with more details.
+;        acc1:<AccessoryCode>    -> the accessory in accessory slot1. Leaving this empty will randomly use or not an appropriate accessory.
+;        name:<name>		     -> If you feel like giving a special name to the monster, otherwise it will use a randomly generated one.									 
+;        passive0:<PassiveCode>   -> The monster will have the given passive equipped. All passives are named <CLASSNAME>-P1 or <CLASSNAME>-P2. eg: Knight passive is KNIG-P1 and KNIG-P2. The classes are listed
+;                                    in GameOptions.txt if needed and you can figure out the passives in game.
+;        passive1:<PassiveCode>   -> Like above, but 2nd passive.
+;        counter:<CounterCode>    -> The monster will have the given counter equipped. Counters are named <CLASSNAME>-C1. eg: Knight counter: KNIG-C1. Classes are listed in GameOptions.txt and you can see counters in game.
+;        chance:x                 -> The chance of this enemy spawning. Default is 100 (100%). Value can be 0-100.
+;        wpstyle:<WpStyleCode>    -> The enemy will try to use a specific weapon style (that their class can use). Note that AI type "Ranged" will try to use wpStyle "Ranged" by default, whereas others will use "melee" by default.
+;            WpStyleCode: meleeonehand, meleetwohand, ranged
+;        wptype:<WpTypeCode>      -> The enemy will try to use a specific weapon type. This overrides wpstyle.
+;            WpTypeCode: sword, dagger, scythe, maul, bow, gun, spear, axe, staff, mace, rapier, rod, crossbow
+;        gender:male or female    -> yeah.
+;        minabilities:x|y|z|...   -> This is a sequence of numbers (1, 2 or 3) that represent a class abilities tier as seen in the Learning menu. The first ability on a line in the skilltree is 1 and the second is 2. If the 1st only is known, the value is 1, if the second only is known, 2 and if both are known, 3.
+;                                 -> Min abilities are the minimum abilities the unit will know on top of the generated ones (as appropriate for the unit's level). Using abilities:x|y|... instead would override the generated abilities.
+;                                 -> subminabilities and subabilities do the same thing for the subclass.
+;        gearpieces:number        -> the number of gear pieces this unit will have. Omitting it automates the process using various rules in GameOptions.txt. Units always have a weapon and this doesn't account for accessories. So range should be 0 to 3.
+;		 weightstyle:<WeightPresetName>     -> Sets the base weights presets for the character. By default the character will use presets that befit their main class.
+;											   These base presets are for "groups of things" (like doing damage, healing, using debuffs, buffs, etc) and will be combined with individual weights multiplicatively.
+;											   You can see all the presets' details in GameOptions.txt under the group [AI-WeightPreset]. You can add new presets in that group and use them here. The base presets are:
+;											   WeightPresetName options: dps, magicdps, rangeddps, dpsdebuffer, trapper, item, protector, healer, raiser, buffer, debuffer and none (for 100% on everything)
+;
+;
+; trap0=x:value y:value skill:name caster:name -> this will spawn an enemy trap on the map at pos x,y. Skill is the trap skill entry (ie: PEDD-A1, PEDD-A2, PEDD-A3, PEDD-A4). Caster is the caster who put the trap down (eg: human0) and doesn't really do much.
+;
+; ** Extra Tables
+; AccessoryCodeList:   All accessories codes are thus <AccFamily>-Index (where the index starts at 00 and goes up by 1 for each acessory in the the family).
+;                  You can see the name of each accessory in game or in the file "My Documents\Fell Seal\customdata_examples\languages\en\accessories.txt on Windows or "~/Fell Seal/customdata_examples/languages/en/accessories.txt" on Mac/Linux
+;    Here's the AccFamily codes:
+;        ABO:    Boots, eg: ABO-00 (Toad boots)
+;        ARI:    Rings, eg: ARI-00 (Pure Band)
+;        AGL:    Gloves,eg: AGL-00 (Gauntlet)
+;
+; MonsterClassList:    All MonsterCode are made from the monster family and its index. Like VAN-01. The index is pretty much a variation of the monster (usually a different color palette, etc).
+;    The families are:
+;		BLA:   Blardger, eg: BLA-01
+;       BOL:   Bzzerk, eg: BOL-01
+;       BUL-01: Water Bulldrake. 02 is Water tier 2, 03 is Water tier 3.
+;       BUL-11: Fire Bulldrake. 12 and 13 for other tiers.
+;       BUL-21: Earth Bulldrake. 22 and 23 for other tiers.
+;       BUL-31: Lightning Bulldrake. 32 and 33 for other tiers.
+;       DAA:    Archafflictor, eg: DAA-01
+;       DAO:   Daodrenner, eg: DAO-01
+;       HAR:   Arpia, eg: HAR-01
+;       HAR-11 to HAR-13: Undead Arpia
+;       HHU:   Helhund, eg: HHU-01
+;       HRV:   Harvester, eg: HRV-01
+;       KAW:   Kawa, eg: KAW-01
+;       KAW-11: Loot Kawa
+;       KAW-21 to KAW-23: Undead Kawa
+;       MAL:   Malcubus, eg: MAL-01
+;       NIW:    Niwot, eg: NIW-01
+;       PEK-01: Water Pektite. 02 is Water tier 2, 03 is Water tier 3.
+;       PEK-11: Fire Pektite. 12 and 13 for other tiers.
+;       PEK-21: Earth Pektite. 22 and 23 for other tiers.
+;       PEK-31: Lightning Pektite. 32 and 33 for other tiers.
+;       PHO:    Ercinee, eg: PHO-01
+;       RAK:   Rakkerjak, eg: RAK-01
+;       TAN:    Tangrel, eg: TAN-01
+;       THE:   Therva, eg: THE-01
+;       UND:   Undead, eg: UND-01
+;       VAN:    Vangal, eg: VAN-01
+;       ZOT:   Zotzit, eg: ZOT-01
+;       DEM:   Demon Turret, eg: DEM-01
+;
+;
+; HumanClassList: All human class codes:
+; Base Classes:
+; 	MERC: mercenary
+; 	KNIG: Knight
+; 	BLAD: Templar
+; 	TEMP: Duelist
+; 	REAV: Reaver
+; 	ASSA: Assassin
+; 	RANG: Ranger
+; 	ROGU: Scoundrel
+; 	GUNN: Gunner
+; 	PEDD: Peddler
+; 	HEAL: Mender
+; 	ALCH: Alchemystic
+; 	SORC: Sorcerer
+; 	UTIL: Plague Doctor
+; 	WIZA: Wizard
+; 	DRUI: Druid
+; 	FELL: Fellblade
+; 	WARM: Warmage
+; 	GAMB: Gambler
+; 	GADG: Gadgeteer
+;
+; Special Classes
+; 	LORD: Lord
+; 	WERE: Werewolf
+; 	VAMP: Vampire
+; 	LICH: Lich
+; 	PRIN: Princess
+; 	SMED: Vessel
+;
+; Story Classes
+; 	MARK: Marked
+; 	DEMK: Demon Knight
+; 	BHUN: Bounty Hunter
+; 	ANAT: Anatomist
+;
+; Generally speaking, you can just check the "My Documents\Fell Seal\customdata_examples\Encounters.txt" on widows, "~/Fell Seal/customdata_examples/Encounters.txt" on Mac/Linux file to get a decent idea of how things should look like.

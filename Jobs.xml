@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XMLJobs>
+  <jobs>
+    <Job ClassName="MONH" WeaponsType="kfDagger kfSword kfSpear kfRapier" ArmorType="kfLightArmor kfLightHelmet" BonusCrit="5" BaseMove="4" BaseJump="5" BonusEvasion="4" SpeedGrowth="1.2" BaseSpeed="104" Hat="assassin" OutfitM="medarmor" OutfitF="lightarmor">
+        <StatsGrowth Values="4 3.7 3.2 3.7" />
+        <HealthGrowth Values="6 2" />
+        <BaseStats Values="42 39 33 38" />
+        <HealthBase Values="80 14" />
+        <requirements>
+          <UnlockingRequirement ClassHash="RANG" Level="5" />
+        </requirements>
+        <learnables>
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>MONH-A1</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="100">
+              <AbilityHash>MONH-A2</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="150">
+              <AbilityHash>MONH-P1</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="150">
+              <AbilityHash>MONH-A3</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="200">
+              <AbilityHash>MONH-A4</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="200">
+              <AbilityHash>MONH-C1</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="225">
+              <AbilityHash>MONH-P2</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="175">
+              <AbilityHash>MONH-A5</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="225">
+              <AbilityHash>MONH-A6</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="300">
+              <AbilityHash>MONH-A7</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="450">
+              <AbilityHash>MONH-A8</AbilityHash>
+            </SkillTile>
+          </Tier>
+        </learnables>
+        <Mastery spd="3" hp="5" crit="2" />
+    </Job>
+    <Job ClassName="DANC" WeaponsType="kfDagger kfRod kfRapier kfScythe" ArmorType="kfRobes kfClothHelmet" BonusCrit="2" BaseMove="4" BaseJump="3" BonusEvasion="6" SpeedGrowth="1.35" BaseSpeed="105" Hat="royal" OutfitM="reaver" OutfitF="gothdress">
+        <StatsGrowth Values="3.8 3 3.8 4.5" />
+        <HealthGrowth Values="6 2" />
+        <BaseStats Values="42 35 42 42" />
+        <HealthBase Values="78 18" />
+        <requirements>
+          <UnlockingRequirement ClassHash="GAMB" Level="3" />
+          <UnlockingRequirement ClassHash="FELL" Level="3" />
+        </requirements>
+        <learnables>
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>DANC-A1</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="150">
+              <AbilityHash>DANC-A2</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="200">
+              <AbilityHash>DANC-C1</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="175">
+              <AbilityHash>DANC-A3</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="250">
+              <AbilityHash>DANC-P1</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="300">
+              <AbilityHash>DANC-P2</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="250">
+              <AbilityHash>DANC-A4</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="250">
+              <AbilityHash>DANC-A5</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="250">
+              <AbilityHash>DANC-A6</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="300">
+              <AbilityHash>DANC-A7</AbilityHash>
+            </SkillTile>
+          </Tier>
+        </learnables>
+        <Mastery eva="2" elem="5" />
+    </Job>
+    <Job ClassName="NECR" WeaponsType="kfDagger kfSword kfMace kfScythe" ArmorType="kfLightArmor kfLightHelmet kfCloth" BonusCrit="3" BaseMove="4" BonusEvasion="4" SpeedGrowth="0.9" BaseSpeed="93.33" Hat="horns" OutfitM="mage1" OutfitF="mage1">
+        <StatsGrowth Values="4.25 4 4 3.75" />
+        <HealthGrowth Values="7.5 3" />
+        <BaseStats Values="42 41 41 38" />
+        <HealthBase Values="78 21" />
+        <learnables>
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>NECR-A1</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>NECR-A2</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="0">
+              <AbilityHash>NECR-A3</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>NECR-P1</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="0">
+              <AbilityHash>NECR-A4</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>NECR-A5</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="0">
+              <AbilityHash>NECR-A6</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>NECR-A7</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="0">
+              <AbilityHash>NECR-C1</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>NECR-P2</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>NECR-A8</AbilityHash>
+            </SkillTile>
+          </Tier>
+        </learnables>
+        <Mastery hp="5" mind="5" />
+    </Job>
+  </jobs>
+</XMLJobs>
