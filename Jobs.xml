@@ -60,14 +60,13 @@
         </learnables>
         <Mastery spd="3" hp="5" crit="2" />
     </Job>
-    <Job ClassName="DANC" WeaponsType="kfDagger kfRod kfRapier kfScythe" ArmorType="kfRobes kfClothHelmet" BonusCrit="2" BaseMove="4" BaseJump="3" BonusEvasion="6" SpeedGrowth="1.35" BaseSpeed="105" Hat="royal" OutfitM="reaver" OutfitF="gothdress">
+    <Job ClassName="DANC" WeaponsType="kfDagger kfRod kfRapier" ArmorType="kfRobes kfClothHelmet" BonusCrit="2" BaseMove="5" BaseJump="3" BonusEvasion="6" SpeedGrowth="1.35" BaseSpeed="105" Hat="royal" OutfitM="reaver" OutfitF="gothdress">
         <StatsGrowth Values="3.8 3 3.8 4.5" />
         <HealthGrowth Values="6 2" />
         <BaseStats Values="42 35 42 42" />
         <HealthBase Values="78 18" />
         <requirements>
-          <UnlockingRequirement ClassHash="GAMB" Level="3" />
-          <UnlockingRequirement ClassHash="FELL" Level="3" />
+          <UnlockingRequirement ClassHash="GAMB" Level="4" />
         </requirements>
         <learnables>
           <Tier>
@@ -113,13 +112,17 @@
             </SkillTile>
           </Tier>
         </learnables>
-        <Mastery eva="2" elem="5" />
+        <Mastery eva="2" spd="3" res="5" />
     </Job>
-    <Job ClassName="NECR" WeaponsType="kfDagger kfSword kfMace kfScythe" ArmorType="kfLightArmor kfLightHelmet kfCloth" BonusCrit="3" BaseMove="4" BonusEvasion="4" SpeedGrowth="0.9" BaseSpeed="93.33" Hat="horns" OutfitM="mage1" OutfitF="mage1">
+    <Job ClassName="NECR" WeaponsType="kfDagger kfSword kfMace kfScythe" ArmorType="kfLightArmor kfLightHelmet kfCloth" BonusCrit="3" BaseMove="4" BonusEvasion="2" SpeedGrowth="0.9" BaseSpeed="93.33" Hat="horns" OutfitM="mage1" OutfitF="mage1">
         <StatsGrowth Values="4.25 4 4 3.75" />
         <HealthGrowth Values="7.5 3" />
         <BaseStats Values="42 41 41 38" />
         <HealthBase Values="78 21" />
+        <requirements>
+          <UnlockingRequirement ClassHash="REAV" Level="3" />
+          <UnlockingRequirement ClassHash="UTIL" Level="3" />
+        </requirements>
         <learnables>
           <Tier>
             <SkillTile Cost="0">
@@ -127,49 +130,49 @@
             </SkillTile>
           </Tier>
           <Tier>
-            <SkillTile Cost="0">
+            <SkillTile Cost="150">
               <AbilityHash>NECR-A2</AbilityHash>
             </SkillTile>
-            <SkillTile Cost="0">
+            <SkillTile Cost="150">
               <AbilityHash>NECR-A3</AbilityHash>
             </SkillTile>
           </Tier>
           <Tier>
-            <SkillTile Cost="0">
+            <SkillTile Cost="200">
               <AbilityHash>NECR-P1</AbilityHash>
             </SkillTile>
-            <SkillTile Cost="0">
+            <SkillTile Cost="200">
               <AbilityHash>NECR-A4</AbilityHash>
             </SkillTile>
           </Tier>
           <Tier>
-            <SkillTile Cost="0">
+            <SkillTile Cost="200">
               <AbilityHash>NECR-A5</AbilityHash>
             </SkillTile>
-            <SkillTile Cost="0">
+            <SkillTile Cost="150">
               <AbilityHash>NECR-A6</AbilityHash>
             </SkillTile>
           </Tier>
           <Tier>
-            <SkillTile Cost="0">
+            <SkillTile Cost="250">
               <AbilityHash>NECR-A7</AbilityHash>
             </SkillTile>
-            <SkillTile Cost="0">
+            <SkillTile Cost="200">
               <AbilityHash>NECR-C1</AbilityHash>
             </SkillTile>
           </Tier>
           <Tier>
-            <SkillTile Cost="0">
+            <SkillTile Cost="300">
               <AbilityHash>NECR-P2</AbilityHash>
             </SkillTile>
           </Tier>
           <Tier>
-            <SkillTile Cost="0">
+            <SkillTile Cost="350">
               <AbilityHash>NECR-A8</AbilityHash>
             </SkillTile>
           </Tier>
         </learnables>
-        <Mastery hp="5" mind="5" />
+        <Mastery hp="10" def="5" res="5" />
     </Job>
   </jobs>
 </XMLJobs>
