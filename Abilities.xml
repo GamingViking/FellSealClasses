@@ -30,6 +30,16 @@
     <Ability HashName="NECR-A7" EffectHash="WRAN-A7" Name="Blood Bond" MpCost="12" MinRange="1" Range="3" RangeHeight="2" Power3="2" SpecialEffect2="kMindControl" SpellType="kSkill" SpecialEffect="k1OverPower3HealthLossSelf" AddNegativeEffects="kfCharm" AddNegativeEffectsBaseChance="85"/>
     <Ability HashName="NECR-A8" EffectHash="SND-01-A1" Name="Exquisite Pain" MpCost="30" Range="3" RangeHeight="5" Size="3" Shape="kCross" DmgType="kNone" AddNegativeEffects="kfBleed" AddNegativeEffectsBaseChance="75" SpecialEffect="kMissingHealthDmg" />
 
+    <Ability HashName="GEOM-A1" EffectHash="DRA-02-A4" Name="Channel Nature" MpCost="6" Range="0" RangeHeight="5" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpecialEffect="kRandomAffinity4" AddPositiveEffects="kfDarkBarrier"/>
+    <Ability HashName="GEOM-A2" EffectHash="NIW-01-A1" Name="Sound of Seasons" MpCost="4" Range="3" RangeHeight="7" ZoneHeight="2" Size="3" Power="1" Shape="kCross" Element="kTerrain" DmgType="kMagical" DmgSource="kMAtk" />
+    <Ability HashName="GEOM-A3" EffectHash="WARM-A7" Name="Summer Scorcher" MpCost="4" MinRange="1" Range="1" Size="3" Power="1.35" Shape="kHline" Element="kFire" DmgType="kMagical" DmgSource="kMAtk" ExtraFlags="kIgnoreSelfAsTarget" AddPositiveEffects="kfAffinity_Water" SpecialEffect="kBuffsOnCaster" />
+    <Ability HashName="GEOM-A4" EffectHash="WARM-A1" Name="Winter Waters" MpCost="4" MinRange="1" Range="1" RangeHeight="1.5" Size="2" Power="1.35" Shape="kCone" Element="kWater" DmgType="kMagical" DmgSource="kMAtk" AddPositiveEffects="kfAffinity_Fire" SpecialEffect="kBuffsOnCaster"/>
+    <Ability HashName="GEOM-A5" EffectHash="WARM-A9" Name="Spring Sparks" MpCost="4" MinRange="1" Range="1" RangeHeight="1" Size="3" Power="1.35" Shape="kVLine" Element="kThunder" DmgType="kMagical" DmgSource="kMAtk" AddPositiveEffects="kfAffinity_Earth" SpecialEffect="kBuffsOnCaster"/>
+    <Ability HashName="GEOM-A6" EffectHash="BEAS-A21" Name="Fall Fissure" MpCost="8" MinRange="1" Range="3" RangeHeight="3" Size="3" Power="1.35" Shape="kCross" Element="kEarth" DmgType="kMagical" DmgSource="kMAtk" AddPositiveEffects="kfAffinity_Thunder" SpecialEffect="kBuffsOnCaster" ExtraFlags="kTargetsGround kIgnoreSelfAsTarget kCannotTargetWater kIgnoreSides kGroundNeedsTarget kStoreDestination"/>
+    <Ability HashName="GEOM-A7" EffectHash="DRA-03-A2" Name="Season Spears" MpCost="2" Range="0" RangeHeight="1.5" ZoneHeight="1.5" Size="99" Power="1.5" Shape="k4Lines" Element="kTerrain" DmgType="kMagical" DmgSource="kMAtk" ExtraFlags="kIgnoreSelfAsTarget"/>
+    <Ability HashName="GEOM-A8" CopyFrom="PEK-03-A4" Name="Focus Fire" />
+    <Ability HashName="GEOM-A9" EffectHash="SMED-A7" Name="Nature's Wrath" MpCost="3" Range="3" RangeHeight="7" Size="3" Power="2" Shape="kSquare" Element="kTerrain" DmgType="kMagical" DmgSource="kMAtk" ExtraFlags="kIgnoreSelfAsTarget kDoNotShowName" />
+
   </active>
   <passive> 
     <Ability HashName="MONH-P1" Name="Quick Fingers" CopyFrom="PEDD-P1" />
@@ -38,10 +48,13 @@
     <Ability HashName="DANC-P2" Name="Harrier" CopyFrom="VAR-AER-P2" />
     <Ability HashName="NECR-P1" EffectHash="VAR-SKE-P2" Name="Exsanguinate" AddsNonRemovableEffects2="kfDevour"/>
     <Ability HashName="NECR-P2" EffectHash="MAW-01-P3" Name="Minion Master" AddsNonRemovableEffects1="kfDmgReducedPerAlly" />
+    <Ability HashName="GEOM-P1" CopyFrom="RAK-02-P1" Name="Submariner" />
+    <Ability HashName="GEOM-P2" CopyFrom="MAL-03-P2" Name="Manaburn" />
   </passive>
   <counter>
     <Ability HashName="MONH-C1" Name="Pounce" CopyFrom="HHU-02-C1" />
     <Ability HashName="DANC-C1" Name="Critical: Mirage" CopyFrom="ASSA-C1" />
     <Ability HashName="NECR-C1" Name="Weaken" CopyFrom="HAR-03-C1" />
+    <Ability HashName="GEOM-C1" EffectHash="SORC-A7" Name="Nature's Revenge" Range="0" RangeHeight="1" Power="0" Shape="kAllEnemies" GivesCounter="kExplodeAllEnemiesPhys" RemovePositiveEffects="kfAll"/>
   </counter>
 </XMLAbilities>

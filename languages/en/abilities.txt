@@ -58,7 +58,7 @@ DANC-A3=Piercing Palm
 DANC-A3-desc={damage-basic-opener} that ignores the target's defense. {counts-as-regular}
 
 DANC-A4=Swift Spin
-DANC-A4-desc={damage-aoe-opener} around the character. {bypass-counters} {counts-as-regular}
+DANC-A4-desc={damage-around-caster-opener}. {bypass-counters} {counts-as-regular}
 
 DANC-A5=Alluring Step
 DANC-A5-desc={status-chance-neg-opener} in a {size} around the character.
@@ -112,12 +112,12 @@ MART-A11=Finisher - Shadow
 MART-A11-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage to the target. If the target is defeated by this ability, character gains {status-mirage-icon}{positive-mirage} and {status-haste-icon}{positive-haste}.
 
 ; ********************************
-; Necromancer
+; Demonologist
 ; ********************************
 ; Job
 NECR-Title	=Demonologist
 NECR-Ability=Pact Magic
-NECR-desc	=These fanatics' lust for power is unbridled - giving their blood and even sacrificing their friends in order to summon demons and obtain their demonic powers.
+NECR-desc	=These fanatics' lust for power is unbridled - giving their blood and even sacrificing their friends to obtain the power and servitude of demons.
 
 NECR-A1=Summon Demon
 NECR-A1-desc=Resurrects a dead enemy as a random demon that will attack foes until it falls. This will prevent the target from being revived by their own allies.
@@ -142,3 +142,38 @@ NECR-P1-desc=Character restores 20% of max {hp} when killing a unit.
 
 NECR-P2=Minion Master
 NECR-P2-desc=Damage taken is reduced for every live ally on the field.
+
+; ********************************
+; Geomancer
+; ********************************
+; Job
+GEOM-Title	=Geomancer
+GEOM-Ability=Force of Nature
+GEOM-desc	=Deeply in tune with their environemnt, these casters adapt to their surroundings as their powers wax and wane with the seasons.
+
+GEOM-A1=Channel Nature
+GEOM-A1-desc={status-pos-opener} to the character. Also grants a random {element} affinity buff (increases damage output by 0.35x with that {element}).
+
+GEOM-A2=Shifting Seasons
+GEOM-A2-desc={damage-aoe-opener} to the targets. The {element} is chosen based on the user's tile. 
+
+GEOM-A3=Summer Scorcher
+GEOM-A3-desc={damage-line-opener}. Also grants <sprite name="icon-element-water">{element-water} affinity to the character.
+
+GEOM-A4=Winter Waters
+GEOM-A4-desc={damage-cone-opener}. Also grants <sprite name="icon-element-fire">{element-fire} affinity to the character.
+
+GEOM-A5=Spring Sparks
+GEOM-A5-desc={damage-line-opener}. Also grants <sprite name="icon-element-earth">{element-earth} affinity to the character.
+
+GEOM-A6=Fall Fissure
+GEOM-A6-desc=Character displaces themselves to the target location (cannot be a water tile) and deals {powerratio} {elem} ({dmgsource}) damage to the targets in a {size} area around them. Also grants <sprite name="icon-element-electric">{element-thunder} affinity to the character. Cannot be used if there are no targets in the area.
+
+GEOM-A7=Season Spears
+GEOM-A7-desc={damage-line-opener} in all 4 directions. The {element} is chosen based on the user's tile. 
+
+GEOM-A9=Nature's Wrath
+GEOM-A9-desc={damage-aoe}. The {element} is chosen based on the user's tile. 
+
+GEOM-C1=Naturalize
+GEOM-C1-desc=Upon death, dispels all {buffs} from all enemies on the map. 

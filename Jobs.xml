@@ -114,7 +114,7 @@
         </learnables>
         <Mastery eva="2" spd="3" res="5" />
     </Job>
-    <Job ClassName="NECR" WeaponsType="kfDagger kfSword kfMace kfScythe" ArmorType="kfLightArmor kfLightHelmet kfCloth" BonusCrit="3" BaseMove="4" BonusEvasion="2" SpeedGrowth="0.9" BaseSpeed="93.33" Hat="horns" OutfitM="mage1" OutfitF="mage1">
+    <Job ClassName="NECR" WeaponsType="kfDagger kfSword kfMace kfScythe" ArmorType="kfLightArmor kfLightHelmet kfCloth" BonusCrit="3" BaseMove="4" BonusEvasion="2" SpeedGrowth="0.9" BaseSpeed="96.67" Hat="horns" OutfitM="mage1" OutfitF="mage1">
         <StatsGrowth Values="4.25 4 4 3.75" />
         <HealthGrowth Values="7.5 3" />
         <BaseStats Values="42 41 41 38" />
@@ -173,6 +173,66 @@
           </Tier>
         </learnables>
         <Mastery hp="10" def="5" res="5" />
+    </Job>
+    <Job ClassName="GEOM" WeaponsType="kfRod kfStaff" ArmorType="kfRobes kfLightArmor kfClothHelmet kfLightHelmet" BaseJump="2" SpeedGrowth="0.88" BaseSpeed="96.67" casterClass="1" Hat="shaman" OutfitM="mage2" OutfitF="mage2">
+        <StatsGrowth Values="3 3.5 5.5 4" />
+        <HealthGrowth Values="6 4" />
+        <BaseStats Values="31 33 45 42" />
+        <HealthBase Values="76 24" />
+        <requirements>
+          <UnlockingRequirement ClassHash="DRUI" Level="6" />
+        </requirements>
+        <learnables>
+        <Tier>
+          <SkillTile Cost="0">
+            <AbilityHash>GEOM-A1</AbilityHash>
+            <AbilityHash>GEOM-A2</AbilityHash>
+          </SkillTile>
+        </Tier>
+        <Tier>
+          <SkillTile Cost="175">
+            <AbilityHash>GEOM-A3</AbilityHash>
+          </SkillTile>
+          <SkillTile Cost="175">
+            <AbilityHash>GEOM-A4</AbilityHash>
+          </SkillTile>
+        </Tier>
+        <Tier>
+          <SkillTile Cost="175">
+            <AbilityHash>GEOM-A5</AbilityHash>
+          </SkillTile>
+          <SkillTile Cost="175">
+            <AbilityHash>GEOM-A6</AbilityHash>
+          </SkillTile>
+        </Tier>
+        <Tier>
+          <SkillTile Cost="200">
+            <AbilityHash>GEOM-P1</AbilityHash>
+          </SkillTile>
+          <SkillTile Cost="200">
+            <AbilityHash>GEOM-C1</AbilityHash>
+          </SkillTile>
+        </Tier>
+        <Tier>
+          <SkillTile Cost="225">
+            <AbilityHash>GEOM-A7</AbilityHash>
+          </SkillTile>
+          <SkillTile Cost="250">
+            <AbilityHash>GEOM-P2</AbilityHash>
+          </SkillTile>
+        </Tier>
+        <Tier>
+          <SkillTile Cost="350">
+            <AbilityHash>GEOM-A8</AbilityHash>
+          </SkillTile>
+        </Tier>
+        <Tier>
+          <SkillTile Cost="550">
+            <AbilityHash>GEOM-A9</AbilityHash>
+          </SkillTile>
+        </Tier>
+        <Mastery mp="5" elem="10" />
+        </learnables>
     </Job>
   </jobs>
 </XMLJobs>
