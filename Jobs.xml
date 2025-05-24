@@ -183,56 +183,56 @@
           <UnlockingRequirement ClassHash="DRUI" Level="6" />
         </requirements>
         <learnables>
-        <Tier>
-          <SkillTile Cost="0">
-            <AbilityHash>GEOM-A1</AbilityHash>
-            <AbilityHash>GEOM-A2</AbilityHash>
-          </SkillTile>
-        </Tier>
-        <Tier>
-          <SkillTile Cost="175">
-            <AbilityHash>GEOM-A3</AbilityHash>
-          </SkillTile>
-          <SkillTile Cost="175">
-            <AbilityHash>GEOM-A4</AbilityHash>
-          </SkillTile>
-        </Tier>
-        <Tier>
-          <SkillTile Cost="175">
-            <AbilityHash>GEOM-A5</AbilityHash>
-          </SkillTile>
-          <SkillTile Cost="175">
-            <AbilityHash>GEOM-A6</AbilityHash>
-          </SkillTile>
-        </Tier>
-        <Tier>
-          <SkillTile Cost="200">
-            <AbilityHash>GEOM-P1</AbilityHash>
-          </SkillTile>
-          <SkillTile Cost="200">
-            <AbilityHash>GEOM-C1</AbilityHash>
-          </SkillTile>
-        </Tier>
-        <Tier>
-          <SkillTile Cost="225">
-            <AbilityHash>GEOM-A7</AbilityHash>
-          </SkillTile>
-          <SkillTile Cost="250">
-            <AbilityHash>GEOM-P2</AbilityHash>
-          </SkillTile>
-        </Tier>
-        <Tier>
-          <SkillTile Cost="350">
-            <AbilityHash>GEOM-A8</AbilityHash>
-          </SkillTile>
-        </Tier>
-        <Tier>
-          <SkillTile Cost="550">
-            <AbilityHash>GEOM-A9</AbilityHash>
-          </SkillTile>
-        </Tier>
-        <Mastery mp="5" elem="10" />
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>GEOM-A1</AbilityHash>
+              <AbilityHash>GEOM-A2</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="175">
+              <AbilityHash>GEOM-A3</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="175">
+              <AbilityHash>GEOM-A4</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="175">
+              <AbilityHash>GEOM-A5</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="175">
+              <AbilityHash>GEOM-A6</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="200">
+              <AbilityHash>GEOM-P1</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="200">
+              <AbilityHash>GEOM-C1</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="225">
+              <AbilityHash>GEOM-A7</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="250">
+              <AbilityHash>GEOM-P2</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="350">
+              <AbilityHash>GEOM-A8</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="550">
+              <AbilityHash>GEOM-A9</AbilityHash>
+            </SkillTile>
+          </Tier>
         </learnables>
+        <Mastery mp="5" elem="10" />
     </Job>
   </jobs>
 </XMLJobs>
