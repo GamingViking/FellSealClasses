@@ -174,7 +174,7 @@
         </learnables>
         <Mastery hp="10" def="5" res="5" />
     </Job>
-    <Job ClassName="GEOM" WeaponsType="kfRod kfStaff" ArmorType="kfRobes kfLightArmor kfClothHelmet kfLightHelmet" BaseJump="2" SpeedGrowth="0.88" BaseSpeed="96.67" casterClass="1" Hat="shaman" OutfitM="mage2" OutfitF="mage2">
+    <Job ClassName="GEOM" WeaponsType="kfRod kfStaff" ArmorType="kfRobes kfLightArmor kfClothHelmet kfLightHelmet" BaseJump="2" SpeedGrowth="0.9" BaseSpeed="96.67" casterClass="1" Hat="shaman" OutfitM="mage2" OutfitF="mage2">
         <StatsGrowth Values="3 3.5 5.5 4" />
         <HealthGrowth Values="6 4" />
         <BaseStats Values="31 33 45 42" />
@@ -233,6 +233,66 @@
           </Tier>
         </learnables>
         <Mastery mp="5" elem="10" />
+    </Job>
+    <Job ClassName="INFE" WeaponsType="kfMace kfRod kfDagger" ArmorType="kfRobes kfHeavyArmor kfClothHelmet kfHeavyHelmet kfShield" BaseMove="4" BaseJump="2" CanSwim="false" SpeedGrowth="0.88" BaseSpeed="93.33" Hat="fellblade" OutfitM="heavy" OutfitF="heavy">
+        <StatsGrowth Values="3.5 4.5 3.5 4" />
+        <HealthGrowth Values="8.5 2" />
+        <BaseStats Values="35 44 38 42" />
+        <HealthBase Values="92 18" />
+        <requirements>
+          <UnlockingRequirement ClassHash="BLAD" Level="3" />
+          <UnlockingRequirement ClassHash="WIZA" Level="3" />
+        </requirements>
+        <learnables>
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>INFE-A1</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="200">
+              <AbilityHash>INFE-A2</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="175">
+              <AbilityHash>INFE-A3</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="175">
+              <AbilityHash>INFE-A4</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="200">
+              <AbilityHash>INFE-C1</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="200">
+              <AbilityHash>INFE-A5</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="300">
+              <AbilityHash>INFE-P1</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="225">
+              <AbilityHash>INFE-A6</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="250">
+              <AbilityHash>INFE-A7</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="300">
+              <AbilityHash>INFE-A8</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="400">
+              <AbilityHash>INFE-P2</AbilityHash>
+            </SkillTile>
+          </Tier>
+        </learnables>
+        <Mastery hp="8" def="5" res="2" />
     </Job>
   </jobs>
 </XMLJobs>

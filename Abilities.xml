@@ -40,6 +40,15 @@
     <Ability HashName="GEOM-A8" CopyFrom="PEK-03-A4" Name="Focus Fire" />
     <Ability HashName="GEOM-A9" EffectHash="SMED-A7" Name="Nature's Wrath" MpCost="3" Range="3" RangeHeight="7" Size="3" Power="2" Shape="kSquare" Element="kTerrain" DmgType="kMagical" DmgSource="kMAtk" ExtraFlags="kIgnoreSelfAsTarget kDoNotShowName" />
 
+    <Ability HashName="INFE-A1" EffectHash="RAK-02-A3" Name="Revel in Blood" MpCost="4" Range="0" Power="0.5" Power2="0.6" Power3="0.5" DmgType="kHealing" DmgSource="kMAtk" AddNegativeEffects="kfBleed" AddNegativeEffectsBaseChance="100" SpellType="kNothing" SpecialEffect="kInflictsRandomDebuff" SpecialEffect2="kDamageUpWithBleed" ExtraFlags="kGivesQuickTurnFrowPower3" />
+    <Ability HashName="INFE-A2" EffectHash="FELL-A6" Name="Epidemic" MpCost="6" Range="0" RangeHeight="3.5" ZoneHeight="1.5" Size="5" Shape="kCross" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" SpecialEffect="kContagion" SpellType="kNothing" AddNegativeEffectsBaseChance="100" />
+    <Ability HashName="INFE-A3" EffectHash="HRV-01-A1" Name="Bloodlet" MpCost="6" MinRange="1" Range="2" RangeHeight="3" Power="0.9" Power2="0.5" SpellType="kSkill" SpecialEffect2="kDamageUpWithBleed" />
+    <Ability HashName="INFE-A4" EffectHash="MAM-01-A3" Name="Fetid Mucus" MpCost="4" MinRange="1" Range="4" Power="0.35" Power2="5" Element="kWater" DmgType="kMagical" DmgSource="kAtkMixed" SpellType="kSkill" SpecialEffect="kRandomDebuffPerPower2" AddNegativeEffectsBaseChance="40" />
+    <Ability HashName="INFE-A5" EffectHash="GAMB-A5" Name="Eternal Illness" MpCost="8" Range="0" Size="5" Shape="kCross" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" SpellType="kSkill" SpecialEffect="kExtendDebuff" />
+    <Ability HashName="INFE-A6" EffectHash="WERE-A2" Name="Putrid Breath" MpCost="10" MinRange="1" Range="1" RangeHeight="1.5" Size="2" Power="0.9" Shape="kCone" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" AddNegativeEffects="kfWeaken kfPoison" AddNegativeEffectsBaseChance="62" />
+    <Ability HashName="INFE-A7" EffectHash="BWO-01-A2" Name="Corrosive Bile" MpCost="14" MinRange="1" Range="3" RangeHeight="2" Size="3" Power="1.2" Shape="kCross" Element="kWater" DmgType="kMagical" DmgSource="kMAtk" SpellType="kSkill" ExtraFlags="kIgnoreSelfAsTarget" AddNegativeEffects="kfDefDown kfMDefDown" AddNegativeEffectsBaseChance="100" />
+    <Ability HashName="INFE-A8" EffectHash="MAW-02-A6" Name="Absorb Putrescence" MpCost="18" Range="0" RangeHeight="5" Size="3" Power="0.3" Power2="0.4" Shape="kSquare" Element="kNone" DmgType="kMagical" DmgSource="kAtkMixed" SpellType="kSkill" SpecialEffect="kDrainHpFromDebuff" ExtraFlags="kIgnoreSelfAsTarget kIgnoreSides" />
+
   </active>
   <passive> 
     <Ability HashName="MONH-P1" Name="Quick Fingers" CopyFrom="PEDD-P1" />
@@ -50,11 +59,14 @@
     <Ability HashName="NECR-P2" EffectHash="MAW-01-P3" Name="Minion Master" AddsNonRemovableEffects1="kfDmgReducedPerAlly" />
     <Ability HashName="GEOM-P1" CopyFrom="RAK-02-P1" Name="Submariner" />
     <Ability HashName="GEOM-P2" CopyFrom="MAL-03-P2" Name="Manaburn" />
+    <Ability HashName="INFE-P1" CopyFrom="HAR-02-P1" Name="Opportunist" />
+    <Ability HashName="INFE-P2" CopyFrom="SND-01-P2" Name="Strong Body" />
   </passive>
   <counter>
     <Ability HashName="MONH-C1" Name="Pounce" CopyFrom="HHU-02-C1" />
     <Ability HashName="DANC-C1" Name="Critical: Mirage" CopyFrom="ASSA-C1" />
     <Ability HashName="NECR-C1" Name="Weaken" CopyFrom="HAR-03-C1" />
     <Ability HashName="GEOM-C1" EffectHash="SORC-A7" Name="Nature's Revenge" Range="0" RangeHeight="1" Power="0" Shape="kAllEnemies" GivesCounter="kExplodeAllEnemiesPhys" RemovePositiveEffects="kfAll"/>
+    <Ability HashName="INFE-C1" EffectHash="UTIL-A6" Range="0" ZoneHeight="1.5" Size="3" Power="1" Power2="0.75" Shape="kCross" Element="kNone" DmgSource="kAtkMixed" DmgType="kMagical" AddNegativeEffects="kfPoison" AddNegativeEffectsBaseChance="100" SpecialEffect2="kDamageUpWithBleed" ExtraFlags="kIgnoreSelfAsTarget" GivesCounter="kExplode" />
   </counter>
 </XMLAbilities>

@@ -177,3 +177,38 @@ GEOM-A9-desc={damage-aoe}. The {element} is chosen based on the user's tile.
 
 GEOM-C1=Naturalize
 GEOM-C1-desc=Upon death, dispels all {buffs} from all enemies on the map. 
+
+; ********************************
+; Infected
+; ********************************
+; Job
+INFE-Title	=Infected
+INFE-Ability=Disease
+INFE-desc	=The tainted blood of these once proud knights is a carrier for all types of diseases which they freely employ to bring low any who would stand before them. 
+
+INFE-A1=Revel in Blood
+INFE-A1-desc={heal-small-opener} to the character. Heals 0.6x more if the character is infliced with bleed. Also inflicts {status-bleed-icon}{negative-bleed} and a random debuff. {turn-comes-faster}
+
+INFE-A2=Epidemic
+INFE-A2-desc=Spreads any {debuff} from the character to other targets in a {size} area around the character.
+
+INFE-A3=Bloodlet
+INFE-A3-desc={damage-single-opener}. Deals {power2ratio} more damage if target is inflicted with {status-bleed-icon}{negative-bleed}.
+
+INFE-A4=Fetid Mucus
+INFE-A4-desc={damage-single-range-opener} and has a {addnegativechance} chance of inflicting {power2} random {debuffs}.
+
+INFE-A5=Eternal Illness
+INFE-A5-desc=Refreshes the duration of all {debuffs} on the character and all targets around the character in a {size} area.
+
+INFE-A6=Putrid Breath
+INFE-A6-desc={damage-cone-opener} {add-negative-effect-closer}
+
+INFE-A7=Corrosive Bile
+INFE-A7-desc={damage-aoe-opener} {add-negative-effect-100-closer}
+
+INFE-A8=Absorb Putresence
+INFE-A8-desc={damage-around-caster-opener} and absorbs the damage dealt. Deals more damage the more {debuffs} the targets are inflicted with.
+
+INFE-C1=Bio Bomb
+INFE-C1-desc=Upon death, deals {powerratio} {elem} ({dmgsource}) damage in a {size} area around the character {add-negative-effect-100-closer} Deals {power2ratio} more damage to targets inflicted with {status-bleed-icon}{negative-bleed}.
