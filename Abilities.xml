@@ -49,6 +49,15 @@
     <Ability HashName="INFE-A7" EffectHash="BWO-01-A2" Name="Corrosive Bile" MpCost="14" MinRange="1" Range="3" RangeHeight="2" Size="3" Power="1.2" Shape="kCross" Element="kWater" DmgType="kMagical" DmgSource="kMAtk" SpellType="kSkill" ExtraFlags="kIgnoreSelfAsTarget" AddNegativeEffects="kfDefDown kfMDefDown" AddNegativeEffectsBaseChance="100" />
     <Ability HashName="INFE-A8" EffectHash="MAW-02-A6" Name="Absorb Putrescence" MpCost="18" Range="0" RangeHeight="5" Size="3" Power="0.3" Power2="0.4" Shape="kSquare" Element="kNone" DmgType="kMagical" DmgSource="kAtkMixed" SpellType="kSkill" SpecialEffect="kDrainHpFromDebuff" ExtraFlags="kIgnoreSelfAsTarget kIgnoreSides" />
 
+    <Ability HashName="EXOR-A1" EffectHash="REAV-A3" Name="Banish Evil" MpCost="4" Range="0" Size="3" Power="0.95" Shape="kCross" SpellType="kSkill" ExtraFlags="kIgnoreSelfAsTarget" SpecialEffect2="kIsTreatedAsRegularAttack" RemoveNegativeEffects="kfAll" />
+    <Ability HashName="EXOR-A2" EffectHash="VAR-COR-A2" Name="Fanatical Blows" MpCost="14" MinRange="1" Power="1.45" SpecialEffect="kBerserkSelf" SpecialEffect2="kIsTreatedAsRegularAttack" SpellType="kSkill"/>
+    <Ability HashName="EXOR-A3" CopyFrom="DEMK-A5" />
+    <Ability HashName="EXOR-A4" EffectHash="ROGU-A6" Name="Surgical Strike" MpCost="6" MinRange="1" Power="0.6" Power2="0.6" Power3="0.799999952" SpecialEffect="kSneakAttack" SpecialEffect2="kIsTreatedAsRegularAttack" SpellType="kSkill" />
+    <Ability HashName="EXOR-A5" EffectHash="BLAD-A3" Name="Rejuvinate" MpCost="16" Range="2" RangeHeight="5" Power="0.40" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" RemoveNegativeEffects="kfBasic kfCharm kfBerserk" SpecialEffect="kHealingPercentage"/>
+    <Ability HashName="EXOR-A6" EffectHash="KNI-01-A2" Name="Purge Spirit" MpCost="18" MinRange="1" Power="1.5" Power2="0.05" Power3="0.5" Element="kWeapon" SpecialEffect="kManabreaker" SpecialEffect2="kIsTreatedAsRegularAttack" SpellType="kSkill"/>
+    <Ability HashName="EXOR-A7" EffectHash="VAR-CEL-A2" Name="Righteous Fury" MpCost="18" MinRange="1" Range="1" RangeHeight="1.5" Size="2" Power="1.5" Shape="kVLine" Element="kHoly" DmgSource="kAtkMixed" AddNegativeEffects="kfBlind" AddNegativeEffectsBaseChance="55" SpecialEffect="kBerserkSelf" />
+    <Ability HashName="EXOR-A8" EffectHash="MARK-A7" Name="Purification" MpCost="28" MinRange="2" Range="2" ZoneHeight="2" Size="3" Power="2" Shape="kCross" Element="kNone" DmgSource="kAtkMixed" SpellType="kSkill" PosStyle="kLine" RemoveNegativeEffects="kfAll" RemovePositiveEffects="kfAll" SpecialEffect2="kIsTreatedAsRegularAttack" />
+
   </active>
   <passive> 
     <Ability HashName="MONH-P1" Name="Quick Fingers" CopyFrom="PEDD-P1" />
@@ -61,6 +70,9 @@
     <Ability HashName="GEOM-P2" CopyFrom="MAL-03-P2" Name="Manaburn" />
     <Ability HashName="INFE-P1" CopyFrom="HAR-02-P1" Name="Opportunist" />
     <Ability HashName="INFE-P2" CopyFrom="SND-01-P2" Name="Strong Body" />
+    <Ability HashName="EXOR-P1" CopyFrom="VAR-SYL-P1" Name="Healing Touch" />
+    <Ability HashName="EXOR-P2" CopyFrom="VAR-COR-P1" Name="Lash Out" />
+
   </passive>
   <counter>
     <Ability HashName="MONH-C1" Name="Pounce" CopyFrom="HHU-02-C1" />
@@ -68,5 +80,6 @@
     <Ability HashName="NECR-C1" Name="Weaken" CopyFrom="HAR-03-C1" />
     <Ability HashName="GEOM-C1" EffectHash="SORC-A7" Name="Nature's Revenge" Range="0" RangeHeight="1" Power="0" Shape="kAllEnemies" GivesCounter="kExplodeAllEnemiesPhys" RemovePositiveEffects="kfAll"/>
     <Ability HashName="INFE-C1" EffectHash="UTIL-A6" Range="0" ZoneHeight="1.5" Size="3" Power="1" Power2="0.75" Shape="kCross" Element="kNone" DmgSource="kAtkMixed" DmgType="kMagical" AddNegativeEffects="kfPoison" AddNegativeEffectsBaseChance="100" SpecialEffect2="kDamageUpWithBleed" ExtraFlags="kIgnoreSelfAsTarget" GivesCounter="kExplode" />
+    <Ability HashName="EXOR-C1" CopyFrom="VAR-GUA-C1" Name="Vanguard" />
   </counter>
 </XMLAbilities>

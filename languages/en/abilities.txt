@@ -212,3 +212,32 @@ INFE-A8-desc={damage-around-caster-opener} and absorbs the damage dealt. Deals m
 
 INFE-C1=Bio Bomb
 INFE-C1-desc=Upon death, deals {powerratio} {elem} ({dmgsource}) damage in a {size} area around the character {add-negative-effect-100-closer} Deals {power2ratio} more damage to targets inflicted with {status-bleed-icon}{negative-bleed}.
+
+; ********************************
+; Exorcist
+; ********************************
+; Job
+EXOR-Title	=Exorcist
+EXOR-Ability=Exorcism
+EXOR-desc	=These spiritual specialists have learned how to attack the corporeal essence of maladies, literally beating away ailments and pain. Of course, that doesn't stop them from bashing their enemies on the physical plane as well. 
+
+EXOR-A1=Banish Evil
+EXOR-A1-desc={damage-around-caster-opener} and removes {removenegative}. {counts-as-regular}
+
+EXOR-A2=Fanatical Blows
+EXOR-A2-desc={damage-single} Also inflicts {status-berserk-icon}{negative-berserk} on the character. {counts-as-regular}
+
+EXOR-A4=Surgical Strike
+EXOR-A4-desc={damage-single-opener}. The attack deals significantly increased damage from the sides or the back, but is weak from the front. {counts-as-regular}
+
+EXOR-A5=Rejuvinate
+EXOR-A5-desc=Heals 33% {hp} to the target and removes {removenegative}.
+
+EXOR-A6=Purge Spirit
+EXOR-A6-desc={damage-single} Deals 0.05x more damage for each {mp} the target has, and removes half of the target's {mp} afterwards. {counts-as-regular}
+
+EXOR-A7=Righteous Fury
+EXOR-A7-desc={damage-line-opener} {add-negative-effect-closer} Also inflicts {status-berserk-icon}{negative-berserk} on the character.
+
+EXOR-A8=Purification
+EXOR-A8-desc={damage-aoe-opener}. Also removes {removenegative} and {removepositive}.

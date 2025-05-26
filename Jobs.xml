@@ -114,7 +114,7 @@
         </learnables>
         <Mastery eva="2" spd="3" res="5" />
     </Job>
-    <Job ClassName="NECR" WeaponsType="kfDagger kfSword kfMace kfScythe" ArmorType="kfLightArmor kfLightHelmet kfCloth" BonusCrit="3" BaseMove="4" BonusEvasion="2" SpeedGrowth="0.9" BaseSpeed="96.67" Hat="horns" OutfitM="mage1" OutfitF="mage1">
+    <Job ClassName="NECR" WeaponsType="kfDagger kfSword kfMace" ArmorType="kfLightArmor kfLightHelmet kfCloth" BonusCrit="3" BaseMove="4" BonusEvasion="2" SpeedGrowth="0.9" BaseSpeed="96.67" Hat="horns" OutfitM="mage1" OutfitF="mage1">
         <StatsGrowth Values="4.25 4 4 3.75" />
         <HealthGrowth Values="7.5 3" />
         <BaseStats Values="42 41 41 38" />
@@ -293,6 +293,65 @@
           </Tier>
         </learnables>
         <Mastery hp="8" def="5" res="2" />
+    </Job>
+    <Job ClassName="EXOR" WeaponsType="kfMaul kfScythe kfStaff" ArmorType="kfRobes kfLightArmor kfClothHelmet kfLightHelmet" BonusCrit="5" BaseMove="4" SpeedGrowth="1.05" BaseSpeed="100" Hat="plaguedoc" OutfitM="arabian" OutfitF="arabian">
+        <StatsGrowth Values="4.75 3.75 4 3.75" />
+        <HealthGrowth Values="7 2.5" />
+        <BaseStats Values="45 38.5 39 38.5" />
+        <HealthBase Values="80 20" />
+        <requirements>
+          <UnlockingRequirement ClassHash="BLAD" Level="4" />
+        </requirements>
+        <learnables>
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>EXOR-A1</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="175">
+              <AbilityHash>EXOR-P1</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="225">
+              <AbilityHash>EXOR-A2</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="225">
+              <AbilityHash>EXOR-A3</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="200">
+              <AbilityHash>EXOR-C1</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="250">
+              <AbilityHash>EXOR-A4</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="250">
+              <AbilityHash>EXOR-A5</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="200">
+              <AbilityHash>EXOR-P2</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="250">
+              <AbilityHash>EXOR-A6</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="250">
+              <AbilityHash>EXOR-A7</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="400">
+              <AbilityHash>EXOR-A8</AbilityHash>
+            </SkillTile>
+          </Tier>
+        </learnables>
+        <Mastery atk="3" crit="2" holy="5" />
     </Job>
   </jobs>
 </XMLJobs>
