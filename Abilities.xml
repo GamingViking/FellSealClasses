@@ -32,6 +32,6 @@
     <Ability HashName="MART-P2" Name="Impetus" CopyFrom="BHUN-P2"/>
   </passive>
   <counter>
-    <Ability HashName="MART-C1" CopyFrom="VAR-DFT-C1"/>
+    <Ability HashName="MART-C1" Name="Scar Tissue" CopyFrom="TAN-01-C1"/>
   </counter>
 </XMLAbilities>
