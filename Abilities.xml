@@ -58,6 +58,14 @@
     <Ability HashName="EXOR-A7" EffectHash="VAR-CEL-A2" Name="Righteous Fury" MpCost="18" MinRange="1" Range="1" RangeHeight="1.5" Size="2" Power="1.5" Shape="kVLine" Element="kHoly" DmgSource="kAtkMixed" AddNegativeEffects="kfBlind" AddNegativeEffectsBaseChance="55" SpecialEffect="kBerserkSelf" />
     <Ability HashName="EXOR-A8" EffectHash="MARK-A7" Name="Purification" MpCost="28" MinRange="2" Range="2" ZoneHeight="2" Size="3" Power="2" Shape="kCross" Element="kNone" DmgSource="kAtkMixed" SpellType="kSkill" PosStyle="kLine" RemoveNegativeEffects="kfAll" RemovePositiveEffects="kfAll" SpecialEffect2="kIsTreatedAsRegularAttack" />
 
+    <Ability HashName="GLAD-A1" EffectHash="BHUN-A1" Name="Net" MinRange="1" Range="3" RangeHeight="3" Element="kNone" SpecialEffect2="kPerfectAccuracy" SpellType="kSkill" AddNegativeEffects="kfRoot" AddNegativeEffectsBaseChance="100" />
+    <Ability HashName="GLAD-A2" EffectHash="BOL-03-A3" Name="Spiked Shield" MpCost="8" Range="0" RangeHeight="5" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" AddPositiveEffects="kfDefUp kfThorns" />
+    <Ability HashName="GLAD-A3" EffectHash="DEMK-A3" Name="Drive Back" MpCost="6" Range="2" RangeHeight="2" PosStyle="kLine" DmgSource="kDef" Power="0.85" SpecialEffect="kPunt" SpellType="kSkill" ExtraFlags="kIgnoreSelfAsTarget" />
+    <Ability HashName="GLAD-A4" EffectHash="VAN-02-A1" Name="Remaneuvering Strike" MinRange="1" Range="1" RangeHeight="1" Power="1" SpecialEffect="kSwapPositions" SpecialEffect2="kPerfectAccuracy" SpellType="kSkill" ExtraFlags="kCannotTargetWater kIgnoresCover" />
+    <Ability HashName="GLAD-A5" EffectHash="KNIG-A3" Name="Hold the Line" MpCost="12" Range="0" RangeHeight="2" Element="kNone" Shape="kCross" Size="3" SpecialEffect2="kPerfectAccuracy" SpellType="kSkill" AddNegativeEffects="kfBerserk" AddNegativeEffectsBaseChance="100" ExtraFlags="kIgnoreSelfAsTarget" />
+    <Ability HashName="GLAD-A6" EffectHash="HRV-02-A2" Name="Rain of Spears" MpCost="12" MinRange="1" Range="1" RangeHeight="2" Size="3" Power="1.2" PosStyle="kLine" Shape="kVLine" SpellType="kSkill" AddNegativeEffects="kfDefDown" AddNegativeEffectsBaseChance="75" ExtraFlags="kIgnoreSelfAsTarget" />
+    <Ability HashName="GLAD-A7" EffectHash="VAR-VEN-A2" Name="Menace" MpCost="14" MinRange="1" Range="1" Size="3" Power="0.25" Shape="kCone" SpecialEffect="kDelayOnFacingCaster" SpellType="kSkill"/>
+
   </active>
   <passive> 
     <Ability HashName="MONH-P1" Name="Quick Fingers" CopyFrom="PEDD-P1" />
@@ -72,6 +80,9 @@
     <Ability HashName="INFE-P2" CopyFrom="SND-01-P2" Name="Strong Body" />
     <Ability HashName="EXOR-P1" CopyFrom="VAR-SYL-P1" Name="Healing Touch" />
     <Ability HashName="EXOR-P2" CopyFrom="VAR-COR-P1" Name="Lash Out" />
+    <Ability HashName="GLAD-P1" CopyFrom="VAR-THO-P1" Name="Retaliation" />
+    <Ability HashName="GLAD-P2" EffectHash="VAR-THO-P2" Name="Holistic Defense" AddsNonRemovableEffects2="kfHallowedBulkwark"/>
+    
 
   </passive>
   <counter>
@@ -81,5 +92,6 @@
     <Ability HashName="GEOM-C1" EffectHash="SORC-A7" Name="Nature's Revenge" Range="0" RangeHeight="1" Power="0" Shape="kAllEnemies" GivesCounter="kExplodeAllEnemiesPhys" RemovePositiveEffects="kfAll"/>
     <Ability HashName="INFE-C1" EffectHash="UTIL-A6" Range="0" ZoneHeight="1.5" Size="3" Power="1" Power2="0.75" Shape="kCross" Element="kNone" DmgSource="kAtkMixed" DmgType="kMagical" AddNegativeEffects="kfPoison" AddNegativeEffectsBaseChance="100" SpecialEffect2="kDamageUpWithBleed" ExtraFlags="kIgnoreSelfAsTarget" GivesCounter="kExplode" />
     <Ability HashName="EXOR-C1" CopyFrom="VAR-GUA-C1" Name="Vanguard" />
+    <Ability HashName="GLAD-C1" EffectHash="VAR-DFT-C1" Name="Repel" GivesCounter="kShove"/>
   </counter>
 </XMLAbilities>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <XMLJobs>
   <jobs>
-    <Job ClassName="MONH" WeaponsType="kfDagger kfSword kfSpear kfRapier" ArmorType="kfLightArmor kfLightHelmet" BonusCrit="5" BaseMove="4" BaseJump="5" BonusEvasion="4" SpeedGrowth="1.2" BaseSpeed="104" Hat="assassin" OutfitM="medarmor" OutfitF="lightarmor">
+    <Job ClassName="MONH" WeaponsType="kfDagger kfSword kfSpear kfRapier" ArmorType="kfLightArmor kfLightHelmet" BonusCrit="2" BaseMove="4" BaseJump="5" BonusEvasion="4" SpeedGrowth="1.2" BaseSpeed="104" Hat="gadgeteer" OutfitM="medarmor" OutfitF="medarmor">
         <StatsGrowth Values="4 3.7 3.2 3.7" />
         <HealthGrowth Values="6 2" />
         <BaseStats Values="42 39 33 38" />
@@ -114,7 +114,7 @@
         </learnables>
         <Mastery eva="2" spd="3" res="5" />
     </Job>
-    <Job ClassName="NECR" WeaponsType="kfDagger kfSword kfMace" ArmorType="kfLightArmor kfLightHelmet kfCloth" BonusCrit="3" BaseMove="4" BonusEvasion="2" SpeedGrowth="0.9" BaseSpeed="96.67" Hat="horns" OutfitM="mage1" OutfitF="mage1">
+    <Job ClassName="NECR" WeaponsType="kfDagger kfSword kfMace" ArmorType="kfLightArmor kfLightHelmet kfCloth" BonusCrit="1" BaseMove="4" BonusEvasion="2" SpeedGrowth="0.9" BaseSpeed="96.67" Hat="horns" OutfitM="mage1" OutfitF="mage1">
         <StatsGrowth Values="4.25 4 4 3.75" />
         <HealthGrowth Values="7.5 3" />
         <BaseStats Values="42 41 41 38" />
@@ -352,6 +352,59 @@
           </Tier>
         </learnables>
         <Mastery atk="3" crit="2" holy="5" />
+    </Job>
+    <Job ClassName="GLAD" WeaponsType="kfSword kfSpear" ArmorType="kfLightArmor kfHeavyArmor kfLightHelmet kfHeavyHelmet kfShield" BaseMove="4" BaseJump="2" CanSwim="false" SpeedGrowth="0.75" BaseSpeed="93.33" Hat="gladiator" OutfitM="paragon" OutfitF="paragon">
+        <StatsGrowth Values="4 5 3 4" />
+        <HealthGrowth Values="7.5 1.5" />
+        <BaseStats Values="40 47 36 45" />
+        <HealthBase Values="86 14" />
+        <learnables>
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>GLAD-A1</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="150">
+              <AbilityHash>GLAD-A2</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="200">
+              <AbilityHash>GLAD-C1</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="200">
+              <AbilityHash>GLAD-A3</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="200">
+              <AbilityHash>GLAD-A4</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="200">
+              <AbilityHash>GLAD-P1</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="200">
+              <AbilityHash>GLAD-P2</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="250">
+              <AbilityHash>GLAD-A5</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="225">
+              <AbilityHash>GLAD-A6</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="250">
+              <AbilityHash>GLAD-A7</AbilityHash>
+            </SkillTile>
+          </Tier>
+        </learnables>
+        <Mastery />
     </Job>
   </jobs>
 </XMLJobs>

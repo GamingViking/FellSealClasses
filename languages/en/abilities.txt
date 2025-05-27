@@ -241,3 +241,38 @@ EXOR-A7-desc={damage-line-opener} {add-negative-effect-closer} Also inflicts {st
 
 EXOR-A8=Purification
 EXOR-A8-desc={damage-aoe-opener}. Also removes {removenegative} and {removepositive}.
+
+; ********************************
+; Gladiator
+; ********************************
+; Job
+GLAD-Title	=Gladiator
+GLAD-Ability=Combat
+GLAD-desc	=Once legionnaires, these battle-tested warriors know the strategies and formations of war and the tactics and grit of those fighting to survive in the colesseum. 
+
+GLAD-A1=Net
+GLAD-A1-desc=Inflicts {addnegative} on the target.
+
+GLAD-A2=Spiked Shield
+GLAD-A2-desc={status-pos-opener}.
+
+GLAD-A3=Drive Back
+GLAD-A3-desc={damage-basic-opener} and pushes the target away by one tile. 
+
+GLAD-A4=Remaneuvering Strike
+GLAD-A4-desc={damage-single-opener} and exchanges position with them. Ignores Protect status and cannot be evaded. Bypasses all {counter} abilities. 
+
+GLAD-A5=Hold the Line
+GLAD-A5-desc=Inflicts {addnegative} in a {size} area around the character. 
+
+GLAD-A6=Rain of Spears
+GLAD-A6-desc={damage-line-opener} {add-negative-effect-closer}
+
+GLAD-A7=Menace
+GLAD-A7-desc={damage-cone-opener}. Any target facing the character loses 60% of the progress toward their next turn. 
+
+GLAD-C1=Repel
+GLAD-C1-desc=Counters with a pushing {regular-attack} any offensive action taken against the character by an adjacent unit. 
+
+GLAD-P2=Holistic Defense
+GLAD-P2-desc=Increses {def} by 25% of {res}, and {res} by 25% of {def}.
