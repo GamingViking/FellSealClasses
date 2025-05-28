@@ -353,11 +353,15 @@
         </learnables>
         <Mastery atk="3" crit="2" holy="5" />
     </Job>
-    <Job ClassName="GLAD" WeaponsType="kfSword kfSpear" ArmorType="kfLightArmor kfHeavyArmor kfLightHelmet kfHeavyHelmet kfShield" BaseMove="4" BaseJump="2" CanSwim="false" SpeedGrowth="0.75" BaseSpeed="93.33" Hat="gladiator" OutfitM="paragon" OutfitF="paragon">
-        <StatsGrowth Values="4 5 3 4" />
-        <HealthGrowth Values="7.5 1.5" />
+    <Job ClassName="GLAD" WeaponsType="kfSword kfSpear" ArmorType="kfLightArmor kfHeavyArmor kfLightHelmet kfHeavyHelmet kfShield" BaseMove="4" BaseJump="2" CanSwim="false" SpeedGrowth="0.83" BaseSpeed="96.67" Hat="gladiator" OutfitM="paragon" OutfitF="paragon">
+        <StatsGrowth Values="4 4.25 3 3.75" />
+        <HealthGrowth Values="8 1" />
         <BaseStats Values="40 47 36 45" />
-        <HealthBase Values="86 14" />
+        <HealthBase Values="88 15" />
+        <requirements>
+          <UnlockingRequirement ClassHash="KNIG" Level="4" />
+          <UnlockingRequirement ClassHash="MERC" Level="4" />
+        </requirements>
         <learnables>
           <Tier>
             <SkillTile Cost="0">
@@ -404,7 +408,7 @@
             </SkillTile>
           </Tier>
         </learnables>
-        <Mastery />
+        <Mastery hp="6" def="5" atk="3" />
     </Job>
   </jobs>
 </XMLJobs>

@@ -247,8 +247,8 @@ EXOR-A8-desc={damage-aoe-opener}. Also removes {removenegative} and {removeposit
 ; ********************************
 ; Job
 GLAD-Title	=Gladiator
-GLAD-Ability=Combat
-GLAD-desc	=Once legionnaires, these battle-tested warriors know the strategies and formations of war and the tactics and grit of those fighting to survive in the colesseum. 
+GLAD-Ability=Formation
+GLAD-desc	=Once legionnaires, these battle-tested warriors know the strategies and formations of war as well as the tactics and grit of those fighting to survive in the colesseum. 
 
 GLAD-A1=Net
 GLAD-A1-desc=Inflicts {addnegative} on the target.
