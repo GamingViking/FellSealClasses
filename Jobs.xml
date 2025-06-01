@@ -410,5 +410,35 @@
         </learnables>
         <Mastery hp="6" def="5" atk="3" />
     </Job>
+    <Job ClassName="TIME" WeaponsType="kfRod kfStaff kfGun" ArmorType="kfCloth" BaseJump="2" SpeedGrowth="0.75" BaseSpeed="91.67" casterClass="1" Hat="sage" OutfitM="Irdred" OutfitF="Irdra">
+        <StatsGrowth Values="3.25 3.5 5.5 4.25" />
+        <HealthGrowth Values="5 5.5" />
+        <BaseStats Values="30 33 45 42.5" />
+        <HealthBase Values="74 32" />
+        <learnables>
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>TIME-A1</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>TIME-A2</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="0">
+              <AbilityHash>TIME-A3</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>TIME-A4</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="0">
+              <AbilityHash>TIME-P1</AbilityHash>
+            </SkillTile>
+          </Tier>
+        </learnables>
+        <Mastery />
+    </Job>
   </jobs>
 </XMLJobs>

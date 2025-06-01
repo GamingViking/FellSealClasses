@@ -276,3 +276,28 @@ GLAD-C1-desc=Counters with a pushing {regular-attack} any offensive action taken
 
 GLAD-P2=Holistic Defense
 GLAD-P2-desc=Increses {def} by 25% of {res}, and {res} by 25% of {def}.
+
+; ********************************
+; Time Traveler
+; ********************************
+; Job
+TIME-Title	=Time Traveler
+TIME-Ability=Futuristics
+TIME-desc	=Whether here and now for a specific reason or merely adrift in the vast ocean of time, these unusual combatants have a strange affinity for working with time. Additionally, their arsenal of techniques has been learned both from bygone eras and societies yet to exist.
+
+TIME-A1=Deterrent Current
+TIME-A1-desc={damage-aoe-opener} {add-negative-effect-closer}
+
+TIME-A2=Time Crawl
+TIME-A2-desc=Inflicts {addnegative} to targets in a {size} area and delays their progress towards their next turns by {locterm}% of its current value.
+
+TIME-A3=Predict Outcome
+Time-A3-desc=Grants {addpositive}.
+
+TIME-A4=Overclock
+TIME-A4-desc=Grants {addpositive} and an immediate turn. Also {add-negative-effect-100-closer}
+
+
+
+TIME-P1=Mind Over Matter
+TIME-P1-desc=When using a {regular-attack}, character uses 1.2x {mnd} in place of {atk} if the resulting damage would be higher.
