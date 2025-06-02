@@ -283,21 +283,34 @@ GLAD-P2-desc=Increses {def} by 25% of {res}, and {res} by 25% of {def}.
 ; Job
 TIME-Title	=Time Traveler
 TIME-Ability=Futuristics
-TIME-desc	=Whether here and now for a specific reason or merely adrift in the vast ocean of time, these unusual combatants have a strange affinity for working with time. Additionally, their arsenal of techniques has been learned both from bygone eras and societies yet to exist.
+TIME-desc	=Having been to the distant future, these unusual combatants are gifted at affecting the flow of time and using futuristic X-weapons. 
 
-TIME-A1=Deterrent Current
-TIME-A1-desc={damage-aoe-opener} {add-negative-effect-closer}
+TIME-A1=Accelerating Attack
+TIME-A1-desc={damage-single-opener} and grants {addpositive} to the character. {counts-as-regular}
 
-TIME-A2=Time Crawl
-TIME-A2-desc=Inflicts {addnegative} to targets in a {size} area and delays their progress towards their next turns by {locterm}% of its current value.
+TIME-A2=Deja Vu
+TIME-A2-desc=Character uses the last (non-boss) {ability} that was used by any combatant. (Some {abilities} are excluded from this).
 
-TIME-A3=Predict Outcome
-Time-A3-desc=Grants {addpositive}.
+TIME-A3=Deterrent Current
+TIME-A3-desc={damage-aoe-opener} {add-negative-effect-closer}
 
-TIME-A4=Overclock
-TIME-A4-desc=Grants {addpositive} and an immediate turn. Also {add-negative-effect-100-closer}
+TIME-A4=Foresee Outcome
+Time-A4-desc=Grants {addpositive}. The character's next action has 100% accuracy. 
 
+TIME-A5=Wear of Time
+TIME-A5-desc={damage-aoe-opener} {add-negative-effect-closer}
 
+TIME-A6=Overclock
+TIME-A6-desc=Grants {addpositive} and an immediate turn. Also {add-negative-effect-100-closer}
+
+TIME-A7=Overshock
+TIME-A7-desc={damage-aoe-opener} and delays targets' progress towards their next turns by {locterm}% of their current value.
+
+TIME-A8=Temporal Storm
+TIME-A8-desc={damage-basic-opener} in a huge area around the character and displaces all targets to random locations within the area (will not move units to a water tile). 
 
 TIME-P1=Mind Over Matter
 TIME-P1-desc=When using a {regular-attack}, character uses 1.2x {mnd} in place of {atk} if the resulting damage would be higher.
+
+TIME-P2=Rewind
+TIME-P2-desc=Automatically revive with full {hp} after 3 turns of being dead. (Character will still suffer injuries).

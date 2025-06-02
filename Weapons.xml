@@ -1,0 +1,25 @@
+<XMLWeapons>
+    <Weapons HashName="GUN-38" Name="X-Targeting Taser" Desc="wp-gun-38" Icon="icon-gun-02" Type="gun" BonusAcc="15" Speed="3" Critical="3" Price="5" Tier="999" WeaponSprite="Hu-Ma-Fe-Gun@Gun02" EffectExtra="3" Range="3" Height="4" Element="kThunder">
+        <Stats Values="5 -12 58 0" />
+    </Weapons>
+    <Weapons HashName="GUN-39" Name="X-Bomber" Desc="wp-gun-39" Icon="icon-gun-35" IsDLCIcon="true" Type="gun" BonusAcc="-10" Critical="12" Price="5" Tier="999" WeaponSprite="Hu-Ma-Fe-Gun@Gun35" EffectExtra="1" Range="1" Height="2" Shape="kCone" ShapeSize="2" Element="kFire">
+        <Stats Values="35 -10 54 0" />
+    </Weapons>
+    <Weapons HashName="GUN-40" Name="X-Piercer" Desc="wp-gun-40" Icon="icon-gun-06" Type="gun" Price="16" Tier="999" WeaponSprite="Hu-Ma-Fe-Gun@Gun06" Range="6" Height="10" PosStyle="kLine" Shape="kVLine" ShapeSize="2" NegativeEffectsGive="kfDefDown" NegativeEffectsGiveChance="20">
+        <Stats Values="66 -17 66 0" />
+    </Weapons>
+    <Weapons HashName="GUN-41" Name="X-Afflicter" Desc="wp-gun-41" Icon="icon-gun-37" IsDLCIcon="true" Type="gun" Price="15" Tier="999" WeaponSprite="Hu-Ma-Fe-Gun@Gun37" Range="5" Height="15" BonusDebuffAcc="10">
+        <Stats Values="45 -20 56 0" />
+    </Weapons>
+    <Weapons HashName="GUN-42" Name="X-Time Displacer" Desc="wp-gun-42" Icon="icon-gun-09" Type="gun" Price="30" Speed="4" Tier="999" WeaponSprite="Hu-Ma-Fe-Gun@Gun09" Range="6" Height="5" DelayTurn="0.33">
+        <Health Values="-20 10" />
+        <Stats Values="50 -30 62 0" />
+    </Weapons>
+    <Weapons HashName="GUN-43" Name="X-Amplifier" Desc="wp-gun-43" Icon="icon-accring-38" IsDLCIcon="true" Type="gun" SpellRange="2" PositiveEffectsAdd="kfAffinity_Thunder" PositiveBuffTrigger="kBuffs" Price="14" Tier="999" Element="kThunder" WeaponSprite="Hu-Ma-Fe-Sword@Rod02" Range="1" EffectExtra="3">
+        <Stats Values="0 -10 72 0" />
+        <ElementalResist Values="0 0 0 100 0 0" />
+    </Weapons>
+    <Weapons HashName="GUN-44" Name="X-Ambusher" Desc="wp-gun-44" Icon="icon-gun-08" Type="gun" Price="30" Tier="999" WeaponSprite="Hu-Ma-Fe-Gun@Gun08" Speed="2" Range="7" Height="8" HpFullBonus="50" NegativeEffectsGive="kfCripple kfRoot" NegativeEffectsGiveChance="15">
+        <Stats Values="50 -5 50 0" />
+    </Weapons>
+</XMLWeapons>

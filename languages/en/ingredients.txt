@@ -1,0 +1,5 @@
+; **** Badges ************
+; Badges
+
+badg-15-name=Hourglass
+badg-15-desc={badg-allows-access} {TIME-Title} {jobterm}.

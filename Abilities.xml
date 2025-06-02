@@ -28,17 +28,17 @@
     <Ability HashName="NECR-A5" CopyFrom="KAW-02-A2" Name="Meatshield" />
     <Ability HashName="NECR-A6" CopyFrom="APB-01-A2" Name="Sacrifice" />
     <Ability HashName="NECR-A7" EffectHash="WRAN-A7" Name="Blood Bond" MpCost="12" MinRange="1" Range="3" RangeHeight="2" Power3="2" SpecialEffect2="kMindControl" SpellType="kSkill" SpecialEffect="k1OverPower3HealthLossSelf" AddNegativeEffects="kfCharm" AddNegativeEffectsBaseChance="85"/>
-    <Ability HashName="NECR-A8" EffectHash="SND-01-A1" Name="Exquisite Pain" MpCost="30" Range="3" RangeHeight="5" Size="3" Shape="kCross" DmgType="kNone" AddNegativeEffects="kfBleed" AddNegativeEffectsBaseChance="75" SpecialEffect="kMissingHealthDmg" />
+    <Ability HashName="NECR-A8" EffectHash="SND-01-A1" Name="Exquisite Pain" MpCost="28" Range="3" RangeHeight="5" Size="3" Shape="kCross" DmgType="kNone" AddNegativeEffects="kfBleed" AddNegativeEffectsBaseChance="75" SpecialEffect="kMissingHealthDmg" />
 
     <Ability HashName="GEOM-A1" EffectHash="DRA-02-A4" Name="Channel Nature" MpCost="6" Range="0" RangeHeight="5" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpecialEffect="kRandomAffinity4" AddPositiveEffects="kfDarkBarrier"/>
-    <Ability HashName="GEOM-A2" EffectHash="NIW-01-A1" Name="Sound of Seasons" MpCost="4" Range="3" RangeHeight="7" ZoneHeight="2" Size="3" Power="1" Shape="kCross" Element="kTerrain" DmgType="kMagical" DmgSource="kMAtk" />
-    <Ability HashName="GEOM-A3" EffectHash="WARM-A7" Name="Summer Scorcher" MpCost="4" MinRange="1" Range="1" Size="3" Power="1.35" Shape="kHline" Element="kFire" DmgType="kMagical" DmgSource="kMAtk" ExtraFlags="kIgnoreSelfAsTarget" AddPositiveEffects="kfAffinity_Water" SpecialEffect="kBuffsOnCaster" />
-    <Ability HashName="GEOM-A4" EffectHash="WARM-A1" Name="Winter Waters" MpCost="4" MinRange="1" Range="1" RangeHeight="1.5" Size="2" Power="1.35" Shape="kCone" Element="kWater" DmgType="kMagical" DmgSource="kMAtk" AddPositiveEffects="kfAffinity_Fire" SpecialEffect="kBuffsOnCaster"/>
-    <Ability HashName="GEOM-A5" EffectHash="WARM-A9" Name="Spring Sparks" MpCost="4" MinRange="1" Range="1" RangeHeight="1" Size="3" Power="1.35" Shape="kVLine" Element="kThunder" DmgType="kMagical" DmgSource="kMAtk" AddPositiveEffects="kfAffinity_Earth" SpecialEffect="kBuffsOnCaster"/>
-    <Ability HashName="GEOM-A6" EffectHash="BEAS-A21" Name="Fall Fissure" MpCost="8" MinRange="1" Range="3" RangeHeight="3" Size="3" Power="1.35" Shape="kCross" Element="kEarth" DmgType="kMagical" DmgSource="kMAtk" AddPositiveEffects="kfAffinity_Thunder" SpecialEffect="kBuffsOnCaster" ExtraFlags="kTargetsGround kIgnoreSelfAsTarget kCannotTargetWater kIgnoreSides kGroundNeedsTarget kStoreDestination"/>
-    <Ability HashName="GEOM-A7" EffectHash="DRA-03-A2" Name="Season Spears" MpCost="2" Range="0" RangeHeight="1.5" ZoneHeight="1.5" Size="99" Power="1.5" Shape="k4Lines" Element="kTerrain" DmgType="kMagical" DmgSource="kMAtk" ExtraFlags="kIgnoreSelfAsTarget"/>
+    <Ability HashName="GEOM-A2" EffectHash="NIW-01-A1" Name="Sound of Seasons" MpCost="8" Range="3" RangeHeight="7" ZoneHeight="2" Size="3" Power="1.15" Shape="kCross" Element="kTerrain" DmgType="kMagical" DmgSource="kMAtk" />
+    <Ability HashName="GEOM-A3" EffectHash="WARM-A7" Name="Summer Scorcher" MpCost="12" MinRange="1" Range="1" Size="3" Power="1.35" Shape="kHline" Element="kFire" DmgType="kMagical" DmgSource="kMAtk" ExtraFlags="kIgnoreSelfAsTarget" AddPositiveEffects="kfAffinity_Water" SpecialEffect="kBuffsOnCaster" />
+    <Ability HashName="GEOM-A4" EffectHash="WARM-A1" Name="Winter Waters" MpCost="12" MinRange="1" Range="1" RangeHeight="1.5" Size="2" Power="1.35" Shape="kCone" Element="kWater" DmgType="kMagical" DmgSource="kMAtk" AddPositiveEffects="kfAffinity_Fire" SpecialEffect="kBuffsOnCaster"/>
+    <Ability HashName="GEOM-A5" EffectHash="WARM-A9" Name="Spring Sparks" MpCost="12" MinRange="1" Range="1" RangeHeight="1" Size="3" Power="1.35" Shape="kVLine" Element="kThunder" DmgType="kMagical" DmgSource="kMAtk" AddPositiveEffects="kfAffinity_Earth" SpecialEffect="kBuffsOnCaster"/>
+    <Ability HashName="GEOM-A6" EffectHash="BEAS-A21" Name="Fall Fissure" MpCost="12" MinRange="1" Range="3" RangeHeight="3" Size="3" Power="1.35" Shape="kCross" Element="kEarth" DmgType="kMagical" DmgSource="kMAtk" AddPositiveEffects="kfAffinity_Thunder" SpecialEffect="kBuffsOnCaster" ExtraFlags="kTargetsGround kIgnoreSelfAsTarget kCannotTargetWater kIgnoreSides kGroundNeedsTarget kStoreDestination"/>
+    <Ability HashName="GEOM-A7" EffectHash="DRA-03-A2" Name="Season Spears" MpCost="22" Range="0" RangeHeight="1.5" ZoneHeight="1.5" Size="99" Power="1.5" Shape="k4Lines" Element="kTerrain" DmgType="kMagical" DmgSource="kMAtk" ExtraFlags="kIgnoreSelfAsTarget"/>
     <Ability HashName="GEOM-A8" CopyFrom="PEK-03-A4" Name="Focus Fire" />
-    <Ability HashName="GEOM-A9" EffectHash="SMED-A7" Name="Nature's Wrath" MpCost="3" Range="3" RangeHeight="7" Size="3" Power="2" Shape="kSquare" Element="kTerrain" DmgType="kMagical" DmgSource="kMAtk" ExtraFlags="kIgnoreSelfAsTarget kDoNotShowName" />
+    <Ability HashName="GEOM-A9" EffectHash="SMED-A7" Name="Nature's Wrath" MpCost="30" Range="3" RangeHeight="7" Size="3" Power="2.35" Shape="kSquare" Element="kTerrain" DmgType="kMagical" DmgSource="kMAtk" ExtraFlags="kIgnoreSelfAsTarget kDoNotShowName"/>
 
     <Ability HashName="INFE-A1" EffectHash="RAK-02-A3" Name="Revel in Blood" MpCost="4" Range="0" Power="0.5" Power2="0.6" Power3="0.5" DmgType="kHealing" DmgSource="kMAtk" AddNegativeEffects="kfBleed" AddNegativeEffectsBaseChance="100" SpellType="kNothing" SpecialEffect="kInflictsRandomDebuff" SpecialEffect2="kDamageUpWithBleed" ExtraFlags="kGivesQuickTurnFrowPower3" />
     <Ability HashName="INFE-A2" EffectHash="FELL-A6" Name="Epidemic" MpCost="6" Range="0" RangeHeight="3.5" ZoneHeight="1.5" Size="5" Shape="kCross" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" SpecialEffect="kContagion" SpellType="kNothing" AddNegativeEffectsBaseChance="100" />
@@ -66,10 +66,14 @@
     <Ability HashName="GLAD-A6" EffectHash="HRV-02-A2" Name="Rain of Spears" MpCost="12" MinRange="1" Range="1" RangeHeight="2" Size="3" Power="1.2" PosStyle="kLine" Shape="kVLine" SpellType="kSkill" AddNegativeEffects="kfDefDown" AddNegativeEffectsBaseChance="75" ExtraFlags="kIgnoreSelfAsTarget" />
     <Ability HashName="GLAD-A7" EffectHash="VAR-VEN-A2" Name="Menace" MpCost="14" MinRange="1" Range="1" Size="3" Power="0.25" Shape="kCone" SpecialEffect="kDelayOnFacingCaster" SpellType="kSkill"/>
 
-    <Ability HashName="TIME-A1" EffectHash="GADG-A12" Name="Deterrent Current" MpCost="8" MinRange="1" Range="3" RangeHeight="3" Power="0.9" Size="3" Shape="kCross" Element="kThunder" DmgType="kMagical" SpellType="kNothing" ExtraFlags="kIgnoreSelfAsTarget" AddNegativeEffects="kfRoot" AddNegativeEffectsBaseChance="50" />
-    <Ability HashName="Time-A2" EffectHash="GHO-01-A2" Name="Time Crawl" MpCost="8" MinRange="1" Range="3" RangeHeight="5" Size="3" Shape="kCross" Element="kNone" DmgSource="kMAtk" SpellType="kNothing" AddNegativeEffects="kfSlow" AddNegativeEffectsBaseChance="100" SpecialEffect="kDelayStrike" />
-    <Ability HashName="TIME-A3" EffectHash="RANG-A2" Name="Predict Outcome" MpCost="6" Range="0" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpellType="kSkill" AddPositiveEffects="kfBoon" />
-    <Ability HashName="TIME-A4" EffectHash="GAMB-A6" Name="Overclock" MpCost="4" Range="0" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpecialEffect="kQuicken" AddPositiveEffects="kfAtkUp kfMAtkUp" AddNegativeEffects="kfDefDown kfMDefDown" AddNegativeEffectsBaseChance="100" />
+    <Ability HashName="TIME-A1" EffectHash="MERC-A6" Name="Accelerating Attack" MpCost="8" MinRange="1" Power="0.85" Element="kWeapon" SpecialEffect="kBuffsOnCaster" SpecialEffect2="kIsTreatedAsRegularAttack" SpellType="kSkill" AddPositiveEffects="kfHaste" />
+    <Ability HashName="TIME-A2" EffectHash="REIN-A4" Name="Deja Vu" MpCost="8" Range="0" RangeHeight="5" Power="1" Element="kNone" DmgType="kNone" ExtraFlags="kNoAIUse" HasExtraBox="kLastAbility" />
+    <Ability HashName="TIME-A3" EffectHash="GADG-A12" Name="Deterrent Current" MpCost="12" MinRange="1" Range="3" RangeHeight="3" Power="0.9" Size="3" Shape="kCross" Element="kThunder" DmgSource="kMAtk" ExtraFlags="kIgnoreSelfAsTarget" AddNegativeEffects="kfRoot" AddNegativeEffectsBaseChance="50" />
+    <Ability HashName="TIME-A4" EffectHash="GADG-A9" Name="Foresee Outcome" MpCost="6" Range="0" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpellType="kSkill" AddPositiveEffects="kfBoon" SpecialEffect2="kNextActionIs100" />
+    <Ability HashName="Time-A5" EffectHash="GHO-01-A2" Name="Wear of Time" MpCost="14" Power="1" MinRange="1" Range="3" RangeHeight="5" Size="3" Shape="kCross" Element="kNone" DmgSource="kMAtk" SpellType="kNothing" AddNegativeEffects="kfSlow kfWeaken" AddNegativeEffectsBaseChance="50" />
+    <Ability HashName="TIME-A6" EffectHash="GAMB-A6" Name="Overclock" MpCost="8" Range="0" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpecialEffect="kQuicken" AddPositiveEffects="kfAtkUp kfMAtkUp" AddNegativeEffects="kfDefDown kfMDefDown kfNoQuicken" AddNegativeEffectsBaseChance="100" />
+    <Ability HashName="TIME-A7" EffectHash="TEMP-A4" Name="Overshock" MpCost="4" Range="2" RangeHeight="9" Power="1.75" Shape="kCross" Size="3" Element="kThunder" DmgType="kMagical" DmgSource="kAtkMixed" SpecialEffect="kDelayStrike" ExtraFlags="kIgnoreSelfAsTarget kIgnoreSides" />
+    <Ability HashName="TIME-A8" EffectHash="VAR-AER-A2" Name="Temporal Storm" MpCost="14" Range="0" RangeHeight="0" ZoneHeight="7" Size="9" Power="0.5" Shape="kCross" Element="kThunder" DmgType="kMagical" DmgSource="kMAtk" SpecialEffect="kDisplaceAllTargetsInRadius" ExtraFlags="kIgnoreSelfAsTarget"/>
 
   </active>
   <passive> 
@@ -88,8 +92,7 @@
     <Ability HashName="GLAD-P1" CopyFrom="VAR-THO-P1" Name="Retaliation" />
     <Ability HashName="GLAD-P2" EffectHash="VAR-THO-P2" Name="Holistic Defense" AddsNonRemovableEffects2="kfHallowedBulkwark"/>
     <Ability HashName="TIME-P1" EffectHash="VAR-SHA-P1" Name="Mind Over Matter" AddsNonRemovableEffects2="kfEtherialTouch"/>
-
-    
+    <Ability HashName="TIME-P2" EffectHash="MAM-01-P1" Name="Rewind" AddsNonRemovableEffects1="kfRegenesis" />
 
   </passive>
   <counter>
@@ -100,5 +103,6 @@
     <Ability HashName="INFE-C1" EffectHash="UTIL-A6" Range="0" ZoneHeight="1.5" Size="3" Power="1" Power2="0.75" Shape="kCross" Element="kNone" DmgSource="kAtkMixed" DmgType="kMagical" AddNegativeEffects="kfPoison" AddNegativeEffectsBaseChance="100" SpecialEffect2="kDamageUpWithBleed" ExtraFlags="kIgnoreSelfAsTarget" GivesCounter="kExplode" />
     <Ability HashName="EXOR-C1" CopyFrom="VAR-GUA-C1" Name="Vanguard" />
     <Ability HashName="GLAD-C1" EffectHash="VAR-DFT-C1" Name="Repel" GivesCounter="kShove"/>
+    <Ability HashName="TIME-C1" CopyFrom="VAR-WRD-C1" Name="Tap Out" GivesCounter="kTapOut"/>
   </counter>
 </XMLAbilities>

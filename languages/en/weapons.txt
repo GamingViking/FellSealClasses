@@ -1,0 +1,31 @@
+; **********************
+; Weapons
+; **********************
+; Guns
+wp-gun-38			=X-Targeting Taser
+wp-gun-38-desc	    =Advanced shocking technology, unlikely to miss (+15 accuracy). 
+
+wp-gun-39           =X-Bomber
+wp-gun-39-desc      =Causes a point-blank dangerous yet inaccurate explosion (-10 accuracy). 
+
+wp-gun-40           =X-Piercer
+wp-gun-40-desc      =A straight-shooting contraption designed to pierce multiple targets.  
+
+wp-gun-41           =X-Afflicter
+wp-gun-41-desc      =Shoots darts designed to weaken a target's immune system. Debuffs have 10% increased chance to apply. 
+
+wp-gun-42           =X-Time Displacer
+wp-gun-42-desc      =Temporal distortion shots from this weapon delay enemy turns. 
+
+wp-gun-43           =X-Amplifier
+wp-gun-43-desc      =This magical conduit channels electricity and greatly increases the magical reach of its user. 
+
+wp-gun-44           =X-Ambusher
+wp-gun-44-desc      =Deals 50% more damage to enemies with full {hp}.
+
+
+
+
+
+wp-gun-55           =X-Weak-Point-Hitter
+wp-gun-55-desc      =Extra damage on unhurt enemy + high crit?

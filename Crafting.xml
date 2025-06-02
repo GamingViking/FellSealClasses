@@ -1,0 +1,4 @@
+<XMLCrafting>
+    <Recipes ItemHash="BADG-15" Type="kSpecial" Ing0="13" Count0="5" Ing1="14" Count1="1"/>
+    <Badges HashName="BADG-15" Name="Badge 15" Desc="BADG-15" Icon="icon-badge-lord" Class="TIME"/>
+</XMLCrafting>
