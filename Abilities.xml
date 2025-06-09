@@ -26,7 +26,7 @@
     <Ability HashName="NECR-A3" EffectHash="DEMK-A2" Name="Reap" MinRange="1" Range="1" RangeHeight="2" Size="3" Power="1" Power3="6" Shape="kHline" SpecialEffect="k1OverPower3HealthLossSelf" SpellType="kSkill" AddNegativeEffects="kfBleed" AddNegativeEffectsBaseChance="62" />
     <Ability HashName="NECR-A4" EffectHash="WERE-A7" Name="Cull" MpCost="6" Range="2" RangeHeight="4" Power="1.5" Power2="0.4" Power3="3" Element="kNone" DmgType="kMagical" DmgSource="kAtkMixed" SpellType="kSkill" SpecialEffect="k1OverPower3HealthLossSelf" SpecialEffect2="kDamageUpWithBleed" />
     <Ability HashName="NECR-A5" CopyFrom="KAW-02-A2" Name="Meatshield" />
-    <Ability HashName="NECR-A6" CopyFrom="APB-01-A2" Name="Sacrifice" />
+    <Ability HashName="NECR-A6" CopyFrom="DEMK-A5" Name="Demonic Might" />
     <Ability HashName="NECR-A7" EffectHash="WRAN-A7" Name="Blood Bond" MpCost="12" MinRange="1" Range="3" RangeHeight="2" Power3="2" SpecialEffect2="kMindControl" SpellType="kSkill" SpecialEffect="k1OverPower3HealthLossSelf" AddNegativeEffects="kfCharm" AddNegativeEffectsBaseChance="85"/>
     <Ability HashName="NECR-A8" EffectHash="SND-01-A1" Name="Exquisite Pain" MpCost="28" Range="3" RangeHeight="5" Size="3" Shape="kCross" DmgType="kNone" AddNegativeEffects="kfBleed" AddNegativeEffectsBaseChance="75" SpecialEffect="kMissingHealthDmg" />
 
@@ -75,6 +75,15 @@
     <Ability HashName="TIME-A7" EffectHash="TEMP-A4" Name="Overshock" MpCost="4" Range="2" RangeHeight="9" Power="1.75" Shape="kCross" Size="3" Element="kThunder" DmgType="kMagical" DmgSource="kAtkMixed" SpecialEffect="kDelayStrike" ExtraFlags="kIgnoreSelfAsTarget kIgnoreSides" />
     <Ability HashName="TIME-A8" EffectHash="VAR-AER-A2" Name="Temporal Storm" MpCost="14" Range="0" RangeHeight="0" ZoneHeight="7" Size="9" Power="0.5" Shape="kCross" Element="kThunder" DmgType="kMagical" DmgSource="kMAtk" SpecialEffect="kDisplaceAllTargetsInRadius" ExtraFlags="kIgnoreSelfAsTarget"/>
 
+    <Ability HashName="FARB-A1" EffectHash="APB-01-A2" Name="Dark Ritual" Range="0" SpellType="kSkill" DmgType="kHealing" AddNegativeEffects="kfBleed" AddPositiveEffects="kfMAtkUp kfMDefUp kfAffinity_Dark" AddNegativeEffectsBaseChance="100" />
+    <Ability HashName="FARB-A2" CopyFrom="APB-01-A2" Name="Sacrifice" />
+    <Ability HashName="FARB-A3" EffectHash="MAW-02-A6" Name="Blood Tribute" Range="0" RangeHeight="1" Power="80" Shape="kAllAllies" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" SpecialEffect="kDrainHp" SpecialEffect2="kPerfectAccuracy" SpellType="kNothing" ExtraFlags="kIgnoreSelfAsTarget kFixedDamage kIsSystem" />
+    <Ability HashName="FARB-A4" EffectHash="MAW-01-A1" Name="Feed the Maw" MpCost="12" Range="0" Size="3" Power="2.25" Shape="kSquare" Element="kDark" DmgSource="kMAtk" DmgType="kMagical" SpellType="kNothing" SpecialEffect="kLowAccuracyWithCrit" ExtraFlags="kIgnoreSides" />
+    <Ability HashName="FARB-A5" EffectHash="GHO-01-A1" Name="Last Breath" Range="1" RangeHeight="1.5" Power="1.75" Shape="kCone" Size="2" Element="kNone" DmgType="kMagical" DmgSource="kAtkMixed" SpecialEffect2="kSacrifice" SpellType="kSkill" />
+    <Ability HashName="FARB-A6" EffectHash="SORC-A5" Name="Pervasive Darkness" MpCost="12" Range="0" RangeHeight="1" Power="0.9" Shape="kAll" Element="kDark" DmgSource="kMAtk" DmgType="kMagical" SpecialEffect="kBypassCounters" ExtraFlags="kNoAIUse kIgnoreSides kIgnoreSelfAsTarget" />
+    <Ability HashName="FARB-A7" EffectHash="SND-01-A4" Name="Abyssal Gaze"  MpCost="-1" MinRange="1" Range="1" RangeHeight="1.5" Size="3" Power="0.1" Power2="0.5" Power3="10" Shape="kCone" Element="kDark" DmgType="kMagical" DmgSource="kMAtk" SpecialEffect="kUseAllMp" SpecialEffect2="kPerfectAccuracy" />
+    <Ability HashName="FARB-A8" EffectHash="APB-01-A4" Name="Profane Offering" Range="0" RangeHeight="1" Power="-999" Power3="1" IntArg="7" Shape="kAllAllies" Element="kNone" DmgType="kHealing" SpecialEffect="kBuffsOnCaster" ExtraFlags="kFixedDamage kIgnoreSelfAsTarget kTargetCannotRevive kGivesQuickTurnFrowPower3" AddPositiveEffects="kfAtkUp kfMAtkUp kfHaste kfBoon kfFocus kfMirage kfBarrier kfRenew kfFleetOfFoot kfAffinity_Holy kfAffinity_Dark" />
+
   </active>
   <passive> 
     <Ability HashName="MONH-P1" Name="Quick Fingers" CopyFrom="PEDD-P1" />
@@ -93,6 +102,9 @@
     <Ability HashName="GLAD-P2" EffectHash="VAR-THO-P2" Name="Holistic Defense" AddsNonRemovableEffects2="kfHallowedBulkwark"/>
     <Ability HashName="TIME-P1" EffectHash="VAR-SHA-P1" Name="Mind Over Matter" AddsNonRemovableEffects2="kfEtherialTouch"/>
     <Ability HashName="TIME-P2" EffectHash="MAM-01-P1" Name="Rewind" AddsNonRemovableEffects1="kfRegenesis" />
+    <Ability HashName="FARB-P1" EffectHash="DAO-02-P2" Name="Heart of Darkness" AddPositiveEffects="kfAffinity_Dark" RemoveNegativeEffects="kfCharm kfBlind" AddsNonRemovableEffects1="kfPermanentPositive kfPermanentNegativeProtection" />
+    <Ability HashName="FARB-P2" CopyFrom="APB-01-P1" Name="Deathfeeder" />
+
 
   </passive>
   <counter>
@@ -103,6 +115,8 @@
     <Ability HashName="INFE-C1" EffectHash="UTIL-A6" Range="0" ZoneHeight="1.5" Size="3" Power="1" Power2="0.75" Shape="kCross" Element="kNone" DmgSource="kAtkMixed" DmgType="kMagical" AddNegativeEffects="kfPoison" AddNegativeEffectsBaseChance="100" SpecialEffect2="kDamageUpWithBleed" ExtraFlags="kIgnoreSelfAsTarget" GivesCounter="kExplode" />
     <Ability HashName="EXOR-C1" CopyFrom="VAR-GUA-C1" Name="Vanguard" />
     <Ability HashName="GLAD-C1" EffectHash="VAR-DFT-C1" Name="Repel" GivesCounter="kShove"/>
-    <Ability HashName="TIME-C1" CopyFrom="VAR-WRD-C1" Name="Tap Out" GivesCounter="kTapOut"/>
+    <Ability HashName="TIME-C1" CopyFrom="VAR-WRD-C1" Name="Tap Out" />
+    <Ability HashName="FARB-C1" CopyFrom="KNI-03-C1" Name="Grudge" />
+
   </counter>
 </XMLAbilities>

@@ -187,7 +187,7 @@ INFE-Ability=Disease
 INFE-desc	=The tainted blood of these once proud knights is a carrier for all types of diseases which they freely employ to bring low any who would stand before them. 
 
 INFE-A1=Revel in Blood
-INFE-A1-desc={heal-small-opener} to the character. Heals 0.6x more if the character is infliced with bleed. Also inflicts {status-bleed-icon}{negative-bleed} and a random debuff. {turn-comes-faster}
+INFE-A1-desc={heal-small-opener} to the character. Heals 0.6x more if the character is infliced with bleed. Also inflicts {status-bleed-icon}{negative-bleed} and a random debuff on the character. {turn-comes-faster}
 
 INFE-A2=Epidemic
 INFE-A2-desc=Spreads any {debuff} from the character to other targets in a {size} area around the character.
@@ -314,3 +314,35 @@ TIME-P1-desc=When using a {regular-attack}, character uses 1.2x {mnd} in place o
 
 TIME-P2=Rewind
 TIME-P2-desc=Automatically revive with full {hp} after 3 turns of being dead. (Character will still suffer injuries).
+
+; ********************************
+; Fell Arbiter
+; ********************************
+; Job
+FARB-Title	=Fell Arbiter
+FARB-Ability=Maw's Hunger
+FARB-desc	=Only a powerful marked can channel the dark energies of the Maw to become a Fell Arbiter, but while doing so grants great power, the Maw's infuence corrupts those who would channel its power - tempting them to sacrifice all that they hold dear for greater boons. 
+
+FARB-A1=Dark Ritual
+FARB-A1-desc=Grants {addpositive}. Also inflicts {addnegative} on the character.
+
+FARB-A3=Blood Tribute
+FARB-A3-desc=Deals 80 damage to all allies and absorbs the damage dealt.
+
+FARB-A4=Feed the Maw
+FARB-A4-desc={damage-basic-opener} in a {size} area centered on the character. The attack has reduced accuracy. If the attack hits, it will always be a {critical-hit}. 
+
+FARB-A5=Last Breath
+FARB-A5-desc=Sacrifices the character's life to deal {powerratio} {elem} ({dmgsource}) damage in a cone. 
+
+FARB-A6=Pervasive Darkness
+FARB-A6-desc={damage-basic-opener} to all other units on the map. {bypass-counters}
+
+FARB-A7=Abyssal Gaze
+FARB-A7-desc=Uses all {mp} to deal {elem} ({dmgsource}) damage in a large cone with 100% accuracy (cannot miss). Deals more damage the more {mp} is used. 
+
+FARB-A8=Profane Offering
+FARB-A8-desc=Dispels all buffs on all allied units and instantly kills them. The character then gains an immediate extra turn and {addpositive}. Allies defeated by this ability cannot be raised for the rest of the encounter. 
+
+FARB-P1=Heart of Darkness
+FARB-P1-desc=Character has a permanent {addpositive} effect and is immune to {removenegative}.

@@ -462,14 +462,74 @@
             <SkillTile Cost="350">
               <AbilityHash>TIME-A8</AbilityHash>
             </SkillTile>
-            </Tier>
-            <Tier>
+          </Tier>
+          <Tier>
             <SkillTile Cost="999">
               <AbilityHash>TIME-P2</AbilityHash>
             </SkillTile>
           </Tier>
         </learnables>
         <Mastery mnd="10" spd="5" crit="3" />
+    </Job>
+    <Job ClassName="FARB" WeaponsType="kfSword kfRapier kfStaff kfRod" ArmorType="kfAll" BaseMove="4" SpeedGrowth="1" BaseSpeed="101.67" StoryClass="true" Hat="batwings" OutfitM="vampire" OutfitF="Jil">
+      <StatsGrowth Values="4.5 3.25 5 3.25" />
+      <HealthGrowth Values="7 4" />
+      <BaseStats Values="42 39 44 36" />
+      <HealthBase Values="83 23" />
+      <noVicariousGiven>true</noVicariousGiven>
+        <requirements>
+          <UnlockingRequirement ClassHash="MARK" Level="12" />
+        </requirements>
+        <learnables>
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>FARB-A1</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="225">
+              <AbilityHash>FARB-A2</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="200">
+              <AbilityHash>FARB-A3</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="175">
+              <AbilityHash>FARB-C1</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="225">
+              <AbilityHash>FARB-A4</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="225">
+              <AbilityHash>FARB-A5</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="200">
+              <AbilityHash>FARB-A6</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="200">
+              <AbilityHash>FARB-P1</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="250">
+              <AbilityHash>FARB-P2</AbilityHash>
+            </SkillTile>
+            <SkillTile Cost="250">
+              <AbilityHash>FARB-A7</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="325">
+              <AbilityHash>FARB-A8</AbilityHash>
+            </SkillTile>
+          </Tier>
+        </learnables>
+        <Mastery dark="25" />
     </Job>
   </jobs>
 </XMLJobs>
