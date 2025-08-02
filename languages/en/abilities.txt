@@ -117,7 +117,7 @@ MART-A11-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge
 ; Job
 NECR-Title	=Demonologist
 NECR-Ability=Pact Magic
-NECR-desc	=These fanatics' lust for power is unbridled - giving their blood and even sacrificing their friends to obtain the power and servitude of demons.
+NECR-desc	=These fanatics' lust for power is unbridled - willingly giving their blood to obtain the power and servitude of demons.
 
 NECR-A1=Summon Demon
 NECR-A1-desc=Resurrects a dead enemy as a random demon that will attack foes until it falls. This will prevent the target from being revived by their own allies.
@@ -346,3 +346,30 @@ FARB-A8-desc=Dispels all buffs on all allied units and instantly kills them. The
 
 FARB-P1=Heart of Darkness
 FARB-P1-desc=Character has a permanent {addpositive} effect and is immune to {removenegative}.
+
+; ********************************
+; Scout
+; ********************************
+; Job
+SCOU-Title	=Scout
+SCOU-Ability=Munitions
+SCOU-desc	=Speedy and mobile, scouts specialize at weakening and disabling enemies from afar with guns and hazardous canisters. Though the range of their canister launcher is impressive, it can only shoot in straight lines.
+
+SCOU-A1=Stalk Target
+SCOU-A1-desc=Inflicts {addnegative} on target. Character gains {addpositive}.
+
+SCOU-A2=Sand Canister
+SCOU-A2-desc={damage-cone-opener} at range {add-negative-effect-closer}
+
+SCOU-A3=Pinpoint Shot
+SCOU-A3-desc=Deals {power} damage to the target.
+
+SCOU-A4=Fire Canister
+SCOU-A4-desc={damage-cone-opener} at range.
+
+SCOU-A5=Exposing Shot
+SCOU-A5-desc={damage-single-opener} {add-negative-effect-closer}
+
+SCOU-A6=Explosive Canister
+SCOU-A6-desc={damage-aoe-opener}. The attack has reduced accuracy. If the attack hits, it will always be a {critical-hit}. 
+

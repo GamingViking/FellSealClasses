@@ -84,6 +84,15 @@
     <Ability HashName="FARB-A7" EffectHash="SND-01-A4" Name="Abyssal Gaze"  MpCost="-1" MinRange="1" Range="1" RangeHeight="1.5" Size="3" Power="0.1" Power2="0.5" Power3="10" Shape="kCone" Element="kDark" DmgType="kMagical" DmgSource="kMAtk" SpecialEffect="kUseAllMp" SpecialEffect2="kPerfectAccuracy" />
     <Ability HashName="FARB-A8" EffectHash="APB-01-A4" Name="Profane Offering" Range="0" RangeHeight="1" Power="-999" Power3="1" IntArg="7" Shape="kAllAllies" Element="kNone" DmgType="kHealing" SpecialEffect="kBuffsOnCaster" ExtraFlags="kFixedDamage kIgnoreSelfAsTarget kTargetCannotRevive kGivesQuickTurnFrowPower3" AddPositiveEffects="kfAtkUp kfMAtkUp kfHaste kfBoon kfFocus kfMirage kfBarrier kfRenew kfFleetOfFoot kfAffinity_Holy kfAffinity_Dark" />
 
+    <Ability HashName="SCOU-A1" EffectHash="ROGU-A4" Name="Stalk Target" MpCost="8" MinRange="1" AddNegativeEffects="kfDefDown" AddNegativeEffectsBaseChance="100" AddPositiveEffects="kfAtkUp kfFleetOfFoot" SpecialEffect="kBuffsOnCaster" SpellType="kSkill" />
+    <Ability HashName="SCOU-A2" EffectHash="BWO-01-A3" Name="Sand Canister" MpCost="8" MinRange="2" Range="4" RangeHeight="2.5" Power="0.75" PosStyle="kLine" Shape="kCone" Size="2" Element="kEarth" DmgType="kMagical" DmgSource="kMAtk" SpellType="kSkill" AddNegativeEffects="kfBlind" AddNegativeEffectsBaseChance="55" />
+    <Ability HashName="SCOU-A3" Name="Pinpoint Shot" EffectHash="MERC-A6" MpCost="8" MinRange="1" RangeHeight="3" Power="50" Element="kNone" SpellType="kSkill" ExtraFlags="kFixedDamage" />
+    <Ability HashName="SCOU-A4" EffectHash="WIZA-A2" Name="Fire Canister" MpCost="12" MinRange="2" Range="5" RangeHeight="2.5" Power="1.15" PosStyle="kLine" Shape="kCone" Size="2" Element="kFire" DmgType="kMagical" DmgSource="kAtkMixed" SpellType="kSkill" />
+    <Ability HashName="SCOU-A5" EffectHash="MERC-A5" Name="Exposing Shot" MpCost="6" MinRange="1" Power="0.8" SpellType="kSkill" AddNegativeEffects="kfDefDown kfMDefDown" AddNegativeEffectsBaseChance="50" />
+    <Ability HashName="SCOU-A6" EffectHash="RANG-A4" Name="Explosive Canister" MpCost="14" Range="2" RangeHeight="2.5" Power="1.45" PosStyle="kLine" Shape="kCross" Size="2" Element="kNone" DmgSource="kAtkMixed" SpellType="kSkill" SpecialEffect="kLowAccuracyWithCrit" />
+
+
+    <!-- <Ability HashName="GODP-A1" Name="Kill All" MpCost="1" Range="0" RangeHeight="1" Power="-999" Shape="kAllEnemies" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpellType="kNothing" SpecialEffect="kScaleWithProximity" ExtraFlags="kFixedDamage" /> -->
   </active>
   <passive> 
     <Ability HashName="MONH-P1" Name="Quick Fingers" CopyFrom="PEDD-P1" />
@@ -104,7 +113,8 @@
     <Ability HashName="TIME-P2" EffectHash="MAM-01-P1" Name="Rewind" AddsNonRemovableEffects1="kfRegenesis" />
     <Ability HashName="FARB-P1" EffectHash="DAO-02-P2" Name="Heart of Darkness" AddPositiveEffects="kfAffinity_Dark" RemoveNegativeEffects="kfCharm kfBlind" AddsNonRemovableEffects1="kfPermanentPositive kfPermanentNegativeProtection" />
     <Ability HashName="FARB-P2" CopyFrom="APB-01-P1" Name="Deathfeeder" />
-
+    <Ability HashName="SCOU-P1" CopyFrom="WRAN-P2" Name="Skirmish" />
+    <Ability HashName="SCOU-P2" CopyFrom="VAN-03-P2" Name="Deep Wounds" />
 
   </passive>
   <counter>
@@ -117,6 +127,7 @@
     <Ability HashName="GLAD-C1" EffectHash="VAR-DFT-C1" Name="Repel" GivesCounter="kShove"/>
     <Ability HashName="TIME-C1" CopyFrom="VAR-WRD-C1" Name="Tap Out" />
     <Ability HashName="FARB-C1" CopyFrom="KNI-03-C1" Name="Grudge" />
+    <Ability HashName="SCOU-C1" CopyFrom="DAA-01-C1" Name="Adaptive Aegis" />
 
   </counter>
 </XMLAbilities>

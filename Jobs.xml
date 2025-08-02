@@ -471,7 +471,7 @@
         </learnables>
         <Mastery mnd="10" spd="5" crit="3" />
     </Job>
-    <Job ClassName="FARB" WeaponsType="kfSword kfRapier kfStaff kfRod" ArmorType="kfAll" BaseMove="4" SpeedGrowth="1" BaseSpeed="101.67" StoryClass="true" Hat="batwings" OutfitM="vampire" OutfitF="Jil">
+    <Job ClassName="FARB" WeaponsType="kfSword kfRapier kfStaff kfRod" ArmorType="kfAll" BaseMove="4" SpeedGrowth="1" BaseSpeed="101.67" Hat="batwings" OutfitM="vampire" OutfitF="Jil">
       <StatsGrowth Values="4.5 3.25 5 3.25" />
       <HealthGrowth Values="7 4" />
       <BaseStats Values="42 39 44 36" />
@@ -530,6 +530,56 @@
           </Tier>
         </learnables>
         <Mastery dark="25" />
+    </Job>
+    <Job ClassName="SCOU" WeaponsType="kfGun kfCrossbow kfDagger" ArmorType="kfLightArmor kfLightHelmet" BonusEvasion="2" BonusCrit="4" BaseMove="4" BaseJump="3" SpeedGrowth="1.33" BaseSpeed="106" Hat="Gadgeteer" OutfitM="Vampire" OutfitF="Vampire">
+      <StatsGrowth Values="4.25 3.25 4.25 3.5" />
+      <HealthGrowth Values="6.5 2" />
+      <BaseStats Values="42 39 42 35.5" />
+      <HealthBase Values="80 18" />
+      <noVicariousGiven>true</noVicariousGiven>
+      <requirements>
+        <UnlockingRequirement ClassHash="REIN" Level="2" />
+      </requirements>
+      <learnables>
+        <Tier>
+          <SkillTile Cost="0">
+            <AbilityHash>SCOU-A1</AbilityHash>
+          </SkillTile>
+        </Tier>
+        <Tier>
+          <SkillTile Cost="175">
+            <AbilityHash>SCOU-A2</AbilityHash>
+          </SkillTile>
+          <SkillTile Cost="175">
+            <AbilityHash>SCOU-C1</AbilityHash>
+          </SkillTile>
+        </Tier>
+        <Tier>
+          <SkillTile Cost="200">
+            <AbilityHash>SCOU-P1</AbilityHash>
+          </SkillTile>
+          <SkillTile Cost="200">
+            <AbilityHash>SCOU-A3</AbilityHash>
+          </SkillTile>
+        </Tier>
+        <Tier>
+          <SkillTile Cost="200">
+            <AbilityHash>SCOU-A4</AbilityHash>
+          </SkillTile>
+          <SkillTile Cost="200">
+            <AbilityHash>SCOU-A5</AbilityHash>
+          </SkillTile>
+        </Tier>
+        <Tier>
+          <SkillTile Cost="275">
+            <AbilityHash>SCOU-A6</AbilityHash>
+          </SkillTile>
+          <SkillTile Cost="275">
+            <AbilityHash>SCOU-P2</AbilityHash>
+          </SkillTile>
+        </Tier>
+      </learnables>
+      <Mastery spd="3" eva="1" elem="5" />
     </Job>
   </jobs>
 </XMLJobs>
