@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <XMLStores>
   <Store StoreNumber="0" StoryIndex="0" AddToItems="true">
-    <Items data="GUN-38,GUN-39,GUN-40,GUN-41,GUN-42,GUN-43,GUN-44" />
+    <Items data="GUN-38,GUN-39,GUN-40,GUN-41,GUN-42,GUN-43,GUN-44,SWD-37,SHI-37,DAG-37,STF-37,SPR-38,MAC-38,ROD-37,MAU-37,RAP-38,AXE-37,HHE-37,HCL-37,ARI-43" />
   </Store>
 </XMLStores>

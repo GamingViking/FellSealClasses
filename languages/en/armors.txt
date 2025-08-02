@@ -1,0 +1,14 @@
+; **********************
+; Armors
+; **********************
+; Shield
+ar-shield-37        =Kraken Shell
+ar-shield-37-desc   =Few weapons can pierce the shell of the mighty Kraken, though it's unmatched defense makes movement difficult.
+
+; Helm
+ar-helm-37          =Mind Cage
+ar-helm-37-desc     =A helm of great protection, but tight like a vise (-2MP per turn).
+
+; Hat
+ar-hat-37           =Believer's Blindfold
+ar-hat-37-desc      =Strike without fear against that which can't be seen (-15 accuracy).

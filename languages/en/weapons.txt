@@ -1,7 +1,7 @@
 ; **********************
 ; Weapons
 ; **********************
-; Guns
+; Gun
 wp-gun-38			=X-Targeting Taser
 wp-gun-38-desc	    =Advanced shocking technology, unlikely to miss (+15 accuracy). 
 
@@ -23,9 +23,38 @@ wp-gun-43-desc      =This magical conduit channels electricity and greatly incre
 wp-gun-44           =X-Ambusher
 wp-gun-44-desc      =Deals 50% more damage to enemies with full {hp}.
 
+; Sword
+wp-swd-37           =Eviscerator
+wp-swd-37-desc      =An unwieldy but lethal blade (grants {addpositive} when using a Regular Attack).
 
+; Dagger
+wp-dag-37           =Wind Dancer
+wp-dag-37-desc      =The wind spirit inside makes you feel lighter than air (grants {addpositive} when using a regular attack from the sides or back).
 
+; Staff
+wp-stf-37           =Shaper's Finger
+wp-stf-37-desc      =Concentrates magical power to nearby attacks (Decreases the range of Ranged Spells by 1).
 
+; Spear
+wp-spr-38           =Vaulter
+wp-spr-38-desc      =The weapon's flexible shaft helps the user to vault great heights.
 
-wp-gun-55           =X-Weak-Point-Hitter
-wp-gun-55-desc      =Extra damage on unhurt enemy + high crit?
+; Mace
+wp-mac-38           =Insight
+wp-mac-38-desc      =Magical knowledge swirls within (grants +2MP per turn).
+
+; Rod
+wp-rod-37           =Illusory Rod
+wp-rod-37-desc      =Makes its bearer appear insubstantial (grants {addpositive} when HP is Critical at the start of a turn).
+
+; Maul
+wp-mau-37           =Harmony
+wp-mau-37-desc      =A weapon which calms the heart and aids the righteous, said to bolster one's <sprite name="icon-element-holy">Holy affinity.
+
+; Rapier
+wp-rap-38           =Maw's Tooth
+wp-rap-38-desc      =A true weapon of evil which taints the user (+5 accuracy), said to bolster one's <sprite name="icon-element-dark">Dark affinity.
+
+; Axe
+wp-axe-37           =Throwing Axe
+wp-axe-37-desc      =An axe that magically returns after being thrown, but leaves the user exposed.

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XMLArmors> 
+  <Armors HashName="SHI-37" Name="Kraken Shell" Desc="ar-shield-37" Icon="icon-gadget-10" Type="shield" Evasion="-15" Price="5" Tier="1" Move="-1" Speed="-8" WeaponSprite="Hu-Ma-Fe-Shield@Shield13">
+    <Stats Values="0 80 0 60" />
+    <ElementalResist Values="100 50 0 -15 0 0" />
+  </Armors>
+  <Armors HashName="HHE-37" Name="Mind Cage" Desc="ar-helm-37" Icon="icon-helmheavy-04" Type="heavyhelmet" Price="4" Tier="1" MPTurn="-2">
+    <Stats Values="0 35 0 22"/>
+    <ElementalResist Values="25 25 25 25 0 0" />
+  </Armors>
+  <Armors HashName="HCL-37" Name="Believer's Blindfold" Desc="ar-hat-37" Icon="icon-acccollar-04" IsDLCIcon="true" Type="clothhelmet" BonusAcc="-15" Speed="10" NegativeEffectsProtect="kfBlind" Price="2" Tier="1">
+    <Stats Values="62 1 0 1"/>
+  </Armors> 
+</XMLArmors>

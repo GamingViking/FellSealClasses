@@ -1,0 +1,8 @@
+; ************ Missions Descriptions and Names ***************
+
+miss-90-name=Strange Portal
+miss-91-name=Strange Trail
+
+
+miss-90-desc=A strange gateway suddenly appeared and then vanished, but not before a strange looking person came out of it. The stranger dropped some sort of alien artefact before departing which seems to have attracted some unusual creatures to the area, so it might be best to send someone knowledgeable in the {color=hint}mystical{color=base} arts.
+miss-91-desc=More unusual monsters have begin to appear - similar to those that came in the wake of the strange portal. Odds are, there's another alien artefact nearby drawing them out, but no one has been able to find it yet. Someone with {color=hint}tracking{color=base} abilities might stand a better chance of chasing it down. 

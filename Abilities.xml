@@ -92,7 +92,7 @@
     <Ability HashName="SCOU-A6" EffectHash="RANG-A4" Name="Explosive Canister" MpCost="14" Range="2" RangeHeight="2.5" Power="1.45" PosStyle="kLine" Shape="kCross" Size="2" Element="kNone" DmgSource="kAtkMixed" SpellType="kSkill" SpecialEffect="kLowAccuracyWithCrit" />
 
 
-    <!-- <Ability HashName="GODP-A1" Name="Kill All" MpCost="1" Range="0" RangeHeight="1" Power="-999" Shape="kAllEnemies" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpellType="kNothing" SpecialEffect="kScaleWithProximity" ExtraFlags="kFixedDamage" /> -->
+    <Ability HashName="GODP-A1" Name="No Survivors" MpCost="1" Range="0" RangeHeight="1" Power="-999" Shape="kAllEnemies" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpellType="kNothing" SpecialEffect="kScaleWithProximity" ExtraFlags="kFixedDamage" />
   </active>
   <passive> 
     <Ability HashName="MONH-P1" Name="Quick Fingers" CopyFrom="PEDD-P1" />
@@ -115,6 +115,7 @@
     <Ability HashName="FARB-P2" CopyFrom="APB-01-P1" Name="Deathfeeder" />
     <Ability HashName="SCOU-P1" CopyFrom="WRAN-P2" Name="Skirmish" />
     <Ability HashName="SCOU-P2" CopyFrom="VAN-03-P2" Name="Deep Wounds" />
+    <Ability HashName="GODP-P1" CopyFrom="GAMB-P1" Name="No Survivors" />
 
   </passive>
   <counter>

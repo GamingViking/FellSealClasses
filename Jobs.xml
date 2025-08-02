@@ -581,5 +581,20 @@
       </learnables>
       <Mastery spd="3" eva="1" elem="5" />
     </Job>
+    <Job ClassName="GODP" WeaponsType="kfAll" ArmorType="kfAll" BaseJump="2" BonusEvasion="2" BonusCrit="5" SpeedGrowth="1.2" BaseSpeed="102" Hat="sage" OutfitM="Irdred" OutfitF="Irdra">
+        <StatsGrowth Values="3.75 3.5 5.25 4.25" />
+        <HealthGrowth Values="6 3" />
+        <BaseStats Values="36 35 43 42.5" />
+        <HealthBase Values="76 22" />
+        <learnables>
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>GODP-A1</AbilityHash>
+              <AbilityHash>GODP-P1</AbilityHash>
+            </SkillTile>
+          </Tier>
+        </learnables>
+        <Mastery spd="50" />
+    </Job>
   </jobs>
 </XMLJobs>

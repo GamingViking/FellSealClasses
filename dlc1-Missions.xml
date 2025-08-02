@@ -1,0 +1,1474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XMLMissions MissionsAtOnce="3" RepeatMult="0.75" SellRatio="0.5" FailMult="0.5" FailMultNoRepeat="0.25" SuccessPerUnit="5" CriticalSuccessMult="1.5" CriticalBaseChance="5" StoryTimeReductionBonus="0.25" PatrolTimeReductionBonus="0.1" ArenaTimeReductionBonus="0.15">
+  <Missions Hash="miss-00" Name="Troubled Travelers" Location="B02" CostGp="200" MaxRecruits="2" BaseSuccess="90" DurationInMins="25">
+    <Reward Ap="25" Cp="150" />
+  </Missions>
+  <Missions Hash="miss-01" Name="The Cure for White Fever" Location="B03" CostCp="25" MaxRecruits="3" BaseSuccess="90">
+    <Reward Ap="25" Exp="34" />
+  </Missions>
+  <Missions Hash="miss-02" Name="A Brother in Need" Location="B03" CostCp="35" MaxRecruits="2" BaseSuccess="80" DurationInMins="40" Repeatable="false">
+    <SuccessAdd data="BRUTE|20" />
+    <Reward Ap="100" Exp="50" Gp="500" />
+  </Missions>
+  <Missions Hash="miss-03" Name="Extortion in Illuster" Location="T04" CostCp="25" MinRecruits="2" BaseSuccess="80">
+    <Reward Ap="75" />
+  </Missions>
+  <Missions Hash="miss-04" Name="Safe Passage" Location="T04" CostCp="25" MaxRecruits="2" BaseSuccess="90" DurationInMins="25">
+    <Reward Ap="25" Gp="1250" />
+  </Missions>
+  <Missions Hash="miss-05" Name="Something in the Woods..." Location="B04" CostGp="350" BaseSuccess="75" DurationInMins="35">
+    <SuccessAdd data="MONSTER|25" />
+    <Reward Ap="25" Cp="125">
+      <Mats data="ING-00|2" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-06" Name="Time for a Culling" Location="B05" CostCp="150" MinRecruits="2" BaseSuccess="70" DurationInMins="45" Repeatable="false">
+    <SuccessAdd data="TRACKING|25,WILDERNESS|25,WRAN|10" />
+    <Reward Ap="20">
+      <Special Type="kRecruit" DataString="RECRUIT-00" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-07" Name="Death From Above" Location="B06" CostCp="50" MinRecruits="2" BaseSuccess="85" DurationInMins="35">
+    <Reward Ap="40" Exp="25" Gp="750" />
+  </Missions>
+  <Missions Hash="miss-08" Name="Meet Sergeant Greely" Location="B06" CostCp="50" MaxRecruits="1" BaseSuccess="100" DurationInMins="20" Repeatable="false">
+    <Reward Ap="50" Exp="100" CanCrit="false" />
+  </Missions>
+  <Missions Hash="miss-09" Name="Pests of Sigil" Location="B07" CostGp="700" MaxRecruits="3" BaseSuccess="70" DurationInMins="35" HideName="true">
+    <SuccessAdd data="LUCKY|20" />
+    <Reward Ap="25" Cp="75" RandMat="true">
+      <Mats data="ING-03|2,ING-04|1,ING-09|1" />
+    </Reward>
+    <Lock MissionHash="MISS-05" />
+  </Missions>
+  <Missions Hash="miss-10" Name="Deftness Training" Location="B07" CostCp="150" MaxRecruits="2" BaseSuccess="60" DurationInMins="35" Repeatable="false">
+    <SuccessAdd data="MONSTER|20,MARKSMANSHIP|20" />
+    <Reward Ap="50">
+      <Special Type="kClass" DataString="VAR-DFT" />
+    </Reward>
+    <Lock SpecialFlag="kfMonster" />
+  </Missions>
+  <Missions Hash="miss-11" Name="Spring Cleaning" Location="B07" CostCp="50" MinRecruits="2" MaxRecruits="3" BaseSuccess="60" Repeatable="false">
+    <SuccessAdd data="STEALTH|25" />
+    <Reward Ap="50" Cp="125" Gp="750" />
+  </Missions>
+  <Missions Hash="miss-12" Name="Hungry Beast!" Location="B07" CostCp="50" MaxRecruits="3" BaseSuccess="60" Repeatable="false">
+    <SuccessAdd data="STEALTH|25" />
+    <Reward Ap="100" Gp="400" />
+  </Missions>
+  <Missions Hash="miss-13" Name="Leadership Training" Location="B07" CostGp="900" MaxRecruits="2" BaseSuccess="100" DurationInMins="25" Repeatable="false">
+    <Reward Ap="75" Exp="50" Cp="125" CanCrit="false">
+      <Special Type="kOutfits" DataString="unlock-heroes" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-14" Name="And the Dead Shall Walk..." Location="B09" CostGp="1100" MinRecruits="2" BaseSuccess="60" DurationInMins="35" Repeatable="false">
+    <SuccessAdd data="HOLY|30,ARCANE|15" />
+    <Reward Ap="50" Cp="50">
+      <Special Type="kItem" DataInt="1" DataString="BADG-07" />
+    </Reward>
+    <Lock SpecialFlag="kfMonster" />
+  </Missions>
+  <Missions Hash="miss-15" Name="What Haunts These Woods?" Location="B09" CostGp="1100" MaxRecruits="3" BaseSuccess="65" DurationInMins="35" Repeatable="false">
+    <SuccessAdd data="WILDERNESS|15,HOLY|20" />
+    <Reward Ap="50" Cp="50">
+      <Special Type="kClass" DataString="VAR-SYL" />
+    </Reward>
+    <Lock SpecialFlag="kfMonster" />
+  </Missions>
+  <Missions Hash="miss-16" Name="Watching Over the Harvest" Location="B09" CostGp="1100" MaxRecruits="3" BaseSuccess="70" DurationInMins="35" Repeatable="false">
+    <SuccessAdd data="MARKSMANSHIP|20" />
+    <Reward Ap="50" Cp="50">
+      <Special Type="kItem" DataInt="1" DataString="BADG-06" />
+    </Reward>
+    <Lock SpecialFlag="kfMonster" />
+  </Missions>
+  <Missions Hash="miss-17" Name="The Monster Mine" Location="B09" CostCp="150" MinRecruits="2" BaseSuccess="40" DurationInMins="45" Repeatable="false" HideName="true">
+    <SuccessAdd data="MONSTER|40" />
+    <Reward Ap="40" CanCrit="false">
+      <Special Type="kClass" DataString="WRAN" />
+    </Reward>
+    <Lock MissionHash="MISS-06" />
+  </Missions>
+  <Missions Hash="miss-18" Name="Monster Wrangling" Location="B09" CostGp="1500" MaxRecruits="1" BaseSuccess="100" DurationInMins="40" Repeatable="false" HideName="true">
+    <SuccessAdd data="WRAN|10" />
+    <Reward Ap="50" Exp="25" Cp="50" CanCrit="false">
+      <Special Type="kRecruit" DataString="RECRUIT-01" />
+    </Reward>
+    <Lock MissionHash="MISS-17" />
+  </Missions>
+  <Missions Hash="miss-19" Name="A Relaxing Walk in the Woods" Location="B10" CostGp="750" MinRecruits="2" MaxRecruits="3" BaseSuccess="82">
+    <Reward Ap="25" Cp="150">
+      <Mats data="ING-01|1,ING-02|1,ING-03|1" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-20" Name="Mayhem at the Bridge" Location="B10" CostCp="200" MinRecruits="2" MaxRecruits="3" BaseSuccess="100" DurationInMins="50" Repeatable="false" HideName="true">
+    <SuccessAdd data="HEALING|13,MONSTER|13" />
+    <Reward Ap="75" Gp="2200">
+      <Special Type="kRecruit" DataString="RECRUIT-02" />
+    </Reward>
+    <Lock MissionHash="MISS-02, MISS-11" />
+  </Missions>
+  <Missions Hash="miss-21" Name="Mysterious Lights" Location="T07" CostGp="1000" MaxRecruits="3" BaseSuccess="80" DurationInMins="35">
+    <SuccessAdd data="LUCKY|25" />
+    <Reward Ap="35" Cp="75" RandMat="true">
+      <Mats data="ING-07|1,ING-09|1,ING-06|1,ING-04|1,ING-20|1" />
+    </Reward>
+    <Lock MissionHash="MISS-19" />
+  </Missions>
+  <Missions Hash="miss-22" Name="Routine Patrol" Location="T07" CostCp="50" MaxRecruits="3" BaseSuccess="100" DurationInMins="35">
+    <Reward Ap="35" Exp="50" CanCrit="false" />
+  </Missions>
+  <Missions Hash="miss-23" Name="A Bountiful Harvest" Location="T07" CostCp="50" MaxRecruits="3" BaseSuccess="100" DurationInMins="35">
+    <Reward Ap="100" CanCrit="false" />
+  </Missions>
+  <Missions Hash="miss-24" Name="A Gang of Cutthroats" Location="T07" CostGp="500" MinRecruits="2" BaseSuccess="55" DurationInMins="45" Repeatable="false" HideName="true">
+    <SuccessAdd data="CITY|35" />
+    <Reward Ap="50" Exp="50" Cp="125">
+      <Special Type="kItem" DataInt="1" DataString="BADG-09" />
+      <Special Type="kItem" DataInt="1" DataString="BLI-35" />
+    </Reward>
+    <Lock MissionHash="MISS-11" />
+  </Missions>
+  <Missions Hash="miss-25" Name="Feral Creatures" Location="B11" CostGp="1000" MinRecruits="2" MaxRecruits="3" BaseSuccess="75" DurationInMins="35">
+    <SuccessAdd data="MONSTER|25" />
+    <Reward Ap="25" Cp="250" />
+  </Missions>
+  <Missions Hash="miss-26" Name="A Fearsome Threat" Location="B11" CostGp="1250" MinRecruits="2" MaxRecruits="2" DurationInMins="35" Repeatable="false">
+    <SuccessAdd data="BRUTE|40" />
+    <Reward Ap="50" Cp="75">
+      <Special Type="kItem" DataInt="1" DataString="BADG-08" />
+      <Special Type="kItem" DataInt="1" DataString="SCY-35" />
+    </Reward>
+    <Lock SpecialFlag="kfMonster" />
+  </Missions>
+  <Missions Hash="miss-27" Name="Sigil Raiders" Location="B11.5" CostCp="60" MinRecruits="2" BaseSuccess="65" DurationInMins="35" HideName="true">
+    <SuccessAdd data="HUMAN|25" />
+    <Reward Ap="25" Gp="750">
+      <Mats data="ING-05|1,ING-06|1" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-28" Name="The Missing Scullery Maid" Location="B11.5" CostCp="100" MinRecruits="2" MaxRecruits="2" BaseSuccess="60" Repeatable="false">
+    <SuccessAdd data="OFFENSIVE|30" />
+    <Reward Ap="25">
+      <Special Type="kItem" DataInt="1" DataString="HHE-35" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-29" Name="Wiped Out" Location="B11.5" CostCp="150" DurationInMins="45" Repeatable="false">
+    <SuccessAdd data="HEALING|30,MONSTER|30" />
+    <Reward Ap="100">
+      <Special Type="kClass" DataString="BEAS" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-30" Name="A Hasty Retreat" Location="B12" CostCp="100" BaseSuccess="65" DurationInMins="45" Repeatable="false" HideName="true">
+    <SuccessAdd data="TRACKING|35" />
+    <Reward Ap="100" Gp="2000" />
+    <Lock MissionHash="MISS-24" />
+  </Missions>
+  <Missions Hash="miss-31" Name="Caravan Escort" Location="B12" CostGp="1500" MaxRecruits="2" BaseSuccess="80" Repeatable="false">
+    <SuccessAdd data="HYBRID|30,WRAN|10" />
+    <Reward Ap="75" Cp="125">
+      <Special Type="kRecruit" DataString="RECRUIT-03" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-32" Name="Avenging Angels" Location="B12" CostGp="2000" MinRecruits="2" BaseSuccess="60" DurationInMins="25" Repeatable="false">
+    <SuccessAdd data="DARK|40,ARCANE|20" />
+    <Reward Ap="100">
+      <Special Type="kUnlockHunt" DataString="HUNT-00" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-33" Name="Riffraff and Ne’er-do-wells" Location="T08" CostCp="75" MaxRecruits="3" BaseSuccess="85">
+    <SuccessAdd data="PEDD|15" />
+    <Reward Ap="40" Gp="2500" />
+  </Missions>
+  <Missions Hash="miss-34" Name="The Witch and the Tower" Location="T08" CostCp="100" MaxRecruits="1" BaseSuccess="65" DurationInMins="45" Repeatable="false" HideName="true">
+    <SuccessAdd data="ARCANE|30" />
+    <Reward Ap="25" />
+    <Lock MissionHash="MISS-28" />
+  </Missions>
+  <Missions Hash="miss-35" Name="A Shorter Leash" Location="T08" CostCp="50" MinRecruits="2" MaxRecruits="3" BaseSuccess="60" DurationInMins="45" Repeatable="false" HideName="true">
+    <SuccessAdd data="HOLY|35" />
+    <Reward Ap="100" />
+    <Lock MissionHash="MISS-12" />
+  </Missions>
+  <Missions Hash="miss-36" Name="Assassin!" Location="T08" CostCp="300" MaxRecruits="3" BaseSuccess="70" DurationInMins="60" Repeatable="false">
+    <SuccessAdd data="HUMAN|15,CASTLES|15" />
+    <Reward Ap="50" Cp="200">
+      <Special Type="kClass" DataString="SAMU" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-37" Name="The Flying Menace" Location="B14" CostGp="1250" MaxRecruits="3" BaseSuccess="75" DurationInMins="35">
+    <SuccessAdd data="MALE|25" />
+    <Reward Ap="50" Cp="50">
+      <Mats data="ING-10|1,ING-09|1" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-38" Name="And the Dead Shall Rest" Location="B14" CostGp="1250" MinRecruits="2" MaxRecruits="3" BaseSuccess="100" DurationInMins="35">
+    <Reward Ap="50" Exp="34" Cp="50" CanCrit="false" />
+  </Missions>
+  <Missions Hash="miss-39" Name="Landslide" Location="B15" CostCp="150" MinRecruits="2" MaxRecruits="2" BaseSuccess="70" DurationInMins="35" Repeatable="false">
+    <SuccessAdd data="BRUTE|20" />
+    <Reward Ap="75" Gp="500" CanCrit="false">
+      <Special Type="kItem" DataInt="1" DataString="BADG-03" />
+      <Special Type="kItem" DataInt="1" DataString="ARI-38" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-40" Name="Yet Another Patrol" Location="T09" CostGp="1500" MinRecruits="2" BaseSuccess="90" DurationInMins="40">
+    <Reward Ap="125" />
+  </Missions>
+  <Missions Hash="miss-41" Name="Battles in the Air" Location="T09" CostGp="1500" MaxRecruits="3" BaseSuccess="65" DurationInMins="35" Repeatable="false">
+    <SuccessAdd data="FLYING|15,CASTLES|15" />
+    <Reward Ap="50" Cp="50" CanCrit="false">
+      <Special Type="kItem" DataInt="1" DataString="BADG-10" />
+    </Reward>
+    <Lock SpecialFlag="kfMonster" />
+  </Missions>
+  <Missions Hash="miss-42" Name="A Mysterious Cave" Location="B16" CostGp="2000" MinRecruits="2" MaxRecruits="3" BaseSuccess="80" DurationInMins="45" Repeatable="false">
+    <SuccessAdd data="BRUTE|20,WRAN|10,WRAN|10" />
+    <Reward Ap="75" Cp="125">
+      <Special Type="kRecruit" DataString="RECRUIT-04" />
+    </Reward>
+    <Lock MissionHash="MISS-26" />
+  </Missions>
+  <Missions Hash="miss-43" Name="Special Training" Location="B16" CostCp="250" MaxRecruits="1" BaseSuccess="100" Repeatable="false">
+    <Reward Ap="350" CanCrit="false">
+      <Special Type="kItem" DataInt="1" DataString="BHE-35" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-44" Name="The Black Flag" Location="B18" CostCp="75" MinRecruits="2" MaxRecruits="2" BaseSuccess="100" DurationInMins="40">
+    <Reward Ap="50">
+      <Mats data="ING-18|1" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-45" Name="Relic Study" Location="B18.5" CostGp="1500" MinRecruits="2" MaxRecruits="3" BaseSuccess="60" DurationInMins="35" Repeatable="false">
+    <SuccessAdd data="DARK|25" />
+    <Reward Ap="50" Cp="50">
+      <Special Type="kClass" DataString="VAR-COR" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-46" Name="Three Sisters" Location="B18.5" CostGp="4000" MaxRecruits="2" BaseSuccess="60" Repeatable="false">
+    <SuccessAdd data="OFFENSIVE|15,FLYING|25" />
+    <Reward Ap="50">
+      <Special Type="kUnlockHunt" DataString="HUNT-01" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-47" Name="Animal Control" Location="T01" CostCp="300" MinRecruits="3" MaxRecruits="3" BaseSuccess="85" DurationInMins="50" Repeatable="false" HideName="true">
+    <Reward Ap="100" Gp="5000" CanCrit="false">
+      <Special Type="kItem" DataInt="1" DataString="BADG-11" />
+      <Special Type="kItem" DataInt="1" DataString="BADG-10" />
+      <Special Type="kItem" DataInt="1" DataString="RAP-35" />
+    </Reward>
+    <Lock MissionHash="MISS-35" />
+  </Missions>
+  <Missions Hash="miss-48" Name="A New Path Through the Bogs" Location="B19" CostGp="1250" MinRecruits="2" MaxRecruits="2" BaseSuccess="100" DurationInMins="25">
+    <Reward Ap="25" Cp="250" CanCrit="false" />
+  </Missions>
+  <Missions Hash="miss-49" Name="The Thing in the Swamp" Location="B19" CostGp="3500" MinRecruits="2" MaxRecruits="2" BaseSuccess="65" DurationInMins="25" Repeatable="false">
+    <SuccessAdd data="STEALTH|25" />
+    <Reward Ap="75" CanCrit="false">
+      <Special Type="kItem" DataInt="1" DataString="BADG-04" />
+      <Special Type="kItem" DataInt="1" DataString="BADG-14" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-50" Name="Shiver Me Timbers!" Location="B20" CostGp="6000" MaxRecruits="3" BaseSuccess="100">
+    <Reward Ap="50" Exp="50" Cp="25" CanCrit="false">
+      <Special Type="kItem" DataInt="1" DataString="CBO-35" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-51" Name="More Punishment" Location="B20" CostCp="200" MaxRecruits="2" BaseSuccess="100" DurationInMins="25" Repeatable="false" HideName="true">
+    <Reward Ap="100" Exp="100" CanCrit="false">
+      <Special Type="kItem" DataInt="1" DataString="SWD-36" />
+    </Reward>
+    <Lock MissionHash="MISS-08" />
+  </Missions>
+  <Missions Hash="miss-52" Name="A Gaggle of Niwots" Location="B20" CostGp="2000" MaxRecruits="3" BaseSuccess="70" Repeatable="false">
+    <SuccessAdd data="HEALING|30,WRAN|10" />
+    <Reward Ap="100" Cp="125">
+      <Special Type="kRecruit" DataString="RECRUIT-05" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-53" Name="A Fisherman’s Woes" Location="T10" CostCp="75" MinRecruits="2" MaxRecruits="2" BaseSuccess="100" DurationInMins="25">
+    <Reward Ap="40" Gp="4500" CanCrit="false" />
+  </Missions>
+  <Missions Hash="miss-54" Name="A Scaled Stalking" Location="T11" CostCp="75" MaxRecruits="2" BaseSuccess="80">
+    <SuccessAdd data="FEMALE|30" />
+    <Reward Ap="40" Exp="20">
+      <Mats data="ING-07|1,ING-06|1" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-55" Name="The Storm Spirit" Location="B21" CostGp="1750" MinRecruits="2" BaseSuccess="80" DurationInMins="40">
+    <SuccessAdd data="LUCKY|25" />
+    <Reward Ap="50" Cp="50" RandMat="true">
+      <Mats data="ING-16|1,ING-12|1,ING-10|1,ING-18|1,ING-20|1" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-56" Name="Lucky Lebrice" Location="T11" CostGp="2000" MaxRecruits="1" BaseSuccess="80" DurationInMins="45" Repeatable="false" HideName="true">
+    <SuccessAdd data="CITY|15,LUCKY|10" />
+    <Reward Ap="50" Exp="125" Cp="200" />
+    <Lock MissionHash="MISS-30" />
+  </Missions>
+  <Missions Hash="miss-57" Name="A Flock of Malcubi" Location="T10" CostCp="150" MinRecruits="3" MaxRecruits="3" DurationInMins="60" Repeatable="false" HideName="true">
+    <SuccessAdd data="WRAN|10,REPAIR|35" />
+    <Reward Ap="25">
+      <Special Type="kRecruit" DataString="RECRUIT-06" />
+      <Special Type="kItem" DataInt="1" DataString="ROD-35" />
+      <Special Type="kPassiveAbility" DataInt="4" DataString="BONU-P6" />
+    </Reward>
+    <Lock MissionHash="MISS-34" SpecialFlag="kfBzaro" />
+  </Missions>
+  <Missions Hash="miss-58" Name="The Beast Below" Location="T10" CostGp="4000" MaxRecruits="3" BaseSuccess="65" DurationInMins="35" Repeatable="false">
+    <SuccessAdd data="CITY|25" />
+    <Reward Ap="50" Cp="100">
+      <Special Type="kUnlockHunt" DataString="HUNT-02" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-59" Name="Gold Rush" Location="B22" CostGp="2500" MaxRecruits="3" BaseSuccess="85" DurationInMins="35">
+    <SuccessAdd data="MONSTER|15,BRUTE|15" />
+    <Reward Ap="50" Cp="400" />
+  </Missions>
+  <Missions Hash="miss-60" Name="The Hostage" Location="B22" CostGp="6000" MinRecruits="3" BaseSuccess="30" DurationInMins="40" Repeatable="false">
+    <SuccessAdd data="MONSTER|40,KAW|20" />
+    <Reward Ap="50" Cp="200">
+      <Special Type="kRecruit" DataString="RECRUIT-07" />
+    </Reward>
+    <Lock MissionHash="MISS-57" Story="38" SpecialFlag="kfMonster kfBzaro" />
+  </Missions>
+  <Missions Hash="miss-61" Name="Fill in the Blanks" Location="B23" CostCp="100" BaseSuccess="90" DurationInMins="35">
+    <Reward Gp="7000" />
+  </Missions>
+  <Missions Hash="miss-62" Name="An Even More Special Mission" Location="B23" CostCp="350" MaxRecruits="1" BaseSuccess="100" DurationInMins="40" Repeatable="false" HideName="true">
+    <Reward Ap="500" CanCrit="false">
+      <Special Type="kItem" DataInt="1" DataString="HCL-35" />
+    </Reward>
+    <Lock MissionHash="MISS-43" />
+  </Missions>
+  <Missions Hash="miss-63" Name="Taming the Wastes" Location="B24" CostGp="3000" MinRecruits="3" BaseSuccess="60" DurationInMins="35" Repeatable="false">
+    <SuccessAdd data="HYBRID|15,HUMAN|15" />
+    <Reward Ap="20">
+      <Mats data="ING-25|1" />
+    </Reward>
+    <Lock MissionHash="MISS-54" />
+  </Missions>
+  <Missions Hash="miss-64" Name="Closing In" Location="B24" CostCp="500" MinRecruits="2" MaxRecruits="3" DurationInMins="60" Repeatable="false" HideName="true">
+    <SuccessAdd data="ARCANE|30" />
+    <Reward Ap="100" Exp="50">
+      <Special Type="kUnlockMap" DataString="LARG-05" />
+    </Reward>
+    <Lock MissionHash="MISS-56" />
+  </Missions>
+  <Missions Hash="miss-65" Name="Desert Training" Location="B24" CostCp="150" MaxRecruits="2" BaseSuccess="100" DurationInMins="35" Repeatable="false" HideName="true">
+    <Reward Ap="200" Exp="200" CanCrit="false">
+      <Special Type="kItem" DataInt="1" DataString="HHE-36" />
+    </Reward>
+    <Lock MissionHash="MISS-51" />
+  </Missions>
+  <Missions Hash="miss-66" Name="Kawa Wrangling" Location="T12" CostGp="3000" BaseSuccess="90">
+    <Reward Ap="145" />
+  </Missions>
+  <Missions Hash="miss-67" Name="Forgotten Crypts" Location="T12" CostGp="7500" MinRecruits="2" BaseSuccess="55" Repeatable="false">
+    <SuccessAdd data="DARK|25" />
+    <Reward Ap="50" Cp="50" CanCrit="false">
+      <Special Type="kItem" DataInt="1" DataString="BADG-05" />
+      <Special Type="kItem" DataInt="1" DataString="ROD-36" />
+      <Special Type="kItem" DataInt="1" DataString="BADG-14" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-68" Name="A Voice from Beyond!" Location="T12" CostGp="7500" MinRecruits="2" BaseSuccess="55" DurationInMins="35" Repeatable="false">
+    <SuccessAdd data="HEALING|25" />
+    <Reward Ap="50" Cp="50" CanCrit="false">
+      <Special Type="kItem" DataInt="1" DataString="BADG-00" />
+      <Special Type="kItem" DataInt="1" DataString="HCL-36" />
+      <Special Type="kItem" DataInt="1" DataString="BADG-14" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-69" Name="The High Mountain Pass" Location="B25" CostCp="50" MinRecruits="2" MaxRecruits="3" BaseSuccess="60" DurationInMins="40">
+    <SuccessAdd data="OFFENSIVE|25,HUMAN|20" />
+    <Reward Ap="50">
+      <Mats data="ING-09|1,ING-11|1,ING-10|1" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-70" Name="Emergency Aid" Location="B25" CostCp="100" MaxRecruits="3" BaseSuccess="100">
+    <Reward Ap="75" Exp="50" Gp="3000" CanCrit="false" />
+  </Missions>
+  <Missions Hash="miss-71" Name="Vangal Trouble" Location="B25" CostGp="25000" MaxRecruits="3" BaseSuccess="60" DurationInMins="25" Repeatable="false">
+    <SuccessAdd data="HEALING|25,WRAN|10" />
+    <Reward Ap="150" Gp="50000" CanCrit="false">
+      <Special Type="kRecruit" DataString="RECRUIT-08" />
+      <Special Type="kItem" DataInt="1" DataString="MAC-37" />
+    </Reward>
+    <Lock MissionHash="MISS-52" />
+  </Missions>
+  <Missions Hash="miss-72" Name="Changelings" Location="B26" CostGp="3000" BaseSuccess="75" DurationInMins="40">
+    <SuccessAdd data="LUCKY|25" />
+    <Reward Ap="50" RandMat="true">
+      <Mats data="ING-23|1,ING-22|1,ING-16|1,ING-12|1,ING-07|1,ING-21|1" />
+    </Reward>
+    <Lock MissionHash="MISS-63" Story="43" />
+  </Missions>
+  <Missions Hash="miss-73" Name="A Noble Disagreement" Location="B26" CostCp="250" MinRecruits="3" BaseSuccess="45" DurationInMins="35" Repeatable="false">
+    <SuccessAdd data="CASTLES|30" />
+    <Reward Ap="100" CanCrit="false">
+      <Special Type="kItem" DataInt="1" DataString="BADG-01" />
+    </Reward>
+    <Lock Story="45" />
+  </Missions>
+  <Missions Hash="miss-74" Name="Witchcraft!" Location="B26" CostCp="250" MinRecruits="3" BaseSuccess="45" DurationInMins="45" Repeatable="false">
+    <SuccessAdd data="FEMALE|30" />
+    <Reward Ap="100" CanCrit="false">
+      <Special Type="kItem" DataInt="1" DataString="BADG-02" />
+    </Reward>
+    <Lock Story="45" />
+  </Missions>
+  <Missions Hash="miss-75" Name="Troublemakers" Location="B26" CostCp="300" MinRecruits="3" BaseSuccess="45" DurationInMins="40" Repeatable="false">
+    <SuccessAdd data="OFFENSIVE|30" />
+    <Reward Ap="100" CanCrit="false">
+      <Special Type="kItem" DataInt="1" DataString="BADG-13" />
+      <Mats data="ING-26|1" />
+    </Reward>
+    <Lock Story="46" />
+  </Missions>
+  <Missions Hash="miss-76" Name="Too Many Monsters!" Location="B26" CostCp="300" MinRecruits="3" BaseSuccess="45" DurationInMins="40" Repeatable="false">
+    <SuccessAdd data="BRUTE|30" />
+    <Reward Ap="125" Exp="50" CanCrit="false">
+      <Mats data="ING-19|1" />
+    </Reward>
+    <Lock Story="46" />
+  </Missions>
+  <Missions Hash="miss-77" Name="Kidnapped Children" Location="B26" CostCp="250" MaxRecruits="3" BaseSuccess="85" DurationInMins="35" Repeatable="false">
+    <SuccessAdd data="TRACKING|25,FEMALE|25" />
+    <Reward Ap="200" Cp="150" Gp="5000">
+      <Special Type="kUnlockHunt" DataString="HUNT-03" />
+    </Reward>
+    <Lock Story="46" />
+  </Missions>
+  <Missions Hash="miss-78" Name="Raife's Journal" Location="B26" CostGp="8000" MaxRecruits="3" DurationInMins="40" Repeatable="false" HideName="true">
+    <SuccessAdd data="REPAIR|25,MALE|25" />
+    <Reward Ap="200" Cp="150">
+      <Special Type="kUnlockHunt" DataString="HUNT-04" />
+    </Reward>
+    <Lock Story="47" />
+  </Missions>
+  <Missions Hash="miss-79" Name="Baleful Guardian" Location="T08" CostCp="200" MaxRecruits="2" BaseSuccess="75" Repeatable="false">
+    <SuccessAdd data="WILDERNESS|15,MARKSMANSHIP|20" />
+    <Reward Ap="50" Exp="100">
+      <Special Type="kUnlockHunt" DataString="HUNT-05" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-80" Name="Violet Blight" Location="T09" CostGp="4000" MinRecruits="2" MaxRecruits="3" BaseSuccess="85" Repeatable="false">
+    <SuccessAdd data="TRACKING|15,DARK|15" />
+    <Reward Ap="100" Cp="200">
+      <Special Type="kUnlockHunt" DataString="HUNT-06" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-81" Name="The Beachmaster" Location="B21" CostCp="250" MaxRecruits="3" BaseSuccess="65" DurationInMins="25" Repeatable="false">
+    <SuccessAdd data="HEALING|25,HYBRID|25" />
+    <Reward Ap="100" Gp="2500">
+      <Special Type="kUnlockHunt" DataString="HUNT-07" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-82" Name="A Legendary Dessert" Location="T10" CostGp="2500" MinRecruits="2" MaxRecruits="3" BaseSuccess="65" DurationInMins="35" Repeatable="false">
+    <SuccessAdd data="OFFENSIVE|25,STEALTH|25" />
+    <Reward Ap="100" Exp="50">
+      <Special Type="kUnlockHunt" DataString="HUNT-08" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-83" Name="Impostor!" Location="B25" CostCp="50" MaxRecruits="2" BaseSuccess="35" Repeatable="false">
+    <SuccessAdd data="CITY|30,HUMAN|30" />
+    <Reward Ap="50" Exp="50" Gp="7500">
+      <Special Type="kUnlockHunt" DataString="HUNT-09" />
+    </Reward>
+    <Lock StoryFlag="18" />
+  </Missions>
+  <Missions Hash="miss-84" Name="Children of the Volcano" Location="B26" CostGp="5000" MinRecruits="2" MaxRecruits="2" BaseSuccess="60" DurationInMins="25" Repeatable="false">
+    <SuccessAdd data="BRUTE|35" />
+    <Reward Exp="150" Cp="100">
+      <Special Type="kUnlockHunt" DataString="HUNT-10" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-85" Name="Demon Versus Demon?" Location="B26" CostCp="350" BaseSuccess="60" DurationInMins="35" Repeatable="false">
+    <SuccessAdd data="HOLY|15,ARCANE|15" />
+    <Reward Ap="200" Gp="5000">
+      <Special Type="kUnlockHunt" DataString="HUNT-11" />
+    </Reward>
+    <Lock Story="45" />
+  </Missions>
+  <Missions Hash="miss-86" Name="Infestation!" Location="B26" CostGp="8000" MinRecruits="2" BaseSuccess="60" Repeatable="false">
+    <SuccessAdd data="LUCKY|15,FLYING|15" />
+    <Reward Ap="100" Exp="50" Cp="100">
+      <Special Type="kUnlockHunt" DataString="HUNT-12" />
+    </Reward>
+    <Lock Story="45" />
+  </Missions>
+  <Missions Hash="miss-87" Name="Here There Be Dragons?" Location="B21" CostCp="100" MaxRecruits="3" BaseSuccess="75" DurationInMins="25" Repeatable="false">
+    <SuccessAdd data="FLYING|25" />
+    <Reward Ap="100" Gp="2000">
+      <Special Type="kUnlockHunt" DataString="HUNT-13" />
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-88" Name="A Stab in the Dark" Location="D03" CostCp="100" MaxRecruits="3" BaseSuccess="75" DurationInMins="25" Repeatable="false">
+    <SuccessAdd data="STEALTH|20,HEALING|20,CITY|20" />
+    <Reward Ap="100" Gp="2000">
+      <Special Type="kUnlockHunt" DataString="HUNT-14" />
+    </Reward>
+    <Lock MissionHash="HUNT-02" />
+  </Missions>
+  <Missions Hash="miss-90" Name="Strange Portal" Location="B02" CostCp="50" MaxRecruits="2" BaseSuccess="70" DurationInMins="1" Repeatable="false">
+    <SuccessAdd data="ARCANE|30"/>
+    <Reward Ap="25" Exp="50" Gp="500" CanCrit="false">
+        <Special Type="kItem" DataInt="1" DataString="GUN-38"/>
+    </Reward>
+  </Missions>
+  <Missions Hash="miss-91" Name="Strange Trail" Location="T04" CostCp="25" MaxRecruits="2" BaseSuccess="70" DurationInMins="1" Repeatable="false">
+    <SuccessAdd data="TRACKING|30"/>
+    <Reward Ap="25" Exp="50" Gp="500" CanCrit="false">
+        <Special Type="kItem" DataInt="1" DataString="GUN-39"/>
+    </Reward>
+    <Lock MissionHash="MISS-90" />
+  </Missions>
+  <Zones Hash="zone-00" Name="Centina Hinterlands" SlotsX="3" SlotsY="3" LargeBattle="LARG-00">
+    <Missions data="miss-00,miss-01,miss-02,miss-03,miss-04,miss-05,miss-06,miss-07,miss-08,miss-09,miss-10,miss-11,miss-12,miss-13,miss-90,miss-91" />
+    <MapNodes data="B02,B03,T04,B04,B05,B06,B07,D04" />
+    <ExcludedUpgrades data="upgr-23,upgr-20,upgr-22" />
+  </Zones>
+  <Zones Hash="zone-01" Name="Thespeiran Byways" SlotsX="3" SlotsY="3" LargeBattle="LARG-01">
+    <Missions data="miss-14,miss-15,miss-16,miss-17,miss-18,miss-19,miss-20,miss-21,miss-22,miss-23,miss-24,miss-25,miss-26,miss-27,miss-28,miss-29,miss-30,miss-31,miss-32" />
+    <MapNodes data="B09,B10,T07,B11,B11.5,B12,D01" />
+    <ExcludedUpgrades data="upgr-23,upgr-20,upgr-21" />
+  </Zones>
+  <Zones Hash="zone-02" Name="Zzakandia" SlotsX="4" SlotsY="3" NodeToOpen="T08" LargeBattle="LARG-02">
+    <Missions data="miss-33,miss-34,miss-35,miss-36,miss-37,miss-38,miss-39,miss-40,miss-41,miss-42,miss-43,miss-44,miss-45,miss-46,miss-79,miss-80,miss-88" />
+    <MapNodes data="B08,B14,B15,T09,B16,B18,B18.5,D03" />
+    <ExcludedUpgrades data="upgr-23,upgr-20" />
+  </Zones>
+  <Zones Hash="zone-03" Name="Coast of Industry" SlotsX="4" SlotsY="3" NodeToOpen="B19" LargeBattle="LARG-03">
+    <Missions data="miss-47,miss-48,miss-49,miss-50,miss-51,miss-52,miss-53,miss-54,miss-55,miss-56,miss-57,miss-58,miss-81,miss-82,miss-87" />
+    <MapNodes data="B20,T10,T11,B21,T01,B01" />
+    <ExcludedUpgrades data="upgr-23" />
+  </Zones>
+  <Zones Hash="zone-04" Name="Kawalands" SlotsX="3" SlotsY="3" LargeBattle="LARG-04">
+    <Missions data="miss-59,miss-60,miss-61,miss-62,miss-63,miss-64,miss-65,miss-66,miss-67,miss-68,miss-69,miss-70,miss-71,miss-72,miss-73,miss-74,miss-75,miss-76,miss-77,miss-78,miss-83,miss-84,miss-85,miss-86" />
+    <MapNodes data="B22,B23,B24,T12,B25,B26,D02" />
+    <ExcludedUpgrades data="upgr-20" />
+  </Zones>
+  <Upgrades Hash="upgr-00" Name="Stables" Gfx="0" Cost="150">
+    <Effect>
+      <Missions Time="20" />
+    </Effect>
+    <Bonus1 From="upgr-12">
+      <Missions Time="5" />
+    </Bonus1>
+  </Upgrades>
+  <Upgrades Hash="upgr-01" Name="Cantina" Gfx="1" Cost="200">
+    <Effect>
+      <Missions Cp="20" />
+    </Effect>
+  </Upgrades>
+  <Upgrades Hash="upgr-02" Name="Gardens" Gfx="2" Cost="100">
+    <Effect>
+      <Missions BonusMat="true" />
+    </Effect>
+    <Bonus1 From="upgr-01">
+      <Patrols Gather="true" />
+    </Bonus1>
+  </Upgrades>
+  <Upgrades Hash="upgr-03" Name="Convoy" Gfx="3" Cost="200">
+    <Effect>
+      <Missions BonusUnit="true" />
+    </Effect>
+  </Upgrades>
+  <Upgrades Hash="upgr-04" Name="Library" Gfx="4" Cost="125">
+    <Effect>
+      <Missions Ap="20" />
+    </Effect>
+    <Bonus1 From="upgr-07">
+      <Missions Ap="10" />
+    </Bonus1>
+  </Upgrades>
+  <Upgrades Hash="upgr-05" Name="Training Grounds" Gfx="5" Cost="125">
+    <Effect>
+      <Missions Exp="20" />
+    </Effect>
+    <Bonus1 From="upgr-07">
+      <Missions Exp="10" />
+    </Bonus1>
+  </Upgrades>
+  <Upgrades Hash="upgr-06" Name="Bounty Board" Gfx="6" Cost="125">
+    <Effect>
+      <Missions Gp="20" />
+    </Effect>
+    <Bonus1 From="upgr-01">
+      <Missions Gp="10" />
+    </Bonus1>
+    <Bonus2 From="upgr-08">
+      <Missions Gp="10" />
+    </Bonus2>
+  </Upgrades>
+  <Upgrades Hash="upgr-07" Name="Diviner" Gfx="7" Cost="100">
+    <Effect>
+      <Missions Success="20" />
+    </Effect>
+    <Bonus1 From="upgr-08">
+      <Missions Success="5" />
+    </Bonus1>
+  </Upgrades>
+  <Upgrades Hash="upgr-08" Name="Recordkeeper" Gfx="8" Cost="100">
+    <Effect>
+      <Missions BonusRepeat="true" />
+    </Effect>
+  </Upgrades>
+  <Upgrades Hash="upgr-09" Name="Watchtower" Gfx="9" Cost="150">
+    <Effect>
+      <Patrols Kawa="7" />
+    </Effect>
+    <Bonus1 From="upgr-01">
+      <Patrols Kawa="3" />
+    </Bonus1>
+  </Upgrades>
+  <Upgrades Hash="upgr-10" Name="Apiarium" Gfx="10" Cost="150">
+    <Effect>
+      <Patrols Zotzit="7" />
+    </Effect>
+    <Bonus1 From="upgr-15">
+      <Patrols Zotzit="3" />
+    </Bonus1>
+  </Upgrades>
+  <Upgrades Hash="upgr-11" Name="Weaponsmith" Gfx="11" Cost="150">
+    <Effect>
+      <Patrols Dmg="10" />
+    </Effect>
+    <Bonus1 From="upgr-15">
+      <Patrols Dmg="3" />
+    </Bonus1>
+    <Bonus2 From="upgr-13">
+      <Patrols Dmg="3" />
+    </Bonus2>
+    <Bonus3 From="upgr-14">
+      <Patrols Dmg="3" />
+    </Bonus3>
+  </Upgrades>
+  <Upgrades Hash="upgr-12" Name="Fountainhead" Gfx="12" Cost="100">
+    <Effect>
+      <Patrols Buff="kfRenew" />
+    </Effect>
+  </Upgrades>
+  <Upgrades Hash="upgr-13" Name="Armorsmith" Gfx="13" Cost="100">
+    <Effect>
+      <Patrols Buff="kfDefUp" />
+    </Effect>
+  </Upgrades>
+  <Upgrades Hash="upgr-14" Name="Shaman's Hut" Gfx="14" Cost="100">
+    <Effect>
+      <Patrols Buff="kfMDefUp" />
+    </Effect>
+  </Upgrades>
+  <Upgrades Hash="upgr-15" Name="Hunter's Lodge" Gfx="15" Cost="200">
+    <Effect>
+      <Patrols BonusLoot="15" />
+    </Effect>
+  </Upgrades>
+  <Upgrades Hash="upgr-16" Name="Marina" Gfx="16" Cost="100">
+    <Effect>
+      <Patrols Swim="true" />
+    </Effect>
+  </Upgrades>
+  <Upgrades Hash="upgr-17" Name="Shooting Range" Gfx="17" Cost="125">
+    <Effect>
+      <Patrols Hit="10" />
+    </Effect>
+    <Bonus1 From="upgr-15">
+      <Patrols Hit="5" />
+    </Bonus1>
+  </Upgrades>
+  <Upgrades Hash="upgr-18" Name="Cutler" Gfx="18" Cost="100">
+    <Effect>
+      <Patrols Crit="15" />
+    </Effect>
+    <Bonus1 From="upgr-04">
+      <Patrols Crit="7" />
+    </Bonus1>
+  </Upgrades>
+  <Upgrades Hash="upgr-19" Name="Kennel" Gfx="19" Cost="150">
+    <Effect>
+      <Patrols Tame="15" />
+    </Effect>
+    <Bonus1 From="upgr-17">
+      <Patrols Tame="7" />
+    </Bonus1>
+  </Upgrades>
+  <Upgrades Hash="upgr-20" Name="Apothecary" Gfx="20" Cost="100">
+    <Effect>
+      <Patrols Immune="kfPoison" />
+    </Effect>
+  </Upgrades>
+  <Upgrades Hash="upgr-21" Name="Marketplace" Gfx="21" Cost="250">
+    <Effect>
+      <Special Store="7" />
+    </Effect>
+  </Upgrades>
+  <Upgrades Hash="upgr-22" Name="Outpost" Gfx="22" Cost="250">
+    <Effect>
+      <Special Guild="7" />
+    </Effect>
+  </Upgrades>
+  <Upgrades Hash="upgr-23" Name="Barracks" Gfx="23" Cost="250">
+    <Effect>
+      <Special BonusMission="true" />
+    </Effect>
+  </Upgrades>
+  <Groups GroupName="TRACKING">
+    <Values data="ASSA,RANG,VAMP,WRAN,HRV,VAN" />
+  </Groups>
+  <Groups GroupName="ARCANE">
+    <Values data="WIZA,ALCH,LICH,SORC,SMED,DAA,PEK" />
+  </Groups>
+  <Groups GroupName="WILDERNESS">
+    <Values data="RANG,DRUI,PEDD,WERE,WRAN,BEAS,REAV,HAR,BLA,DAO,SMED,NIW,VAN,RAK" />
+  </Groups>
+  <Groups GroupName="CITY">
+    <Values data="MERC,PEDD,ROGU,TEMP,LORD,VAMP,GADG,GAMB,UTIL,ASSA,KAW" />
+  </Groups>
+  <Groups GroupName="HEALING">
+    <Values data="HEAL,ALCH,PRIN,UTIL,DRUI,SMED,NIW,THE,VAN,DAO" />
+  </Groups>
+  <Groups GroupName="OFFENSIVE">
+    <Values data="WIZA,SORC,WARM,DRUI,LICH,PRIN,DAA,BUL,PHO,SMED,HHU,MAL,PEK,THE" />
+  </Groups>
+  <Groups GroupName="BRUTE">
+    <Values data="MERC,KNIG,REAV,BLAD,WERE,SAMU,BEAS,BLA,HHU,BOL,TAN,HRV" />
+  </Groups>
+  <Groups GroupName="STEALTH">
+    <Values data="ASSA,ROGU,VAMP,FELL,PEDD,RAK" />
+  </Groups>
+  <Groups GroupName="MARKSMANSHIP">
+    <Values data="GUNN,RANG,ZOT" />
+  </Groups>
+  <Groups GroupName="REPAIR">
+    <Values data="GADG,GUNN" />
+  </Groups>
+  <Groups GroupName="DARK">
+    <Values data="LICH,DAA,MAL" />
+  </Groups>
+  <Groups GroupName="HOLY">
+    <Values data="PRIN,DAO,PHO,BLAD,HEAL" />
+  </Groups>
+  <Groups GroupName="LUCKY">
+    <Values data="GAMB,ROGU,PEDD,KAW,ZOT,BUL" />
+  </Groups>
+  <Groups GroupName="CASTLES">
+    <Values data="KNIG,BLAD,LORD,PRIN,SAMU" />
+  </Groups>
+  <Groups GroupName="FLYING">
+    <Values data="HAR,PHO,MAL" />
+  </Groups>
+  <Groups GroupName="HYBRID">
+    <Values data="FELL,WARM,LORD,VAMP,PHO,BLAD,THE,GADG" />
+  </Groups>
+  <Hunts Hash="HUNT-00" NodeHash="T05">
+    <EncounterData>
+Loot=BOW-35
+Lootcount=3
+Loottable=17
+Stealtable=9
+PortraitUnlock=portraits-hunt-0
+LevelRange2=15,20
+
+zone0=0,0,2,3
+;zone1=2,0,1,1
+facing=ru
+center=6,4
+MaxUnits=4
+
+story-necro=x:2, y:0, dir:ru
+
+monster0=x:7, y:3, dir:ld, isaboss:true, class:THE-03, variant:SKE, variant:DRE, variant:DFT, stat-hp:145, stat-spd:10, stat-mnd:30, stat-atk:15, stat-res:10, stat-def:15, acc0:ABO-08, acc1:ARI-06, counter:VAR-DFT-C1, nameloc:hunt-monster-therva, behavior:alwaysoptimal, weightstyle:viciousdps, weight:VAR-SKE-A2|-99, element-dark: 50, element-holy: -50, sprite:thervahunt, portrait:Portrait-Monster-ThervaHunt
+monster1=x:6, y:5, dir:ld, isaboss:true, class:VAN-03, variant:CEL, variant:VEN, variant:SKE, stat-hp:160, stat-spd:10, stat-res:10, stat-def:30, stat-mnd:10, acc0:ABO-08, acc1:ARI-06, counter:VAR-SKE-C1, nameloc:hunt-monster-vangal, behavior:alwaysoptimal, weightstyle:viciousdps, weight:VAR-SKE-A2|-99, element-dark: 25, element-holy: -25, element-earth: 50, sprite:vangalhunt, portrait:Portrait-Monster-VangalHunt
+
+monster2=x:8, y:1, dir:ld, class:UND-01, difficulty:1
+monster3=x:3, y:10, dir:rd, class:UND-02, difficulty:2
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-01" NodeHash="B15">
+    <EncounterData>
+Loot=SPR-36
+Lootcount=3
+Loottable=24
+Stealtable=13
+PortraitUnlock=portraits-hunt-1
+LevelRange2=24,30
+LevelRange3=24,30
+
+zone0=10,0,4,2
+facing=lu
+center=6, 8
+MaxUnits=6
+
+monster0=x:3, y:7, dir:rd, class:HAR-03, isaboss:true, variant:SPE, variant:TYR, variant:DRT, counter:VAR-CEL-C1, acc0:ARI-06, stat-hp:190, stat-spd:10, stat-res:10, stat-def:25, nameloc:hunt-monster-arpia, gearfill:noboots, behavior:killer, portrait:Portrait-Monster-ArpiaHunt, sprite:ArpiaHuntHeadless, spriteextra:ArpiaHuntHead
+monster1=x:4, y:7, dir:rd, class:PHO-03, isaboss:true, variant:CEL, variant:MYS, variant:SHA, counter:VAR-ALP-C1, acc0:ARI-06, stat-hp:110, stat-spd:10, stat-res:10, stat-def:15, nameloc:hunt-monster-ercinee, gearfill:noboots, portrait:Portrait-Monster-ErcineeHunt, sprite:ErcineeHunt
+monster2=x:3, y:4, dir:lu, class:NIW-03, isaboss:true, variant:AER, variant:SYL, variant:WRD, counter:VAR-AER-C1, acc0:ARI-06, acc1:ABO-06, stat-hp:110, stat-spd:10, stat-res:10, stat-def:15, nameloc:hunt-monster-niwot, gearfill:noboots, portrait:Portrait-Monster-NiwotHunt, sprite:NiwotHunt
+
+bzil0=x:5, y:6, dir:ld, class:NIW-99, counter:NIW-99-C1, difficulty:1, nodifficulty:2
+bzil1=x:5, y:6, dir:ld, class:NIW-99, subclass:PHO-99, passive0:PHO-99-P1, passive1:PHO-99-P2, counter:NIW-99-C1, acc0:ARI-06, difficulty:2
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-02" NodeHash="D03">
+    <EncounterData>
+Loot=GUN-35
+Lootcount=3
+Loottable=25
+Stealtable=14
+PortraitUnlock=portraits-hunt-2
+LevelRange2=24,32
+LevelRange3=26,33
+
+zone0=8,3,6,1
+facing=lu
+center=9, 14
+MaxUnits=5
+
+monster0=x:8, y:17, dir:rd, class:BOL-03, isaboss:true, variant:AER, variant:HRN, variant:FER, counter:VAR-HRN-C1, acc0:ARI-06, stat-hp:180, stat-spd:20, stat-mnd:10, stat-atk:10, stat-res:40, stat-def:15, stat-jump:9, nameloc:miss-monster-female-name, behavior:killer, gearfill:noboots, sprite:BzzerkHunt, portrait:Portrait-Monster-BzzerkHunt, helmet:ABO-04
+monster1=x:11, y:15, dir:rd, class:TAN-01, variant:SPE, variant:GUA, counter:TAN-01-C1
+monster2=x:11, y:14, dir:lu, class:VAN-03, variant:DFT, variant:VEN, counter:VAR-DFT-C1
+
+monster3=x:6, y:17, dir:ru, class:NIW-02, variant:SYL, novariants:true, difficulty:1, nodifficulty:2
+monster4=x:6, y:17, dir:ru, class:NIW-02, variant:SYL, variant:SPE, difficulty:2
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-03" NodeHash="B30">
+    <EncounterData>
+Loot=SCY-36, BHE-36, ING-17
+Lootcount=3
+Loottable=30
+Stealtable=19
+SpecialHuntCode=children
+PortraitUnlock=portraits-hunt-3
+LevelRange5=40,48
+LevelRange6=40,48
+
+zone0=4,12,3,2
+facing=rd
+center=4,4
+MaxUnits=5
+
+story-hunter=x:5, y:11
+
+monster0=x:7, y:2, dir:lu, class:BLA-03, isaboss:true, variant:DRW, variant:ALP, variant:HRN, counter:BLA-02-C1, acc0:ARI-06, acc1:ABO-07, stat-hp:160, stat-spd:45, stat-res:45, stat-def:45, stat-mnd:60, gearfill:noboots, nameloc:hunt-monster-blardger, behavior:killer, portrait:Portrait-Monster-BlardgerHunt, sprite:BlardgerHuntEyes, spriteextra:BlardgerHuntHairPiece
+monster1=x:8, y:4, dir:lu, class:THE-03, variant:DFT, variant:HRN, counter:VAR-DFT-C1, acc0:ABO-07, stat-hp:150, stat-def:15, stat-res:15
+monster2=x:1, y:3, dir:lu, class:RAK-03, variant:COR, variant:SKE, counter:VAR-COR-C1, stat-hp:170, stat-def:25, stat-res:25, gearfill:noberserk
+;Weight to Boomerang Bounce
+monster3=x:8, y:1, dir:ru, class:KAW-03, variant:SKE, variant:DFT, counter:VAR-SKE-C1, stat-hp:80, stat-atk:25, stat-mnd:25, weight:KAW-02-A3|25, behavior:killer
+monster4=x:9, y:1, dir:ld, class:KAW-03, variant:SKE, variant:DFT, counter:VAR-SKE-C1, stat-hp:80, stat-atk:25, stat-mnd:25, weight:KAW-02-A3|25, behavior:killer
+
+;Sacks. Enemies will not actively target them unless Berserk, but they don't mind hitting them in an AoE in order to hit the player.
+monster5 =x:5, y:9, dir:rd, class:CHI-01, faction:player, stat-atk:-400, stat-spd:-400, nomove:true, variant:null, variant:null, nameloc:hunt-blardger-boyspeaker-name, acc0:false, acc1:false
+monster6 =x:6, y:7, dir:rd, class:CHI-01, faction:player, stat-atk:-400, stat-spd:-400, nomove:true, variant:null, variant:null, nameloc:hunt-blardger-boyspeaker-name, acc0:false, acc1:false
+monster7 =x:2, y:9, dir:rd, class:CHI-01, faction:player, stat-atk:-400, stat-spd:-400, nomove:true, variant:null, variant:null, nameloc:hunt-blardger-boyspeaker-name, acc0:false, acc1:false
+monster8 =x:4, y:6, dir:rd, class:CHI-01, faction:player, stat-atk:-400, stat-spd:-400, nomove:true, variant:null, variant:null, nameloc:hunt-blardger-boyspeaker-name, acc0:false, acc1:false
+monster9 =x:4, y:3, dir:rd, class:CHI-01, faction:player, stat-atk:-400, stat-spd:-400, nomove:true, variant:null, variant:null, nameloc:hunt-blardger-boyspeaker-name, acc0:false, acc1:false
+monster10=x:7, y:4, dir:rd, class:CHI-01, faction:player, stat-atk:-400, stat-spd:-400, nomove:true, variant:null, variant:null, nameloc:hunt-blardger-boyspeaker-name, acc0:false, acc1:false
+monster11=x:0, y:7, dir:rd, class:CHI-01, faction:player, stat-atk:-400, stat-spd:-400, nomove:true, variant:null, variant:null, nameloc:hunt-blardger-boyspeaker-name, acc0:false, acc1:false
+monster12=x:8, y:6, dir:rd, class:CHI-01, faction:player, stat-atk:-400, stat-spd:-400, nomove:true, variant:null, variant:null, nameloc:hunt-blardger-boyspeaker-name, acc0:false, acc1:false
+
+; Extra
+monster13=x:3, y:2, dir:lu, class:BUL-01, variant:THO, novariants:true, gearfill:nosleep, difficulty:1, nodifficulty:2
+
+; Elite
+monster14=x:3, y:2, dir:lu, class:BUL-02, variant:THO, variant:COR, gearfill:nosleep, gearfill:noberserk, difficulty:2
+
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-04" NodeHash="D01">
+    <EncounterData>
+Loot=ACO-06, ING-15
+Lootcount=3
+Loottable=33
+Stealtable=19
+SpecialHuntCode=malcubus
+PortraitUnlock=portraits-hunt-4
+LevelRange5=42,50
+LevelRange6=42,52
+
+;zone0=0,7,1,2
+nozone=true
+facing=ru
+center=8,8
+MaxUnits=2
+
+story-hero=x:1, y:7
+story-anadine=x:0, y:7
+
+; Normal
+monster0=x:10, y:10, dir:ld, class:MAL-03, isaboss:true, variant:SPE, variant:MYS, variant:MYC, counter:VAR-MYC-C1, nameloc:hunt-monster-malcubus, portrait:Portrait-Monster-MalcubusHunt, sprite:MalcubusHunt, gearfill:noboots, waitturns:1, stat-hp:170, stat-mnd:30, stat-atk:15, nodifficulty:2, generatedname:mal-boss
+monster1=x:10, y:9,  dir:ld, class:LORD, isaboss:true, variant:AER, variant:SHA, variant:COR, counter:VAR-AER-C1, nameloc:hunt-monster-raife, gearfill:noextra, weapon:MAC-10,shield:SHI-10,helmet:HLI-10,armor:BLI-15,acc0:ARI-06,acc1:ABO-07, stat-hp:150, stat-mnd:10, stat-atk:20, weight:VAR-SHA-A2|-30
+
+; Extra
+monster2=x:7, y:0, dir:lu, class:MAL-01, variant:SYL, variant:SCO, acc0:ARI-06, difficulty:1, nomonsterupgrade:true
+
+; Elite
+monster3=x:10, y:10, dir:ld, class:MAL-03, isaboss:true, variant:SPE, variant:MYS, variant:MYC, counter:VAR-MYC-C1, nameloc:hunt-monster-malcubus, portrait:Portrait-Monster-MalcubusHunt, sprite:MalcubusHunt, gearfill:noboots, waitturns:1, stat-hp:170, stat-mnd:30, stat-atk:15, difficulty:2, helmet:ACO-05, generatedname:mal-boss
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-05" NodeHash="B02">
+    <EncounterData>
+Loot=STF-35,BLI-35
+Lootcount=3
+Loottable=19
+Stealtable=10
+PortraitUnlock=portraits-hunt-5
+LevelRange2=16,21
+
+zone0=0,1,2,5
+facing=ru
+center=9,6
+MaxUnits=5
+
+human0=x: 9, y:3, dir:lu, class:KNIG, subclass:null, passive0:null, passive1:null, counter: KNIG-C1, abilities:1|3|2|3|2, noitems:true, nodifficulty: 2
+human1=x:10, y:3, dir:lu, class:KNIG, subclass:null, passive0:null, passive1:null, counter: KNIG-C1, abilities:1|3|2|3|2, noitems:true, nodifficulty: 2
+human2=x:11, y:3, dir:lu, class:KNIG, subclass:null, passive0:null, passive1:null, counter: KNIG-C1, abilities:1|3|2|3|2, noitems:true, nodifficulty: 2
+
+; Elite
+human5=x: 9, y:3, dir:lu, class:KNIG, difficulty: 2
+human6=x:10, y:3, dir:lu, class:KNIG, difficulty: 2
+human7=x:11, y:3, dir:lu, class:KNIG, difficulty: 2
+
+human3=x:9, y:7, dir:rd, class:DRUI, subclass:ALCH, passive0:ALCH-P1, passive1:ALCH-P2, counter: WIZA-C1, wptype:staff
+human4=x:10, y:5, dir:rd, class:DRUI, subclass:HEAL, passive0:HEAL-P1, passive1:HEAL-P2, counter: WIZA-C1, wptype:staff
+
+monster0=x:9, y:6, dir:ld,isaboss:true, class:DAO-03, variant:MYS, variant:WRD, variant:DRF, stat-hp:155, stat-spd:15, stat-mnd:10, stat-atk:20, stat-res:20, stat-def:20, counter:VAR-MYS-C1, acc0: ABO-05, acc1:ARI-06, acc2:ARI-36, nameloc:hunt-monster-daodrenner, behavior:alwaysoptimal, weightstyle:viciousdps, element-fire:50, waitturn:1, weight:VAR-DRF-A2|-40, portrait:Portrait-Monster-DaodrennerHunt, sprite:DaodrennerHunt
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-06" NodeHash="B11">
+    <EncounterData>
+Loot=MAC-35
+Lootcount=3
+Loottable=20
+Stealtable=11
+PortraitUnlock=portraits-hunt-6
+LevelRange2=19,25
+
+zone0=0,11,2,3
+facing=ru
+center=10,7
+MaxUnits=4
+
+monster0=x:10, y:7, dir:ld, class:RAK-03, isaboss:true, variant:COR, variant:VEN, variant:MYC, counter:VAR-MYC-C1, acc1:ARI-06, nameloc:hunt-monster-rakkerjak, behavior:killer, stat-hp:120, stat-spd:25, stat-def:30, stat-res:20, sprite:RakkerjakHunt, portrait:Portrait-Monster-RakkerjakHunt
+monster1=x:5, y:2, dir:lu, class:NIW-03, variant:GUA, variant:MYC, counter:VAR-GUA-C1, stat-hp:30, weighttarget:NIW-03-A4|40|monster0
+monster2=x:10, y:8, dir:ld, class:HAR-03, variant:AER, variant:MYS, counter:HAR-03-C1, stat-hp:30
+
+monster3=x:8, y:6, dir:ld, class:RAK-01, variant:SCO, novariants:true, difficulty:1, nodifficulty:2
+monster4=x:8, y:6, dir:ld, class:RAK-02, variant:SCO, variant:VEN, counter:VAR-MYC-C1, acc0:ARI-06, difficulty:2
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-07" NodeHash="B20">
+    <EncounterData>
+Loot=ABO-36
+Lootcount=3
+Loottable=25
+Stealtable=14
+PortraitUnlock=portraits-hunt-7
+LevelRange3=25,31
+
+objective=defeatleader
+zone0=0,0,2,1
+zone1=6,0,3,1
+facing=lu
+center=5,13
+MaxUnits=5
+
+; Normal
+monster0=x:4, y:16, dir:rd, class:BUL-03, isaboss:true, variant:ALP, variant:TYR, variant:CLO, counter:VAR-TYR-C1, acc0:ABO-05, acc1:ARI-39, stat-hp:180, stat-spd:20, stat-mnd:25, stat-atk:25, stat-res:15, stat-def:15, nameloc:hunt-monster-bulldrake, behavior:killer, waitturns:1, isaleader:100, sprite:bulldrakehunt, portrait:Portrait-Monster-BulldrakePolarHunt, nodifficulty:2
+monster1=x:2, y:13, dir:lu, class:BUL-02, variant:GUA, variant:SYL, counter:VAR-GUA-C1, stat-mnd:15, stat-atk:15, gearfill:nosleep, behavior:guardian, weightstyle:viciousdps, nodifficulty:1
+monster2=x:3, y:13, dir:lu, class:BUL-12, variant:WRD, variant:SYL, counter:VAR-WRD-C1, stat-mnd:15, stat-atk:15, gearfill:nosleep, nodifficulty:1, weightstyle:magicdps
+monster3=x:5, y:13, dir:lu, class:BUL-22, variant:GUA, variant:WRD, counter:VAR-GUA-C1, stat-mnd:15, stat-atk:15, gearfill:nosleep, behavior:guardian, nodifficulty:1, weightstyle:protector
+monster4=x:6, y:13, dir:lu, class:BUL-32, variant:DFT, variant:CLO, counter:VAR-CLO-C1, stat-mnd:15, stat-atk:15, gearfill:nosleep, weightstyle:viciousdps, nodifficulty:2
+
+; Extra
+monster6=x:2, y:13, dir:lu, class:BUL-02, variant:GUA, variant:SYL, counter:VAR-GUA-C1, stat-mnd:15, stat-atk:15, gearfill:nosleep, behavior:guardian, weightstyle:viciousdps, difficulty:1, helmet:ACO-03
+monster7=x:3, y:13, dir:lu, class:BUL-12, variant:WRD, variant:SYL, counter:VAR-WRD-C1, stat-mnd:15, stat-atk:15, gearfill:nosleep, difficulty:1, helmet:ACO-00, weightstyle:magicdps
+monster8=x:5, y:13, dir:lu, class:BUL-22, variant:GUA, variant:WRD, counter:VAR-GUA-C1, stat-mnd:15, stat-atk:15, gearfill:nosleep, behavior:guardian, difficulty:1, helmet:ACO-01, weightstyle:protector
+
+; Elite
+monster5=x:4, y:16, dir:rd, class:BUL-03, isaboss:true, variant:ALP, variant:TYR, variant:CLO, counter:VAR-TYR-C1, acc0:ABO-05, acc1:ARI-39, stat-hp:180, stat-spd:20, stat-mnd:25, stat-atk:25, stat-res:15, stat-def:15, nameloc:hunt-monster-bulldrake, behavior:killer, waitturns:1, isaleader:100, sprite:bulldrakehunt, portrait:Portrait-Monster-BulldrakePolarHunt, difficulty:2, helmet:ACO-03
+monster9=x:6, y:13, dir:lu, class:BUL-32, variant:DFT, variant:CLO, counter:VAR-CLO-C1, stat-mnd:15, stat-atk:15, gearfill:nosleep, weightstyle:viciousdps, difficulty:2, helmet:ACO-02
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-08" NodeHash="T10">
+    <EncounterData>
+Loot=STF-36
+Lootcount=2
+Loottable=24
+Stealtable=14
+ApBonusAll=250
+PortraitUnlock=portraits-hunt-8
+LevelRange3=25,31
+
+zone0=8,12,4,2
+facing=rd
+center=8,4
+MaxUnits=6
+
+story-reiner=x:11, y:11
+monster0=x:5,  y:2, dir:ru, class:PEK-03, isaboss:true, variant:CEL, variant:MYS, variant:WRD, counter:VAR-CEL-C1, acc0:ARI-06, acc1:ARI-13, stat-hp:110, stat-spd:10, stat-res:45, gearfill:noboots, nameloc:hunt-monster-water-pektite, sprite:pektiteWaterHunt, portrait:Portrait-Monster-PektiteWaterHunt, nodifficulty:2
+monster1=x:7,  y:2, dir:ld, class:PEK-13, isaboss:true, variant:DFT, variant:SPE, variant:SYL, counter:VAR-SYL-C1, acc0:ARI-06, acc1:ABO-08, stat-hp:110, stat-spd:10, stat-res:45, gearfill:noboots, nameloc:hunt-monster-fire-pektite, sprite:pektiteFireHunt, portrait:Portrait-Monster-PektiteFireHunt, nodifficulty:2
+monster2=x:9,  y:3, dir:lu, class:PEK-23, isaboss:true, variant:THO, variant:VEN, variant:ALP, counter:VAR-THO-C1, acc0:ARI-06, stat-hp:110, stat-spd:10, stat-res:45, gearfill:noboots, nameloc:hunt-monster-earth-pektite, sprite:pektiteEarthHunt, portrait:Portrait-Monster-PektiteEarthHunt, nodifficulty:2
+monster3=x:12, y:1, dir:lu, class:PEK-33, isaboss:true, variant:AER, variant:FER, variant:MYC, counter:VAR-FER-C1, acc0:ARI-06, stat-hp:110, stat-spd:10, stat-res:45, gearfill:noboots, nameloc:hunt-monster-thunder-pektite, weight:VAR-AER-A2|25, weight:VAR-FER-A1|15, sprite:pektiteLightningHunt, portrait:Portrait-Monster-PektiteLightningHunt, nodifficulty:2
+
+; Elite
+monster4=x:5,  y:2, dir:ru, class:PEK-03, isaboss:true, variant:CEL, variant:MYS, variant:WRD, counter:VAR-CEL-C1, acc0:ARI-06, acc1:ARI-13, stat-hp:110, stat-spd:10, stat-res:45, gearfill:noboots, nameloc:hunt-monster-water-pektite, sprite:pektiteWaterHunt, portrait:Portrait-Monster-PektiteWaterHunt, difficulty:2, helmet:ACO-03
+monster5=x:7,  y:2, dir:ld, class:PEK-13, isaboss:true, variant:DFT, variant:SPE, variant:SYL, counter:VAR-SYL-C1, acc0:ARI-06, acc1:ABO-08, stat-hp:110, stat-spd:10, stat-res:45, gearfill:noboots, nameloc:hunt-monster-fire-pektite, sprite:pektiteFireHunt, portrait:Portrait-Monster-PektiteFireHunt, difficulty:2, helmet:ACO-00
+monster6=x:9,  y:3, dir:lu, class:PEK-23, isaboss:true, variant:THO, variant:VEN, variant:ALP, counter:VAR-THO-C1, acc0:ARI-06, stat-hp:110, stat-spd:10, stat-res:45, gearfill:noboots, nameloc:hunt-monster-earth-pektite, sprite:pektiteEarthHunt, portrait:Portrait-Monster-PektiteEarthHunt, difficulty:2, helmet:ACO-01
+monster7=x:12, y:1, dir:lu, class:PEK-33, isaboss:true, variant:AER, variant:FER, variant:MYC, counter:VAR-FER-C1, acc0:ARI-06, stat-hp:110, stat-spd:10, stat-res:45, gearfill:noboots, nameloc:hunt-monster-thunder-pektite, weight:VAR-AER-A2|25, weight:VAR-FER-A1|15, sprite:pektiteLightningHunt, portrait:Portrait-Monster-PektiteLightningHunt, difficulty:2, helmet:ACO-02
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-09" NodeHash="T06" battlemap="shop01">
+    <EncounterData>
+Loot=ARI-35, ARI-38
+Lootcount=2
+Loottable=27
+Stealtable=16
+PortraitUnlock=portraits-hunt-9
+LevelRange3=31,38
+
+zone0=1,1,1,4
+zone1=0,2,1,2
+facing=ru
+center=10,3
+MaxUnits=5
+
+human0=x:13, y:2, dir:ld, class:LICH, subclass:UTIL, acc0:ARI-36, passive0:KNIG-P2, passive1:SORC-P1, counter:ALCH-C1, ai:healer, weightstyle:healer
+human1=x:9, y:7, dir:rd, class:GUNN, subclass:RANG, passive0:RANG-P1, passive1:FELL-P2, counter:RANG-C1
+human2=x:8, y:6, dir:rd, class:ROGU, subclass:null, passive0:null, passive1:null, counter: ROGU-C1, noitems:true, wptype:dagger, nodifficulty:2
+
+monster0=x:13, y:1, dir:ld, class:KAW-03, isaboss:true, variant:SKE, variant:ALP, variant:TYR, counter:VAR-SKE-C1, acc0:ARI-06, stat-hp:170, stat-spd:15, stat-res:25, stat-def:25, stat-atk:35, stat-mnd:35, gearfill:noboots, nameloc:hunt-monster-kawa, behavior:killer, weight:VAR-SKE-A1|-60, weight:VAR-SKE-A2|-99, portrait:Portrait-Monster-KawaHunt, sprite:kawahunt, noitems:true
+monster1=x:11, y:1, dir:ld, class:HHU-02, variant:SKE, variant:CLO, counter:VAR-SKE-C1, weight:VAR-SKE-A1|-60
+
+bzil0=x:14, y:0, dir:ld, class:UND-99, subclass:DAA-99, passive0:DAO-99-P2, passive1:VAN-99-P2, counter:THE-99-C1
+
+; Extra
+human3=x:9, y:0, dir:lu, class:GADG, subclass:null, passive0:null, passive1:null, counter: GADG-C1, difficulty:1
+
+; Elite
+human4=x:8, y:6, dir:rd, class:TEMP, difficulty:2
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-10" NodeHash="B25">
+    <EncounterData>
+Loot=GUN-37, HLI-36
+Lootcount=2
+Loottable=28
+Stealtable=18
+PortraitUnlock=portraits-hunt-10
+LevelRange3=33,39
+
+zone0=0,5,2,2
+zone1=0,8,2,1
+facing=ru
+center=8,4
+MaxUnits=4
+
+monster0=x:10, y:3, dir:ld, class:TAN-03, isaboss:true, variant:THO, variant:CEL, variant:CLO, counter:TAN-01-C1, acc0:ARI-06, acc1:ABO-07, stat-hp:200, stat-spd:20, stat-mnd:15, stat-atk:15, stat-res:10, stat-def:25, nameloc:hunt-monster-tangrel, gearfill:noboots, behavior:killer, portrait:Portrait-Monster-TangrelHunt, sprite:tangrelhunt
+monster1=x:8,  y:4, dir:ld, class:HHU-03, isaboss:true, variant:SPE, variant:SHA, variant:SCO, counter:VAR-SPE-C1, acc0:ARI-06, acc1:ABO-07, stat-hp:200, stat-spd:10, stat-res:25, stat-def:25, nameloc:hunt-monster-hellhund, gearfill:noboots, sprite:HelhundACHunt, portrait:Portrait-Monster-Helhund3Hunt
+
+; Extra
+monster2=x:10, y:7, dir:ld, class:PEK-12, variant:SYL, novariants:true, acc0:ARI-06, difficulty:1, nodifficulty:2
+
+; Elite
+monster3=x:10, y:7, dir:ld, class:PEK-13, variant:SYL, variant:SPE, acc0:ARI-06, difficulty:2
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-11" NodeHash="B18">
+    <EncounterData>
+Loot=BLI-36, CBO-36
+Lootcount=2
+Loottable=30
+Stealtable=19
+SpecialHuntCode=demons
+PortraitUnlock=portraits-hunt-11
+LevelRange4=39,47
+NewRecruits=RECRUIT-09, RECRUIT-10
+
+zone0=5,0,3,2
+facing=lu
+center=7,10
+MaxUnits=4
+
+monster0=x:6, y:9, dir:lu, class:DAA-02, variant:FER, variant:COR, faction:extra2, counter:VAR-COR-C1
+monster1=x:6, y:7, dir:rd, class:HRV-02, variant:THO, variant:AER, faction:extra2, counter:HRV-01-C1
+monster2=x:7, y:7, dir:rd, class:MAL-02, variant:SCO, variant:MYS, faction:extra2, counter:VAR-SCO-C1
+
+monster7=x:2, y:7, dir:rd, class:HAR-02, variant:SKE, novariants:true, acc0:ABO-05, faction:extra2, difficulty:1, nodifficulty:2
+monster8=x:2, y:7, dir:rd, class:HAR-03, variant:SKE, variant:AER, acc0:ABO-05, faction:extra2, difficulty:2
+
+; These will be spawned by the event itself, hardcoded, sadly.
+;monster3=x:6, y:13, dir:rd, class:DAA-03, isaboss:true, variant:CEL, variant:VEN, variant:MYC, counter:VAR-MYC-C1, stat-hp:185, stat-spd:25, stat-mnd:30, stat-atk:10, stat-res:25, stat-def:30, acc0: ABO-05, element-holy:50, nameloc:hunt-monster-archafflictor, portrait:Portrait-Monster-ArchafflictorHunt, sprite:ArchafflictorHunt
+;monster4=x:6, y:12, dir:rd, class:HRV-03, isaboss:true, variant:CEL, variant:HRN, variant:SKE, counter:VAR-CEL-C1, stat-hp:165, stat-spd:25, stat-mnd:20, stat-atk:20, stat-res:20, stat-def:25, acc0: ABO-05, element-holy:50, behavior:killer, nameloc:hunt-monster-harvester, sprite:HarvesterHunt, portrait:Portrait-Monster-HarvesterHunt
+;monster5=x:5, y:12, dir:rd, class:HAR-02, variant:CEL, variant:ALP, stat:hp:40, stat-def:10, stat-res:10, element-holy:50, counter:VAR-ALP-C1
+;monster6=x:7, y:12, dir:rd, class:MAL-02, variant:CEL, variant:DFT, stat-hp:40, element-holy:50, counter:VAR-CEL-C1
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-12" NodeHash="B08">
+    <EncounterData>
+Loot=BOW-37, ARI-41
+Lootcount=2
+Loottable=30
+Stealtable=19
+SpecialHuntCode=zotzits
+PortraitUnlock=portraits-hunt-12
+LevelRange4=39,47
+
+zone0=0,0,3,2
+facing=lu
+center=8,6
+MaxUnits=4
+
+; Normal
+monster0=x:7, y:9, dir:rd, class:ZOT-03, isaboss:true, variant:FER, variant:COR, variant:DRT, counter:VAR-SHA-C1, stat-hp:225, stat-spd:20, stat-mnd:20, stat-atk:30, stat-res:55, stat-def:35, element-thunder:50, nameloc:hunt-monster-zotzit, behavior:killer, weight:ZOT-01-A1, apbonus:150, sprite:zotzithunt, portrait:Portrait-Monster-ZotzitHunt, nodifficulty:2, generatedname:zot-queen
+monster1=x:3, y:6, dir:rd, class:ZOT-01, variant:VEN, variant:THO, counter:ZOT-01-C1, apbonus:50, nodifficulty:2
+monster2=x:9, y:7, dir:ld, class:ZOT-01, variant:SPE, variant:SCO, counter:ZOT-01-C1, apbonus:50, nodifficulty:2
+
+; Elite
+monster3=x:7, y:9, dir:rd, class:ZOT-03, isaboss:true, variant:FER, variant:COR, variant:DRT, counter:VAR-SHA-C1, stat-hp:225, stat-spd:20, stat-mnd:20, stat-atk:30, stat-res:55, stat-def:35, element-thunder:50, nameloc:hunt-monster-zotzit, behavior:killer, weight:ZOT-01-A1, apbonus:150, sprite:zotzithunt, portrait:Portrait-Monster-ZotzitHunt, difficulty:2, helmet:ACO-04, generatedname:zot-queen
+monster4=x:3, y:6, dir:rd, class:ZOT-03, variant:VEN, variant:THO, counter:ZOT-01-C1, apbonus:50, difficulty:2
+monster5=x:9, y:7, dir:ld, class:ZOT-02, variant:SPE, variant:SCO, counter:ZOT-01-C1, apbonus:50, difficulty:2
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-13" NodeHash="T11">
+    <EncounterData>
+Loot=ARI-39, GUN-36, ING-14
+Lootcount=2
+Loottable=26
+Stealtable=14
+LevelRange3=28,38
+LevelRange4=28,38
+PortraitUnlock=portraits-hunt-13
+
+zone0=3,12,2,3
+facing=ru
+center=15,14
+MaxUnits=4
+
+; Normal
+monster0=x:15, y:14, dir:ld, class:DRA-03, isaboss:true, variant:SPE, variant:COR, variant:SYL, counter:DRA-03-C1, stat-hp:150, stat-spd:25, stat-atk:35, stat-mnd:15, stat-def:25, stat-res:25, nameloc:hunt-monster-dragon, acc0:ARI-40, sprite:draekonhunt, portrait:Portrait-Monster-DraekonHunt
+monster1=x:13, y:11, dir:ld, class:DRA-01, variant:AER, variant:DFT, counter:VAR-DFT-C1, stat-hp:25, nomonsterupgrade:true
+monster2=x:11, y:6, dir:lu, class:RAK-02, variant:SCO, variant:DFT, counter:VAR-DFT-C1, ai:healer, stat-hp:25
+monster3=x:16, y:9, dir:ld, class:BUL-02, variant:AER, variant:COR, counter:VAR-AER-C1, difficulty:1, stat-hp:25
+; Elites
+bzil0=x:14, y:16, dir:ld, class:ZOT-99, subclass:DRA-99, passive0:DRA-99-P1, passive1:DRA-99-P2, counter:ZOT-99-C1, difficulty:2
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-14" NodeHash="D03">
+    <EncounterData>
+Loot=HCL-36
+Lootcount=3
+Loottable=27
+Stealtable=16
+LevelRange3=30,40
+LevelRange4=30,40
+PortraitUnlock=portraits-hunt-14
+
+zone0=6,16,6,1
+facing=rd
+center=13,7
+MaxUnits=4
+
+; Normal
+monster0=x:16, y:8, dir:ld, class:KNI-03, isaboss:true, variant:ALP, variant:HRN, variant:SKE, counter:KNI-03-C1, stat-hp:175, stat-spd:25, stat-atk:25, stat-def:25, stat-res:25, nameloc:hunt-monster-knifer, acc0:ARI-06, acc1:ABO-03, sprite:kniferhunt, portrait:portrait-monster-kniferhunt, spriteextra:kniferhuntblade
+monster1=x:17, y:10, dir:ld, class:KNI-01, variant:AER, variant:HRN, counter:TAN-01-C1, stat-hp:25, nomonsterupgrade:true
+monster2=x:12, y:5, dir:lu, class:PEK-02, variant:SYL, variant:MYS, counter:VAR-SYL-C1, stat-hp:25, ai:healer
+monster3=x:14, y:3, dir:lu, class:VAN-02, variant:SKE, variant:DRT, counter:VAN-01-C1, difficulty:1, stat-hp:25
+; Elites
+bzil0=x:11, y:6, dir:lu, class:BLA-99, subclass:KNI-99, passive0:KNI-99-P1, passive1:KNI-99-P2, counter:KNI-99-C1, difficulty:2
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="LARG-00" NodeHash="D04" isLargeBattle="true" isZoneCompletion="true">
+    <EncounterData>
+Loot=ARI-36, MAU-35
+Lootcount=2
+Loottable=13
+StealTable=8
+LevelRange0=7,11
+LevelRange1=9,14
+APBonusPercent=30
+GoldBonusPercent=25
+
+zone0=1,0,2,4
+zone1=3,0,2,2
+facing=ru
+center=11,9
+MaxUnits=9
+
+human0=x:14, y:4, dir:ld, class:GUNN, subclass:null, passive0:null, passive1:null, counter: GUNN-C1, abilities:1|3|3|1|2|1, noitems:true
+human1=x:12, y:13, dir:rd, class:RANG, subclass:null, passive0:null, passive1:null, counter: RANG-C1, abilities:1|3|1|3|2|1, wptype:bow, noitems:true
+human2=x:12, y:8, dir:ld, class:BLAD, subclass:null, passive0:null, passive1:null, counter: BLAD-C1, noitems:true, wptype:mace, weapon2:true, abilities:1|3|3|3|1
+human3=x:12, y:7, dir:ld, class:WIZA, subclass:null, passive0:null, passive1:null, counter: WIZA-C1, noitems:true
+human4=x:10, y:9, dir:rd, class:MERC, subclass:null, passive0:null, passive1:null, counter: MERC-C1, noitems:true, wptype:maul, weapon2:true
+human5=x:10, y:6, dir:lu, class:MERC, subclass:null, passive0:null, passive1:null, counter: MERC-C1, noitems:true, wptype:maul, weapon2:true
+human6=x:15, y:8, dir:ld, class:TEMP, subclass:ROGU
+human7=x:15, y:9, dir:ld, class:ALCH
+human8=x:15, y:7, dir:ld, class:DRUI
+human9=x:13, y:12, dir:ld, class:ROGU, wptype:crossbow, difficulty:1
+human10=x:8, y:15, dir:rd, class:UTIL, subclass:HEAL, passive0:DRUI-C2, passive1:GADG-P2, counter:WIZA-C1, difficulty:2
+
+
+monster0=x:2, y:11, dir:rd, class:HAR-01, variant:AER, variant:DFT, counter:VAR-DFT-01, customai:unlockcages
+monster1=x:3, y:11, dir:rd, class:HAR-01, variant:AER, variant:DFT, counter:VAR-DFT-01
+
+;These VANs are meant to be allied to whoever releases them from their cages. This can be used in any patrols/hunts/etc if player has DLC. Use 'customai:unlockcages' on an enemy to make him focus on opening the cages.
+cage-monster0=x:0, y:9, dir:ru, class:VAN-02, variant:ALP, variant:GUA, counter:VAR-THO-C1, apbonus:25
+cage-monster1=x:0, y:8, dir:ru, class:VAN-02, variant:CLO, variant:THO, counter:VAR-THO-C1, apbonus:25
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="LARG-01" NodeHash="B10" isLargeBattle="true" isZoneCompletion="true">
+    <EncounterData>
+Loot=ABO-35, SPR-35
+Lootcount=2
+Loottable=17
+StealTable=9
+LevelRange2=16,22
+APBonusPercent=30
+GoldBonusPercent=25
+
+zone0=16,5,3,4
+facing=ld
+center=7,5
+MaxUnits=9
+
+human0=x:6, y:10, dir:ru, class:KNIG, wptype:spear
+human1=x:6, y:9, dir:ru, class:MERC
+human2=x:7, y:1, dir:lu, class:ROGU, wptype:crossbow
+human3=x:2, y:10, dir:ru, class:RANG, wptype:bow
+human4=x:3, y:8, dir:ru, class:ALCH, passive0:HEAL-P2, wptype:staff
+human5=x:6, y:2, dir:ru, class:GUNN, subclass:RANG
+human6=x:8, y:10, dir:ru, class:BLAD, difficulty:1
+human7=x:5, y:0, dir:ru, class:HEAL, subclass:WIZA, passive0:WIZA-P1, passive1:WIZA-P2, counter:WIZA-C1, difficulty:2
+
+monster0=x:8, y:7, dir:ru, class:PHO-01, novariants:true
+monster1=x:8, y:5, dir:ru, class:PHO-01, novariants:true
+monster2=x:7, y:9, dir:ru, class:DAO-02
+monster3=x:6, y:4, dir:ru, class:DAO-02
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="LARG-02" NodeHash="D03" isLargeBattle="true" isZoneCompletion="true">
+    <EncounterData>
+Loot=ARI-37, BOW-36, DAG-35
+Lootcount=2
+Loottable=24
+StealTable=13
+LevelRange2=24,30
+LevelRange3=24,30
+APBonusPercent=30
+GoldBonusPercent=25
+
+zone0=8,15,2,1
+zone1=7,16,4,1
+zone2=15,8,1,2
+zone3=16,7,1,4
+facing=ld
+center=5,4
+MaxUnits=9
+
+monster0=x:5, y:7, dir:lu, class:TAN-01, variant:MYC, variant:VEN, counter:VAR-VEN-C1
+monster1=x:7, y:5, dir:ru, class:TAN-01, variant:MYC, variant:VEN, counter:VAR-MYC-C1
+monster2=x:5, y:4, dir:ru, class:HAR-02, variant:DEF, variant:WRD, counter:VAR-WRD-C1, leveldelta:3
+monster3=x:7, y:2, dir:lu, class:BOL-01, variant:AER, variant:DRE, counter:VAR-DRE-C1
+monster4=x:0, y:7, dir:ru, class:VAN-02, variant:MYC, variant:SKE, counter:VAR-SKE-C1
+monster5=x:0, y:6, dir:ru, class:VAN-02, variant:VEN, variant:SKE, counter:VAR-SKE-C1
+monster6=x:5, y:0, dir:ru, class:RAK-02, variant:SPE, variant:SCO
+monster7=x:6, y:0, dir:ld, class:RAK-02, variant:FER, variant:HRN
+monster8=x:3, y:6, dir:lu, class:HAR-01
+monster9=x:6, y:5, dir:ru, class:NIW-02, difficulty:1
+monster10=x:10, y:4, dir:ru, class:TAN-02, variant:CLO, variant:ALP, counter:VAR-CLO-C1, weightstyle:viciousdps, difficulty:2
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="LARG-03" NodeHash="T11" isLargeBattle="true" isZoneCompletion="true">
+    <EncounterData>
+Loot=AGL-35, MAC-36
+Lootcount=3
+Loottable=25
+StealTable=14
+LevelRange3=28,36
+APBonusPercent=30
+GoldBonusPercent=25
+
+;zone0=10,1,5,1
+;zone1=12,0,4,1
+;zone2=13,2,2,1
+zone0=2,1,6,1
+zone1=12,0,3,2
+facing=lu
+;center=10,5
+center=10,13
+MaxUnits=9
+
+human0=x:10, y:14, dir:rd, class:RANG, subclass:WARM, passive0:WARM-P1, passive1:WARM-P2, counter:SAMU-C1, wptype:bow
+human1=x:11, y:13, dir:rd, class:SMED, subclass:HEAL, passive0:WARM-P2, passive1:KNIG-P1, counter:RANG-C1, wptype:crossbow
+human2=x:5, y:12, dir:rd, class:SAMU, subclass:BEAS
+human3=x:4, y:11, dir:rd, class:BLAD, subclass:null, passive0:null, passive1:null, counter: BLAD-C1, noitems:true, wptype:mace, weapon2:true, abilities:1|3|3|3|1
+human4=x:4, y:14, dir:rd, class:GUNN
+human5=x:7, y:14, dir:rd, class:ALCH, passive0:HEAL-P2, wptype:staff
+human6=x:17, y:14, dir:rd, class:GADG, subclass:null, passive0:null, passive1:null, counter: GADG-C1, difficulty:1
+human7=x:16, y:12, dir:rd, class:DRUI, subclass:null, passive0:null, passive1:null, counter: DRUI-C1, noitems:true, wptype:staff
+human8=x:6, y:12, dir:rd, class:UTIL, subclass:HEAL, passive0:HEAL-P2, passive1:KNIG-P1, counter:GADG-C1, difficulty:2
+
+monster0=x:6, y:14, dir:rd, class:VAN-03, variant:AER, variant:CEL, acc0:ABO-07, gearfill:noboots, waitturns:1
+monster1=x:12, y:13, dir:rd, class:THE-03, variant:AER, variant:VEN, waitturns:1
+
+bzil0=x:7, y:10, dir:rd, class:BUL-99, subclass:RAK-99, passive0:PEK-99-P1, passive1:DAO-99-P2, counter:RAK-99-C1, gearfill:nosleep
+bzil1=x:8, y:16, dir:rd, class:HAR-99, subclass:PEK-99, passive0:VAN-99-P1, passive1:VAN-99-P2, counter:HAR-99-C1
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="LARG-04" NodeHash="D02" isLargeBattle="true" isZoneCompletion="true">
+    <EncounterData>
+Loot=BADG-13, BADG-12, ING-15, ING-15, ING-17, ING-17, ING-06, ING-06
+Lootcount=2
+; same tables as Cave03
+Loottable=40
+StealTable=24
+Poachtable=90
+LevelRange5=43,63
+LevelRange6=43,63
+APBonusPercent=30
+GoldBonusPercent=25
+UniqueGear=true
+
+
+zone0=15,0,3,4
+facing=ld
+center=5,9
+MaxUnits=9
+
+human0=x:6, y:16, dir:rd, class:LICH, subclass:PRIN, gender:female, passive0:WRAN-P1, passive1:PRIN-P1, counter:ALCH-C1, wptype:staff, behavior:alwaysoptimal, acc0:ARI-07, weight:LICH-A1|-25
+human1=x:5, y:16, dir:rd, class:DEMK, subclass:BEAS, wptype:mace, passive0:WRAN-P1, passive1:BEAS-P2, counter:BEAS-C1, acc0:ABO-05, weight:BEAS-A8|40, weight:BEAS-A-18|25, behavior:killer, wptype:scythe
+
+monster0=x:10, y:16, dir:rd, class:KAW-03, variant:SKE, variant:DFT, counter:VAR-SKE-C1, acc0:ABO-04, acc1:ACO-00
+monster1=x:11, y:14, dir:rd, class:DAA-03, variant:WRD, variant:MYS, counter:VAR-WRD-C1, acc0:ACO-05, difficulty:2
+monster2=x:5, y:11, dir:rd, class:MAL-03, variant:SPE, variant:MYC, counter:VAR-MYC-C1
+monster3=x:2, y:2, dir:ru, class:HRV-03, variant:THO, variant:CLO, counter:VAR-THO-C1, acc0:ACO-01
+monster4=x:1, y:9, dir:ru, class:MAL-03, variant:TYR, variant:FER, counter:VAR-FER-C1, weight:VAR-TYR-A1|-40
+monster5=x:4, y:7, dir:ru, class:HRV-03, variant:HRN, variant:COR, counter:VAR-COR-C1, acc0:ACO-01
+monster6=x:0, y:4, dir:ru, class:DAA-03, variant:SHA, variant:DRT, counter:VAR-DRT-C1, acc0:ACO-05
+monster7=x:17, y:16, dir:rd, class:ZOT-03, variant:SHA, variant:CLO, counter:VAR-SHA-C1, apbonus:150, acc0:ACO-04
+monster8=x:14, y:12, dir:rd, class:HRV-03, variant:DFT, variant:VEN, counter:VAR-DFT-C1, difficulty:1
+monster9=x:1, y:13, dir:ru, class:HHU-03, variant:SKE, variant:ALP, counter:HHU-02-C1, behavior:killer, acc0:ARI-07, acc1:ACO-06
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="LARG-05" NodeHash="T10" isLargeBattle="true">
+    <EncounterData>
+Loot=DAG-36, BCL-35, ARI-39, ARI-40, SPR-37
+Lootcount=1
+Loottable=27
+StealTable=16
+GoldBonus=4000
+LevelRange3=30,38
+APBonusPercent=30
+GoldBonusPercent=25
+color=brown
+
+zone0=0,6,2,3
+zone1=0,10,2,3
+facing=ru
+center=9,8
+MaxUnits=9
+
+human0=x:9, y:9, dir:ld, class:BEAS, subclass:WRAN, passive0:WRAN-P1, passive1:WRAN-P2, counter: BEAS-C1, behavior:alwaysoptimal
+human1=x:12, y:4, dir:ld, class:BEAS, subclass:WRAN, passive0:WRAN-P1, passive1:WRAN-P2, counter: BEAS-C1, behavior:alwaysoptimal
+human2=x:8, y:13, dir:rd, class:GUNN, subclass:null, passive0:null, passive1:null, counter: GUNN-C1, abilities:1|3|3|1|2|1, noitems:true
+human3=x:7, y:6, dir:ld, class:GADG, subclass:null, passive0:null, passive1:null, counter: GADG-C1
+human4=x:9, y:1, dir:lu, class:RANG, subclass:SAMU, passive0:WARM-P2, passive1:GAMB-P2, counter:RANG-C1, nameloc:miss-bandit-male-nickname, gender:male, stat-hp:140, acc0:ARI-06, behavior:killer, wptype:bow
+human5=x:9, y:3, dir:rd, class:MERC, subclass:null, passive0:null, passive1:null, counter: MERC-C1, noitems:true, wptype:maul, weapon2:true, gearfill:noboots
+human6=x:10, y:3, dir:rd, class:MERC, subclass:null, passive0:null, passive1:null, counter: MERC-C1, noitems:true, wptype:maul, weapon2:true, gearfill:noboots
+human7=x:11, y:8, dir:rd, class:UTIL, subclass:HEAL, passive0:KNIG-P1, passive1:HEAL-P2, counter: WIZA-C1, wptype:staff, weapon2:true
+
+monster0=x:9, y:8, dir:ld, class:VAN-03, variant:MYS, counter:VAR-MYS-C1
+monster1=x:12, y:5, dir:ld, class:KAW-02, variant:DFT, variant:SPD, counter:VAR-SPD-C1
+monster2=x:8, y:6, dir:ld, class:PEK-22, variant:VEN, variant:MYS, counter:VAR-VEN-C1, difficulty:1
+monster4=x:13, y:9, dir:ld, class:PHO-02, variant:CLO, variant:CEL, counter:VAR-CLO-C1, difficulty:2
+</EncounterData>
+  </Hunts>
+  <Recruits Hash="RECRUIT-00" Class="VAN-98" APBonusMain="100">
+    <Gear data="ABO-01" />
+  </Recruits>
+  <Recruits Hash="RECRUIT-01" Class="WRAN" Name="miss-wrangler-male-name" APBonusMain="50" Portrait="portrait-human-male-healer-coonskin">
+    <KnownJobs data="KNIG,ROGU,WIZA" />
+    <Outfit>
+      <mBody>darker</mBody>
+      <mHead>content</mHead>
+      <mEye>blue</mEye>
+      <mHair>longish</mHair>
+      <mHairColor>espresso</mHairColor>
+      <mBeard>friendlymuttonchops</mBeard>
+      <mBeardColor>espresso</mBeardColor>
+      <mHat>coonskin</mHat>
+      <mHatColor>blue</mHatColor>
+      <mOutfit>healer2</mOutfit>
+      <mOutfitColor>blue</mOutfitColor>
+      <mHatMatch>false</mHatMatch>
+      <mOutfiteMatch>false</mOutfiteMatch>
+    </Outfit>
+    <Gear data="SPR-04,HLI-03,BLI-03" />
+  </Recruits>
+  <Recruits Hash="RECRUIT-02" Class="BLAD" Name="lancaster" APBonusMult="0.15" APBonusMain="100" Portrait="portrait-human-male-warrior-backer21">
+    <KnownJobs data="KNIG,ROGU,WIZA,ALCH" />
+    <Outfit>
+      <mBody>darker</mBody>
+      <mHead>default</mHead>
+      <mEye>brown</mEye>
+      <mHair>buzzcut</mHair>
+      <mHairColor>espresso</mHairColor>
+      <mBeard>fullbeard</mBeard>
+      <mBeardColor>espresso</mBeardColor>
+      <mAcc>eyepatch</mAcc>
+      <mAccColor>brown</mAccColor>
+      <mOutfit>medarmor</mOutfit>
+      <mOutfitColor>brown</mOutfitColor>
+      <mHatMatch>false</mHatMatch>
+      <mOutfiteMatch>false</mOutfiteMatch>
+    </Outfit>
+    <Gear data="SWD-35,SHI-36,HHE-02,BHE-02" />
+  </Recruits>
+  <Recruits Hash="RECRUIT-03" Class="THE-98" APBonusMain="100">
+    <KnownJobs data="VAR-ALP" />
+    <Gear data="ARI-36" />
+  </Recruits>
+  <Recruits Hash="RECRUIT-04" Class="TAN-98" APBonusMain="150">
+    <KnownJobs data="VAR-ALP,VAR-VEN" />
+    <Gear data="ACO-01,ARI-14" />
+  </Recruits>
+  <Recruits Hash="RECRUIT-05" Class="NIW-98" APBonusMain="200">
+    <KnownJobs data="VAR-ALP,VAR-SCO,VAR-SKE" />
+    <Gear data="ACO-02,ARI-38" />
+  </Recruits>
+  <Recruits Hash="RECRUIT-06" Class="MAL-98" Name="miss-malcubus-name" APBonusMult="0.1" APBonusMain="250" NoDismiss="true">
+    <KnownJobs data="VAR-ALP,VAR-SCO,VAR-SKE,VAR-VEN,VAR-AER" />
+    <Gear data="ACO-05,ARI-06" />
+  </Recruits>
+  <Recruits Hash="RECRUIT-07" Class="MERC" Name="miss-super-female-recruit" Gender="1" Special="1" APBonusMult="1.25" APBonusMain="250" Portrait="portrait-human-female-mage-moorel">
+    <KnownJobs data="LICH,PRIN,SMED,WIZA,ROGU,BLAD,KNIG" />
+    <Outfit>
+      <mBody>medium</mBody>
+      <mHead>catscheming</mHead>
+      <mEye>gray</mEye>
+      <mHair>headbandcurls</mHair>
+      <mHairColor>brown</mHairColor>
+      <mHat>horns</mHat>
+      <mHatColor>green</mHatColor>
+      <mAcc>glasses</mAcc>
+      <mAccColor>green</mAccColor>
+      <mOutfit>paragon</mOutfit>
+      <mOutfitColor>grass</mOutfitColor>
+      <mHatMatch>false</mHatMatch>
+      <mOutfiteMatch>false</mOutfiteMatch>
+    </Outfit>
+    <Gear data="MAU-36" />
+  </Recruits>
+  <Recruits Hash="RECRUIT-08" Class="KAW-98" APBonusMult="0.15" APBonusMain="300">
+    <KnownJobs data="VAR-ALP,VAR-SCO,VAR-SKE,VAR-VEN,VAR-AER,VAR-SHA,VAR-TYR" />
+    <Gear data="ARI-42" />
+  </Recruits>
+  <Recruits Hash="RECRUIT-09" Class="DAA-98" Name="miss-archafflictor-name" APBonusMult="0.2" APBonusMain="400" NoDismiss="true">
+    <KnownJobs data="VAR-ALP,VAR-SCO,VAR-SKE,VAR-VEN,VAR-AER,VAR-WRD" />
+    <Gear data="ARI-38,ARI-05" />
+  </Recruits>
+  <Recruits Hash="RECRUIT-10" Class="HRV-98" Name="miss-harvester-name" APBonusMult="0.2" APBonusMain="400" NoDismiss="true">
+    <KnownJobs data="VAR-ALP,VAR-SCO,VAR-SKE,VAR-VEN,VAR-AER,VAR-TYR" />
+    <Gear data="ABO-36" />
+  </Recruits>
+</XMLMissions>

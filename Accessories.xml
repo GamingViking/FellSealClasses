@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XMLAccessories>
+  <Accessories HashName="ARI-43" Name="Trapped Soul" Desc="acc-ring-43" Icon="icon-component-10" MPTurn="6" Evasion="-6" Speed="-6" Special="kfTeleport kfFloat" Price="1" Tier="1">
+    <Health Values="-66 66"/>
+    <Stats Values="6 -6 6 -6"/>
+    <ElementalResist Values="-66 -66 -66 -66 66 -66"/>
+  </Accessories>
+</XMLAccessories>

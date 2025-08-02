@@ -373,3 +373,13 @@ SCOU-A5-desc={damage-single-opener} {add-negative-effect-closer}
 SCOU-A6=Explosive Canister
 SCOU-A6-desc={damage-aoe-opener}. The attack has reduced accuracy. If the attack hits, it will always be a {critical-hit}. 
 
+; ********************************
+; Deity
+; ********************************
+; Job
+GODP-Title	=Deity
+GODP-Ability=Omnipotence
+GODP-desc	=Surely this coudln't pose a balance problem.
+
+GODP-A1=No Survivors
+GODP-A1-desc=The name speaks for itself.

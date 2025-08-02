@@ -1,0 +1,6 @@
+; **********************
+; Accessories
+; **********************
+; Ring
+acc-ring-43         =Trapped Soul
+acc-ring-43-desc    =Tapping into the power of a soul brings both great cost and great reward (grants +6MP per turn).
