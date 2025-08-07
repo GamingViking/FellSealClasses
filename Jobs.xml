@@ -581,6 +581,58 @@
       </learnables>
       <Mastery spd="3" eva="1" elem="5" />
     </Job>
+    <Job ClassName="INDE" WeaponsType="kfScythe kfMaul" ArmorType="kfHeavy" BonusCrit="3" BaseMove="4" BaseJump="2" CanSwim="false" SpeedGrowth="0.75" BaseSpeed="101" Hat="horns" OutfitM="heavy" OutfitF="heavy">
+      <StatsGrowth Values="5.5 3.5 3.25 2.5" />
+      <HealthGrowth Values="7.5 1" />
+      <BaseStats Values="47 39 34 35" />
+      <HealthBase Values="84 15" />
+      <noVicariousGiven>true</noVicariousGiven>
+      <requirements>
+        <UnlockingRequirement ClassHash="DEMK" Level="6" />
+      </requirements>
+      <learnables>
+        <Tier>
+          <SkillTile Cost="0">
+            <AbilityHash>INDE-A1</AbilityHash>
+          </SkillTile>
+        </Tier>
+        <Tier>
+          <SkillTile Cost="150">
+            <AbilityHash>INDE-A2</AbilityHash>
+          </SkillTile>
+          <SkillTile Cost="150">
+            <AbilityHash>INDE-C1</AbilityHash>
+          </SkillTile>
+        </Tier>
+        <Tier>
+          <SkillTile Cost="250">
+            <AbilityHash>INDE-P1</AbilityHash>
+          </SkillTile>
+          <SkillTile Cost="250">
+            <AbilityHash>INDE-A3</AbilityHash>
+          </SkillTile>
+        </Tier>
+        <Tier>
+          <SkillTile Cost="225">
+            <AbilityHash>INDE-A4</AbilityHash>
+          </SkillTile>
+        </Tier>
+        <Tier>
+          <SkillTile Cost="250">
+            <AbilityHash>INDE-A5</AbilityHash>
+          </SkillTile>
+          <SkillTile Cost="250">
+            <AbilityHash>INDE-A6</AbilityHash>
+          </SkillTile>
+        </Tier>
+        <Tier>
+          <SkillTile Cost="400">
+            <AbilityHash>INDE-P2</AbilityHash>
+          </SkillTile>
+        </Tier>
+      </learnables>
+      <Mastery hp="10" atk="10" dark="10" />
+    </Job>
     <Job ClassName="GODP" WeaponsType="kfAll" ArmorType="kfAll" BaseJump="2" BonusEvasion="2" BonusCrit="5" SpeedGrowth="1.2" BaseSpeed="102" Hat="sage" OutfitM="Irdred" OutfitF="Irdra">
         <StatsGrowth Values="3.75 3.5 5.25 4.25" />
         <HealthGrowth Values="6 3" />
@@ -594,7 +646,7 @@
             </SkillTile>
           </Tier>
         </learnables>
-        <Mastery spd="50" />
+        <Mastery spd="50" hp="700"/>
     </Job>
   </jobs>
 </XMLJobs>

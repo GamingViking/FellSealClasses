@@ -371,7 +371,36 @@ SCOU-A5=Exposing Shot
 SCOU-A5-desc={damage-single-opener} {add-negative-effect-closer}
 
 SCOU-A6=Explosive Canister
-SCOU-A6-desc={damage-aoe-opener}. The attack has reduced accuracy. If the attack hits, it will always be a {critical-hit}. 
+SCOU-A6-desc={damage-cone-opener} at range. Also sets {eva} to 0 until the character's next turn.   
+
+; ********************************
+; Inner Demon
+; ********************************
+; Job
+INDE-Title	=Inner Demon
+INDE-Ability=Corruption
+INDE-desc	=Accepting the Maw's dark energy into them, these daring warriors move further along the path to demonhood, gaining abilities to affect and destroy the mind. They also become much more dangerous to attack. 
+
+INDE-A1=Soporific Bite
+INDE-A1-desc={damage-single-opener} {add-negative-effect-closer}
+
+INDE-A2=Seeing Red
+INDE-A2-desc={status-chance-neg-opener} in a line.
+
+INDE-A3=Unleash
+INDE-A3-desc={damage-single-opener}. The attack has reduced accuracy. If the attack hits, it will always be a {critical-hit}.
+
+INDE-A4=Soul Scream
+INDE-A4-desc={damage-basic-opener} and {power2} damage to {mp} in a cone. 
+
+INDE-A5=Lurid Lullaby
+INDE-A5-desc={status-chance-neg-opener} around the character.
+
+INDE-A6=Dream Eater
+INDE-A6-desc=Deals {power2ratio} {elem} ({dmgsource}) to a target inflicted with {status-sleep-icon}{negative-sleep} and absorbs the damage dealt.
+
+INDE-P1=Cruel Carapace
+INDE-P1-desc=Character has a permanent {addpositive} effect and is immune to {removenegative}.
 
 ; ********************************
 ; Deity

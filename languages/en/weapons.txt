@@ -25,7 +25,7 @@ wp-gun-44-desc      =Deals 50% more damage to enemies with full {hp}.
 
 ; Sword
 wp-swd-37           =Eviscerator
-wp-swd-37-desc      =An unwieldy but lethal blade (grants {addpositive} when using a Regular Attack).
+wp-swd-37-desc      =An unwieldy but lethal blade (-5 accuracy, grants {addpositive} when using a Regular Attack).
 
 ; Dagger
 wp-dag-37           =Wind Dancer
@@ -53,7 +53,7 @@ wp-mau-37-desc      =A weapon which calms the heart and aids the righteous, said
 
 ; Rapier
 wp-rap-38           =Maw's Tooth
-wp-rap-38-desc      =A true weapon of evil which taints the user (+5 accuracy), said to bolster one's <sprite name="icon-element-dark">Dark affinity.
+wp-rap-38-desc      =A true weapon of evil which weakens the user to the Maw's energy (+5 accuracy), said to bolster one's <sprite name="icon-element-dark">Dark affinity.
 
 ; Axe
 wp-axe-37           =Throwing Axe

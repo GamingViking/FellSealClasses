@@ -511,21 +511,71 @@
     </Reward>
     <Lock MissionHash="HUNT-02" />
   </Missions>
-  <Missions Hash="miss-90" Name="Strange Portal" Location="B02" CostCp="50" MaxRecruits="2" BaseSuccess="70" DurationInMins="1" Repeatable="false">
+  <Missions Hash="miss-90" Name="Strange Portal" Location="B02" CostCp="50" MaxRecruits="3" BaseSuccess="60" DurationInMins="25" Repeatable="false">
     <SuccessAdd data="ARCANE|30"/>
-    <Reward Ap="25" Exp="50" Gp="500" CanCrit="false">
+    <Reward Ap="50" Gp="1000" CanCrit="false">
         <Special Type="kItem" DataInt="1" DataString="GUN-38"/>
     </Reward>
   </Missions>
-  <Missions Hash="miss-91" Name="Strange Trail" Location="T04" CostCp="25" MaxRecruits="2" BaseSuccess="70" DurationInMins="1" Repeatable="false">
+  <Missions Hash="miss-91" Name="Strange Trail" Location="T04" CostCp="100" MaxRecruits="2" BaseSuccess="70" DurationInMins="30" Repeatable="false">
     <SuccessAdd data="TRACKING|30"/>
-    <Reward Ap="25" Exp="50" Gp="500" CanCrit="false">
+    <Reward Ap="25" Gp="1500" CanCrit="false">
         <Special Type="kItem" DataInt="1" DataString="GUN-39"/>
     </Reward>
     <Lock MissionHash="MISS-90" />
   </Missions>
+  <Missions Hash="miss-92" Name="Strange Stranger" Location="B18" CostCp="150" MaxRecruits="2" BaseSuccess="65" DurationInMins="40" Repeatable="false">
+    <SuccessAdd data="MARKSMAN|30"/>
+    <Reward Ap="25" Gp="2000" CanCrit="false">
+        <Special Type="kItem" DataInt="1" DataString="GUN-44"/>
+        <Special Type="kUnlockHunt" DataString="HUNT-15" />
+    </Reward>
+    <Lock MissionHash="MISS-91" />
+  </Missions>
+    <Missions Hash="miss-93" Name="Strange Finding" Location="B20" CostGp="40000" MaxRecruits="1" BaseSuccess="100" DurationInMins="25" Repeatable="false">
+    <Reward Ap="30" Cp="75" CanCrit="false">
+        <Special Type="kItem" DataInt="1" DataString="GUN-41"/>
+    </Reward>
+    <Lock MissionHash="HUNT-15" />
+  </Missions>
+  <Missions Hash="miss-94" Name="Strange Auction" Location="T11" CostGp="55000" MaxRecruits="1" BaseSuccess="100" DurationInMins="30" Repeatable="false">
+    <Reward Ap="35" Cp="100" CanCrit="false">
+        <Special Type="kItem" DataInt="1" DataString="GUN-42"/>
+    </Reward>
+    <Lock MissionHash="MISS-93" />
+  </Missions>
+  <Missions Hash="miss-95" Name="Strange Valuable" Location="B22" CostGp="80000" MaxRecruits="1" BaseSuccess="100" DurationInMins="35" Repeatable="false">
+    <Reward Ap="60" Cp="200" CanCrit="false">
+        <Special Type="kItem" DataInt="1" DataString="GUN-43"/>
+    </Reward>
+    <Lock MissionHash="MISS-94" />
+  </Missions>
+  <Missions Hash="miss-96" Name="Unearthed Treasure" Location="B18" CostCp="200" MaxRecruits="2" BaseSuccess="65" DurationInMins="35" Repeatable="false">
+    <SuccessAdd data="STEALTH|30"/>
+    <Reward Ap="50" Gp="3500" CanCrit="false">
+        <Special Type="kUnlockHunt" DataString="HUNT-16" />
+    </Reward>
+    <Lock Story="36" />
+  </Missions>
+  <Missions Hash="miss-97" Name="A Challenge" Location="B22" CostCp="400" MaxRecruits="2" BaseSuccess="55" DurationInMins="25" Repeatable="false">
+    <Reward Ap="40" Gp="5000" CanCrit="false">
+        <Special Type="kUnlockHunt" DataString="HUNT-17" />
+    </Reward>
+    <Lock MissionHash="HUNT-16" />
+  </Missions>
+  <Missions Hash="miss-98" Name="Fell Arbiter" Location="B25" CostCp="500" MaxRecruits="3" BaseSuccess="60" DurationInMins="35" Repeatable="false">
+    <SuccessAdd data="DARK|30,HOLY|30"/>
+    <Reward Ap="80" GP="7000" CanCrit="false">
+        <Special Type="kUnlockHunt" DataString="HUNT-18" />
+    </Reward>
+    <Lock Story="45" />
+  </Missions>
+  <Missions Hash="miss-99" Name="Get Smart" Location="B02" CostGp="5" MaxRecruits="5" BaseSuccess="100" DurationInMins="1">
+    <Reward Ap="10000" GP="5" CanCrit="false">
+    </Reward>
+  </Missions>
   <Zones Hash="zone-00" Name="Centina Hinterlands" SlotsX="3" SlotsY="3" LargeBattle="LARG-00">
-    <Missions data="miss-00,miss-01,miss-02,miss-03,miss-04,miss-05,miss-06,miss-07,miss-08,miss-09,miss-10,miss-11,miss-12,miss-13,miss-90,miss-91" />
+    <Missions data="miss-00,miss-01,miss-02,miss-03,miss-04,miss-05,miss-06,miss-07,miss-08,miss-09,miss-10,miss-11,miss-12,miss-13,miss-99" />
     <MapNodes data="B02,B03,T04,B04,B05,B06,B07,D04" />
     <ExcludedUpgrades data="upgr-23,upgr-20,upgr-22" />
   </Zones>
@@ -535,17 +585,17 @@
     <ExcludedUpgrades data="upgr-23,upgr-20,upgr-21" />
   </Zones>
   <Zones Hash="zone-02" Name="Zzakandia" SlotsX="4" SlotsY="3" NodeToOpen="T08" LargeBattle="LARG-02">
-    <Missions data="miss-33,miss-34,miss-35,miss-36,miss-37,miss-38,miss-39,miss-40,miss-41,miss-42,miss-43,miss-44,miss-45,miss-46,miss-79,miss-80,miss-88" />
+    <Missions data="miss-33,miss-34,miss-35,miss-36,miss-37,miss-38,miss-39,miss-40,miss-41,miss-42,miss-43,miss-44,miss-45,miss-46,miss-79,miss-80,miss-88,miss-90,miss-91,miss-92,miss-93" />
     <MapNodes data="B08,B14,B15,T09,B16,B18,B18.5,D03" />
     <ExcludedUpgrades data="upgr-23,upgr-20" />
   </Zones>
   <Zones Hash="zone-03" Name="Coast of Industry" SlotsX="4" SlotsY="3" NodeToOpen="B19" LargeBattle="LARG-03">
-    <Missions data="miss-47,miss-48,miss-49,miss-50,miss-51,miss-52,miss-53,miss-54,miss-55,miss-56,miss-57,miss-58,miss-81,miss-82,miss-87" />
+    <Missions data="miss-47,miss-48,miss-49,miss-50,miss-51,miss-52,miss-53,miss-54,miss-55,miss-56,miss-57,miss-58,miss-81,miss-82,miss-87,miss-94,miss-95,miss-96,miss-97" />
     <MapNodes data="B20,T10,T11,B21,T01,B01" />
     <ExcludedUpgrades data="upgr-23" />
   </Zones>
   <Zones Hash="zone-04" Name="Kawalands" SlotsX="3" SlotsY="3" LargeBattle="LARG-04">
-    <Missions data="miss-59,miss-60,miss-61,miss-62,miss-63,miss-64,miss-65,miss-66,miss-67,miss-68,miss-69,miss-70,miss-71,miss-72,miss-73,miss-74,miss-75,miss-76,miss-77,miss-78,miss-83,miss-84,miss-85,miss-86" />
+    <Missions data="miss-59,miss-60,miss-61,miss-62,miss-63,miss-64,miss-65,miss-66,miss-67,miss-68,miss-69,miss-70,miss-71,miss-72,miss-73,miss-74,miss-75,miss-76,miss-77,miss-78,miss-83,miss-84,miss-85,miss-86,miss-98" />
     <MapNodes data="B22,B23,B24,T12,B25,B26,D02" />
     <ExcludedUpgrades data="upgr-20" />
   </Zones>
@@ -715,37 +765,37 @@
     </Effect>
   </Upgrades>
   <Groups GroupName="TRACKING">
-    <Values data="ASSA,RANG,VAMP,WRAN,HRV,VAN" />
+    <Values data="ASSA,RANG,VAMP,WRAN,HRV,VAN,MONH" />
   </Groups>
   <Groups GroupName="ARCANE">
-    <Values data="WIZA,ALCH,LICH,SORC,SMED,DAA,PEK" />
+    <Values data="WIZA,ALCH,LICH,SORC,SMED,DAA,PEK,NECR" />
   </Groups>
   <Groups GroupName="WILDERNESS">
-    <Values data="RANG,DRUI,PEDD,WERE,WRAN,BEAS,REAV,HAR,BLA,DAO,SMED,NIW,VAN,RAK" />
+    <Values data="RANG,DRUI,PEDD,WERE,WRAN,BEAS,REAV,HAR,BLA,DAO,SMED,NIW,VAN,RAK,MONH,GEOM" />
   </Groups>
   <Groups GroupName="CITY">
-    <Values data="MERC,PEDD,ROGU,TEMP,LORD,VAMP,GADG,GAMB,UTIL,ASSA,KAW" />
+    <Values data="MERC,PEDD,ROGU,TEMP,LORD,VAMP,GADG,GAMB,UTIL,ASSA,KAW,DANC" />
   </Groups>
   <Groups GroupName="HEALING">
-    <Values data="HEAL,ALCH,PRIN,UTIL,DRUI,SMED,NIW,THE,VAN,DAO" />
+    <Values data="HEAL,ALCH,PRIN,UTIL,DRUI,SMED,NIW,THE,VAN,DAO,EXOR" />
   </Groups>
   <Groups GroupName="OFFENSIVE">
-    <Values data="WIZA,SORC,WARM,DRUI,LICH,PRIN,DAA,BUL,PHO,SMED,HHU,MAL,PEK,THE" />
+    <Values data="WIZA,SORC,WARM,DRUI,LICH,PRIN,DAA,BUL,PHO,SMED,HHU,MAL,PEK,THE,GEOM" />
   </Groups>
   <Groups GroupName="BRUTE">
-    <Values data="MERC,KNIG,REAV,BLAD,WERE,SAMU,BEAS,BLA,HHU,BOL,TAN,HRV" />
+    <Values data="MERC,KNIG,REAV,BLAD,WERE,SAMU,BEAS,BLA,HHU,BOL,TAN,HRV,EXOR,GLAD" />
   </Groups>
   <Groups GroupName="STEALTH">
     <Values data="ASSA,ROGU,VAMP,FELL,PEDD,RAK" />
   </Groups>
   <Groups GroupName="MARKSMANSHIP">
-    <Values data="GUNN,RANG,ZOT" />
+    <Values data="GUNN,RANG,ZOT,TIME" />
   </Groups>
   <Groups GroupName="REPAIR">
-    <Values data="GADG,GUNN" />
+    <Values data="GADG,GUNN,TIME" />
   </Groups>
   <Groups GroupName="DARK">
-    <Values data="LICH,DAA,MAL" />
+    <Values data="LICH,DAA,MAL,NECR,INFE" />
   </Groups>
   <Groups GroupName="HOLY">
     <Values data="PRIN,DAO,PHO,BLAD,HEAL" />
@@ -754,7 +804,7 @@
     <Values data="GAMB,ROGU,PEDD,KAW,ZOT,BUL" />
   </Groups>
   <Groups GroupName="CASTLES">
-    <Values data="KNIG,BLAD,LORD,PRIN,SAMU" />
+    <Values data="KNIG,BLAD,LORD,PRIN,SAMU,DANC" />
   </Groups>
   <Groups GroupName="FLYING">
     <Values data="HAR,PHO,MAL" />
@@ -1176,6 +1226,97 @@ monster2=x:12, y:5, dir:lu, class:PEK-02, variant:SYL, variant:MYS, counter:VAR-
 monster3=x:14, y:3, dir:lu, class:VAN-02, variant:SKE, variant:DRT, counter:VAN-01-C1, difficulty:1, stat-hp:25
 ; Elites
 bzil0=x:11, y:6, dir:lu, class:BLA-99, subclass:KNI-99, passive0:KNI-99-P1, passive1:KNI-99-P2, counter:KNI-99-C1, difficulty:2
+</EncounterData>
+  </Hunts>
+
+    <Hunts Hash="HUNT-15" NodeHash="B19">
+    <EncounterData>
+Loot=GUN-40,BADG-15
+Lootcount=3
+Loottable=27
+Stealtable=16
+LevelRange3=20,30
+
+zone0=9,0,2,1
+zone1=2,9,2,1
+facing=lu
+center=7,6
+MaxUnits=3
+
+; Normal
+human0=x:7, y:5, dir:ld, class:TIME, subclass:null, isaboss:true, passive0:HEAL-P1, passive1:SORC-P1, counter:TIME-C1, abilities:1|3|3|2|3|1, stat-hp:150, stat-spd:25, stat-mnd:25, stat-def:25, stat-res:25, gender:female, name:Ml'zina, weapon:GUN-40, acc0:ABO-07, acc1:ARI-06
+; Elites
+bzil0=x:4, y:5, dir:lu, class:BLA-99, subclass:KNI-99, passive0:KNI-99-P1, passive1:KNI-99-P2, counter:KNI-99-C1, acc0:ABO-07, difficulty:1
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-16" NodeHash="B16">
+    <EncounterData>
+Loot=DAG-37,STF-37,SPR-38,MAC-38,ROD-37,AXE-37
+Lootcount=3
+Loottable=27
+Stealtable=20
+LevelRange3=25,35
+
+zone0=0,8,2,2
+zone1=15,12,2,2
+facing=rd
+center=11,7
+MaxUnits=6
+
+; Normal
+human0=x:9, y:7, dir:lu, class:MONH, weapon:DAG-37
+human1=x:10, y:5, dir:ld, class:GEOM, weapon:STF-37
+human2=x:14, y:6, dir:ld, class:GLAD, weapon:SPR-38
+human3=x:8, y:5, dir:ld, class:INFE, weapon:MAC-38
+human4=x:12, y:6, dir:ld, class:DANC, weapon:ROD-37
+human5=x:12, y:8, dir:ld, class:BEAS, weapon:AXE-37
+; Elites
+bzil0=x:13, y:2, dir:ld, class:TAN-01, variant:MYC, variant:VEN, counter:VAR-MYC-C1, difficulty:1
+</EncounterData>
+  </Hunts>
+      <Hunts Hash="HUNT-17" NodeHash="B17">
+    <EncounterData>
+Loot=SWD-37,MAU-37,SHI-37,HCL-37,HHE-37
+Lootcount=3
+Loottable=27
+Stealtable=20
+LevelRange3=30,40
+
+zone0=1,1,2,2
+facing=ru
+center=7,3
+MaxUnits=2
+
+; Normal
+human0=x:7, y:2, dir:ld, class:WERE, subclass:FELL, isaboss:true, passive0:RANG-P1, passive1:ROGU-P2, counter:MERC-C1, abilities:1|3|2|3|1|3, subabilities:1|3|2|2|2|1, gender:female, name:Elsia, weapon:SWD-37, helmet:HCL-37, acc0:ARI-06, behavior:killer
+human1=x:10, y:0, dir:ld, class:EXOR, subclass:KNIG, noitems:true, passive0:KNIG-P1, passive1:MERC-P1, counter:EXOR-C1, abilities:1|1|3|3|3|3|1, subabilities:1|3|1|1|3, gender:male, name:Llerval, weapon:MAU-37, shield:SHI-37, helmet:HHE-37, acc0:ARI-06, behavior:guardian, weightstyle:protector
+; Elites
+monster0=x:10, y:3, dir:ld, class:TAN-01, variant:MYC, variant:VEN, counter:class:TAN-01-C1, difficulty:1
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-18" NodeHash="B28">
+    <EncounterData>
+Loot=RAP-38,ARI-43
+Lootcount=3
+Loottable=27
+Stealtable=20
+LevelRange3=35,45
+
+zone0=3,3,3,3
+facing=lu
+center=9,9
+MaxUnits=6
+
+; Normal
+human0=x:9, y:9, dir:rd, class:FARB, subclass:MARK, passive0:INFE-P2, passive1:NECR-P1, counter:FARB-C1, gender:female, name:Liana, stat-hp:700, weapon:RAP-38, acc0:ARI-43, acc1:ARI-06, armor:BCL-15
+monster0=x:3, y:10, dir:rd, class:MAL-01, variant:AER, variant:DFT, counter:VAR-DFT-01, armor:ACO-04
+monster1=x:11, y:3, dir:ld, class:MAL-01, variant:AER, variant:DFT, counter:VAR-DFT-01, armor:ACO-04
+monster2=x:6, y:9, dir:ld, class:UND-03
+monster3=x:9, y:5, dir:ld, class:UND-03
+monster4=x:2, y:4, dir:ru, class:UND-01
+monster5=x:4, y:1, dir:lu, class:UND-01
+; Elites
+monster6=x:9, y:7, dir:ld, class:MAL-03, variant:SKE, variant:ALP, counter:VAR-DFT-01, name:Void Pet, acc0:ARI-07, armor:ACO-06, difficulty:2
 </EncounterData>
   </Hunts>
   <Hunts Hash="LARG-00" NodeHash="D04" isLargeBattle="true" isZoneCompletion="true">

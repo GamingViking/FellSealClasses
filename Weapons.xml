@@ -16,13 +16,13 @@
         <Stats Values="50 -30 62 0" />
     </Weapons>
     <Weapons HashName="GUN-43" Name="X-Amplifier" Desc="wp-gun-43" Icon="icon-gadget-12" Type="gun" SpellRange="2" PositiveEffectsAdd="kfAffinity_Thunder" PositiveBuffTrigger="kBuffs" Price="5" Tier="1" Element="kThunder" WeaponSprite="Hu-Ma-Fe-Sword@Rod02" Range="1" EffectExtra="3">
-        <Stats Values="0 -10 72 0" />
+        <Stats Values="0 -10 73 0" />
         <ElementalResist Values="0 0 0 100 0 0" />
     </Weapons>
     <Weapons HashName="GUN-44" Name="X-Ambusher" Desc="wp-gun-44" Icon="icon-gadget-05" Type="gun" Price="6" Tier="1" WeaponSprite="Hu-Ma-Fe-Gun@Gun08" Speed="2" Range="7" Height="8" HpFullBonus="50" NegativeEffectsGive="kfCripple kfRoot" NegativeEffectsGiveChance="15">
         <Stats Values="50 -5 50 0" />
     </Weapons>
-    <Weapons HashName="SWD-37" Name="Eviscerator" Desc="wp-swd-37" Icon="icon-sword-16" Type="sword" PositiveEffectsAdd="kfCritUp" PositiveBuffTrigger="kBuffsOnRegulars" Critical="13" Price="5" Tier="1" WeaponSprite="Hu-Ma-Fe-Sword@Sword16" Evasion="-8" Height="1.5" >
+    <Weapons HashName="SWD-37" Name="Eviscerator" Desc="wp-swd-37" Icon="icon-sword-16" Type="sword" PositiveEffectsAdd="kfCritUp" PositiveBuffTrigger="kBuffsOnRegulars" Critical="13" Price="5" Tier="1" WeaponSprite="Hu-Ma-Fe-Sword@Sword16" BonusAcc="-5" Height="1.5" >
         <Stats Values="86 -16 0 0" />
     </Weapons>
     <Weapons HashName="DAG-37" Name="Wind Dancer" Desc="wp-dag-37" Icon="icon-dagger-09" Type="dagger" PositiveEffectsAdd="kfFleetOfFoot" PositiveBuffTrigger="kBuffsOnFlankingRegulars" Move="1" Jump="2" Critical="3" Evasion="3" Price="5" Tier="1" WeaponSprite="Hu-Ma-Fe-Sword@Dagger09" >
@@ -46,8 +46,8 @@
         <Stats Values="120 0 0 0"/>
     </Weapons>
     <Weapons HashName="RAP-38" Name="Maw's Tooth" Desc="wp-rap-38" Icon="icon-rapier-35" IsDLCIcon="true" Type="rapier" BonusAcc="5" elementalBonus="kfDark" Element="kDark" Price="1" Tier="1" WeaponSprite="Hu-Ma-Fe-Spear@Rapier35" Height="1.5">
-        <Stats Values="84 0 38 -8"/>
-        <ElementalResist Values="0 0 0 0 -25 0"/>
+        <Stats Values="106 0 48 -20"/>
+        <ElementalResist Values="0 0 0 0 70 -30"/>
     </Weapons>
     <Weapons HashName="AXE-37" Name="Throwing Axe" Desc="wp-axe-37" Icon="icon-axe-06" Type="axe" Price="3" Tier="1" PosStyle="kLine" WeaponSprite="Hu-Ma-Fe-Sword@Axe06" Range="3" Height="2.5">
         <Stats Values="118 -33 0 0"/>
