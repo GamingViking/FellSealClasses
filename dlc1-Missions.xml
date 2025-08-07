@@ -1269,7 +1269,7 @@ human1=x:10, y:5, dir:ld, class:GEOM, weapon:STF-37
 human2=x:14, y:6, dir:ld, class:GLAD, weapon:SPR-38
 human3=x:8, y:5, dir:ld, class:INFE, weapon:MAC-38
 human4=x:12, y:6, dir:ld, class:DANC, weapon:ROD-37
-human5=x:12, y:8, dir:ld, class:BEAS, weapon:AXE-37
+human5=x:12, y:8, dir:ld, class:MART, weapon:AXE-37
 ; Elites
 bzil0=x:13, y:2, dir:ld, class:TAN-01, variant:MYC, variant:VEN, counter:VAR-MYC-C1, difficulty:1
 </EncounterData>

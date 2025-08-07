@@ -1,6 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <XMLJobs>
   <jobs>
+  <Job ClassName="MART" WeaponsType="kfSword kfAxe kfMace kfSpear" ArmorType="kfRobes kfClothHelmet kfLightArmor kfLightHelmet kfShield" BonusCrit="2" BaseMove="4" BonusEvasion="3" SpeedGrowth="1.15" BaseSpeed="100" Hat="tempest" OutfitM="reaver" OutfitF="reaver">
+      <StatsGrowth Values="4.3 3.8 3.5 3.7"/>
+      <HealthGrowth Values="7 2"/>
+      <BaseStats Values="43 38 38 37"/>
+      <HealthBase Values="80 16"/>
+      <requirements>
+        <UnlockingRequirement ClassHash="MERC" Level="6"/>
+      </requirements>
+      <learnables>
+      <Tier>
+        <SkillTile Cost="0">
+          <AbilityHash>MART-A1</AbilityHash>
+          <AbilityHash>MART-A2</AbilityHash>
+          <AbilityHash>MART-A3</AbilityHash>
+        </SkillTile>
+      </Tier>
+      <Tier>
+        <SkillTile Cost="150">
+          <AbilityHash>MART-A7</AbilityHash>
+        </SkillTile>
+        <SkillTile Cost="150">
+          <AbilityHash>MART-A8</AbilityHash>
+        </SkillTile>
+      </Tier>
+      <Tier>
+        <SkillTile Cost="200">
+          <AbilityHash>MART-A4</AbilityHash>
+        </SkillTile>
+        <SkillTile Cost="200">
+          <AbilityHash>MART-P1</AbilityHash>
+        </SkillTile>
+      </Tier>
+      <Tier>
+        <SkillTile Cost="200">
+          <AbilityHash>MART-A5</AbilityHash>
+        </SkillTile>
+        <SkillTile Cost="200">
+          <AbilityHash>MART-A9</AbilityHash>
+        </SkillTile>
+      </Tier>
+      <Tier>
+        <SkillTile Cost="200">
+          <AbilityHash>MART-C1</AbilityHash>
+        </SkillTile>
+        <SkillTile Cost="250">
+          <AbilityHash>MART-A10</AbilityHash>
+        </SkillTile>
+      </Tier>
+      <Tier>
+        <SkillTile Cost="200">
+          <AbilityHash>MART-A6</AbilityHash>
+        </SkillTile>
+        <SkillTile Cost="250">
+          <AbilityHash>MART-A11</AbilityHash>
+        </SkillTile>
+      </Tier>
+      <Tier>
+        <SkillTile Cost="300">
+          <AbilityHash>MART-P2</AbilityHash>
+        </SkillTile>
+      </Tier>
+      </learnables>
+      <Mastery hp="5" atk="5" spd="3"/>
+    </Job>
     <Job ClassName="MONH" WeaponsType="kfDagger kfSword kfSpear kfRapier" ArmorType="kfLightArmor kfLightHelmet" BonusCrit="2" BaseMove="4" BaseJump="5" BonusEvasion="4" SpeedGrowth="1.2" BaseSpeed="104" Hat="gadgeteer" OutfitM="medarmor" OutfitF="medarmor">
         <StatsGrowth Values="4 3.7 3.2 3.7" />
         <HealthGrowth Values="6 2" />
@@ -643,6 +707,11 @@
             <SkillTile Cost="0">
               <AbilityHash>GODP-A1</AbilityHash>
               <AbilityHash>GODP-P1</AbilityHash>
+            </SkillTile>
+          </Tier>
+          <Tier>
+            <SkillTile Cost="0">
+              <AbilityHash>GODP-A2</AbilityHash>
             </SkillTile>
           </Tier>
         </learnables>

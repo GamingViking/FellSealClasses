@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <XMLAbilities>
   <active>
+   <Ability HashName="MART-A1" Name="Martial Strike" MpCost="4" MinRange="1" Power="0.85" SpellType="kSkill" DmgSource="kAtkMixed">
+      <PetEffect PetHash="petniwot" Monster="NIW"/>
+    </Ability>
+    <Ability HashName="MART-A2" EffectHash="BLAD-A4" Name="Focus Qi" MpCost="6" Range="0" RangeHeight="5" ZoneHeight="2.5" Power2="1" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpellType="kNothing" SpecialEffect="kRandomBuffPerPower2" SpecialEffect2="kNextActionIs100">
+      <PetEffect PetHash="petniwot" Monster="NIW"/>
+    </Ability>
+    <Ability HashName="MART-A3" EffecHash="KNIG-A6" Name="Pressure Point" MpCost="6" MinRange="1" SpecialEffect="kFourthCurrentHealth" AddNegativeEffects="kfWeaken" AddNegativeEffectsBaseChance="55">
+      <PetEffect PetHash="petniwot" Monster="NIW"/>
+    </Ability>
+    <Ability HashName="MART-A4" Name="Feint" MpCost="4" MinRange="1" Power="0.4" Power3="0.5" SpellType="kSkill" AddNegativeEffects="kfDefDown" AddNegativeEffectsBaseChance="50" ExtraFlags="kGivesQuickTurnFrowPower3">
+      <PetEffect PetHash="petniwot" Monster="NIW"/>
+    </Ability>
+    <Ability HashName="MART-A5" EffectHash="KNIG-A1" Name="Block" Range="0" MpCost="4" Power="0.5" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpecialEffect="kDefend" SpellType="kSkill" ExtraFlags="kIsNotPrimarilyHealing">
+      <PetEffect PetHash="petniwot" Monster="NIW"/>
+    </Ability>
+    <Ability HashName="MART-A6" EffecHash="VAR-SPE-A1" Name="Swift Strike" MpCost="4" MinRange="1" Power="0.9" Element="kWeapon" DmgSource="kSpd" SpecialEffect2="kIsTreatedAsRegularAttack" SpellType="kSkill">
+      <PetEffect PetHash="petniwot" Monster="NIW"/>
+    </Ability>
+    <Ability HashName="MART-A7" EffectHash="WERE-A3" Name="Finisher - Eagle" MpCost="10" MinRange="1" Range="2" RangeHeight="3" Size="3" Power2="1.15" Shape="kCross" SpecialEffect="kRangeUpPerPetDamageUpPerPower2" SpecialEffect2="kPetDismiss" SpellType="kSkill" ExtraFlags="kTargetsGround kIgnoreSelfAsTarget kCannotTargetWater kIgnoreSides kGroundNeedsTarget kStoreDestination"/>
+    <Ability HashName="MART-A8" EffectHash="LORD-A2" Name="Finisher - Flail" MpCost="12" MinRange="1" Range="1" RangeHeight="1" Size="2" Power2="0.75" Shape="kCone" DmgSource="kAtkMixed" SpellType="kSkill" SpecialEffect2="kPetDismissAndDamageUpPerPower2" AddNegativeEffects="kfAtkDown" AddNegativeEffectsBaseChance="75"/>
+    <Ability HashName="MART-A9" EffectHash="NIW-02-A2" Name="Finisher - Qi Blast" MpCost="12" MinRange="1" Range="1" RangeHeight="1" Size="3" Power2="0.85" Shape="kVLine" Element="kNone" DmgType="kMagical" SpecialEffect="kBypassCounters" SpecialEffect2="kPetDismissAndDamageUpPerPower2"/>
+    <Ability HashName="MART-A10" EffectHash="FELL-A1" Name="Finisher - Scorpion" MpCost="14" MinRange="1" Range="2" Power2="1" PosStyle="kLine" SpecialEffect="kRandomDebuffPerPower2" SpecialEffect2="kPetDismissAndDamageUpPerPower2" ConditionalPositiveEffects="kfHaste" SpellType="kSkill" AddNegativeEffectsBaseChance="100"/>
+    <Ability HashName="MART-A11" EffectHash="BHUN-A4" Name="Finisher - Shadow" MpCost="18" MinRange="1" Power2="1.3" Element="kWeapon" SpecialEffect="kSelfBuffOnKill" SpecialEffect2="kPetDismissAndDamageUpPerPower2" ConditionalPositiveEffects="kfHaste kfMirage" SpellType="kSkill"/>
+
     <Ability HashName="MONH-A1" Name="Hook Leap" EffectHash="WERE-A3" MinRange="1" Range="3" RangeHeight="9" SpellType="kSkill" ExtraFlags="kTargetsGround kCannotTargetWater kStoreDestination" />
     <Ability HashName="MONH-A2" Name="Grapple Thrust" EffectHash="EXIL-A2" MinRange="1" Range="1" RangeHeight="7" Size="4" Power="0.9" Shape="kCharge" SpecialEffect2="kIsTreatedAsRegularAttack" SpellType="kSkill" ExtraFlags="kIgnoresCover" />
     <Ability HashName="MONH-A3" Name="Caltrops" EffectHash="KAW-03-A4" TrapEffect="TRAP-BLAZE" TrapSpell="WORK-TRAP-CALTROP" MinRange="1" Range="3" Size="3" Power="0.5" Shape="kHline" SpecialEffect="kAddsTrapOnRandomSpace" SpellType="kSkill" />
@@ -100,8 +124,11 @@
 
 
     <Ability HashName="GODP-A1" Name="No Survivors" MpCost="1" Range="0" RangeHeight="1" Power="-999" Shape="kAllEnemies" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpellType="kNothing" SpecialEffect="kScaleWithProximity" ExtraFlags="kFixedDamage" />
+    <Ability HashName="GODP-A2" EffectHash="WRAN-A1" Name="Super Tame" MpCost="2" MinRange="1" Range="30" RangeHeight="25" Power="50" Element="kNone" SpecialEffect="kMonsterTame" SpecialEffect2="kPerfectAccuracy" SpellType="kSkill" ExtraFlags="kNoAIUse kNoFF kIgnoreSides kIgnoresCover kOnlyWorksOnMonsters"/>
   </active>
   <passive> 
+    <Ability HashName="MART-P1" Name="No Flank" CopyFrom="KNIG-P1"/>
+    <Ability HashName="MART-P2" Name="Impetus" CopyFrom="BHUN-P2"/>
     <Ability HashName="MONH-P1" Name="Quick Fingers" CopyFrom="PEDD-P1" />
     <Ability HashName="MONH-P2" Name="Stampede" CopyFrom="BOL-01-P1" />
     <Ability HashName="DANC-P1" Name="Shifting Target" CopyFrom="ZOT-02-P1" />
@@ -128,6 +155,7 @@
 
   </passive>
   <counter>
+    <Ability HashName="MART-C1" Name="Scar Tissue" CopyFrom="TAN-01-C1"/>
     <Ability HashName="MONH-C1" Name="Pounce" CopyFrom="HHU-02-C1" />
     <Ability HashName="DANC-C1" Name="Critical: Mirage" CopyFrom="ASSA-C1" />
     <Ability HashName="NECR-C1" Name="Weaken" CopyFrom="HAR-03-C1" />
