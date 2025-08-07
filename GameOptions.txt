@@ -20,3 +20,95 @@
 
 ; NOTE:
 ; It is recommended to only change the values you want modified in here, rather than copying whole blocks from GameOptions.txt, to limit the chances of our own updates to GameOptions.txt being overriden by stale values.
+
+
+[AI-StrongAbilities]
+NECR-A7
+GEOM-A7
+
+[AI-WeigthPresetPerClass]
+; base
+MONH=trapper
+DANC=debuffer
+NECR=raiser,dps
+GEOM=magicdps
+INFE=debuffer
+EXOR=healer,dps,visciousdps
+GLAD=dpsdebuffer,protector
+
+[npc-counters]
+GLAD-C1=16 ; Repel
+GEOM-C1=20 ; Nature's Revenge
+NECR-C1=24 ; Weaken
+MART-C1=28 ; Scar Tissue
+
+[npc-passives-melee]
+GLAD-P1=16 ; Retaliation
+NECR-P1=18 ; Exsanguinate
+INFE-P2=22 ; Strong Body
+GLAD-P2=22 ; Holistic Defense
+MONH-P1=24 ; Stampede
+DANC-P2=26 ; Harrier
+
+[npc-passives-range]
+GEOM-P2=20 ; Manaburn
+INFE-P1=20 ; Opportunist II
+DANC-P1=22 ; Shifting Target
+MONH-P1=26 ; Stampede
+DANC-P2=30 ; Harrier
+
+[npc-passives-magic]
+GEOM-P1=16 ; Submariner
+GEOM-P2=18 ; Manaburn
+INFE-P1=20 ; Opportunist II
+NECR-P2=22 ; Minion Master
+MONH-P2=26 ; Stampede
+MART-P2=28 ; Impetus
+
+[npc-passives-healer]
+GLAD-P2=14 ; Holistic Defense
+GEOM-P1=16 ; Submariner
+EXOR-P1=18 ; Healing Touch
+DANC-P1=18 ; Shifting Target
+
+[npc-class-melee]
+MART=5
+GLAD=11
+
+[npc-class-magic]
+GEOM=17
+
+[npc-class-healer]
+EXOR=18
+
+[npc-class-hybrid]
+DANC=18
+INFE=22
+NECR=26
+
+[npc-class-trapper]
+MONH=1
+
+[npc-healer-count]
+EXOR=0.75
+
+[npc-subclass-all]
+MONH=14
+DANC=12
+MART=28
+NECR=26
+GEOM=15
+INFE=18
+EXOR=24
+GLAD=11
+
+[AmbientLootTable-40]
+fixeddrop0=BADG-15, 0.25
+
+[AmbientLootTable-46]
+fixeddrop0=BADG-15, 0.5
+
+[StealGroups]
+Fighter	=MART, INFE, EXOR, GLAD
+Rogue	=MONH
+Caster	=DANC, NECR, GEOM

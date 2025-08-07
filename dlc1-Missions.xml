@@ -1289,7 +1289,7 @@ MaxUnits=2
 
 ; Normal
 human0=x:7, y:2, dir:ld, class:WERE, subclass:FELL, isaboss:true, passive0:RANG-P1, passive1:ROGU-P2, counter:MERC-C1, abilities:1|3|2|3|1|3, subabilities:1|3|2|2|2|1, gender:female, name:Elsia, weapon:SWD-37, helmet:HCL-37, acc0:ARI-06, behavior:killer
-human1=x:10, y:0, dir:ld, class:EXOR, subclass:KNIG, noitems:true, passive0:KNIG-P1, passive1:MERC-P1, counter:EXOR-C1, abilities:1|1|3|3|3|3|1, subabilities:1|3|1|1|3, gender:male, name:Llerval, weapon:MAU-37, shield:SHI-37, helmet:HHE-37, acc0:ARI-06, behavior:guardian, weightstyle:protector
+human1=x:10, y:0, dir:ld, class:EXOR, subclass:KNIG, noitems:true, passive0:KNIG-P1, passive1:MERC-P1, counter:EXOR-C1, abilities:1|1|3|3|3|3|1, subabilities:1|3|1|1|3, gender:male, name:Llerval, weapon:MAU-37, shield:SHI-37, helmet:HHE-37, acc0:ARI-06, behavior:guardianall, weightstyle:protector
 ; Elites
 monster0=x:10, y:3, dir:ld, class:TAN-01, variant:MYC, variant:VEN, counter:class:TAN-01-C1, difficulty:1
 </EncounterData>
@@ -1301,6 +1301,7 @@ Lootcount=3
 Loottable=27
 Stealtable=20
 LevelRange3=35,45
+color=black
 
 zone0=3,3,3,3
 facing=lu
@@ -1308,7 +1309,7 @@ center=9,9
 MaxUnits=6
 
 ; Normal
-human0=x:9, y:9, dir:rd, class:FARB, subclass:MARK, passive0:INFE-P2, passive1:NECR-P1, counter:FARB-C1, gender:female, name:Liana, stat-hp:700, weapon:RAP-38, acc0:ARI-43, acc1:ARI-06, armor:BCL-15
+human0=x:9, y:9, dir:rd, class:FARB, subclass:MARK, passive0:INFE-P2, passive1:NECR-P1, counter:FARB-C1, gender:female, name:Liana, stat-hp:700, weapon:RAP-38, acc0:ARI-43, acc1:ARI-06, armor:BCL-15, behavior:killer
 monster0=x:3, y:10, dir:rd, class:MAL-01, variant:AER, variant:DFT, counter:VAR-DFT-01, armor:ACO-04
 monster1=x:11, y:3, dir:ld, class:MAL-01, variant:AER, variant:DFT, counter:VAR-DFT-01, armor:ACO-04
 monster2=x:6, y:9, dir:ld, class:UND-03
