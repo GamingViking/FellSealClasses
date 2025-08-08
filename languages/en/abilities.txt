@@ -8,48 +8,6 @@ expend-qi-opener                =Character expends all qi charges
 
 
 ; ********************************
-; Martial Artist
-; ********************************
-; Job
-
-MART-Title  =Martial Artist
-MART-Ability=Discipline
-MART-desc   =These skillfull warriors unleash devastating combos by using a series setup techniques to charge their qi before delivering a finishing strike. Qi charges cap at 3. Each setup move can only be used once before a finisher is used. 
-
-MART-A1=Martial Strike
-MART-A1-desc={charge-qi-opener} then deals {powerratio} {elem} ({dmgsource}) damage to the target.
-
-MART-A2=Focus Qi
-MART-A2-desc={charge-qi-opener} then grants 1 random buff. The character's next action has 100% accuracy.
-
-MART-A3=Pressure Point
-MART-A3-desc={charge-qi-opener} then deals damage equal to {percent-damage} of the target's current {HP} {add-negative-effect-closer}
-
-MART-A4=Feint
-MART-A4-desc={charge-qi-opener} then deals {powerratio} {elem} ({dmgsource}) damage to the target {add-negative-effect-closer} {turn-comes-faster}
-
-MART-A5=Block
-MART-A5-desc={charge-qi-opener} then takes half damage from all attacks until their next turn and heals {powerratio} ({dmgsource}) {hp}.
-
-MART-A6=Swift Strike
-MART-A6-desc={charge-qi-opener} then deals {powerratio} {elem} ({dmgsource}) damage to the target. {counts-as-regular}
-
-MART-A7=Finisher - Eagle
-MART-A7-desc={expend-qi-opener} then displaces themselves to the target location (cannot be a water tile) and deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage to the targets in a {size} area around them. Cannot be used if there are no targets in the area. The range is extended by 1 for every qi charge expended.
-
-MART-A8=Finisher - Flail
-MART-A8-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage in a cone {add-negative-effect-closer}
-
-MART-A9=Finisher - Qi Blast
-MART-A9-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage in a line. {bypass-counters}
-
-MART-A10=Finisher - Scorpion
-MART-A10-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage to the target and inflicts {power2} random {debuff} per expended qi charge.
-
-MART-A11=Finisher - Shadow
-MART-A11-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage to the target. If the target is defeated by this ability, character gains {status-mirage-icon}{positive-mirage} and {status-haste-icon}{positive-haste}.
-
-; ********************************
 ; Monster Hunter
 ; ********************************
 ; Job
