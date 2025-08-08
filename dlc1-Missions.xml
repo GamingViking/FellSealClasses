@@ -511,7 +511,7 @@
     </Reward>
     <Lock MissionHash="HUNT-02" />
   </Missions>
-  <Missions Hash="miss-90" Name="Strange Portal" Location="B02" CostCp="50" MaxRecruits="3" BaseSuccess="60" DurationInMins="25" Repeatable="false">
+  <Missions Hash="miss-90" Name="Strange Portal" Location="B02" CostCp="50" MaxRecruits="3" BaseSuccess="60" DurationInMins="35" Repeatable="false">
     <SuccessAdd data="ARCANE|30"/>
     <Reward Ap="50" Gp="1000" CanCrit="false">
         <Special Type="kItem" DataInt="1" DataString="GUN-38"/>
@@ -519,14 +519,14 @@
   </Missions>
   <Missions Hash="miss-91" Name="Strange Trail" Location="T04" CostCp="100" MaxRecruits="2" BaseSuccess="70" DurationInMins="30" Repeatable="false">
     <SuccessAdd data="TRACKING|30"/>
-    <Reward Ap="25" Gp="1500" CanCrit="false">
+    <Reward Ap="1" Gp="1500" CanCrit="false">
         <Special Type="kItem" DataInt="1" DataString="GUN-39"/>
     </Reward>
     <Lock MissionHash="MISS-90" />
   </Missions>
-  <Missions Hash="miss-92" Name="Strange Stranger" Location="B18" CostCp="150" MaxRecruits="2" BaseSuccess="65" DurationInMins="40" Repeatable="false">
+  <Missions Hash="miss-92" Name="Strange Stranger" Location="B18" CostCp="150" MaxRecruits="2" BaseSuccess="65" DurationInMins="35" Repeatable="false">
     <SuccessAdd data="MARKSMAN|30"/>
-    <Reward Ap="25" Gp="2000" CanCrit="false">
+    <Reward Ap="1" Gp="2000" CanCrit="false">
         <Special Type="kItem" DataInt="1" DataString="GUN-44"/>
         <Special Type="kUnlockHunt" DataString="HUNT-15" />
     </Reward>
@@ -538,32 +538,32 @@
     </Reward>
     <Lock MissionHash="HUNT-15" />
   </Missions>
-  <Missions Hash="miss-94" Name="Strange Auction" Location="T11" CostGp="55000" MaxRecruits="1" BaseSuccess="100" DurationInMins="30" Repeatable="false">
+  <Missions Hash="miss-94" Name="Strange Auction" Location="T11" CostGp="55000" MaxRecruits="1" BaseSuccess="100" DurationInMins="25" Repeatable="false">
     <Reward Ap="35" Cp="100" CanCrit="false">
         <Special Type="kItem" DataInt="1" DataString="GUN-42"/>
     </Reward>
     <Lock MissionHash="MISS-93" />
   </Missions>
-  <Missions Hash="miss-95" Name="Strange Valuable" Location="B22" CostGp="80000" MaxRecruits="1" BaseSuccess="100" DurationInMins="35" Repeatable="false">
+  <Missions Hash="miss-95" Name="Strange Valuable" Location="B22" CostGp="80000" MaxRecruits="1" BaseSuccess="100" DurationInMins="25" Repeatable="false">
     <Reward Ap="60" Cp="200" CanCrit="false">
         <Special Type="kItem" DataInt="1" DataString="GUN-43"/>
     </Reward>
     <Lock MissionHash="MISS-94" />
   </Missions>
-  <Missions Hash="miss-96" Name="Unearthed Treasure" Location="B18" CostCp="200" MaxRecruits="2" BaseSuccess="65" DurationInMins="35" Repeatable="false">
+  <Missions Hash="miss-96" Name="Unearthed Treasure" Location="B18" CostCp="200" MaxRecruits="2" BaseSuccess="65" DurationInMins="40" Repeatable="false">
     <SuccessAdd data="STEALTH|30"/>
     <Reward Ap="50" Gp="3500" CanCrit="false">
         <Special Type="kUnlockHunt" DataString="HUNT-16" />
     </Reward>
     <Lock Story="36" />
   </Missions>
-  <Missions Hash="miss-97" Name="A Challenge" Location="B22" CostCp="400" MaxRecruits="2" BaseSuccess="55" DurationInMins="25" Repeatable="false">
+  <Missions Hash="miss-97" Name="A Challenge" Location="B22" CostCp="400" MaxRecruits="2" BaseSuccess="55" DurationInMins="35" Repeatable="false">
     <Reward Ap="40" Gp="5000" CanCrit="false">
         <Special Type="kUnlockHunt" DataString="HUNT-17" />
     </Reward>
     <Lock MissionHash="HUNT-16" />
   </Missions>
-  <Missions Hash="miss-98" Name="Fell Arbiter" Location="B25" CostCp="500" MaxRecruits="3" BaseSuccess="60" DurationInMins="35" Repeatable="false">
+  <Missions Hash="miss-98" Name="Fell Arbiter" Location="B25" CostCp="500" MaxRecruits="3" BaseSuccess="60" DurationInMins="25" Repeatable="false">
     <SuccessAdd data="DARK|30,HOLY|30"/>
     <Reward Ap="80" GP="7000" CanCrit="false">
         <Special Type="kUnlockHunt" DataString="HUNT-18" />
@@ -1271,7 +1271,7 @@ human3=x:8, y:5, dir:ld, class:INFE, weapon:MAC-38
 human4=x:12, y:6, dir:ld, class:DANC, weapon:ROD-37
 human5=x:12, y:8, dir:ld, class:MART, weapon:AXE-37
 ; Elites
-bzil0=x:13, y:2, dir:ld, class:TAN-01, variant:MYC, variant:VEN, counter:VAR-MYC-C1, difficulty:1
+monster0=x:13, y:2, dir:ld, class:TAN-01, variant:SPE, variant:GUA, counter:TAN-01-C1, acc0:ARI-40, difficulty:2
 </EncounterData>
   </Hunts>
       <Hunts Hash="HUNT-17" NodeHash="B17">
@@ -1291,7 +1291,7 @@ MaxUnits=2
 human0=x:7, y:2, dir:ld, class:WERE, subclass:FELL, isaboss:true, passive0:RANG-P1, passive1:ROGU-P2, counter:MERC-C1, abilities:1|3|2|3|1|3, subabilities:1|3|2|2|2|1, gender:female, name:Elsia, weapon:SWD-37, helmet:HCL-37, acc0:ARI-06, behavior:killer
 human1=x:10, y:0, dir:ld, class:EXOR, subclass:KNIG, noitems:true, passive0:KNIG-P1, passive1:MERC-P1, counter:EXOR-C1, abilities:1|1|3|3|3|3|1, subabilities:1|3|1|1|3, gender:male, name:Llerval, weapon:MAU-37, shield:SHI-37, helmet:HHE-37, acc0:ARI-06, behavior:guardianall, weightstyle:protector
 ; Elites
-monster0=x:10, y:3, dir:ld, class:TAN-01, variant:MYC, variant:VEN, counter:class:TAN-01-C1, difficulty:1
+monster0=x:10, y:3, dir:ld, class:TAN-01, variant:MYC, variant:VEN, counter:class:TAN-01-C1, difficulty:2
 </EncounterData>
   </Hunts>
   <Hunts Hash="HUNT-18" NodeHash="B28">
