@@ -123,8 +123,8 @@
     <Ability HashName="INDE-A6" EffectHash="MAL-02-A3" Name="Dream Eater" MpCost="12" MinRange="1" Range="1" DmgType="kMagical" SpecialEffect="kDrainHp" SpecialEffect2="kDamageUpWithSleep" Power2="1.35" SpellType="kSkill" Element="kNone" />
 
 
-    <Ability HashName="GODP-A1" Name="No Survivors" MpCost="1" Range="0" RangeHeight="1" Power="-999" Shape="kAllEnemies" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpellType="kNothing" SpecialEffect="kScaleWithProximity" ExtraFlags="kFixedDamage" />
-    <Ability HashName="GODP-A2" EffectHash="WRAN-A1" Name="Super Tame" MpCost="2" MinRange="1" Range="30" RangeHeight="25" Power="50" Element="kNone" SpecialEffect="kMonsterTame" SpecialEffect2="kPerfectAccuracy" SpellType="kSkill" ExtraFlags="kNoAIUse kNoFF kIgnoreSides kIgnoresCover kOnlyWorksOnMonsters"/>
+    <!-- <Ability HashName="GODP-A1" Name="No Survivors" MpCost="1" Range="0" RangeHeight="1" Power="-999" Shape="kAllEnemies" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpellType="kNothing" SpecialEffect="kScaleWithProximity" ExtraFlags="kFixedDamage" />
+    <Ability HashName="GODP-A2" EffectHash="WRAN-A1" Name="Super Tame" MpCost="2" MinRange="1" Range="30" RangeHeight="25" Power="50" Element="kNone" SpecialEffect="kMonsterTame" SpecialEffect2="kPerfectAccuracy" SpellType="kSkill" ExtraFlags="kNoAIUse kNoFF kIgnoreSides kIgnoresCover kOnlyWorksOnMonsters"/> -->
   </active>
   <passive> 
     <Ability HashName="MART-P1" Name="No Flank" CopyFrom="KNIG-P1"/>

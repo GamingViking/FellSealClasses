@@ -448,12 +448,12 @@ INDE-P1-desc=Character has a permanent {addpositive} effect and is immune to {re
 ; Deity
 ; ********************************
 ; Job
-GODP-Title	=Deity
-GODP-Ability=Omnipotence
-GODP-desc	=Surely this coudln't pose a balance problem.
+;GODP-Title	=Deity
+;GODP-Ability=Omnipotence
+;GODP-desc	=Surely this coudln't pose a balance problem.
 
-GODP-A1=No Survivors
-GODP-A1-desc=The name speaks for itself.
+;GODP-A1=No Survivors
+;GODP-A1-desc=The name speaks for itself.
 
-GODP-A2=Super Tame
-GODP-A2-desc=If the first don't get 'em, the second will.
+;GODP-A2=Super Tame
+;GODP-A2-desc=If the first don't get 'em, the second will.
