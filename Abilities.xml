@@ -151,7 +151,7 @@
     <Ability HashName="SCOU-P2" CopyFrom="VAN-03-P2" Name="Deep Wounds" />
     <Ability HashName="INDE-P1" EffectHash="DAO-02-P2" Name="Cruel Carapace" RemoveNegativeEffects="kfDefDown" AddPositiveEffects="kfThorns" AddsNonRemovableEffects1="kfPermanentPositive kfPermanentNegativeProtection" />
     <Ability HashName="INDE-P2" CopyFrom="KNI-02-P1" Name="Relentless" />
-    <Ability HashName="GODP-P1" CopyFrom="GAMB-P1" Name="Initiative" />
+    <!-- <Ability HashName="GODP-P1" CopyFrom="GAMB-P1" Name="Initiative" /> -->
 
   </passive>
   <counter>

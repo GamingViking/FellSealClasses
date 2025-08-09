@@ -570,12 +570,8 @@
     </Reward>
     <Lock Story="45" />
   </Missions>
-  <Missions Hash="miss-99" Name="Get Smart" Location="B02" CostGp="5" MaxRecruits="5" BaseSuccess="100" DurationInMins="1">
-    <Reward Ap="10000" GP="5" CanCrit="false">
-    </Reward>
-  </Missions>
   <Zones Hash="zone-00" Name="Centina Hinterlands" SlotsX="3" SlotsY="3" LargeBattle="LARG-00">
-    <Missions data="miss-00,miss-01,miss-02,miss-03,miss-04,miss-05,miss-06,miss-07,miss-08,miss-09,miss-10,miss-11,miss-12,miss-13,miss-99" />
+    <Missions data="miss-00,miss-01,miss-02,miss-03,miss-04,miss-05,miss-06,miss-07,miss-08,miss-09,miss-10,miss-11,miss-12,miss-13" />
     <MapNodes data="B02,B03,T04,B04,B05,B06,B07,D04" />
     <ExcludedUpgrades data="upgr-23,upgr-20,upgr-22" />
   </Zones>

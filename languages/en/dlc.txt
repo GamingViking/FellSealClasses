@@ -9,7 +9,6 @@ miss-95-name=Strange Valuable
 miss-96-name=Unearthed Treasure
 miss-97-name=A Challenge
 miss-98-name=Fell Arbiter
-miss-99-name=Get Smart
 
 
 miss-90-desc=A strange gateway suddenly appeared and then vanished, but not before a strange looking person came out of it. The stranger dropped some sort of alien artefact before departing which seems to have attracted some unusual creatures to the area, so it might be best to send someone knowledgeable in the {color=hint}mystical{color=base} arts.
@@ -21,4 +20,3 @@ miss-95-desc=The last alien artefact recovered from the mysterious stranger is o
 miss-96-desc=Miner's have begun excavating Occul Cavern after following underground passageways left by a giant serpent. They had just uncovered a slew of dangerous-looking weapons when they were ambushed by a gang of theives who had been following them. A strong group is needed to subdue the thieves and recover the dangerous weaponry. In order to get the jump on them, it might be best to send in someone{color=hint} sneaky{color=base}.
 miss-97-desc="Hey, Arbiter who has been making such a fuss recently - you won't believe the powerful items we found in some of these underground tunnels. We heard you've also collected some powerful items - so what do you say to a 2v2 where we put them all on the line? Your strongest against us, winner take all. We'll be waiting" -Elsia and Llerval of Double Trouble. It might be best to send your {color=hint}strongest {color=base}units to show you mean business.
 miss-98-desc=Liana - a marked once a favorite to become an immortal disappeared after not being selected. She has now resurfaced and it appears she has given herself over to the Maw's {color=hint}dark {color=base}power. Fueled by her new {color=hint}dark {color=base}energy, she is heading for the seat of the immortals to seize control for herself. She must be stopped!
-miss-99-desc=Master a class.

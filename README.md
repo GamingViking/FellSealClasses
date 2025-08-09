@@ -12,7 +12,8 @@ In further seeking to expand replayability, I have also created a number of new 
     * 9 weapons, 7 weapons of a new type, 3 armors, 1 accessory
 * 9 new dispath missions and 3 new hunts to acquire new items
     * Battle against new classes using new items to reap the rewards
-* A number of new portraits created based on the aesthetic options available in character creation in order to make visual matching a reality. 
+* New portraits created based on the aesthetic options available in character creation in order to make visual matching a reality. 
+    * 30 female portraits, 32 male portraits, 4 unisex portraits
     * More portraits of people with darker skin tones, class helmets, accessories, and gear color combinations
     * No longer choose between using the same old portraits or portraits that clash with your characters' sprites
 
