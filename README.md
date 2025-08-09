@@ -2,7 +2,7 @@
 
 ### Preamble
 What I enjoy most about Fell Seal is the creative ways in which the many different abilities of different classes can be combined in fun, powerful, and unexpected ways. Having played quite a bit and tried many of these combinations, I sought to add more options to the theory crafting pool of Fell Seal's numerous abilities without power-creeping existing classes into irrelevance. As such, nearly all active abilities are completely new abilities that I have made from the soup of accessible and alterable ability properties found in game; the goal being to create classes with new niches, playstyles, and combinations, without merely creating a selection of super classes. Additionally, nearly all passive and counter abilities are either newly created or abilities that were previously only accessible to monster/non-generic classes. I've also thrown in a few new weapons for a bit of fun, all of which are obtainable through new hunts or dispatch missions. 
-In further seeking to expand replayability, I have also created a number of new character portraits for all manner of characters to increase the existing selection. Nearly all portraits were made based off of in-game aesthetic options so there won't be weird portrait and character mismatch. Additionally, I have tried to incorporate elements in the portraits of lesser-used items/equipment/aesthetics to make picking those options more viable when selecting a portrait. This is my first mod - I hope you enjoy!
+In further seeking to expand replayability, I have also created a number of new character portraits for all manner of characters to increase the existing selection. Nearly all portraits were made based off of in-game aesthetic options so there won't be weird portrait and character mismatches. Additionally, I have tried to incorporate elements in the portraits of lesser-used items/equipment/aesthetics to make picking those options more viable when selecting a portrait. This is my first mod - I hope you enjoy!
 
 ### What the mod adds
 * 12 new fully custom classes with diverse, and (hopefully) balanced abilities 
@@ -52,6 +52,20 @@ The only **Real** issue is if you intend to mod my work - see #2 below.
 * **Fell Arbiter** - Only a powerful marked can channel the dark energies of the Maw to become a Fell Arbiter, but while doing so grants great power, the Maw's infuence corrupts those who would channel its power - tempting them to sacrifice all that they hold dear for greater boons. 
 * **Scout** - Speedy and mobile, scouts specialize at weakening and disabling enemies from afar with guns and hazardous canisters. Though the range of their canister launcher is impressive, it can only shoot in straight lines.
 * **Inner Demon** - Accepting the Maw's dark energy into them, these daring warriors move further along the path to demonhood, gaining abilities to affect and destroy the mind. They also become much more dangerous to attack. 
+
+### Class Unlock Conditions
+* **Monster Hunter** - RANGER=5
+* **Dancer** - GAMBLER=4
+* **Martial Artist** - MERCENARY=6
+* **Demonologist** - REAVER=3, PLAGUE DOCTOR=3
+* **Geomancer** - DRUID=6
+* **Infected** - TEMPLAR=3, WIZARD=3
+* **Exorcist** - TEMPLAR=4
+* **Gladiator** - MERCENARY=4, KNIGHT=4
+* **Time Traveler** - GADGETEER=3, GUNNER=4, HOURGLASS BADGE, NON-STORY
+* **Fell Arbiter** - MARKED=12 (KYRIE)
+* **Scout** - SPYMASTER=2 (REINER)
+* **Inner Demon** - DEMON KNIGHT=6 (ANADINE)
 
 ### Complete Equipment List
 * **X-Targeting Taser** (GUN) - Advanced shocking technology, unlikely to miss (+15 accuracy). 
