@@ -24,10 +24,12 @@ In further seeking to expand replayability, I have also created a number of new 
 * Portrait installation is the same for any other custom portrait you would upload, inside of "C:\Users\username\Documents\Fell Seal\customdata\portraits" there are folders for "female", "male", and "unisex" in which you should place the relevant portraits. 
 
 ### Known Issues
-The only **Real** issue is if you intend to mod my work - see #2 below.
+The only **Real** issue is if you intend to mod my work - see #2 below. As I play through the game with this mod, I will add updates about interactions that I find here.
+
 <details>
     <summary>Click to Reveal Known Issues</summary>
-
+    
+    - The skill "Epidemic" does not work if the user has the passive "Smart Casting" equipped. I believe this is due to how Smart Casting is coded under the hood, unfortunately. 
     - Classes specific to story characters still appear in other characters' class wheels. They are still inaccessible to everyone else, so it's just a visual thing, but one for which I don't know a good fix. 
     - The Martial Artist class pushes the boundaries of what can be done with modded classes, using certain abilities in ways that they weren't designed to be used. This can affect you in two ways:
         1. For normal players: the class' abilities use Beastmaster abilities under the hood. If you combine those abilities in game, you may get some weirdness. As far as I am aware, this means:
