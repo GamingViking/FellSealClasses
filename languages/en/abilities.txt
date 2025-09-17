@@ -227,6 +227,9 @@ EXOR-A1-desc={damage-around-caster-opener} and removes {removenegative}. Counts 
 EXOR-A2=Fanatical Blows
 EXOR-A2-desc={damage-single} Also inflicts {status-berserk-icon}{negative-berserk} on the character. {counts-as-regular}
 
+EXOR-A3=Tranquil Focus
+EXOR-A3-desc={buff-caster}
+
 EXOR-A4=Surgical Strike
 EXOR-A4-desc={damage-single-opener}. The attack deals significantly increased damage from the sides or the back, but is weak from the front. {counts-as-regular}
 

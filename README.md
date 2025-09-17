@@ -95,8 +95,12 @@ The only **Real** issue is if you intend to mod my work - see #2 below. As I pla
 * **Trapped Soul** (ACCESSORY) - Tapping into the power of a soul brings both great cost and great reward (grants +6MP per turn).
 
 ### Changelog
-## Version 1.01
-# Abilities
+### Version 1.01
+### Portraits
+- Portraits are now formatted in all lowercase and should be compatible with the steamdeck 
+### Abilities
+- Exorcist skill "Demonic Might" changed to new skill "Tranquil Focus"
+    * Too many instances of Demonic Might with Anadine and Demonologist already having it, provides a more thematically relevant replacement
 - Martial Artist skill "Pressure Point" changed from spell to skill
     * This felt thematically more appropriate
 - Martial Artist skill "Swift Strike" MpCost from 4 to 6
@@ -119,19 +123,19 @@ The only **Real** issue is if you intend to mod my work - see #2 below. As I pla
     * Stops casting on self and works like expected for a breath weapon
 - Scout skill "Explosive Canister" property that gave low accuracy and guaranteed crit removed, power from 1.65 to 1.75
     * Too many story class skills had the low-accuracy-and-guaranteed-crit proptery, damage increased to compensate
-# Ability Descriptions
+### Ability Descriptions
 - Area of Effect attacks which have the "counts as a regular attack" property fundamentally differ in that they do not use the equipped weapon's element (although they still use the equipped weapon's debuffs). Affected AoE skills have had their descriptions updated accordingly including: "Swift Spin", "Banish Evil", and "Purification"
 - Purification is now properly listed as counting as a regular attack (previously not in description)
 - Martial Artist skill "Finisher - Shadow" uses the equipped weapon's element and now properly reflects that in its description
 - Fixed "Nature's Wrath" extra period typo
-# Classes
+### Classes
 - Martial Artist "Impetus" AP cost from 350 to 300
     * Seemed to be slightly overvalued
 - Dancer bonus evasion from 6 to 7
     * Wanted evasion to be more impactful
 - Infected changed position of skills so that "Strong Body" is acquired earlier, and "Bio Bomb" and "Absorb Putresence" are acquired later. "Strong Body" AP cost from 400 to 200. "Bio Bomb" AP cost from 200 to 250
     * Strong Body feels pivotal for "Revel in Blood" use and should be available ealier, "Absorb Putresence" can be very strong and deserves to be a final tier skill. "Bio Bomb" got shuffled slightly out of necessity.
-# Missions
+### Missions
 - "Strange Trail" AP reward from 1 to 60. "Strange Stranger" AP reward from 1 to 70
     * While the AP is minimal, "1" felt aesthetically out of place
 - "Unearthed Treasure" now locked behind story index 38 (from 36)

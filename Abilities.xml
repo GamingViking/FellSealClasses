@@ -75,7 +75,7 @@
 
     <Ability HashName="EXOR-A1" EffectHash="REAV-A3" Name="Banish Evil" MpCost="4" Range="0" Size="3" Power="0.95" Shape="kCross" SpellType="kSkill" ExtraFlags="kIgnoreSelfAsTarget" SpecialEffect2="kIsTreatedAsRegularAttack" RemoveNegativeEffects="kfAll" />
     <Ability HashName="EXOR-A2" EffectHash="VAR-COR-A2" Name="Fanatical Blows" MpCost="14" MinRange="1" Power="1.45" SpecialEffect="kBerserkSelf" SpecialEffect2="kIsTreatedAsRegularAttack" SpellType="kSkill"/>
-    <Ability HashName="EXOR-A3" CopyFrom="DEMK-A5" />
+    <Ability HashName="EXOR-A3" EffectHash="KNIG-A5" Name="Tranquil Focus" Range="0" DmgType="kHealing" MpCost="6" AddPositiveEffects="kfRenew kfCritUp" />
     <Ability HashName="EXOR-A4" EffectHash="ROGU-A6" Name="Surgical Strike" MpCost="6" MinRange="1" Power="0.6" Power2="0.6" Power3="0.799999952" SpecialEffect="kSneakAttack" SpecialEffect2="kIsTreatedAsRegularAttack" SpellType="kSkill" />
     <Ability HashName="EXOR-A5" EffectHash="BLAD-A3" Name="Rejuvinate" MpCost="16" Range="2" RangeHeight="5" Power="0.40" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" RemoveNegativeEffects="kfBasic kfCharm kfBerserk" SpecialEffect="kHealingPercentage"/>
     <Ability HashName="EXOR-A6" EffectHash="KNI-01-A2" Name="Purge Spirit" MpCost="18" MinRange="1" Power="1.5" Power2="0.05" Power3="0.5" Element="kWeapon" SpecialEffect="kManabreaker" SpecialEffect2="kIsTreatedAsRegularAttack" SpellType="kSkill"/>
