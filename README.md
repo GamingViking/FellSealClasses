@@ -29,8 +29,11 @@ The only **Real** issue is if you intend to mod my work - see #2 below. As I pla
 <details>
     <summary>Click to Reveal Known Issues</summary>
     
-    - The skill "Epidemic" does not work if the user has the passive "Smart Casting" equipped. I believe this is due to how Smart Casting is coded under the hood, unfortunately. 
+    - The skill "Lasso" does not display the bonus damage that would result to an enemy as a result of the displacement (whether that be extra damage from being pulled into something or drowning.) This does not affect the result, only the prediction.
+    - The skill "Finisher - Scorpion" doesn't correctly display the number of debuffs that will be inflicted beyond one. This does not affect the result, only the prediction.
+    - The skill "Epidemic" does not work if the user has the passive "Smart Casting" equipped. This technically makes sense as it's an offensive ability with which you target your own unit, but it would be cool if it worked.
     - Classes specific to story characters still appear in other characters' class wheels. They are still inaccessible to everyone else, so it's just a visual thing, but one for which I don't know a good fix. 
+    - The passive "Strong Body" does not reduce self-inflicted damage from ratio damage abilities such as "Enraged Blow" or "Cull". Not really an issue, but thought I would include it. 
     - The Martial Artist class pushes the boundaries of what can be done with modded classes, using certain abilities in ways that they weren't designed to be used. This can affect you in two ways:
         1. For normal players: the class' abilities use Beastmaster abilities under the hood. If you combine those abilities in game, you may get some weirdness. As far as I am aware, this means:
             * Qi charges and pets can be used interchangeably. Serenity will also work with Qi charges. 
@@ -90,3 +93,49 @@ The only **Real** issue is if you intend to mod my work - see #2 below. As I pla
 * **Mind Cage** (HELMET) - A helm of great protection, but tight like a vise (-2MP per turn).
 * **Believer's Blindfold** (HELMET) - Strike without fear against that which can't be seen (-15 accuracy).
 * **Trapped Soul** (ACCESSORY) - Tapping into the power of a soul brings both great cost and great reward (grants +6MP per turn).
+
+### Changelog
+## Version 1.01
+# Abilities
+- Martial Artist skill "Pressure Point" changed from spell to skill
+    * This felt thematically more appropriate
+- Martial Artist skill "Swift Strike" MpCost from 4 to 6
+    * While it falls off later, early on this skill can be very strong
+- Martial Artist skill "Finisher - Flail" now also has a chance to inflict Defense Down
+    * This finisher felt like the weakest, this should add some more utility to differentiate it
+- Monster Hunter skill "Hook Leap" height from 18-24
+    * Allows for certain desirable breakpoints and more impact relative to jump
+- Monster Hunter skill "Explosive Trap" range height from weapon dependent to 2
+    * Bringing it in line with other trap skills
+- Dancer skill "Piercing Palm" MpCost from 10 to 8
+    * Felt more appropriate to its power
+- Geomancer spell "Nature's Wrath" zone height from 2 to 4
+    * This larger AOE should have had a higher zone range, now it does
+- Infected spell "Epidemic" zone height from 3 to 4, now cannot miss
+    * Makes the spell reach certain terrain breakpoints and feel more usable
+- Infected skill "Eternal Illness" zone height from 2 to 4
+    * Brings skill use more in line with Epidemic
+- Fell Arbiter spell "Last Breath" now has a minimum range of 1
+    * Stops casting on self and works like expected for a breath weapon
+- Scout skill "Explosive Canister" property that gave low accuracy and guaranteed crit removed, power from 1.65 to 1.75
+    * Too many story class skills had the low-accuracy-and-guaranteed-crit proptery, damage increased to compensate
+# Ability Descriptions
+- Area of Effect attacks which have the "counts as a regular attack" property fundamentally differ in that they do not use the equipped weapon's element (although they still use the equipped weapon's debuffs). Affected AoE skills have had their descriptions updated accordingly including: "Swift Spin", "Banish Evil", and "Purification"
+- Purification is now properly listed as counting as a regular attack (previously not in description)
+- Martial Artist skill "Finisher - Shadow" uses the equipped weapon's element and now properly reflects that in its description
+- Fixed "Nature's Wrath" extra period typo
+# Classes
+- Martial Artist "Impetus" AP cost from 350 to 300
+    * Seemed to be slightly overvalued
+- Dancer bonus evasion from 6 to 7
+    * Wanted evasion to be more impactful
+- Infected changed position of skills so that "Strong Body" is acquired earlier, and "Bio Bomb" and "Absorb Putresence" are acquired later. "Strong Body" AP cost from 400 to 200. "Bio Bomb" AP cost from 200 to 250
+    * Strong Body feels pivotal for "Revel in Blood" use and should be available ealier, "Absorb Putresence" can be very strong and deserves to be a final tier skill. "Bio Bomb" got shuffled slightly out of necessity.
+# Missions
+- "Strange Trail" AP reward from 1 to 60. "Strange Stranger" AP reward from 1 to 70
+    * While the AP is minimal, "1" felt aesthetically out of place
+- "Unearthed Treasure" now locked behind story index 38 (from 36)
+    * Items were a bit too strong for how early you could obtain them
+- "Unearthed Treasure" now properly factors sending the appropriate unit into success chance
+- "Unearthed Treasure" and "A Challenge" now are part of the Kawalands mission pool
+    * Brings them more in line with the slightly later unlock time

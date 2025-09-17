@@ -519,14 +519,14 @@
   </Missions>
   <Missions Hash="miss-91" Name="Strange Trail" Location="T04" CostCp="100" MaxRecruits="2" BaseSuccess="70" DurationInMins="30" Repeatable="false">
     <SuccessAdd data="TRACKING|30"/>
-    <Reward Ap="1" Gp="1500" CanCrit="false">
+    <Reward Ap="60" Gp="1500" CanCrit="false">
         <Special Type="kItem" DataInt="1" DataString="GUN-39"/>
     </Reward>
     <Lock MissionHash="MISS-90" />
   </Missions>
   <Missions Hash="miss-92" Name="Strange Stranger" Location="B18" CostCp="150" MaxRecruits="2" BaseSuccess="65" DurationInMins="35" Repeatable="false">
     <SuccessAdd data="MARKSMAN|30"/>
-    <Reward Ap="1" Gp="2000" CanCrit="false">
+    <Reward Ap="70" Gp="2000" CanCrit="false">
         <Special Type="kItem" DataInt="1" DataString="GUN-44"/>
         <Special Type="kUnlockHunt" DataString="HUNT-15" />
     </Reward>
@@ -555,9 +555,10 @@
     <Reward Ap="50" Gp="3500" CanCrit="false">
         <Special Type="kUnlockHunt" DataString="HUNT-16" />
     </Reward>
-    <Lock Story="36" />
+    <Lock Story="38" />
   </Missions>
   <Missions Hash="miss-97" Name="A Challenge" Location="B22" CostCp="400" MaxRecruits="2" BaseSuccess="55" DurationInMins="35" Repeatable="false">
+    <SuccessAdd data="BRUTE|30"/>
     <Reward Ap="40" Gp="5000" CanCrit="false">
         <Special Type="kUnlockHunt" DataString="HUNT-17" />
     </Reward>
@@ -586,12 +587,12 @@
     <ExcludedUpgrades data="upgr-23,upgr-20" />
   </Zones>
   <Zones Hash="zone-03" Name="Coast of Industry" SlotsX="4" SlotsY="3" NodeToOpen="B19" LargeBattle="LARG-03">
-    <Missions data="miss-47,miss-48,miss-49,miss-50,miss-51,miss-52,miss-53,miss-54,miss-55,miss-56,miss-57,miss-58,miss-81,miss-82,miss-87,miss-94,miss-95,miss-96,miss-97" />
+    <Missions data="miss-47,miss-48,miss-49,miss-50,miss-51,miss-52,miss-53,miss-54,miss-55,miss-56,miss-57,miss-58,miss-81,miss-82,miss-87,miss-94,miss-95" />
     <MapNodes data="B20,T10,T11,B21,T01,B01" />
     <ExcludedUpgrades data="upgr-23" />
   </Zones>
   <Zones Hash="zone-04" Name="Kawalands" SlotsX="3" SlotsY="3" LargeBattle="LARG-04">
-    <Missions data="miss-59,miss-60,miss-61,miss-62,miss-63,miss-64,miss-65,miss-66,miss-67,miss-68,miss-69,miss-70,miss-71,miss-72,miss-73,miss-74,miss-75,miss-76,miss-77,miss-78,miss-83,miss-84,miss-85,miss-86,miss-98" />
+    <Missions data="miss-59,miss-60,miss-61,miss-62,miss-63,miss-64,miss-65,miss-66,miss-67,miss-68,miss-69,miss-70,miss-71,miss-72,miss-73,miss-74,miss-75,miss-76,miss-77,miss-78,miss-83,miss-84,miss-85,miss-86,,miss-96,miss-97,miss-98" />
     <MapNodes data="B22,B23,B24,T12,B25,B26,D02" />
     <ExcludedUpgrades data="upgr-20" />
   </Zones>

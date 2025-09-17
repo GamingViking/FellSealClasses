@@ -58,7 +58,7 @@ DANC-A3=Piercing Palm
 DANC-A3-desc={damage-basic-opener} that ignores the target's defense. {counts-as-regular}
 
 DANC-A4=Swift Spin
-DANC-A4-desc={damage-around-caster-opener}. {bypass-counters} {counts-as-regular}
+DANC-A4-desc={damage-around-caster-opener}. {bypass-counters} Counts as a {regular-attack} and will use the equipped weapon's {debuffs}.
 
 DANC-A5=Alluring Step
 DANC-A5-desc={status-chance-neg-opener} in a {size} around the character.
@@ -109,7 +109,7 @@ MART-A10=Finisher - Scorpion
 MART-A10-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage to the target and inflicts {power2} random {debuff} per expended qi charge.
 
 MART-A11=Finisher - Shadow
-MART-A11-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage to the target. If the target is defeated by this ability, character gains {status-mirage-icon}{positive-mirage} and {status-haste-icon}{positive-haste}.
+MART-A11-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage to the target. Will use the equipped weapon's element. If the target is defeated by this ability, character gains {status-mirage-icon}{positive-mirage} and {status-haste-icon}{positive-haste}.
 
 ; ********************************
 ; Demonologist
@@ -173,7 +173,7 @@ GEOM-A7=Season Spears
 GEOM-A7-desc={damage-line-opener} in all 4 directions. The {element} is chosen based on the user's tile. 
 
 GEOM-A9=Nature's Wrath
-GEOM-A9-desc={damage-aoe}. The {element} is chosen based on the user's tile. 
+GEOM-A9-desc={damage-aoe} The {element} is chosen based on the user's tile. 
 
 GEOM-C1=Naturalize
 GEOM-C1-desc=Upon death, dispels all {buffs} from all enemies on the map. 
@@ -222,7 +222,7 @@ EXOR-Ability=Exorcism
 EXOR-desc	=These spiritual specialists have learned how to attack the corporeal essence of maladies, literally beating away ailments and pain. Of course, that doesn't stop them from bashing their enemies on the physical plane as well. 
 
 EXOR-A1=Banish Evil
-EXOR-A1-desc={damage-around-caster-opener} and removes {removenegative}. {counts-as-regular}
+EXOR-A1-desc={damage-around-caster-opener} and removes {removenegative}. Counts as a {regular-attack} and will use the equipped weapon's {debuffs}.
 
 EXOR-A2=Fanatical Blows
 EXOR-A2-desc={damage-single} Also inflicts {status-berserk-icon}{negative-berserk} on the character. {counts-as-regular}
@@ -240,7 +240,7 @@ EXOR-A7=Righteous Fury
 EXOR-A7-desc={damage-line-opener} {add-negative-effect-closer} Also inflicts {status-berserk-icon}{negative-berserk} on the character.
 
 EXOR-A8=Purification
-EXOR-A8-desc={damage-aoe-opener}. Also removes {removenegative} and {removepositive}.
+EXOR-A8-desc={damage-aoe-opener}. Also removes {removenegative} and {removepositive}. Counts as a {regular-attack} and will use the equipped weapon's {debuffs}.
 
 ; ********************************
 ; Gladiator

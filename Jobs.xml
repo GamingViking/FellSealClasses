@@ -58,7 +58,7 @@
         </SkillTile>
       </Tier>
       <Tier>
-        <SkillTile Cost="300">
+        <SkillTile Cost="350">
           <AbilityHash>MART-P2</AbilityHash>
         </SkillTile>
       </Tier>
@@ -124,7 +124,7 @@
         </learnables>
         <Mastery spd="3" hp="5" crit="2" />
     </Job>
-    <Job ClassName="DANC" WeaponsType="kfDagger kfRod kfRapier" ArmorType="kfRobes kfClothHelmet" BonusCrit="2" BaseMove="5" BaseJump="3" BonusEvasion="6" SpeedGrowth="1.35" BaseSpeed="105" Hat="royal" OutfitM="reaver" OutfitF="gothdress">
+    <Job ClassName="DANC" WeaponsType="kfDagger kfRod kfRapier" ArmorType="kfRobes kfClothHelmet" BonusCrit="2" BaseMove="5" BaseJump="3" BonusEvasion="7" SpeedGrowth="1.35" BaseSpeed="105" Hat="royal" OutfitM="reaver" OutfitF="gothdress">
         <StatsGrowth Values="3.8 3 3.8 4.5" />
         <HealthGrowth Values="6 2" />
         <BaseStats Values="42 35 42 42" />
@@ -328,7 +328,7 @@
           </Tier>
           <Tier>
             <SkillTile Cost="200">
-              <AbilityHash>INFE-C1</AbilityHash>
+              <AbilityHash>INFE-P2</AbilityHash>
             </SkillTile>
             <SkillTile Cost="200">
               <AbilityHash>INFE-A5</AbilityHash>
@@ -346,13 +346,13 @@
             <SkillTile Cost="250">
               <AbilityHash>INFE-A7</AbilityHash>
             </SkillTile>
-            <SkillTile Cost="300">
-              <AbilityHash>INFE-A8</AbilityHash>
+            <SkillTile Cost="250">
+              <AbilityHash>INFE-C1</AbilityHash>
             </SkillTile>
           </Tier>
           <Tier>
-            <SkillTile Cost="400">
-              <AbilityHash>INFE-P2</AbilityHash>
+            <SkillTile Cost="300">
+              <AbilityHash>INFE-A8</AbilityHash>
             </SkillTile>
           </Tier>
         </learnables>
