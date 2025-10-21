@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <XMLJobs>
   <jobs>
-    <Job ClassName="MART" WeaponsType="kfSword kfAxe kfMace kfSpear" ArmorType="kfRobes kfClothHelmet kfLightArmor kfLightHelmet kfShield" BonusCrit="2" BaseMove="4" BonusEvasion="3" SpeedGrowth="1.15" BaseSpeed="100" Hat="tempest" OutfitM="reaver" OutfitF="reaver">
+      <Job ClassName="MART" WeaponsType="kfSword kfAxe kfMace kfSpear" ArmorType="kfRobes kfClothHelmet kfLightArmor kfLightHelmet kfShield" BonusCrit="2" BaseMove="4" BonusEvasion="3" SpeedGrowth="1.15" BaseSpeed="100" Hat="tempest" OutfitM="reaver" OutfitF="reaver">
       <StatsGrowth Values="4.3 3.8 3.5 3.7"/>
       <HealthGrowth Values="7 2"/>
       <BaseStats Values="43 38 38 37"/>
@@ -58,7 +58,7 @@
         </SkillTile>
       </Tier>
       <Tier>
-        <SkillTile Cost="300">
+        <SkillTile Cost="350">
           <AbilityHash>MART-P2</AbilityHash>
         </SkillTile>
       </Tier>
