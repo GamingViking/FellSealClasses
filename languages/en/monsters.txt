@@ -1,0 +1,11 @@
+; ****************************
+; Family: Undead
+; ****************************
+UND-04-Title    =Unstable Corpse
+
+; *** Abilities ***
+UND-04-A1		=Rabid Rush
+UND-04-A1-Desc	={damage-single-opener} and moves character along the path to the tile adjacent to your target. {counts-as-regular}
+
+UND-04-C1       =Unstable Explosion
+UND-04-C1-desc  =Upon death, deals {powerratio} {elem} ({dmgsource}) damage in a {size} area around the character.

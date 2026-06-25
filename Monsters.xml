@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XMLMonsters>
+    <Monsters HashName="UND-04" Img="zombieaa" Portrait="portrait-monster-cadaver1" Immunities="kfPoison kfBleed kfSleep" WpSfx="FS_FX_216_v02" WpMissSfx="FS_FX_204_v01" DeathSfx="FS_FX_217_v01" CanTame="false" ExtraRace="kUndead" NoVariant="true" Counter="UND-04-C1" >
+        <ElemsRes data="0,-50,25,0,150,-75" />
+    </Monsters>
+</XMLMonsters>

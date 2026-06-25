@@ -8,6 +8,48 @@ expend-qi-opener                =Character expends all qi charges
 
 
 ; ********************************
+; Martial Artist
+; ********************************
+; Job
+
+MART-Title  =Martial Artist
+MART-Ability=Discipline
+MART-desc   =These skillfull warriors unleash devastating combos by using a series setup techniques to charge their qi before delivering a finishing strike. Qi charges cap at 3. Each setup move can only be used once before a finisher is used. 
+
+MART-A1=Martial Strike
+MART-A1-desc={charge-qi-opener} then deals {powerratio} {elem} ({dmgsource}) damage to the target.
+
+MART-A2=Focus Qi
+MART-A2-desc={charge-qi-opener} then grants 1 random buff. The character's next action has 100% accuracy.
+
+MART-A3=Pressure Point
+MART-A3-desc={charge-qi-opener} then deals damage equal to {percent-damage} of the target's current {HP} {add-negative-effect-closer}
+
+MART-A4=Feint
+MART-A4-desc={charge-qi-opener} then deals {powerratio} {elem} ({dmgsource}) damage to the target {add-negative-effect-closer} {turn-comes-faster}
+
+MART-A5=Block
+MART-A5-desc={charge-qi-opener} then takes half damage from all attacks until their next turn and heals {powerratio} ({dmgsource}) {hp}.
+
+MART-A6=Swift Strike
+MART-A6-desc={charge-qi-opener} then deals {powerratio} {elem} ({dmgsource}) damage to the target. {counts-as-regular}
+
+MART-A7=Finisher - Eagle
+MART-A7-desc={expend-qi-opener} then displaces themselves to the target location (cannot be a water tile) and deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage to the targets in a {size} area around them. Cannot be used if there are no targets in the area. The range is extended by 1 for every qi charge expended.
+
+MART-A8=Finisher - Flail
+MART-A8-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage in a cone {add-negative-effect-closer}
+
+MART-A9=Finisher - Qi Blast
+MART-A9-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage in a line. {bypass-counters}
+
+MART-A10=Finisher - Scorpion
+MART-A10-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage to the target and inflicts {power2} random {debuff} per expended qi charge.
+
+MART-A11=Finisher - Shadow
+MART-A11-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage to the target. Will use the equipped weapon's element. If the target is defeated by this ability, character gains {status-mirage-icon}{positive-mirage} and {status-haste-icon}{positive-haste}.
+
+; ********************************
 ; Monster Hunter
 ; ********************************
 ; Job
@@ -70,48 +112,6 @@ DANC-A7=Provocative Dance
 DANC-A7-desc={damage-around-caster-opener} {add-negative-effect-closer} Also forces targes in the area to change direction to face the character.
 
 ; ********************************
-; Martial Artist
-; ********************************
-; Job
-
-MART-Title  =Martial Artist
-MART-Ability=Discipline
-MART-desc   =These skillfull warriors unleash devastating combos by using a series setup techniques to charge their qi before delivering a finishing strike. Qi charges cap at 3. Each setup move can only be used once before a finisher is used. 
-
-MART-A1=Martial Strike
-MART-A1-desc={charge-qi-opener} then deals {powerratio} {elem} ({dmgsource}) damage to the target.
-
-MART-A2=Focus Qi
-MART-A2-desc={charge-qi-opener} then grants 1 random buff. The character's next action has 100% accuracy.
-
-MART-A3=Pressure Point
-MART-A3-desc={charge-qi-opener} then deals damage equal to {percent-damage} of the target's current {HP} {add-negative-effect-closer}
-
-MART-A4=Feint
-MART-A4-desc={charge-qi-opener} then deals {powerratio} {elem} ({dmgsource}) damage to the target {add-negative-effect-closer} {turn-comes-faster}
-
-MART-A5=Block
-MART-A5-desc={charge-qi-opener} then takes half damage from all attacks until their next turn and heals {powerratio} ({dmgsource}) {hp}.
-
-MART-A6=Swift Strike
-MART-A6-desc={charge-qi-opener} then deals {powerratio} {elem} ({dmgsource}) damage to the target. {counts-as-regular}
-
-MART-A7=Finisher - Eagle
-MART-A7-desc={expend-qi-opener} then displaces themselves to the target location (cannot be a water tile) and deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage to the targets in a {size} area around them. Cannot be used if there are no targets in the area. The range is extended by 1 for every qi charge expended.
-
-MART-A8=Finisher - Flail
-MART-A8-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage in a cone {add-negative-effect-closer}
-
-MART-A9=Finisher - Qi Blast
-MART-A9-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage in a line. {bypass-counters}
-
-MART-A10=Finisher - Scorpion
-MART-A10-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage to the target and inflicts {power2} random {debuff} per expended qi charge.
-
-MART-A11=Finisher - Shadow
-MART-A11-desc={expend-qi-opener} then deals {power2ratio} per expended qi charge {elem} ({dmgsource}) damage to the target. Will use the equipped weapon's element. If the target is defeated by this ability, character gains {status-mirage-icon}{positive-mirage} and {status-haste-icon}{positive-haste}.
-
-; ********************************
 ; Demonologist
 ; ********************************
 ; Job
@@ -149,7 +149,7 @@ NECR-P2-desc=Damage taken is reduced for every live ally on the field.
 ; Job
 GEOM-Title	=Geomancer
 GEOM-Ability=Force of Nature
-GEOM-desc	=Deeply in tune with their environemnt, these casters adapt to their surroundings as their powers wax and wane with the seasons.
+GEOM-desc	=Deeply in tune with their environment, these casters adapt to their surroundings as their powers wax and wane with the seasons.
 
 GEOM-A1=Channel Nature
 GEOM-A1-desc={status-pos-opener} to the character. Also grants a random {element} affinity buff (increases damage output by 0.35x with that {element}).
@@ -251,7 +251,7 @@ EXOR-A8-desc={damage-aoe-opener}. Also removes {removenegative} and {removeposit
 ; Job
 GLAD-Title	=Gladiator
 GLAD-Ability=Formation
-GLAD-desc	=Once legionnaires, these battle-tested warriors know the strategies and formations of war as well as the tactics and grit of those fighting to survive in the colesseum. 
+GLAD-desc	=Once legionnaires, these battle-tested warriors know the strategies and formations of war as well as the tactics and grit of those fighting to survive in the colosseum. 
 
 GLAD-A1=Net
 GLAD-A1-desc=Inflicts {addnegative} on the target.
@@ -324,7 +324,7 @@ TIME-P2-desc=Automatically revive with full {hp} after 3 turns of being dead. (C
 ; Job
 FARB-Title	=Fell Arbiter
 FARB-Ability=Maw's Hunger
-FARB-desc	=Only a powerful marked can channel the dark energies of the Maw to become a Fell Arbiter, but while doing so grants great power, the Maw's infuence corrupts those who would channel its power - tempting them to sacrifice all that they hold dear for greater boons. 
+FARB-desc	=Only a powerful marked can channel the dark energies of the Maw to become a Fell Arbiter, but while doing so grants great power, the Maw's influence corrupts those who would channel its power - tempting them to sacrifice all that they hold dear for greater boons. 
 
 FARB-A1=Dark Ritual
 FARB-A1-desc=Grants {addpositive}. Also inflicts {addnegative} on the character.
@@ -406,15 +406,124 @@ INDE-P1=Cruel Carapace
 INDE-P1-desc=Character has a permanent {addpositive} effect and is immune to {removenegative}.
 
 ; ********************************
+; Illusionist
+; ********************************
+; Job
+ILLU-Title	=Illusionist
+ILLU-Ability=Hallucinate
+ILLU-desc	=Adept at avoiding danger and altering the course of battle in an instant - the Illusionist wields magical trickery to aid allies as well as hamper and frustrate opponents. 
+
+ILLU-A1=Swift Swap
+ILLU-A1-desc=Character exchanges position on the map with the target ally. {turn-comes-faster}
+
+ILLU-A2=Disorienting Drop
+ILLU-A2-desc={Deals-OneOverXDamage-opener} and displaces them to a random location within a 4 tile radius. Has a {addnegativechance} of inflicting {addnegative}. Ignores Protect Status.
+
+ILLU-A3=Flight of Fancy
+ILLU-A3-desc={damage-line-opener} to {mp} and removes {removepositive}. Displaces the character to the destination. 
+
+ILLU-A4=Illusory Guardian
+ILLU-A4-desc=Character will be protected from taking any kind of direct damage by having the target take the hit in their stead (will not work for Area of Effect Abilities if the the protector is already a target of the ability). Grants {addpositive} to the target. 
+
+ILLU-A5=Instigate
+ILLU-A5-desc=Inflicts {addnegative} on the target and grants them an immediate turn. 
+
+ILLU-A6=Heroic Moment
+ILLU-A6-desc={status-pos-single-opener} and an immediate turn. The target's next action will have 100% accuracy (cannot miss).
+
+ILLU-A7=Healing Wind
+ILLU-A7-desc=Uses all {mp} to heal all allies. Does more healing the more {mp} used.
+
+ILLU-A8=Gift of Time
+ILLU-A8-desc={sacrifice-life-opener} to grant all allies an immediate turn. Has a {addnegativechance} of inflicting {addnegative}.
+
+ILLU-P2=Trickster's Tricks
+ILLU-P2-desc=All {debuffs} have 50% less chance to work on this character.
+
+; ********************************
+; Night Priestess
+; ********************************
+; Job
+NARP-Title	=Night Priestess
+NARP-Ability=Perverse Prayer
+NARP-desc	=Tainted by dark forces, these once pure maidens wield powerful magics which wax and wane based on their proximity to their target.
+
+NARP-A1=Psychic Weapon
+NARP-A1-desc={damage-single-range-opener}. {counts-as-regular}
+
+NARP-A2=Piercing Darkness
+NARP-A2-desc=Deals {powerratio} to {power3ratio} {elem} ({dmgsource}) damage in a line, based on proximity.
+
+NARP-A3=Growing Gloom
+NARP-A3-desc=Deals {powerratio} to {power3ratio} {elem} ({dmgsource}) damage in a {size} area around the character, based on proximity.
+
+NARP-A4=Lunacy
+NARP-A4-desc=Deals {power3ratio} to {powerratio} {elem} ({dmgsource}) damage in a {size} area. Deals more damage the further the character is from the target.
+
+NARP-A5=Essence Tribute
+NARP-A5-desc=Deals 10 damage to all allies' {mp} and absorbs the damage dealt.
+
+NARP-A6=Dark Night of the Soul
+NARP-A6-desc=Uses all {mp} to deal {elem} ({dmgsource}) damage to the target with 100% accuracy (cannot miss). Deals more damage the more {mp} is used. 
+
+NARP-A7=Manaclysm
+NARP-A7-desc=Deals {power2ratio} {elem} ({dmgsource}) damage to all enemies on the map for each {mp} they have and reduces their {mp} to 0 afterwards.
+
+NARP-C1=Dying Curse
+NARP-C1-desc=Upon death, has an {addnegativechance} chance of inflicting a random {debuff} to all enemies on the map.
+
+NARP-P1=Expansive Knowledge
+NARP-P1-desc=Extends the range of all {Spells} by 1 tile. 
+
+NARP-P2=Unstable Animation
+NARP-P2-desc=Upon defeating an enemy, animate it as a fragile corpse that will explode upon death (only once per character turn, and only on solid ground).
+
+; ********************************
+; Berserker
+; ********************************
+; Job
+BERS-Title	=Berserker
+BERS-Ability=Rampage
+BERS-desc	=Berserkers throw caution to the winds, rending their foes asunder at any cost. Fueled by adrenaline and bloodlust, they ignore the pain of battle as they dart around the battlefield.
+
+BERS-A1=Vaulting Blow
+BERS-A1-desc=Displaces the character to the destination (cannot be a water tile) and deals {powerratio} {elem} ({dmgsource}) damage to the target inbetween.
+
+BERS-A2=Furious Volley
+BERS-A2-desc={damage-aoe-opener} with 100% accuracy (cannot miss).
+
+BERS-A3=Double-Edged Strike
+BERS-A3-desc={damage-single-opener} and {power3ratio} {elem} ({dmgsource}) damage to the character. This attack ignores defense.
+
+BERS-A4=Bloodbath
+BERS-A4-desc={damage-around-caster-opener} and absorbs the damage dealt. 
+
+BERS-A5=Thrill of the Kill
+BERS-A5-desc={damage-single-opener}. If the target is defeated by this ability, character gains {status-fleetoffoot-icon}{positive-fleetoffoot} and {status-critup-icon}{positive-critup}.
+
+BERS-A6=Rain of Pain
+BERS-A6-desc={damage-basic-opener} in short lines in all four directions centered on the character. 
+
+BERS-A7=Desperate Gambit
+BERS-A7-desc={status-pos-opener} and reduces the character's {hp} to 1.
+
+BERS-P1=Battle Frenzy
+BERS-P1-desc=Damage taken until the character's next turn is reduced by 7% (max 35%) for every tile the character has moved this turn. 
+
+BERS-P2=Dire Debilitation
+BERS-P2-desc={critical-hits} inflict {status-cripple-icon}{negative-cripple} and {status-mute-icon}{negative-mute}. Allows the character's {skills} to inflict {critical-hits}. 
+
+
+; ********************************
 ; Deity
 ; ********************************
 ; Job
-;GODP-Title	=Deity
-;GODP-Ability=Omnipotence
-;GODP-desc	=Surely this coudln't pose a balance problem.
+GODP-Title	=Deity
+GODP-Ability=Omnipotence
+GODP-desc	=Surely this coudln't pose a balance problem.
 
-;GODP-A1=No Survivors
-;GODP-A1-desc=The name speaks for itself.
+GODP-A1=No Survivors
+GODP-A1-desc=The name speaks for itself.
 
-;GODP-A2=Super Tame
-;GODP-A2-desc=If the first don't get 'em, the second will.
+GODP-A2=Super Tame
+GODP-A2-desc=If the first don't get 'em, the second will.

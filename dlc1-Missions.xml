@@ -571,6 +571,13 @@
     </Reward>
     <Lock Story="45" />
   </Missions>
+  <Missions Hash="miss-99" Name="Fractured Echoes" Location="B25" CostCp="5" MaxRecruits="2" BaseSuccess="90" DurationInMins="1" Repeatable="false">
+    <SuccessAdd data="DARK|30,HOLY|30"/>
+    <Reward Ap="50" GP="2000" CanCrit="false">
+        <Special Type="kUnlockHunt" DataString="HUNT-19" />
+    </Reward>
+    <Lock Story="47" />
+  </Missions>
   <Zones Hash="zone-00" Name="Centina Hinterlands" SlotsX="3" SlotsY="3" LargeBattle="LARG-00">
     <Missions data="miss-00,miss-01,miss-02,miss-03,miss-04,miss-05,miss-06,miss-07,miss-08,miss-09,miss-10,miss-11,miss-12,miss-13" />
     <MapNodes data="B02,B03,T04,B04,B05,B06,B07,D04" />
@@ -592,7 +599,7 @@
     <ExcludedUpgrades data="upgr-23" />
   </Zones>
   <Zones Hash="zone-04" Name="Kawalands" SlotsX="3" SlotsY="3" LargeBattle="LARG-04">
-    <Missions data="miss-59,miss-60,miss-61,miss-62,miss-63,miss-64,miss-65,miss-66,miss-67,miss-68,miss-69,miss-70,miss-71,miss-72,miss-73,miss-74,miss-75,miss-76,miss-77,miss-78,miss-83,miss-84,miss-85,miss-86,,miss-96,miss-97,miss-98" />
+    <Missions data="miss-59,miss-60,miss-61,miss-62,miss-63,miss-64,miss-65,miss-66,miss-67,miss-68,miss-69,miss-70,miss-71,miss-72,miss-73,miss-74,miss-75,miss-76,miss-77,miss-78,miss-83,miss-84,miss-85,miss-86,,miss-96,miss-97,miss-98,miss-99" />
     <MapNodes data="B22,B23,B24,T12,B25,B26,D02" />
     <ExcludedUpgrades data="upgr-20" />
   </Zones>
@@ -1225,7 +1232,6 @@ monster3=x:14, y:3, dir:lu, class:VAN-02, variant:SKE, variant:DRT, counter:VAN-
 bzil0=x:11, y:6, dir:lu, class:BLA-99, subclass:KNI-99, passive0:KNI-99-P1, passive1:KNI-99-P2, counter:KNI-99-C1, difficulty:2
 </EncounterData>
   </Hunts>
-
     <Hunts Hash="HUNT-15" NodeHash="B19">
     <EncounterData>
 Loot=GUN-40,BADG-15
@@ -1315,6 +1321,26 @@ monster4=x:2, y:4, dir:ru, class:UND-01
 monster5=x:4, y:1, dir:lu, class:UND-01
 ; Elites
 monster6=x:9, y:7, dir:ld, class:MAL-03, variant:SKE, variant:ALP, counter:VAR-DFT-01, name:Void Pet, acc0:ARI-07, armor:ACO-06, difficulty:2
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-19" NodeHash="B35">
+    <EncounterData>
+Loot=GUN-40,BADG-15
+Lootcount=3
+Loottable=27
+Stealtable=16
+LevelRange3=20,30
+
+zone0=9,0,2,1
+zone1=2,9,2,1
+facing=lu
+center=7,6
+MaxUnits=3
+
+; Normal
+human0=x:7, y:5, dir:ld, class:TIME, subclass:null, isaboss:true, passive0:HEAL-P1, passive1:SORC-P1, counter:TIME-C1, abilities:1|3|3|2|3|1, stat-hp:150, stat-spd:25, stat-mnd:25, stat-def:25, stat-res:25, gender:female, name:Ml'zina, weapon:GUN-40, acc0:ABO-07, acc1:ARI-06
+; Elites
+bzil0=x:4, y:5, dir:lu, class:BLA-99, subclass:KNI-99, passive0:KNI-99-P1, passive1:KNI-99-P2, counter:KNI-99-C1, acc0:ABO-07, difficulty:1
 </EncounterData>
   </Hunts>
   <Hunts Hash="LARG-00" NodeHash="D04" isLargeBattle="true" isZoneCompletion="true">

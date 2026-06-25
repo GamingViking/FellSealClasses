@@ -33,7 +33,7 @@ DANC=debuffer
 NECR=raiser,dps
 GEOM=magicdps
 INFE=debuffer
-EXOR=healer,dps,visciousdps
+EXOR=healer,dps,viciousdps
 GLAD=dpsdebuffer,protector
 
 [npc-counters]
@@ -41,6 +41,8 @@ GLAD-C1=16 ; Repel
 GEOM-C1=20 ; Nature's Revenge
 NECR-C1=24 ; Weaken
 MART-C1=28 ; Scar Tissue
+NARP-C1=36 ; Dying Curse
+BERS-C1=40 ; Thrash
 
 [npc-passives-melee]
 GLAD-P1=16 ; Retaliation
@@ -49,6 +51,8 @@ INFE-P2=22 ; Strong Body
 GLAD-P2=22 ; Holistic Defense
 MONH-P1=24 ; Stampede
 DANC-P2=26 ; Harrier
+BERS-P1=38 ; Battle Frenzy
+BERS-P2=40 ; Dire Debilitation
 
 [npc-passives-range]
 GEOM-P2=20 ; Manaburn
@@ -56,6 +60,7 @@ INFE-P1=20 ; Opportunist II
 DANC-P1=22 ; Shifting Target
 MONH-P1=26 ; Stampede
 DANC-P2=30 ; Harrier
+BERS-P2=42 ; Dire Debilitation
 
 [npc-passives-magic]
 GEOM-P1=16 ; Submariner
@@ -64,6 +69,7 @@ INFE-P1=20 ; Opportunist II
 NECR-P2=22 ; Minion Master
 MONH-P2=26 ; Stampede
 MART-P2=28 ; Impetus
+NARP-P2=44 ; Unstable Animation
 
 [npc-passives-healer]
 GLAD-P2=14 ; Holistic Defense
@@ -74,9 +80,11 @@ DANC-P1=18 ; Shifting Target
 [npc-class-melee]
 MART=5
 GLAD=11
+BERS=30
 
 [npc-class-magic]
 GEOM=17
+NARP=30
 
 [npc-class-healer]
 EXOR=18
@@ -101,6 +109,8 @@ GEOM=15
 INFE=18
 EXOR=24
 GLAD=11
+BERS=52
+NARP=54
 
 [AmbientLootTable-40]
 fixeddrop0=BADG-15, 0.25
@@ -109,6 +119,6 @@ fixeddrop0=BADG-15, 0.25
 fixeddrop0=BADG-15, 0.5
 
 [StealGroups]
-Fighter	=MART, INFE, EXOR, GLAD
+Fighter	=MART, INFE, EXOR, GLAD, BERS
 Rogue	=MONH
-Caster	=DANC, NECR, GEOM
+Caster	=DANC, NECR, GEOM, NARP

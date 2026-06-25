@@ -29,7 +29,7 @@ The only **Real** issue is if you intend to mod my work - see #2 below. As I pla
 <details>
     <summary>Click to Reveal Known Issues</summary>
     
-    - The skill "Lasso" does not display the bonus damage that would result to an enemy as a result of the displacement (whether that be extra damage from being pulled into something or drowning.) This does not affect the result, only the prediction.
+    - The skill "Lasso" does not display the bonus damage that would result to an enemy as a result of the displacement (whether that be extra damage from being pulled into something or drowning). This does not affect the result, only the prediction.
     - The skill "Finisher - Scorpion" doesn't correctly display the number of debuffs that will be inflicted beyond one. This does not affect the result, only the prediction.
     - The skill "Epidemic" does not work if the user has the passive "Smart Casting" equipped. This technically makes sense as it's an offensive ability with which you target your own unit, but it would be cool if it worked.
     - Classes specific to story characters still appear in other characters' class wheels. They are still inaccessible to everyone else, so it's just a visual thing, but one for which I don't know a good fix. 
@@ -83,7 +83,7 @@ The only **Real** issue is if you intend to mod my work - see #2 below. As I pla
 * **Eviscerator** (SWORD) - An unwieldy but lethal blade (-5 accuracy, grants {addpositive} when using a Regular Attack).
 * **Wind Dancer** (Dagger) - The wind spirit inside makes you feel lighter than air (grants {addpositive} when using a regular attack from the sides or back).
 * **Shaper's Finger** (STAFF) - Concentrates magical power to nearby attacks (Decreases the range of Ranged Spells by 1).
-* **Valuter** (SPEAR) - The weapon's flexible shaft helps the user to vault great heights.
+* **Vaulter** (SPEAR) - The weapon's flexible shaft helps the user to vault great heights.
 * **Insight** (MACE) - Magical knowledge swirls within (grants +2MP per turn).
 * **Illusory Rod** (ROD) - Makes its bearer appear insubstantial (grants {addpositive} when HP is Critical at the start of a turn).
 * **Harmony** (MAUL) - A weapon which calms the heart and aids the righteous, said to bolster one's Holy affinity.
