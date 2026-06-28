@@ -1323,7 +1323,7 @@ monster5=x:4, y:1, dir:lu, class:UND-01
 monster6=x:9, y:7, dir:ld, class:MAL-03, variant:SKE, variant:ALP, counter:VAR-DFT-01, name:Void Pet, acc0:ARI-07, armor:ACO-06, difficulty:2
 </EncounterData>
   </Hunts>
-  <Hunts Hash="HUNT-19" NodeHash="B35">
+  <Hunts Hash="HUNT-19" NodeHash="T09">
     <EncounterData>
 Loot=GUN-40,BADG-15
 Lootcount=3
@@ -1331,14 +1331,16 @@ Loottable=27
 Stealtable=16
 LevelRange3=20,30
 
-zone0=9,0,2,1
-zone1=2,9,2,1
+zone0=1,0,4,2
 facing=lu
-center=7,6
-MaxUnits=3
+center=8,7
+MaxUnits=6
 
 ; Normal
-human0=x:7, y:5, dir:ld, class:TIME, subclass:null, isaboss:true, passive0:HEAL-P1, passive1:SORC-P1, counter:TIME-C1, abilities:1|3|3|2|3|1, stat-hp:150, stat-spd:25, stat-mnd:25, stat-def:25, stat-res:25, gender:female, name:Ml'zina, weapon:GUN-40, acc0:ABO-07, acc1:ARI-06
+human0=x:7, y:9, dir:rd, class:UTIL, subclass:GADG, passive0:WIZA-P1, passive1:HEAL-P2, counter:HEAL-C1, abilities:1|1|3|3|1|3|1, stat-hp:25, stat-spd:5, stat-atk:20, stat-mnd:20, stat-def:20, stat-res:20, gender:female, name:Kyra, weapon:ROD-36, helmet:HCL-09, shield:SHI-04, armor:BHE-10, acc0:ARI-04, acc1:ABO-03, behavior:alwaysoptimal
+human1=x:12, y:5, dir:ld, class:ASSA, subclass:WARM, passive0:LORD-P2, passive1:GUNN-P1, counter:ALCH-C1, abilities:1|3|1|3|3|1|1, stat-hp:25, stat-spd:5, stat-atk:20, stat-mnd:20, stat-def:20, stat-res:20, gender:male, name:Calian, weapon:GUN-36, weapon2:GUN-36, armor:BCL-35, acc0:ABO-07, acc1:ABO-06, acc2:ABO-08, weightstyle:healer, weighttarget:WARM-A5|100|human2
+human2=x:2, y:11, dir:rd, class:MERC, subclass:DEMK, passive0:VAR-COR-P2, passive1:REAV-P1, counter:MERC-C1, abilities:1|1|3|3|3|1|1, stat-hp:35, stat-atk:80, stat-mnd:-35, stat-def:-20, stat-res:20, gender:female, name:Anadyne, weapon:AXE-36, armor:BHE-08, shield:SHI-04, acc0:ARI-37, acc1:ARI-04, acc2:ABO-03, weightstyle:viciousdps
+human3=x:7, y:3, dir:ld, class:MERC, subclass:DEMK, passive0:VAR-COR-P2, passive1:REAV-P1, counter:MERC-C1, abilities:1|1|3|3|3|1|1, stat-hp:35, stat-atk:80, stat-mnd:-35, stat-def:-20, stat-res:20, gender:female, name:Anadyne, weapon:AXE-36, gearfill:none, weightstyle:viciousdps
 ; Elites
 bzil0=x:4, y:5, dir:lu, class:BLA-99, subclass:KNI-99, passive0:KNI-99-P1, passive1:KNI-99-P2, counter:KNI-99-C1, acc0:ABO-07, difficulty:1
 </EncounterData>
