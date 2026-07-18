@@ -1,3 +1,14 @@
+; **** Ingredients ************
+
+; Ingredients
+ing-28-name =Echo Fragment
+ing-28-names=Echo Fragments
+ing-28-desc =An unstable piece of another reality distilled into a physical form.
+
+ing-29-name =Echo Resonator
+ing-29-names=Echo Resonators
+ing-29-desc =A unique device capable of stabilizing and fusing echos of magic from other realities. 
+
 ; **** Badges ************
 ; Badges
 

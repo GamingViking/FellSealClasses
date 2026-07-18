@@ -11,4 +11,10 @@
   <Armors HashName="HCL-37" Name="Believer's Blindfold" Desc="ar-hat-37" Icon="icon-acccollar-04" IsDLCIcon="true" Type="clothhelmet" BonusAcc="-15" Speed="10" NegativeEffectsProtect="kfBlind" Tier="999">
     <Stats Values="62 1 0 1"/>
   </Armors> 
+  <Armors HashName="HCL-38" Name="Devoted Daidem" Desc="ar-hat-38" Icon="icon-helmcloth-09" Type="clothhelmet" NegativeEffectsProtect="kfCharm" Tier="999">
+    <Stats Values="0 10 0 42"/>
+  </Armors> 
+  <Armors HashName="BCL-16" Name="Immaterial Cloak" Desc="ar-cloth-16" Icon="icon-armorcloth-12" Type="robes" Evasion="20" Tier="999">
+    <Stats Values="0 0 0 11" />
+  </Armors>
 </XMLArmors>

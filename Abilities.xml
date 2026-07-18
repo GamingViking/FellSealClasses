@@ -105,7 +105,7 @@
     <Ability HashName="FARB-A4" EffectHash="MAW-01-A1" Name="Feed the Maw" MpCost="12" Range="0" Size="3" Power="2.25" Shape="kSquare" Element="kDark" DmgSource="kMAtk" DmgType="kMagical" SpellType="kNothing" SpecialEffect="kLowAccuracyWithCrit" ExtraFlags="kIgnoreSides" />
     <Ability HashName="FARB-A5" EffectHash="GHO-01-A1" Name="Last Breath" MinRange="1" Range="1" RangeHeight="1.5" Power="1.75" Shape="kCone" Size="2" Element="kNone" DmgType="kMagical" DmgSource="kAtkMixed" SpecialEffect2="kSacrifice" SpellType="kSkill" />
     <Ability HashName="FARB-A6" EffectHash="SORC-A5" Name="Pervasive Darkness" MpCost="12" Range="0" RangeHeight="1" Power="0.9" Shape="kAll" Element="kDark" DmgSource="kMAtk" DmgType="kMagical" SpecialEffect="kBypassCounters" ExtraFlags="kNoAIUse kIgnoreSides kIgnoreSelfAsTarget" />
-    <Ability HashName="FARB-A7" EffectHash="SND-01-A4" Name="Abyssal Gaze"  MpCost="-1" MinRange="1" Range="1" RangeHeight="1.5" Size="3" Power="0.1" Power2="0.5" Power3="10" Shape="kCone" Element="kDark" DmgType="kMagical" DmgSource="kMAtk" SpecialEffect="kUseAllMp" SpecialEffect2="kPerfectAccuracy" />
+    <Ability HashName="FARB-A7" EffectHash="SND-01-A4" Name="Abyssal Gaze"  MpCost="-1" MinRange="1" Range="1" RangeHeight="1.5" Size="3" Power="0.1" Power2="0.5" Power3="10" Shape="kCone" Element="kDark" DmgType="kMagical" DmgSource="kMAtk" SpellType="kNothing" SpecialEffect="kUseAllMp" SpecialEffect2="kPerfectAccuracy" />
     <Ability HashName="FARB-A8" EffectHash="APB-01-A4" Name="Profane Offering" Range="0" RangeHeight="1" Power="-999" Power3="1" IntArg="7" SpellType="kNothing" Shape="kAllAllies" Element="kNone" DmgType="kHealing" SpecialEffect="kBuffsOnCaster" ExtraFlags="kFixedDamage kIgnoreSelfAsTarget kTargetCannotRevive kGivesQuickTurnFrowPower3" AddPositiveEffects="kfAtkUp kfMAtkUp kfHaste kfBoon kfFocus kfMirage kfBarrier kfRenew kfFleetOfFoot kfAffinity_Holy kfAffinity_Dark" />
 
     <Ability HashName="SCOU-A1" EffectHash="ROGU-A4" Name="Stalk Target" MpCost="8" MinRange="1" AddNegativeEffects="kfDefDown" AddNegativeEffectsBaseChance="100" AddPositiveEffects="kfAtkUp kfFleetOfFoot" SpecialEffect="kBuffsOnCaster" SpellType="kSkill" />
@@ -128,7 +128,7 @@
     <Ability HashName="ILLU-A4" EffectHash="KAW-02-A2" Name="Illusory Guardian" MpCost="6" MinRange="1" Range="4" RangeHeight="4" Element="kNone" DmgType="kHealing" SpecialEffect="kMeatshield" ExtraFlags="kNoFF" AddPositiveEffects="kfMirage" />
     <Ability HashName="ILLU-A5" EffectHash="KNIG-A3" Name="Instigate" MpCost="12" MinRange="1" Range="3" RangeHeight="3" Element="kNone" SpecialEffect="kQuicken" SpecialEffect2="kPerfectAccuracy" AddNegativeEffects="kfBerserk kfNoQuicken" AddNegativeEffectsBaseChance="100" />
     <Ability HashName="ILLU-A6" EffectHash="SAMU-A2" Name="Heroic Momement" MpCost="16" Range="3" RangeHeight="2.5" Element="kNone" DmgSource="kMAtk" DmgType="kHealing" AddPositiveEffects="kfCritUp" AddNegativeEffects="kfNoQuicken" AddNegativeEffectsBaseChance="100" SpecialEffect="kQuicken" SpecialEffect2="kNextActionIs100" />
-    <Ability HashName="ILLU-A7" EffectHash="VAR-WRD-A2" Name="Healing Wind" MpCost="-1" Range="0" RangeHeight="1" Power="0.3" Power2="0.4" Power3="10" Shape="kAllAllies" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpecialEffect="kUseAllMp" />
+    <Ability HashName="ILLU-A7" EffectHash="VAR-WRD-A2" Name="Healing Wind" MpCost="-1" Range="0" RangeHeight="1" Power="0.3" Power2="0.4" Power3="10" Shape="kAllAllies" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpellType="kNothing" SpecialEffect="kUseAllMp" />
     <Ability HashName="ILLU-A8" EffectHash="BLAD-A6" Name="Gift of Time" Range="0" RangeHeight="1" Shape="kAllAllies" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpellType="kNothing" AddNegativeEffects="kfSlow" AddNegativeEffectsBaseChance="50" SpecialEffect="kQuicken" SpecialEffect2="kSacrifice" ExtraFlags="kIgnoreSelfAsTarget" />
     <!-- <Ability HashName="ILLU-A9" EffectHash="GAMB-A6" Name="Illusion of Grandeur" Range="0" RangeHeight="3" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpecialEffect="kQuicken" AddNegativeEffects="kfNoQuicken kfSlow kfMAtkDown" AddNegativeEffectsBaseChance="100" /> -->
 
@@ -137,7 +137,7 @@
     <Ability HashName="NARP-A3" EffectHash="ANAT-A3" Name="Growing Gloom" MpCost="20" Range="0" ZoneHeight="3" Shape="kCross" Size="7" Power="0.7" Power3="1.3" IntArg="3" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" SpellType="kSkill" SpecialEffect="kScaleWithProximity" ExtraFlags="kIgnoreSelfAsTarget" />
     <Ability HashName="NARP-A4" EffectHash="WERE-A6" Name="Lunacy" MpCost="18" Range="2" RangeHeight="2.5" Shape="kCross" Size="3" Power="2.3" Power3="1.3" IntArg="7" Element="kDark" DmgType="kMagical" DmgSource="kMAtk" SpecialEffect="kScaleWithProximity" ExtraFlags="kIgnoreSelfAsTarget" />
     <Ability HashName="NARP-A5" EffectHash="MAW-02-A6" Name="Essence Tribute" Range="0" RangeHeight="1" Power="10" Shape="kAllAllies" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" SpecialEffect="kDrainMp" SpecialEffect2="kPerfectAccuracy" SpellType="kNothing" ExtraFlags="kIgnoreSelfAsTarget kFixedDamage kIsSystem" />
-    <Ability HashName="NARP-A6" EffectHash="LICH-A5" Name="Dark Night of the Soul" MpCost="-1" MinRange="1" Range="1" RangeHeight="2" Power="0.1" Power2="1.1" Power3="10" Element="kNone" DmgSource="kAtkMixed" DmgType="kMagical" SpecialEffect="kUseAllMp" SpecialEffect2="kPerfectAccuracy" ExtraFlags="kIgnoreSides" />
+    <Ability HashName="NARP-A6" EffectHash="LICH-A5" Name="Dark Night of the Soul" MpCost="-1" MinRange="1" Range="1" RangeHeight="2" Power="0.1" Power2="1.1" Power3="10" Element="kNone" DmgSource="kAtkMixed" DmgType="kMagical" SpellType="kNothing" SpecialEffect="kUseAllMp" SpecialEffect2="kPerfectAccuracy" ExtraFlags="kIgnoreSides" />
     <Ability HashName="NARP-A7" EffectHash="MAW-01-A2" Name="Manaclysm" MpCost="40" Range="0" RangeHeight="1" Power="0.01" Power2="0.08" Power3="1" Shape="kAllEnemies" DmgType="kNone" DmgSource="kMAtk" Element="kNone" SpecialEffect="kManabreaker" />
 
     <Ability HashName="UND-04-A1" EffectHash="BOL-01-A1" Name="Rabid Rush" MinRange="1" Range="1" RangeHeight="1.5" Size="4" Power="0.9" Shape="kCharge" SpellType="kSkill" ExtraFlags="kIgnoresCover" />
@@ -149,6 +149,77 @@
     <Ability HashName="BERS-A5" EffectHash="WERE-A7" Name="Thrill of the Kill" MpCost="6" MinRange="1" Power="1" SpellType="kSkill" SpecialEffect="kSelfBuffOnKill" ConditionalPositiveEffects="kfFleetOfFoot kfCritUp" />
     <Ability HashName="BERS-A6" EffectHash="ZOT-02-A4" Name="Rain of Pain" Range="0" RangeHeight="0" Power="2" ZoneHeight="1.5" Shape="k4Lines" Size="3" SpellType="kSkill" ExtraFlags="kIgnoreSides" />
     <Ability HashName="BERS-A7" EffectHash="SAMU-A8" Name="Desperate Gambit" Range="0" Height="1" SpellType="kSkill" SpecialEffect="kHpTo1" AddPositiveEffects="kfFocus kfAtkUp kfMirage" />
+
+    <Ability HashName="WARF-A5" Name="Infused Edge" CopyFrom="WARM-A5" />
+    <Ability HashName="WARF-A1" Name="Water Bolt" CopyFrom="WARM-A1" />
+    <Ability HashName="WARF-A2" Name="Fire Bolt" CopyFrom="WARM-A2" />
+    <Ability HashName="WARF-A3" Name="Earth Bolt" CopyFrom="WARM-A3" />
+    <Ability HashName="WARF-A4" Name="Thunder Bolt" CopyFrom="WARM-A4" />
+    <Ability HashName="WARF-A6" Name="Water Burst" CopyFrom="WARM-A6" />
+    <Ability HashName="WARF-A7" Name="Fire Burst" CopyFrom="WARM-A7" />
+    <Ability HashName="WARF-A8" Name="Earth Burst" CopyFrom="WARM-A8" />
+    <Ability HashName="WARF-A9" Name="Thunder Burst" CopyFrom="WARM-A9" />
+    <Ability HashName="WARF-A10" Name="Pulsar" CopyFrom="WARM-A10" />
+    <Ability HashName="WARF-A11" Name="Infused Mirage" MpCost="10" MinRange="1" Element="kNone" DmgType="kHealing" Power="1.5" AddPositiveEffects="kfMirage"/>
+
+    <Ability HashName="VOKS-A1" EffectHash="MAM-01-A1" Name="Gutspawn" MpCost="20" MinRange="1" Range="5" RangeHeight="5" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" StringArg="SUM-01" SpecialEffect="kSummonAny" SpecialEffect2="kPerfectAccuracy" SpellType="kSkill" ExtraFlags="kTargetsGround kCannotTargetWater" />
+    <Ability HashName="VOKS-A2" EffectHash="MERC-A2" Name="Unseen Force" MinRange="1" Range="2" RangeHeight="1" Power="0.85" SpecialEffect="kPunt" DmgType="kMagical" PosStyle="kLine" />
+    <Ability HashName="VOKS-A3" EffectHash="ROGU-A2" Name="Phantom Hand" MinRange="1" Range="3" RangeHeight="1.5" DmgType="kMagical" Power="0.65" SpecialEffect="kStealItems" ExtraFlags="kNoFF" AddNegativeEffectsBaseChance="70" />
+
+    <Ability HashName="SUM-01-A1" EffectHash="MAM-01-A1" Name="Gutspawn" MpCost="20" MinRange="1" Range="4" RangeHeight="5" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" StringArg="SUM-01" SpecialEffect="kSummonAny" SpecialEffect2="kPerfectAccuracy" SpellType="kSkill" ExtraFlags="kTargetsGround kCannotTargetWater" />
+    <Ability HashName="SUM-01-A2" CopyFrom="UND-03-A3" Name="Autotomize" />
+    <Ability HashName="SUM-01-A3" Name="Barbed Tongue" MinRange="1" Range="2" RangeHeight="2" Element="kNone" Power="0.8" SpellType="kSkill" SpecialEffect="kInflictsRandomDebuff" AddNegativeEffectsBaseChance="75" />
+
+    <Ability HashName="ANC-01-A1" EffectHash="UTIL-A7" Name="Decelerate" Range="20" RangeHeight="5" Shape="kCross" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" SpecialEffect2="kPerfectAccuracy" AddNegativeEffects="kfSlow" AddNegativeEffectsBaseChance="100" />
+    <Ability HashName="ANC-01-A2" EffectHash="ALCH-A5" Name="Accelerate" Range="9" RangeHeight="5" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" AddPositiveEffects="kfHaste" />
+    <Ability HashName="ANC-01-A3" EffectHash="BLAD-A6" Name="Time Leap" MpCost="40" Range="0" RangeHeight="1" Shape="kAllAllies" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpellType="kNothing" SpecialEffect="kQuicken" ExtraFlags="kIgnoreSelfAsTarget" />
+
+    <Ability HashName="ANC-02-A1" EffectHash="VAR-AER-A2" Name="Space Distortion" Range="10" RangeHeight="5" ZoneHeight="5" Size="15" Power="0.1" Shape="kSquare" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" SpellType="kNothing" SpecialEffect="kDisplaceAllTargetsInRadius" SpecialEffect2="kPerfectAccuracy" ExtraFlags="kIgnoreSelfAsTarget kNoFF"/>
+    <!-- <Ability HashName="ANC-02-A2" EffectHash="IMM1-A1" Name="Transpose" MinRange="2" Range="10" RangeHeight="5" SpellType="kNothing" Element="kNone" DmgSource="kMAtk" SpecialEffect="kTeleportOther" SpecialEffect2="kPerfectAccuracy" ExtraFlags="kIgnoresCover kIgnoreSmartCast" /> -->
+    <!-- <Ability HashName="ANC-02-A2" EffectHash="IMM1-A4" Name="Spacial Overlap" MpCost="20" MinRange="1" Range="25" RangeHeight="5" Power="1" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" SpecialEffect="kTeleportOtherIntoOther" SpecialEffect2="kPerfectAccuracy" ExtraFlags="kIgnoresCover" /> -->
+    <Ability HashName="ANC-02-A2" EffectHash="IMM1-A2" Name="Dimensional Drop" MpCost="20" Shape="kAllEnemies" Range="0" RangeHeight="5" Power2="8" Element="kNone" DmgType="kNone" DmgSource="kMAtk" SpecialEffect="kFallDamage" SpecialEffect2="kPerfectAccuracy" ExtraFlags="kIgnoreSelfAsTarget kIgnoresCover" />
+
+    <Ability HashName="ANC-03-A1" EffectHash="SMED-A5" Name="Energy Infusion" Range="20" RangeHeight="5" Power="1000" Power2="10" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpecialEffect="kRestoresMpAsWell" SpellType="kNothing" ExtraFlags="kIgnoreSelfAsTarget kFixedDamage" />
+    <Ability HashName="ANC-03-A2" EffectHash="SMED-A5" Name="Energy Influx" MpCost="40" Shape="kAllAllies" Range="0" RangeHeight="5" Power="1000" Power2="10" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpecialEffect="kRestoresMpAsWell" SpellType="kNothing" ExtraFlags="kIgnoreSelfAsTarget kFixedDamage" />
+
+    <Ability HashName="SPN-01-A1" EffectHash="MAM-01-A1" Name="Spawn" MpCost="15" MinRange="1" Range="2" RangeHeight="3" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" StringArg="INC-01" SpecialEffect="kSummonAny" SpecialEffect2="kPerfectAccuracy" ExtraFlags="kTargetsGround kCannotTargetWater" />
+    <Ability HashName="SPN-01-A2" EffectHash="MAM-01-A1" Name="Spawn" MpCost="15" MinRange="1" Range="2" RangeHeight="3" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" StringArg="INC-02" SpecialEffect="kSummonAny" SpecialEffect2="kPerfectAccuracy" ExtraFlags="kTargetsGround kCannotTargetWater" />
+    
+
+    <Ability HashName="INC-01-A1" EffectHash="MAM-01-A1" Name="Evolve" MpCost="40" MinRange="1" Range="2" RangeHeight="3" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" StringArg="EVO-01" SpecialEffect="kSummonAny" SpecialEffect2="kSacrifice" ExtraFlags="kTargetsGround kCannotTargetWater" />
+    <Ability HashName="INC-01-A2" EffectHash="MARK-A4" Name="Life Drain" MinRange="1" Range="1" RangeHeight="2" Power="0.75" Element="kNone" DmgType="kMagical" DmgSource="kAtk" SpecialEffect="kDrainHp" SpellType="kSkill" />
+    
+    <Ability HashName="INC-02-A1" EffectHash="MAM-01-A1" Name="Evolve" MpCost="40" MinRange="1" Range="2" RangeHeight="3" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" StringArg="EVO-02" SpecialEffect="kSummonAny" SpecialEffect2="kSacrifice" ExtraFlags="kTargetsGround kCannotTargetWater" />
+    <Ability HashName="INC-02-A2" CopyFrom="INC-01-A2" Name="Life Drain" />
+
+    <Ability HashName="EVO-01-A1" EffectHash="MAM-01-A1" Name="Evolve" MpCost="40" MinRange="1" Range="2" RangeHeight="3" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" StringArg="EVO-03" SpecialEffect="kSummonAny" SpecialEffect2="kSacrifice" ExtraFlags="kTargetsGround kCannotTargetWater" />
+    <Ability HashName="EVO-01-A2" EffectHash="BWO-01-A2" Name="Corrosive Spit" MinRange="1" Range="3" RangeHeight="2" Size="3" Power="0.9" Shape="kCross" Element="kWater" DmgType="kMagical" DmgSource="kMAtk" SpellType="kSkill" ExtraFlags="kIgnoreSelfAsTarget" AddNegativeEffects="kfDefDown kfMDefDown" AddNegativeEffectsBaseChance="50" />
+    <Ability HashName="EVO-01-A3" EffectHash="PRIN-A4" Name="Blinding Light" Range="3" RangeHeight="5" Size="3" Power="0.9" Shape="kCross" Element="kHoly" DmgType="kMagical" DmgSource="kMAtk" ExtraFlags="kIgnoreSelfAsTarget" AddNegativeEffects="kfBlind" AddNegativeEffectsBaseChance="50" />
+    <Ability HashName="EVO-01-A4" EffectHash="BWO-01-A3" Name="Entangling Dervish" MinRange="1" Range="3" RangeHeight="3" Size="3" Shape="kCross" Power="0.8" Element="kEarth" DmgType="kMagical" DmgSource="kMAtk" SpellType="kSkill" AddNegativeEffects="kfRoot" AddNegativeEffectsBaseChance="50" />
+
+    <Ability HashName="EVO-02-A1" EffectHash="MAM-01-A1" Name="Evolve" MpCost="40" MinRange="1" Range="2" RangeHeight="3" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" StringArg="EVO-04" SpecialEffect="kSummonAny" SpecialEffect2="kSacrifice" ExtraFlags="kTargetsGround kCannotTargetWater" />
+    <Ability HashName="EVO-02-A2" EffectHash="SAMU-A3" Name="Razor Claws" MinRange="1" Range="1" Power="1" SpecialEffect="kIgnoreDefense" SpellType="kSkill" />
+    <Ability HashName="EVO-02-A3" EffectHash="HRV-02-A2" Name="Targeted Spines" MinRange="1" Range="3" Size="3" Power="1" SpellType="kSkill" SpecialEffect2="kPerfectAccuracy" ExtraFlags="kIgnoreSides" />
+    <Ability HashName="EVO-02-A3" EffectHash="REAV-A4" Name="Wallop" MinRange="1" Range="1" RangeHeight="1.5" Power="1.5" SpecialEffect="k1QuarterDmgSelf" SpellType="kSkill" />
+
+     <Ability HashName="EVO-03-A1" EffectHash="MAM-01-A3" Name="Mana Acid" MinRange="1" Range="10" RangeHeight="8" Power="0.4" Element="kWater" DmgType="kMagical" DmgSource="kMAtk" SpecialEffect="kDrainMp" SpellType="kSkill" />
+    <Ability HashName="EVO-03-A2" CopyFrom="ILLU-A2" Name="Disorienting Drop" />
+    <Ability HashName="EVO-03-A3" CopyFrom="NARP-A3" Name="Growing Gloom" />
+    <Ability HashName="EVO-03-A4" CopyFrom="APB-01-A3" Name="Canoptic Jar" />
+    <Ability HashName="EVO-03-A5" CopyFrom="DAO-03-A4" Name="Silverhorn" />
+    <Ability HashName="EVO-03-A6" CopyFrom="NARP-A7" Name="Manaclysm" />
+
+    <Ability HashName="EVO-04-A1" CopyFrom="REAV-A3" Name="Whirling Blow" />
+    <Ability HashName="EVO-04-A2" CopyFrom="MERC-A7" Name="Stunning Strike" />
+    <Ability HashName="EVO-04-A3" CopyFrom="GLAD-A5" Name="Hold the Line" />
+    <Ability HashName="EVO-04-A4" CopyFrom="VAR-COR-A2" Name="Fanatical Blows" />
+    <Ability HashName="EVO-04-A5" CopyFrom="KNI-01-A2" Name="Manabreaker" />
+    <Ability HashName="EVO-04-A6" CopyFrom="EXOR-A7" Name="Righteous Fury" />
+
+
+
+
+    <Ability HashName="TER-01-A1" EffectHash="MAM-01-A1" Name="Gutspawn" MpCost="8" MinRange="1" Range="1" RangeHeight="3" Element="kNone" DmgType="kMagical" DmgSource="kMAtk" StringArg="UND-04" SpecialEffect="kSummonAny" SpecialEffect2="kPerfectAccuracy" SpellType="kSkill" ExtraFlags="kTargetsGround kCannotTargetWater" />
 
     <Ability HashName="GODP-A1" Name="No Survivors" MpCost="1" Range="0" RangeHeight="1" Power="-999" Shape="kAllEnemies" Element="kNone" DmgType="kHealing" DmgSource="kMAtk" SpellType="kNothing" ExtraFlags="kFixedDamage" />
     <Ability HashName="GODP-A2" EffectHash="WRAN-A1" Name="Super Tame" MpCost="2" MinRange="1" Range="30" RangeHeight="25" Power="50" Element="kNone" SpecialEffect="kMonsterTame" SpecialEffect2="kPerfectAccuracy" SpellType="kSkill" ExtraFlags="kNoAIUse kNoFF kIgnoreSides kIgnoresCover kOnlyWorksOnMonsters"/>
@@ -186,6 +257,18 @@
     <Ability HashName="NARP-P2" Name="Unstable Animation" StringArg="UND-04" AddsNonRemovableEffects1="kfSwitcheroo" />
     <Ability HashName="BERS-P1" EffectHash="VAR-CLO-P2" Name="Battle Frenzy" AddsNonRemovableEffects2="kfJuggernaut" />
     <Ability HashName="BERS-P2" EffectHash="VAR-FER-P1" Name="Dire Debilitation" AddNegativeEffects="kfCripple kfMute" AddsNonRemovableEffects1="kfCritSkills kfOnCritAddNegative" />
+
+    <Ability HashName="SUM-01-P1" CopyFrom="VAR-SKE-P1" />
+    <Ability HashName="SUM-01-P2" CopyFrom="WARM-P2" />
+    <Ability HashName="ANC-01-P1" CopyFrom="DEM-01-P1" />
+    <Ability HashName="ANC-02-P1" CopyFrom="DEM-01-P1" />
+    <Ability HashName="ANC-03-P1" CopyFrom="DEM-01-P1" />
+    <Ability HashName="SPN-01-P1" CopyFrom="GADG-P2" />
+    <Ability HashName="EVO-03-P1" CopyFrom="SORC-P1" />
+    <Ability HashName="EVO-03-P2" CopyFrom="HEAL-P2" />
+    <Ability HashName="EVO-04-P1" CopyFrom="VAR-COR-P1" />
+    <Ability HashName="EVO-04-P2" CopyFrom="SAMU-P2" />
+    <Ability HashName="TER-01-P1" EffectHash="DAO-02-P2" Name="Unassailable" AddPositiveEffects="kfMirage" AddsNonRemovableEffects1="kfImmuneTraps kfPermanentPositive" />
   </passive>
 
   <counter>
@@ -202,8 +285,11 @@
     <Ability HashName="SCOU-C1" CopyFrom="DAA-01-C1" Name="Adaptive Aegis" />
     <Ability HashName="INDE-C1" CopyFrom="BOL-03-C1" Name="Shared Rage" />
     <Ability HashName="ILLU-C1" CopyFrom="ZOT-01-C1" Name="Adaptive Evasion" />
-    <Ability HashName="UND-04-C1" EffectHash="RANG-A4" Name="Unstable Explosion" Range="0" ZoneHeight="1.5" Size="3" Power="2" Shape="kCross" Element="kFire" DmgType="kMagical" ExtraFlags="kIgnoreSelfAsTarget" GivesCounter="kExplode" />
     <Ability HashName="NARP-C1" EffectHash="DAA-03-A4" Name="Dying Curse" Range="0" Shape="kAllEnemies" Element="kNone" DmgSource="kMAtk" DmgType="kMagical" SpecialEffect="kInflictsRandomDebuff" AddNegativeEffectsBaseChance="80" ExtraFlags="kIgnoreSelfAsTarget" GivesCounter="kExplode" />
     <Ability HashName="BERS-C1" CopyFrom="BLA-02-C1" Name="Thrash" />
+
+    <Ability HashName="UND-04-C1" EffectHash="RANG-A4" Name="Unstable Explosion" Range="0" ZoneHeight="1.5" Size="3" Power="2" Shape="kCross" Element="kFire" DmgType="kMagical" ExtraFlags="kIgnoreSelfAsTarget kIgnoresCover" GivesCounter="kExplode" />
+
+    <!-- <Ability HashName="UND-04-C1" EffectHash="RANG-A4" Name="Unstable Explosion" Range="0" ZoneHeight="1.5" Size="3" Power="-999" Shape="kCross" Element="kFire" DmgType="kHealing" ExtraFlags="kFixedDamage kIgnoreSelfAsTarget kIgnoresCover" GivesCounter="kExplode" /> -->
   </counter>
 </XMLAbilities>

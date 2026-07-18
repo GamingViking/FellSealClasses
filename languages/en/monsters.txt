@@ -9,3 +9,142 @@ UND-04-A1-Desc	={damage-single-opener} and moves character along the path to the
 
 UND-04-C1       =Unstable Explosion
 UND-04-C1-desc  =Upon death, deals {powerratio} {elem} ({dmgsource}) damage in a {size} area around the character.
+
+; ****************************
+; Family: Vok Summons
+; ****************************
+; Base Ability
+SUM-Ability		=Disfigure
+
+; *** Classes ***
+SUM-01-Title    =Reality Menace
+SUM-01-Desc     =These horrifying creatures posses abilities not of this world.
+
+; *** Abilities ***
+SUM-01-A1       =Multiply
+SUM-01-A1-desc  =Summons a copy of the character.
+
+SUM-01-A3       =Barbed Tongue
+SUM-01-A3-desc  ={damage-single-opener} and has a {addnegativechange} change of inflicting a random debuff.
+
+; ****************************
+; Family: Demon Turret
+; ****************************
+; Base Ability
+ANC-Ability		=Reality Warp
+
+; *** Classes ***
+ANC-01-Title	=Dimensional Pillar
+ANC-01-Desc		=A physical manifestatin of bound dimensional forces.
+ANC-02-Title	=Dimensional Pillar
+ANC-02-Desc		=A physical manifestatin of bound dimensional forces.
+ANC-03-Title	=Dimensional Pillar
+ANC-03-Desc		=A physical manifestatin of bound dimensional forces.
+
+; *** Abilities ***
+ANC-01-A1		=Decelerate
+ANC-01-A1-Desc	={status-negative}
+
+ANC-01-A2		=Accelerate
+ANC-01-A2-Desc	={status-pos-opener}.
+
+ANC-01-A3		=Time Leap
+ANC-01-A3-Desc	=Grant all allies an immediate turn.
+
+ANC-02-A1		=Space Distortion
+ANC-02-A1-Desc	={damage-basic-opener} to all enemies in a massive area and displaces them to random locations in the area(will not move units to a water tile). {ignores-cover-evasion}
+
+ANC-02-A2		=Dimensional Drop
+ANC-02-A2-Desc	=All enemies are teleported {power2} tiles up in the air and then fall down, taking %-based fall damage.
+
+ANC-03-A1		=Energy Infusion
+ANC-03-A1-Desc	=Restores {powerratio} {hp} and {power2} {mp} to the target. 
+
+ANC-03-A2		=Energy Influx
+ANC-03-A2-Desc	=Restores {powerratio} {hp} and {power2} {mp} to all other allies.
+
+; ****************************
+; Family: Dimensional Spawner
+; ****************************
+SPN-01-Title    =Dimensional Spawner
+
+; *** Abilities ***
+SPN-01-A1		=Spawn
+SPN-01-A1-Desc	=Creates a lesser monster. 
+
+SPN-01-A2		=Spawn
+SPN-01-A2-Desc	=Creates a lesser monster. 
+
+; ****************************
+; Family: Incubator
+; ****************************
+INC-01-Title    =Incubator
+INC-02-Title    =Incubator
+
+; *** Abilities ***
+INC-01-A1		=Evolve
+INC-01-A1-Desc	={sacrifice-life-opener} to bring forth a more powerful creature. 
+
+INC-01-A2       =Life Drain
+INC-01-A2-Desc  ={damage-single-opener} and absorbs the damage dealt.
+
+INC-02-A1		=Evolve
+INC-02-A1-Desc	={sacrifice-life-opener} to bring forth a more powerful creature. 
+
+; ****************************
+; Family: Evolution
+; ****************************
+EVO-01-Title	=Evolution
+EVO-01-Desc		=A mana-infused evolution.
+EVO-02-Title	=Evolution
+EVO-02-Desc		=A physically reinforced evolution.
+EVO-03-Title	=Evolution
+EVO-03-Desc		=A powerful evolved form filled with magic.
+EVO-04-Title	=Evolution
+EVO-04-Desc		=A powerful evolved form with incredible strength.
+
+; *** Abilities ***
+EVO-01-A1		=Evolve
+EVO-01-A1-Desc	={sacrifice-life-opener} to bring forth a more powerful creature. 
+
+EVO-01-A2		=Corrosive Spit
+EVO-01-A2-Desc	={damage-aoe-opener} {add-negative-effect-closer}
+
+EVO-01-A3		=Blinding Light
+EVO-01-A3-Desc	={damage-aoe-opener} {add-negative-effect-closer}
+
+EVO-01-A4		=Entangling Dervish
+EVO-01-A4-Desc	={damage-aoe-opener} {add-negative-effect-closer}
+
+EVO-02-A1		=Evolve
+EVO-02-A1-Desc	={sacrifice-life-opener} to bring forth a more powerful creature. 
+
+EVO-02-A2		=Razor Claws
+EVO-02-A2-Desc	={damage-basic-opener} that ignores the target's defense.
+
+EVO-02-A3		=Targeted Spines
+EVO-02-A3-Desc	={damage-single-opener} with 100% accuracy (cannot miss).
+
+EVO-02-A4		=Wallop
+EVO-02-A4-Desc	={damage-single-opener}, but also damages the character by 1/4 of the damage dealt.
+
+EVO-03-A1       =Mana Acid
+EVO-03-A1-Desc  ={damage-single-opener}'s {mp} that is absorbed.
+
+; ****************************
+; Family: Dimensional Terror
+; ****************************
+; Base Ability
+TER-Ability		=Terrorize
+
+; *** Classes ***
+TER-01-Title	=Dimensional Terror
+TER-01-Desc		=A seemingly unkillable abomination from another dimension.
+
+; *** Abilities ***
+
+TER-01-A1       =Spawn
+TER-01-A1-desc  =Summons a volatile monster.
+
+TER-01-P1       =Unassailable
+TER-01-P1-desc  =Out of sync with our reality, it is unclear if or how this entity can be killed. 

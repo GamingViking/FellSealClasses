@@ -11,7 +11,7 @@
     <Weapons HashName="GUN-41" Name="X-Afflicter" Desc="wp-gun-41" Icon="icon-gadget-13" Type="gun" Tier="1000" WeaponSprite="Hu-Ma-Fe-Gun@Gun37" Range="5" Height="15" BonusDebuffAcc="10">
         <Stats Values="45 -20 56 0" />
     </Weapons>
-    <Weapons HashName="GUN-42" Name="X-Time Displacer" Desc="wp-gun-42" Icon="icon-gadget-06" Type="gun" Speed="4"  Tier="1000" WeaponSprite="Hu-Ma-Fe-Gun@Gun09" Range="6" Height="5" DelayTurn="0.33">
+    <Weapons HashName="GUN-42" Name="X-Time Displacer" Desc="wp-gun-42" Icon="icon-gadget-11" Type="gun" Speed="4"  Tier="1000" WeaponSprite="Hu-Ma-Fe-Gun@Gun09" Range="6" Height="5" DelayTurn="0.33">
         <Health Values="-20 10" />
         <Stats Values="50 -30 62 0" />
     </Weapons>
@@ -30,6 +30,10 @@
     </Weapons>
     <Weapons HashName="STF-37" Name="Shaper's Finger" Desc="wp-stf-37" Icon="icon-staff-07" Type="staff" Tier="999" SpellRange="-1" WeaponSprite="Hu-Ma-Fe-Sword@Staff07" Height="1.5" >
         <Stats Values="80 0 106 0" />
+    </Weapons>
+    <Weapons HashName="STF-38" Name="Summoner's Staff" Desc="wp-staff-38" Icon="icon-staff-02" Type="staff" Evasion="1" MPTurn="2" SpellRange="1" Tier="999" WeaponSprite="Hu-Ma-Fe-Sword@Staff02" Height="1.5">
+        <Health Values="0 40"/>
+        <Stats Values="58 0 18 38" />
     </Weapons>
     <Weapons HashName="SPR-38" Name="Vaulter" Desc="wp-spr-38" Icon="icon-spear-10" Type="spear" Range="2" Height="2.5" Jump="3" Tier="8" WeaponSprite="Hu-Ma-Fe-Spear@Spear10" >
         <Stats Values="98 6 0 0" />

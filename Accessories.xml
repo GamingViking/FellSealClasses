@@ -5,4 +5,31 @@
     <Stats Values="6 -6 6 -6"/>
     <ElementalResist Values="-66 -66 -66 -66 66 -66"/>
   </Accessories>
+  <Accessories HashName="ARI-44" Name="Mark of Echoes" Desc="acc-ring-44" Icon="icon-key-obelisk" MPTurn="2" PositiveEffectsAdd="kfHaste" Tier="1000">
+    <ElementalResist Values="5 5 5 5 5 5"/>
+  </Accessories>
+
+  <Accessories HashName="ABO-100" Name="Crit Walkers" Desc="acc-boot-06" Icon="icon-accshoe-06" Move="2" Critical="10" Tier="1000">
+    <Stats Values="0 4 0 0" />
+  </Accessories>
+  <Accessories HashName="ABO-101" Name="Crit Wayfarers" Desc="acc-boot-03" Icon="icon-accshoe-03" Move="1" Jump="1" Evasion="4" Critical="15" Tier="1000">
+    <Stats Values="0 4 0 0" />
+  </Accessories>
+  <Accessories HashName="ABO-102" Name="Crit Spikes" Desc="acc-boot-35" Icon="icon-accshoe-35" IsDLCIcon="true" Move="1" Critical="15" Tier="1000">
+    <Stats Values="10 0 0 0" />
+  </Accessories>
+  <Accessories HashName="ABO-103" Name="Crit Rifters" Desc="acc-boot-08" Icon="icon-accshoe-08" Critical="14" Special="kfTeleport" Tier="1000">
+    <Stats Values="0 3 0 0" />
+  </Accessories>
+  <Accessories HashName="ABO-104" Name="Evasion Walkers" Desc="acc-boot-06" Icon="icon-accshoe-06" Move="2" Evasion="5" Critical="12" Tier="1000">
+    <Stats Values="0 4 0 0" />
+  </Accessories>
+  <Accessories HashName="ABO-105" Name="Crit Rifters+" Desc="acc-boot-36" Icon="icon-accshoe-36" Critical="10" Move="1" Special="kfTeleport" IsDLCIcon="true" Tier="1000">
+  </Accessories>
+  <Accessories HashName="ABO-106" Name="Celia Spikes" Desc="acc-boot-35" Icon="icon-accshoe-35" IsDLCIcon="true" Move="1" Evasion="4" Critical="17" Tier="1000">
+    <Stats Values="10 0 0 0" />
+  </Accessories>
+  <Accessories HashName="ABO-107" Name="Crit Wayfarers-" Desc="acc-boot-03" Icon="icon-accshoe-03" Move="1" Jump="1" Evasion="2" Critical="8" Tier="1000">
+    <Stats Values="0 4 0 0" />
+  </Accessories>
 </XMLAccessories>

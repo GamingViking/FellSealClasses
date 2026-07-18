@@ -12,3 +12,11 @@ ar-helm-37-desc     =A helm of great protection, but tight like a vise (-2MP per
 ; Hat
 ar-hat-37           =Believer's Blindfold
 ar-hat-37-desc      =Strike without fear against that which can't be seen (-15 accuracy).
+
+; Hat
+ar-hat-38           =Devoted Diadem
+ar-hat-38-desc      =A crown of unswerving loyalty and faithfulness.
+
+; Robe
+ar-cloth-16         =Immaterial Cloak
+ar-cloth-16-desc    =Like wearing an illusion, its constant shifting makes the wearer difficult to pin down.

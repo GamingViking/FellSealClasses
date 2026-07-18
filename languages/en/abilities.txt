@@ -514,6 +514,37 @@ BERS-P2=Dire Debilitation
 BERS-P2-desc={critical-hits} inflict {status-cripple-icon}{negative-cripple} and {status-mute-icon}{negative-mute}. Allows the character's {skills} to inflict {critical-hits}. 
 
 
+
+
+; ********************************
+; Summoner
+; ********************************
+; Job
+VOKS-Title  =Summoner
+VOKS-Ability=Rend Reality
+VOKS-Desc   =Summoners are capable of warping the dimensional boundaries between worlds in order to allow passage across realities. 
+
+VOKS-A1     =Warped Summon
+VOKS-A1-desc=Summons a monster from another dimension. 
+
+VOKS-A2     =Unseen Force
+VOKS-A2-desc={damage-basic-opener} and pushes the target away by one tile. Depending on the terrain, this could have interesting results.
+
+VOKS-A3     =Phandom Hand
+VOKS-A3-desc={damage-basic-opener} and attempts to steal a consumable item from the target (the item will be added to the character's team item count for this encounter).
+
+; ********************************
+; Warfmage
+; ********************************
+; Job
+WARF-Title  =Warmage
+WARF-Ability=Battle Magic
+WARF-Desc   =Warmages earned their name by wading into the thick of battle, fusing magic and weaponry to devastating effect. These masters of both body and mind embody the concept of "high risk, high reward."
+
+WARF-A11=Infused Mirage
+WARF-A11-desc=Mimics the effects of {color=hint}Infused Edge{color=base} used with {color=hint}Mirage{color=base}.
+
+
 ; ********************************
 ; Deity
 ; ********************************

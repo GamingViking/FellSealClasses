@@ -10,6 +10,14 @@ miss-96-name=Unearthed Treasure
 miss-97-name=A Challenge
 miss-98-name=Fell Arbiter
 miss-99-name=Fractured Echoes
+miss-100-name=Infected Echo
+miss-101-name=Monstrous Echo
+miss-102-name=War Echo
+miss-103-name=Dark Echo
+miss-104-name=Heroic Echo
+miss-105-name=Forsaken Echo
+miss-106-name=Vok-Urnai
+miss-107-name=Evolving Threat
 
 
 miss-90-desc=A strange gateway suddenly appeared and then vanished, but not before a strange looking person came out of it. The stranger dropped some sort of alien artefact before departing which seems to have attracted some unusual creatures to the area, so it might be best to send someone knowledgeable in the {color=hint}mystical{color=base} arts.
@@ -21,4 +29,12 @@ miss-95-desc=The last alien artefact recovered from the mysterious stranger is o
 miss-96-desc=Miner's have begun excavating Occul Cavern after following underground passageways left by a giant serpent. They had just uncovered a slew of dangerous-looking weapons when they were ambushed by a gang of theives who had been following them. A strong group is needed to subdue the thieves and recover the dangerous weaponry. In order to get the jump on them, it might be best to send in someone{color=hint} sneaky{color=base}.
 miss-97-desc="Hey, Arbiter who has been making such a fuss recently - you won't believe the powerful items we found in some of these underground tunnels. We heard you've also collected some powerful items - so what do you say to a 2v2 where we put them all on the line? Your strongest against us, winner take all. We'll be waiting" -Elsia and Llerval of Double Trouble. It might be best to send your {color=hint}strongest {color=base}units to show you mean business.
 miss-98-desc=Liana - a marked once a favorite to become an immortal disappeared after not being selected. She has now resurfaced and it appears she has given herself over to the Maw's {color=hint}dark {color=base}power. Fueled by her new {color=hint}dark {color=base}energy, she is heading for the seat of the immortals to seize control for herself. She must be stopped!
-miss-99-desc=Kyrie's growing power combined with the Maw's influence on Teoria has begun to weaken the barriers that separate realities. As a result, {color=hint}echoes {color=base}of possible of alternate timelines have begun to manifest, taking the form of {color=hint}alternate versions of Kyrie{color=base} and those around her. If left unchecked, these {color=hint}echoes {color=base}could irreparaby distort Teoria. Please destroy them and stabilize this reality!
+miss-99-desc=Kyrie's growing power combined with the Maw's influence on Teoria has begun to weaken the barriers that separate realities. As a result, {color=hint}echoes {color=base}of possible alternate timelines have begun to manifest, taking the form of {color=hint}alternate versions of Kyrie{color=base} and those around her. If left unchecked, these {color=hint}echoes {color=base}could irreparaby distort Teoria. Please destroy them and stabilize this reality!
+miss-100-desc=Another {color=hint}echo{color=base} of an {color=hint}alternate reality Kyrie{color=base} has been found. Take care, for who knows what dangers could be lurking amidst the dense brush. 
+miss-101-desc=Another {color=hint}echo{color=base} of an {color=hint}alternate reality Kyrie{color=base} has been found. It seems this {color=hint}Kyrie{color=base} forwent companions to conscript a slew of monsters. 
+miss-102-desc=Another {color=hint}echo{color=base} of an {color=hint}alternate reality Kyrie{color=base} has been found. The scale of this echo seems {color=hint}larger{color=base} than normal and should not be underestimated.
+miss-103-desc=Another {color=hint}echo{color=base} of an {color=hint}alternate reality Kyrie{color=base} has been found. The power and ominous aura coming from the woods has scared all monsters out of the forest. 
+miss-104-desc=Another {color=hint}echo{color=base} of an {color=hint}alternate reality Kyrie{color=base} has been found. The souls of once-proud heroes eminate strongly from the citadel. 
+miss-105-desc=Another {color=hint}echo{color=base} of an {color=hint}alternate reality Kyrie{color=base} has been found. Even more of {color=hint}Kyrie's{color=base} companions have emerged this time, foretelling a {color=hint}large{color=base} and dangerous battle.
+miss-106-desc=The one behind the dangerous evolving monsters has been found: {color=hint}Vok-Urnai{color=base}, a summoner with great power seeking to pull all manner of dangerous beings across the {color=hint}dimensional divide{color=base} in pursuit of power. He plans to bend the very pillars of reality to his will and must be stopped before his schemes irreparably damage the dimensional integrity of our world.  
+miss-107-desc=Strange creatures suddenly started appearing out of nowhere causing a panic. They looked small at first, but seem to be growing at an alarming rate. Something about the energy coming off of them seems {color=hint}otherwordly{color=base} in nature - please send help as soon as you can!

@@ -35,6 +35,9 @@ wp-dag-37-desc      =The wind spirit inside makes you feel lighter than air (gra
 wp-stf-37           =Shaper's Finger
 wp-stf-37-desc      =Concentrates magical power to nearby attacks (Decreases the range of Ranged Spells by 1).
 
+wp-staff-38         =Summoner's Staff
+wp-staff-38-desc    =Bestow's the weilder with an influx of mana (grants +2MP per turn).
+
 ; Spear
 wp-spr-38           =Vaulter
 wp-spr-38-desc      =The weapon's flexible shaft helps the user to vault great heights.

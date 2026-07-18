@@ -571,12 +571,68 @@
     </Reward>
     <Lock Story="45" />
   </Missions>
-  <Missions Hash="miss-99" Name="Fractured Echoes" Location="B25" CostCp="5" MaxRecruits="2" BaseSuccess="90" DurationInMins="1" Repeatable="false">
+  <Missions Hash="miss-99" Name="Fractured Echoes" Location="B25" CostCp="1000" MaxRecruits="2" BaseSuccess="90" DurationInMins="1" Repeatable="false">
     <SuccessAdd data="DARK|30,HOLY|30"/>
-    <Reward Ap="50" GP="2000" CanCrit="false">
+    <Reward Ap="200" GP="4000" CanCrit="false">
         <Special Type="kUnlockHunt" DataString="HUNT-19" />
     </Reward>
     <Lock Story="47" />
+  </Missions>
+  <Missions Hash="miss-100" Name="Infected Echo" Location="B09" CostCp="300" MaxRecruits="2" BaseSuccess="90" DurationInMins="1" Repeatable="false">
+    <SuccessAdd data="DARK|30,HOLY|30"/>
+    <Reward Ap="50" GP="2000" CanCrit="false">
+        <Special Type="kUnlockHunt" DataString="HUNT-20" />
+    </Reward>
+    <Lock MissionHash="HUNT-19" />
+  </Missions>
+  <Missions Hash="miss-101" Name="Monstrous Echo" Location="B04" CostCp="300" MaxRecruits="2" BaseSuccess="90" DurationInMins="1" Repeatable="false">
+    <SuccessAdd data="DARK|30,HOLY|30"/>
+    <Reward Ap="50" GP="2000" CanCrit="false">
+        <Special Type="kUnlockHunt" DataString="HUNT-21" />
+    </Reward>
+    <Lock MissionHash="HUNT-19" />
+  </Missions>
+  <Missions Hash="miss-102" Name="War Echo" Location="B15" CostCp="300" MaxRecruits="2" BaseSuccess="90" DurationInMins="1" Repeatable="false">
+    <SuccessAdd data="DARK|30,HOLY|30"/>
+    <Reward Ap="50" GP="2000" CanCrit="false">
+        <Special Type="kUnlockHunt" DataString="HUNT-22" />
+    </Reward>
+    <Lock MissionHash="HUNT-19" />
+  </Missions>
+  <Missions Hash="miss-103" Name="Dark Echo" Location="B03" CostCp="300" MaxRecruits="2" BaseSuccess="90" DurationInMins="1" Repeatable="false">
+    <SuccessAdd data="DARK|30,HOLY|30"/>
+    <Reward Ap="50" GP="2000" CanCrit="false">
+        <Special Type="kUnlockHunt" DataString="HUNT-23" />
+    </Reward>
+    <Lock MissionHash="HUNT-19" />
+  </Missions>
+  <Missions Hash="miss-104" Name="Heroic Echo" Location="B04" CostCp="300" MaxRecruits="2" BaseSuccess="90" DurationInMins="1" Repeatable="false">
+    <SuccessAdd data="DARK|30,HOLY|30"/>
+    <Reward Ap="50" GP="2000" CanCrit="false">
+        <Special Type="kUnlockHunt" DataString="HUNT-24" />
+    </Reward>
+    <Lock MissionHash="HUNT-19" />
+  </Missions>
+  <Missions Hash="miss-105" Name="Forsaken Echo" Location="B04" CostCp="300" MaxRecruits="2" BaseSuccess="90" DurationInMins="1" Repeatable="false">
+    <SuccessAdd data="DARK|30,HOLY|30"/>
+    <Reward Ap="50" GP="2000" CanCrit="false">
+        <Special Type="kUnlockHunt" DataString="HUNT-25" />
+    </Reward>
+    <Lock MissionHash="HUNT-19" />
+  </Missions>
+  <Missions Hash="miss-106" Name="Vok-Urnai" Location="B04" CostCp="300" MaxRecruits="2" BaseSuccess="90" DurationInMins="1" Repeatable="false">
+    <SuccessAdd data="DARK|30,HOLY|30"/>
+    <Reward Ap="50" GP="2000" CanCrit="false">
+        <Special Type="kUnlockHunt" DataString="HUNT-26" />
+    </Reward>
+    <Lock MissionHash="HUNT-27" />
+  </Missions>
+  <Missions Hash="miss-107" Name="Evolving Terror" Location="B04" CostCp="300" MaxRecruits="2" BaseSuccess="90" DurationInMins="1" Repeatable="false">
+    <SuccessAdd data="DARK|30,HOLY|30"/>
+    <Reward Ap="50" GP="2000" CanCrit="false">
+        <Special Type="kUnlockHunt" DataString="HUNT-27" />
+    </Reward>
+    <Lock Story="45" MissionHash="LARG-00" />
   </Missions>
   <Zones Hash="zone-00" Name="Centina Hinterlands" SlotsX="3" SlotsY="3" LargeBattle="LARG-00">
     <Missions data="miss-00,miss-01,miss-02,miss-03,miss-04,miss-05,miss-06,miss-07,miss-08,miss-09,miss-10,miss-11,miss-12,miss-13" />
@@ -599,7 +655,7 @@
     <ExcludedUpgrades data="upgr-23" />
   </Zones>
   <Zones Hash="zone-04" Name="Kawalands" SlotsX="3" SlotsY="3" LargeBattle="LARG-04">
-    <Missions data="miss-59,miss-60,miss-61,miss-62,miss-63,miss-64,miss-65,miss-66,miss-67,miss-68,miss-69,miss-70,miss-71,miss-72,miss-73,miss-74,miss-75,miss-76,miss-77,miss-78,miss-83,miss-84,miss-85,miss-86,,miss-96,miss-97,miss-98,miss-99" />
+    <Missions data="miss-59,miss-60,miss-61,miss-62,miss-63,miss-64,miss-65,miss-66,miss-67,miss-68,miss-69,miss-70,miss-71,miss-72,miss-73,miss-74,miss-75,miss-76,miss-77,miss-78,miss-83,miss-84,miss-85,miss-86,miss-96,miss-97,miss-98,miss-99,miss-100,miss-101,miss-102,miss-103,miss-104,miss-105,miss-106,miss-107" />
     <MapNodes data="B22,B23,B24,T12,B25,B26,D02" />
     <ExcludedUpgrades data="upgr-20" />
   </Zones>
@@ -1325,24 +1381,242 @@ monster6=x:9, y:7, dir:ld, class:MAL-03, variant:SKE, variant:ALP, counter:VAR-D
   </Hunts>
   <Hunts Hash="HUNT-19" NodeHash="T09">
     <EncounterData>
-Loot=GUN-40,BADG-15
+Loot=HCL-38, ING-28
 Lootcount=3
 Loottable=27
 Stealtable=16
-LevelRange3=20,30
+LevelRange4=40,50
 
-zone0=1,0,4,2
-facing=lu
+zone0=3,0,2,2
+zone1=0,4,2,2
+facing=ru
 center=8,7
 MaxUnits=6
+color=cream
 
 ; Normal
-human0=x:7, y:9, dir:rd, class:UTIL, subclass:GADG, passive0:WIZA-P1, passive1:HEAL-P2, counter:HEAL-C1, abilities:1|1|3|3|1|3|1, stat-hp:25, stat-spd:5, stat-atk:20, stat-mnd:20, stat-def:20, stat-res:20, gender:female, name:Kyra, weapon:ROD-36, helmet:HCL-09, shield:SHI-04, armor:BHE-10, acc0:ARI-04, acc1:ABO-03, behavior:alwaysoptimal
-human1=x:12, y:5, dir:ld, class:ASSA, subclass:WARM, passive0:LORD-P2, passive1:GUNN-P1, counter:ALCH-C1, abilities:1|3|1|3|3|1|1, stat-hp:25, stat-spd:5, stat-atk:20, stat-mnd:20, stat-def:20, stat-res:20, gender:male, name:Calian, weapon:GUN-36, weapon2:GUN-36, armor:BCL-35, acc0:ABO-07, acc1:ABO-06, acc2:ABO-08, weightstyle:healer, weighttarget:WARM-A5|100|human2
-human2=x:2, y:11, dir:rd, class:MERC, subclass:DEMK, passive0:VAR-COR-P2, passive1:REAV-P1, counter:MERC-C1, abilities:1|1|3|3|3|1|1, stat-hp:35, stat-atk:80, stat-mnd:-35, stat-def:-20, stat-res:20, gender:female, name:Anadyne, weapon:AXE-36, armor:BHE-08, shield:SHI-04, acc0:ARI-37, acc1:ARI-04, acc2:ABO-03, weightstyle:viciousdps
-human3=x:7, y:3, dir:ld, class:MERC, subclass:DEMK, passive0:VAR-COR-P2, passive1:REAV-P1, counter:MERC-C1, abilities:1|1|3|3|3|1|1, stat-hp:35, stat-atk:80, stat-mnd:-35, stat-def:-20, stat-res:20, gender:female, name:Anadyne, weapon:AXE-36, gearfill:none, weightstyle:viciousdps
+human0=x:8, y:5, dir:ld, class:UTIL, subclass:GADG, passive0:WIZA-P1, passive1:HEAL-P2, counter:HEAL-C1, abilities:1|1|3|3|1|3|1, stat-hp:20, stat-spd:3, stat-atk:15, stat-mnd:20, stat-def:20, stat-res:15, gender:female, name:Kyra, weapon:ROD-36, helmet:HCL-09, shield:SHI-04, armor:BHE-10, acc0:ARI-04, acc1:ABO-03, behavior:alwaysoptimal
+human1=x:11, y:5, dir:ld, class:ASSA, subclass:WARF, passive0:LORD-P2, passive1:GUNN-P1, counter:ALCH-C1, abilities:1|3|1|3|3|1|1, stat-hp:15, stat-spd:3, stat-atk:20, stat-mnd:20, stat-def:15, stat-res:20, gender:male, name:Calian, weapon:GUN-36, weapon2:GUN-36, armor:BCL-35, helmet:HCL-38, acc0:ARI-38, acc1:ABO-08, weightstyle:healer, weight:WARF-A11|90
+human2=x:6, y:7, dir:rd, class:MERC, subclass:DEMK, passive0:VAR-COR-P2, passive1:REAV-P1, counter:MERC-C1, abilities:1|1|3|3|3|1|1, stat-hp:20, stat-atk:80, stat-mnd:-35, stat-def:-20, stat-res:20, gender:female, name:Anadyne, weapon:AXE-36, armor:BHE-12, shield:SHI-04, acc0:ARI-37, acc1:ARI-06, helmet:ABO-03 weightstyle:viciousdps
+human3=x:4, y:9, dir:rd, class:GAMB, subclass:KNIG, passive0:LICH-P1, passive1:REAV-P1, counter:ALCH-C1, abilities:1|3|3|3|3|1, stat-hp:15, stat-atk:20, stat-mnd:15, stat-def:25, stat-res:20, gender:male, name:Ranus, weapon:SPR-37, armor:BLI-12, shield:SHI-04, acc0:ARI-37, acc1:ARI-06, helmet:ABO-03, weight:KNIG-A7|30
+human4=x:9, y:1, dir:ld, class:WARM, subclass:FELL, passive0:ROGU-P1, passive1:SMED-P2, counter:WARM-C1, abilities:1|1|3|3|3|1, stat-hp:15, stat-spd:3, stat-atk:20, stat-mnd:20, stat-def:15, stat-res:15, gender:male, name:Sylcus, weapon:SCY-06, helmet:HCL-04, armor:BCL-03, acc0:AGL-06, acc1:ABO-03, shield:ABO-03, weightstyle:visciousdps
+human5=x:8, y:8, dir:rd, class:SORC, subclass:WIZA, passive0:WARM-P1, passive1:WIZA-P2, counter:FELL-C1, abilities:1|1|3|3|3|1|1, stat-hp:15, stat-atk:15, stat-mnd:20, stat-def:15, stat-res:20, gender:male, name:Polametus, weapon:ROD-03, helmet:HCL-09, armor:BHE-10, acc0:ARI-06, acc1:ARI-38, shield:ABO-03, behavior:alwaysoptimal
 ; Elites
-bzil0=x:4, y:5, dir:lu, class:BLA-99, subclass:KNI-99, passive0:KNI-99-P1, passive1:KNI-99-P2, counter:KNI-99-C1, acc0:ABO-07, difficulty:1
+human6=x:1, y:10, dir:rd, class:ASSA, subclass:RANG, passive0:RANG-P2, passive1:ROGU-P1, counter:WARM-C1, abilities:1|3|1|3|3|1|1, stat-hp:15, stat-spd:5, stat-atk:20, stat-mnd:20, stat-def:15, stat-res:20, gender:male, name:Carver, weapon:DAG-36, weapon2:DAG-06, armor:BLI-07, helmet:AGL-10, acc0:ABO-03, acc1:ABO-03, difficulty:1, 
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-20" NodeHash="B09">
+    <EncounterData>
+Loot=ING-28
+Lootcount=3
+Loottable=40
+Stealtable=23
+LevelRange5=45,55
+
+zone0=6,11,4,1
+zone1=7,10,4,1
+facing=rd
+center=8,10
+MaxUnits=6
+color=grass
+
+human0=x:8, y:15, dir:rd, class:MERC, subclass:FELL, passive0:MARK-P2, passive1:TEMP-P1, counter:MERC-C1, abilities:1|1|3|3|3|1|1, stat-hp:25, stat-spd:3, stat-atk:20, stat-mnd:15, stat-def:20, stat-res:15, gender:female, name:Kyri, weapon:MAU-06, helmet:HHE-10, shield:SHI-10, armor:BHE-11, acc0:ARI-16, acc1:ABO-100
+human1=x:4, y:14, dir:rd, class:GAMB, subclass:GUNN, passive0:HAR-02-P1, passive1:ROGU-P1, counter:TEMP-C1, abilities:1|3|3|3|3|1, stat-hp:15, stat-spd:5, stat-atk:20, stat-mnd:15, stat-def:20, stat-res:15, gender:male, name:Reinor, weapon:SPR-11, helmet:HLI-09, shield:SHI-36, armor:BLI-36, acc0:ARI-04, acc1:ABO-101, behavior:killer
+human2=x:11, y:15, dir:rd, class:BHUN, subclass:FELL, passive0:VAR-FER-P1, passive1:RANG-P1, counter:ALCH-C1, abilities:1|3|3|3|3|1, stat-hp:15, stat-spd:15, stat-atk:25, stat-mnd:10, stat-def:15, stat-res:15, gender:female, name:Katjya, weapon:DAG-04, helmet:ARI-06, shield:AGL-03, armor:BLI-07, acc0:ABO-35, acc1:ABO-101
+bzil0=x:7, y:4, dir:lu, class:TAN-99, subclass:VAN-99, passive0:UND-99-P2, passive1:MAL-99-P1, counter:TAN-99-C1, abilities:1|1|1|3|1|1, stat-hp:20, stat-spd:3, stat-atk:15, stat-mnd:10, stat-def:25, stat-res:20, name:Bzara, helmet:ARI-37, shield:ARI-06, armor:AGL-07, acc0:ABO-35, acc1:ABO-03
+monster0=x:8, y:2, dir:lu, class:HAR-03, variant:FER, variant:MYC, counter:MYS-03-C1, abilities:1|1|1|3|1|1|3, stat-hp:20, stat-spd:3, stat-atk:20, stat-mnd:20, stat-def:15, stat-res:15, name:Icariae, helmet:ARI-09, shield:ARI-06, armor:ACO-03, acc0:ABO-35, acc1:ABO-35, behavior:killer
+monster1=x:11, y:5, dir:lu, class:VAN-03, variant:MYC, variant:VEN, counter:MYC-03-C1, abilities:1|1|3|1|1|1|3, stat-hp:55, stat-spd:15, stat-atk:40, stat-mnd:30, stat-def:30, stat-res:30, name:Cerberus, helmet:ARI-41, shield:ABO-06, armor:ACO-01, acc0:ABO-05, acc1:ABO-05
+</EncounterData>
+  </Hunts>
+    <Hunts Hash="HUNT-21" NodeHash="B04">
+    <EncounterData>
+Loot=ING-28
+Lootcount=3
+Loottable=40
+Stealtable=23
+LevelRange5=45,55
+
+zone0=0,0,2,3
+zone1=2,1,2,1
+facing=ru
+center=5,5
+MaxUnits=6
+color=brown
+
+human0=x:6, y:6, dir:rd, class:DRUI, subclass:WRAN, passive0:FELL-P1, passive1:HEAL-P2, counter:MARK-C1, abilities:1|1|3|3|3|1|1, stat-hp:25, stat-spd:3, stat-atk:15, stat-mnd:15, stat-def:20, stat-res:20, gender:female, name:Kyrin, weapon:RAP-35, helmet:ARI-07, shield:SHI-15, armor:BCL-15, acc0:ARI-35, acc1:ABO-36, weight:WRAN-A7|35
+monster0=x:8, y:3, dir:ld, class:KNI-03, variant:SPE, variant:HRN, counter:DFT-03-C1, abilities:1|1|1|3|1|3|1, stat-hp:35, stat-spd:3, stat-atk:20, stat-mnd:15, stat-def:17, stat-res:15, name:Malphlaetes, helmet:ARI-37, shield:ARI-39, armor:ACO-06, acc0:ABO-06, acc1:ABO-36, behavior:killer
+monster1=x:1, y:9, dir:rd, class:HRV-03, variant:FER, variant:THO, counter:HRV-03-C1, abilities:1|3|1|1|1|1|3, stat-hp:25, stat-spd:5, stat-atk:20, stat-mnd:15, stat-def:15, stat-res:15, name:Ahngeloeus, helmet:ARI-37, shield:ARI-16, armor:ACO-01, acc0:ABO-03, acc1:ABO-03, behavior:killer
+monster2=x:3, y:7, dir:rd, class:BLA-03, variant:HRN, variant:FER, counter:TYR-03-C1, abilities:1|1|1|3|3|1|1, stat-hp:30, stat-spd:3, stat-atk:25, stat-mnd:15, stat-def:20, stat-res:15, name:Krakus, helmet:AGL-03, shield:AGL-03, armor:AGL-09, acc0:ABO-102, acc1:ABO-35
+monster3=x:8, y:5, dir:ld, class:PHO-03, variant:MYS, variant:CEL, counter:PHO-03-C1, abilities:1|1|3|3|1|1|1, stat-hp:30, stat-spd:3, stat-atk:20, stat-mnd:20, stat-def:15, stat-res:15, name:I'curious, helmet:ARI-39, shield:ABO-05, armor:ACO-04, acc0:ABO-05, acc1:ABO-05
+monster4=x:9, y:1, dir:ld, class:DRA-03, variant:DRT, variant:SHA, counter:SHA-03-C1, abilities:1|1|1|3|1|1|3, stat-hp:25, stat-spd:3, stat-atk:20, stat-mnd:20, stat-def:20, stat-res:20, name:Vaehkna, helmet:ARI-41, shield:ARI-08, armor:ACO-04, acc0:ARI-38, acc1:ABO-06
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-22" NodeHash="B15">
+    <EncounterData>
+Loot=ING-28
+Lootcount=3
+Loottable=40
+Stealtable=23
+LevelRange5=45,55
+APBonusPercent=30
+GoldBonusPercent=25
+
+zone0=12,3,1,4
+zone1=13,4,1,2
+zone2=10,0,1,4
+zone3=11,1,1,2
+facing=ld
+center=8,5
+MaxUnits=9
+color=orange
+
+human0=x:8, y:7, dir:ru, class:FELL, subclass:BLAD, passive0:BONU-P1, passive1:BLAD-P1, counter:GADG-C1, abilities:1|3|3|3|3|1, stat-hp:20, stat-spd:3, stat-atk:20, stat-mnd:20, stat-def:15, stat-res:15, gender:female, name:Kyrae, weapon:RAP-37, helmet:HLI-13, shield:SHI-09, armor:BCL-15, acc0:ARI-07, acc1:ABO-36
+human1=x:10, y:9, dir:rd, class:FELL, subclass:WARM, passive0:RANG-P1, passive1:WERE-P1, counter:FELL-C1, abilities:1|3|3|3|3|1, stat-hp:15, stat-spd:3, stat-atk:20, stat-mnd:20, stat-def:15, stat-res:15, gender:female, name:Reyla, weapon:SWD-15, helmet:AGL-09, shield:AGL-35, armor:BCL-10, acc0:ARI-16, acc1:ABO-103
+human2=x:7, y:9, dir:rd, class:WARM, subclass:VAMP, passive0:ASSA-P2, passive1:BLAD-P1, counter:HEAL-C1, abilities:1|1|3|3|3|1, stat-hp:20, stat-spd:3, stat-atk:20, stat-mnd:20, stat-def:15, stat-res:15, gender:female, name:Seraphine, weapon:MAC-10, weapon2:ROD-16, helmet:ARI-40, armor:BCL-15, acc0:ABO-06, acc1:ABO-103
+human3=x:3, y:2, dir:ru, class:MERC, subclass:REAV, passive0:REAV-P1, passive1:ALCH-P1, counter:PRIN-C1, abilities:1|1|3|3|3|1|1, stat-hp:20, stat-spd:3, stat-atk:15, stat-mnd:15, stat-def:20, stat-res:15, gender:female, name:Malady, weapon:AXE-36, helmet:ARI-37, shield:SHI-13, armor:BHE-36, acc0:ABO-08, acc1:ABO-07
+human4=x:4, y:7, dir:ru, class:GUNN, subclass:KNIG, passive0:ASSA-P2, passive1:GAMB-P1, counter:FELL-C1, abilities:1|3|3|3|3|1, stat-hp:15, stat-spd:3, stat-atk:20, stat-mnd:15, stat-def:20, stat-res:15, gender:male, name:D'Artagnan, weapon:GUN-09, weapon2:GUN-09, helmet:ARI-04, armor:BLI-12, acc0:ABO-06, acc1:ABO-103, weight:KNIG-A7|60
+bzil0=x:5, y:5, dir:ru, class:KNI-99, subclass:BUL-99, passive0:PEK-99-P2, passive1:BOL-99-P2, counter:TAN-99-C1, abilities:1|3|3|1|1, stat-hp:25, stat-spd:3, stat-atk:20, stat-mnd:15, stat-def:15, stat-res:15, name:Bzaris, helmet:ARI-09, shield:ARI-37, armor:ABO-05, acc0:ABO-05, acc1:ABO-05
+monster0=x:6, y:3, dir:ru, class:KNI-03, variant:FEL, variant:ALP, counter:VAR-SPE-C1, abilities:1|1|1|3|1|3|1, stat-hp:25, stat-spd:3, stat-atk:20, stat-mnd:20, stat-def:15, stat-res:15, name:R'hak-jasa, helmet:ARI-16, shield:ARI-06, armor:ACO-05, acc0:ABO-05, acc1:ABO-05
+monster1=x:2, y:6, dir:ru, class:DAO-03, variant:WRD, variant:SPE, counter:VAR-HRN-C1, abilities:1|1|1|3|1|1|3, stat-hp:25, stat-spd:3, stat-atk:15, stat-mnd:20, stat-def:15, stat-res:20, name:Ametarassa, helmet:ARI-39, shield:ARI-08, armor:ACO-04, acc0:ABO-05, acc1:ABO-05, weightstyle:healer
+monster2=x:1, y:8, dir:ru, class:BLA-03, variant:FER, variant:HAR, counter:VAR-DFT-C1, abilities:1|1|1|3|3|1|1, stat-hp:25, stat-spd:3, stat-atk:20, stat-mnd:15, stat-def:15, stat-res:15, name:Wrath, helmet:AGL-03, shield:ABO-04, armor:ABO-35, acc0:ABO-35, acc1:ABO-35
+monster3=x:1, y:2, dir:ru, class:KAW-03, variant:SPE, variant:SYL, counter:VAR-ALP-C1, abilities:1|3|3|1|1|1|1, stat-hp:20, stat-spd:5, stat-atk:15, stat-mnd:15, stat-def:20, stat-res:20, name:Thing, helmet:ARI-37, shield:ARI-14, armor:AGL-11, acc0:ABO-03, acc1:ABO-03, weightstyle:healer
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-23" NodeHash="B03">
+    <EncounterData>
+Loot=ING-28
+Lootcount=3
+Loottable=40
+Stealtable=23
+LevelRange5=45,55
+
+zone0=5,11,3,2
+zone1=3,3,3,2
+facing=ru
+center=13,8
+MaxUnits=7
+color=purple
+
+human0=x:16, y:6, dir:ld, class:MARK, subclass:TEMP, passive0:FARB-P2, passive1:WARM-P1, counter:WRAN-C1, abilities:1|3|3|3|3|3|1, stat-hp:20, stat-spd:3, stat-atk:20, stat-mnd:20, stat-def:15, stat-res:15, gender:female, name:Kyre, weapon:SWD-15, helmet:ARI-37, shield:ARI-39, armor:BHE-36, acc0:ABO-06, acc1:ABO-08
+human1=x:15, y:4, dir:ld, class:BHUN, subclass:SAMU, passive0:RANG-P1, passive1:BONU-P4, counter:FELL-C1, abilities:1|3|3|3|3|1, stat-hp:20, stat-spd:6, stat-atk:20, stat-mnd:10, stat-def:10, stat-res:10, gender:female, name:Katjka, weapon:GUN-03, helmet:AGL-09, shield:AGL-03, armor:BLI-07, acc0:AGL-03, acc1:ABO-35, weight:SAMU-A8|70
+human2=x:15, y:11, dir:ld, class:LICH, subclass:WIZA, passive0:REAV-P1, passive1:DRUI-P1, counter:ALCH-C1, abilities:1|3|1|3|3|3, stat-hp:20, stat-spd:3, stat-atk:15, stat-mnd:20, stat-def:15, stat-res:15, gender:female, name:Mortetia, weapon:STF-10, helmet:HCL-11, shield:ARI-37, armor:BCL-15, acc0:ABO-06, acc1:ABO-08
+human3=x:14, y:13, dir:ld, class:ASSA, subclass:GUNN, passive0:ROGU-P1, passive1:DEMK-P1, counter:WRAN-C1, abilities:1|3|1|3|3|1|1, stat-hp:80, stat-spd:-21, stat-atk:77, stat-mnd:15, stat-def:3, stat-res:-12, gender:female, name:Anadina, weapon:BOW-05, helmet:HLI-11, shield:AGL-07, armor:BLI-36, acc0:ABO-03, acc1:ABO-102
+human4=x:13, y:9, dir:ld, class:KNIG, subclass:GLAD, passive0:BLAD-P1, passive1:GLAD-P2, counter:MART-C1, abilities:1|3|3|3|3|1, stat-hp:20, stat-spd:3, stat-atk:15, stat-mnd:15, stat-def:20, stat-res:17, gender:male, name:Ha'Rizath, weapon:SWD-11, helmet:HHE-37, shield:SHI-37, armor:BHE-07, acc0:ARI-37, acc1:ABO-36, weightstyle:protector, behavior:guardian
+human5=x:16, y:9, dir:ld, class:EXOR, subclass:GLAD, passive0:ROGU-P1, passive1:MERC-P1, counter:MERC-C1, abilities:1|1|3|3|3|3|1, stat-hp:15, stat-spd:3, stat-atk:20, stat-mnd:15, stat-def:15, stat-res:15, gender:female, name:Ryusune, weapon:MAU-37, helmet:HCL-36, shield:SHI-15, armor:BLI-07, acc0:ABO-08, acc1:ABO-102, weightstyle:healer
+human6=x:14, y:6, dir:ld, class:VAMP, subclass:ROGU, passive0:ROGU-P1, passive1:PRIN-P2, counter:HEAL-C1, abilities:1|3|3|3|1|3, stat-hp:15, stat-spd:6, stat-atk:20, stat-mnd:15, stat-def:15, stat-res:15, gender:female, name:Maelsin, weapon:SCY-09, helmet:HLI-13, shield:ARI-16, armor:BHE-12, acc0:ABO-35, acc1:ABO-35
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-24" NodeHash="B27">
+    <EncounterData>
+Loot=ING-28
+Lootcount=3
+Loottable=40
+Stealtable=23
+LevelRange5=45,55
+
+zone0=0,4,2,4
+facing=ru
+center=6,6
+MaxUnits=7
+color=white
+
+human0=x:6, y:9, dir:rd, class:MARK, subclass:WARM, passive0:BONU-P1, passive1:WARM-P1, counter:MARK-C1, abilities:1|3|3|3|3|3|1, stat-hp:20, stat-spd:3, stat-atk:20, stat-mnd:20, stat-def:15, stat-res:15, gender:female, name:Kyril, weapon:MAU-36, helmet:HLI-10, shield:ARI-08, armor:BLI-10, acc0:ARI-07, acc1:ABO-05
+human1=x:4, y:11, dir:rd, class:REIN, subclass:KNIG, passive0:GAMB-P1, passive1:RANG-P2, counter:ALCH-C1, abilities:1|3|3|3|1, stat-hp:20, stat-spd:10, stat-atk:20, stat-mnd:20, stat-def:20, stat-res:20, gender:male, name:Reinil, weapon:DAG-06, helmet:ARI-07, shield:SHI-15, armor:BLI-14, acc0:ARI-10, acc1:ABO-104, weightstyle:protector, weighttarget:KNIG-A2|100|human2
+human2=x:6, y:2, dir:ld, class:DEMK, subclass:ASSA, passive0:ASSA-P2, passive1:WARM-P2, counter:MERC-C1, abilities:1|3|3|3|1|3, stat-hp:25, stat-spd:3, stat-atk:20, stat-mnd:10, stat-def:15, stat-res:15, gender:female, name:Anadil, weapon:AXE-10, weapon2:AXE-10, helmet:ARI-07, armor:BHE-11, acc0:ABO-09, acc1:ABO-105, behavior:killer, weight:DEMK-P2|100
+human3=x:5, y:0, dir:lu, class:RANG, subclass:GUNN, passive0:WERE-P1, passive1:FELL-P2, counter:FELL-C1, abilities:1|3|1|3|3|1|1, stat-hp:20, stat-spd:3, stat-atk:20, stat-mnd:15, stat-def:15, stat-res:15, gender:female, name:Celia, weapon:BOW-09, helmet:HLI-13, shield:ARI-07, armor:BLI-12, acc0:AGL-09, acc1:ABO-106, weightstyle:viciousdps, weight:GUNN-A5|25
+human4=x:8, y:3, dir:ld, class:VAMP, subclass:FELL, passive0:PRIN-P2, passive1:SMED-P2, counter:HEAL-C1, abilities:1|3|3|3|1|3, stat-hp:15, stat-spd:6, stat-atk:20, stat-mnd:15, stat-def:15, stat-res:15, gender:female, name:Alyrra, weapon:MAC-10, helmet:HLI-36, shield:SHI-13, armor:BHE-12, acc0:ARI-07, acc1:ABO-104, weightstyle:viciousdps
+human5=x:8, y:9, dir:ld, class:REAV, subclass:TEMP, passive0:WARM-P1, passive1:BLAD-P1, counter:REAV-C1, abilities:1|3|1|3|3|3, stat-hp:20, stat-spd:3, stat-atk:20, stat-mnd:15, stat-def:15, stat-res:15, gender:female, name:Kirane, weapon:MAU-09, helmet:HLI-10, shield:ARI-07, armor:BLI-12, acc0:ABO-35, acc1:ABO-05, weightstyle:viciousdps
+human6=x:9, y:6, dir:ld, class:PRIN, subclass:DRUI, passive0:LICH-P1, passive1:HEAL-P1, counter:ALCH-C1, abilities:1|3|3|1|3|1|1, stat-hp:15, stat-spd:3, stat-atk:20 stat-mnd:20, stat-def:20, stat-res:20, gender:female, name:Mortred, weapon:STF-10, helmet:ARI-37, shield:SHI-35, armor:BCL-13, acc0:ARI-07, acc1:ABO-05, weightstyle:healer
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-25" NodeHash="B24">
+    <EncounterData>
+Loot=ING-28, BCL-16
+Lootcount=3
+Loottable=40
+Stealtable=23
+LevelRange5=45,55
+APBonusPercent=30
+GoldBonusPercent=25
+
+zone0=0,12,2,3
+zone1=13,1,3,2
+facing=lu
+center=8,8
+MaxUnits=9
+color=black
+
+human0=x:10, y:8, dir:rd, class:FARB, subclass:MARK, passive0:BONU-P1, passive1:MARK-P1, counter:MARK-C1, abilities:1|1|3|3|3|3|1, stat-hp:20, stat-spd:3, stat-atk:20, stat-mnd:20, stat-def:15, stat-res:15, gender:female, name:Vok-Kyrie, weapon:RAP-38, helmet:HLI-13, shield:SHI-15, armor:BCL-12, acc0:ARI-07, acc1:ABO-107, weightstyle:viciousdps, behavior:killer
+human1=x:11, y:10, dir:rd, class:INDE, subclass:DEMK, passive0:MERC-P1, passive1:DEMK-P1, counter:MERC-C1, abilities:1|3|3|1|3|1, stat-hp:20, stat-spd:3, stat-atk:20, stat-mnd:20, stat-def:15, stat-res:15, gender:female, name:Vok-Anadine, weapon:MAU-36, helmet:HHE-10, shield:ARI-37, armor:BHE-12, acc0:ABO-03, acc1:ABO-102, weightstyle:viciousdps, behavior:killer
+human2=x:8, y:12, dir:ld, class:DRUI, subclass:ILLU, passive0:HEAL-P2, passive1:ILLU-P1, counter:ILLU-C1, abilities:1|3|3|3|3|3, stat-hp:15, stat-spd:5, stat-atk:15, stat-mnd:20, stat-def:20, stat-res:20, gender:male, name:Vok-Reiner, weapon:ROD-37, helmet:HLI-36, shield:SHI-13, armor:BCL-16, acc0:ARI-40, acc1:ABO-06, weightstyle:healer
+human3=x:11, y:13, dir:ld, class:SCOU, subclass:INFE, passive0:KNIG-P2, passive1:FELL-P1, counter:NECR-C1, abilities:1|3|3|3|3, stat-hp:15, stat-spd:6, stat-atk:15, stat-mnd:15, stat-def:15, stat-res:15, gender:female, name:Vok-Katja, weapon:GUN-41, helmet:HLI-10, shield:ARI-13, armor:BLI-10, acc0:ARI-39, acc1:ABO-03
+human4=x:7, y:10, dir:ld, class:EXOR, subclass:ANAT, passive0:BLAD-P1, passive1:ANAT-P2, counter:NECR-C1, abilities:1|1|3|3|3|3|1, stat-hp:20, stat-spd:3, stat-atk:15, stat-mnd:20, stat-def:15, stat-res:20, gender:male, name:Vok-Yates, weapon:SCY-06, helmet:HCL-11, shield:ARI-37, armor:BCL-15, acc0:ARI-39, acc1:ABO-107, weightstyle:healer
+human5=x:7, y:7, dir:ru, class:WARM, subclass:GEOM, passive0:MONH-P2, passive1:SORC-P1, counter:WARM-C1, abilities:1|1|3|3|3|1, stat-hp:20, stat-spd:3, stat-atk:20, stat-mnd:20, stat-def:15, stat-res:15, gender:male, name:Voldra, weapon:ROD-16, helmet:HCL-09, shield:ARI-38, armor:BCL-15, acc0:ARI-39, acc1:ABO-03
+human6=x:5, y:7, dir:lu, class:DANC, subclass:MONH, passive0:WIZA-P1, passive1:HEAL-P2, counter:TEMP-C1, abilities:1|3|3|3|3|1, stat-hp:15, stat-spd:6, stat-atk:15, stat-mnd:15, stat-def:15, stat-res:20, gender:female, name:Nyva, weapon:DAG-06, helmet:ARI-37, shield:ARI-10, armor:BCL-35, acc0:ABO-35, acc1:ABO-107
+human7=x:7, y:5, dir:ru, class:TIME, subclass:EXOR, passive0:WARM-P2, passive1:DRUI-P1, counter:BLAD-C1, abilities:1|3|3|3|3|1|1, stat-hp:15, stat-spd:6, stat-atk:15, stat-mnd:20, stat-def:15, stat-res:15, gender:female, name:Zil'Sa, weapon:GUN-42, helmet:HCL-11, shield:ARI-10, armor:BLI-10, acc0:ABO-06, acc1:ABO-107
+human8=x:2, y:5, dir:lu, class:INFE, subclass:REAV, passive0:MERC-P2, passive1:UTIL-P1, counter:INFE-C1, abilities:1|1|3|3|3|3|1, stat-hp:20, stat-spd:3, stat-atk:15, stat-mnd:15, stat-def:20, stat-res:15, gender:male, name:Goliath, weapon:MAC-37, helmet:HCL-36, shield:SHI-09, armor:BCL-15, acc0:ARI-16, acc1:ABO-03
+human9=x:5, y:4, dir:lu, class:ASSA, subclass:MART, passive0:MART-P2, passive1:KNIG-P2, counter:MART-C1, abilities:1|3|3|3|3|3|1, stat-hp:20, stat-spd:6, stat-atk:20, stat-mnd:15, stat-def:15, stat-res:15, gender:female, name:Lathe, weapon:DAG-12, helmet:HLI-12, shield:ARI-37, armor:BCL-10, acc0:ABO-06, acc1:ABO-08
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-26" NodeHash="T12">
+    <EncounterData>
+Loot=STF-38
+Lootcount=3
+Loottable=40
+Stealtable=23
+LevelRange5=45,55
+
+zone0=0,11,2,2
+zone1=11,11,2,2
+facing=rd
+center=6,7
+MaxUnits=6
+color=black
+
+human0=x:7, y:2, dir:lu, class:VOKS, subclass:MARK, passive0:GAMB-P1, passive1:GADG-P2, counter:VAMP-C1, abilities:1|3, stat-hp:1000, gender:male, name:Vok-Urnai, isaboss:true, weapon:STF-38, helmet:HCL-35, shield:ARI-07, armor:BLI-36, acc0:ABO-36, acc1:ABO-07, abilities:1|3, weight:VOKS-A1|100
+monster0=x:0, y:0, dir:rd, class:ANC-01, name:Time-Anchor
+monster1=x:11, y:0, dir:ld, class:ANC-02, name:Space-Anchor
+monster2=x:6, y:9, dir:rd, class:ANC-03, name:Power-Anchor, weighttarget:ANC-03-A1|90|human0
+monster3=x:5, y:4, dir:lu, class:SUM-01
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-27" NodeHash="D04">
+    <EncounterData>
+Loot=
+Lootcount=3
+Loottable=40
+Stealtable=23
+LevelRange5=45,55
+
+zone0=0,8,2,2
+zone1=1,0,2,2
+facing=ru
+center=10,8
+MaxUnits=6
+
+monster0=x:4, y:14, dir:rd, class:SPN-01, weight:SPN-01-A1|50, weight:SPN-01-A2|50
+monster1=x:15, y:3, dir:ld, class:SPN-01, weight:SPN-01-A1|50, weight:SPN-01-A2|50
+monster2=x:15, y:14, dir:ld, class:SPN-01, weight:SPN-01-A1|50, weight:SPN-01-A2|50
+monster3=x:3, y:6, dir:ld, class:EVO-03, novariants:true
+monster4=x:6, y:1, dir:rd, class:EVO-04, novariants:true
+</EncounterData>
+  </Hunts>
+  <Hunts Hash="HUNT-28" NodeHash="D04">
+    <EncounterData>
+Loot=
+Lootcount=3
+Loottable=40
+Stealtable=23
+LevelRange5=45,55
+
+zone0=0,8,2,2
+zone1=1,0,2,2
+facing=ru
+center=10,8
+MaxUnits=6
+color=black
+
+monster0=x:3, y:8, dir:ld, class:TER-01, name:Vok-Urnai?, abilities:3
 </EncounterData>
   </Hunts>
   <Hunts Hash="LARG-00" NodeHash="D04" isLargeBattle="true" isZoneCompletion="true">

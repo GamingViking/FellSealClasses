@@ -3,4 +3,43 @@
     <Monsters HashName="UND-04" Img="zombieaa" Portrait="portrait-monster-cadaver1" Immunities="kfPoison kfBleed kfSleep" WpSfx="FS_FX_216_v02" WpMissSfx="FS_FX_204_v01" DeathSfx="FS_FX_217_v01" CanTame="false" ExtraRace="kUndead" NoVariant="true" Counter="UND-04-C1" >
         <ElemsRes data="0,-50,25,0,150,-75" />
     </Monsters>
+     <Monsters HashName="SUM-01" Img="helhundab" Portrait="portrait-monster-helhund2" Immunities="kfPoison kfBleed kfSleep" WpHeight="1.5" WpSfx="FS_FX_219_v01" WpMissSfx="FS_FX_204_v01" DeathSfx="FS_FX_220_v01" Move1="kfFloat" CanTame="false" NoVariant="true" Counter="HHU-02-C1" NoCopy="true" >
+        <ElemsRes data="-50,100,-25,100,50,0" />
+    </Monsters>
+    <Monsters HashName="ANC-01" Img="TurretAB" Portrait="portrait-monster-turret2" Style="kRange" WpRange="0" WpHeight="0" Flags="kfCantWalk kfOnly1Direction kfNoDisplacement kf2x2 kfNoWalkSpeedChange" Immunities="kfCripple kfBerserk kfCharm kfSleep kfMute" NoRaise="true" IsBoss="true" NoUpgrade="true" GearFill="kNoDots" DeathSfx="FS_FX_201_v01" Counter="MARK-C1" CanTame="false" ExtraRace="kDemon" NoVariant="true" Tier="0" NoCopy="true">
+        <ElemsRes data="0,150,-50,50,0,-50" />
+    </Monsters>
+    <Monsters HashName="ANC-02" Img="TurretAA" Portrait="portrait-monster-turret1" Style="kRange" WpRange="0" WpHeight="0" Flags="kfCantWalk kfOnly1Direction kfNoDisplacement kf2x2 kfNoWalkSpeedChange" Immunities="kfCripple kfBerserk kfCharm kfSleep kfMute" NoRaise="true" IsBoss="true" NoUpgrade="true" GearFill="kNoDots" DeathSfx="FS_FX_201_v01" Counter="GUNN-C1" CanTame="false" ExtraRace="kDemon" NoVariant="true" Tier="0" NoCopy="true">
+        <ElemsRes data="50,150,0,-50,0,-50" />
+    </Monsters>
+    <Monsters HashName="ANC-03" Img="TurretAA" Portrait="portrait-monster-turret1" Style="kRange" WpRange="0" WpHeight="0" Flags="kfCantWalk kfOnly1Direction kfNoDisplacement kf2x2 kfNoWalkSpeedChange" Immunities="kfCripple kfBerserk kfCharm kfSleep kfMute" NoRaise="true" IsBoss="true" NoUpgrade="true" GearFill="kNoDots" DeathSfx="FS_FX_201_v01" Counter="GADG-C1" CanTame="false" ExtraRace="kDemon" NoVariant="true" Tier="0" NoCopy="true">
+        <ElemsRes data="-50,150,50,0,0,-50" />
+    </Monsters>
+    <Monsters HashName="SPN-01" Img="ancientbeastviscerawyrm" Portrait="portrait-story-viscerawyrm" Flags="kfCantWalk kfNoDisplacement" CustomAI="kViscerawyrm" Immunities="kfCharm kfSleep kfBerserk kfMute" NoUpgrade="true" WpSfx="FS_FX_328_A_v01" WpDelay="0.35" WpMissSfx="FS_FX_328_A_v01" WpMissDelay="0.35" DeathSfx="FS_FX_310_v01" Counter="FELL-C1" Passive0="DEM-01-P1" Passive1="GAMB-P1" CanTame="false" NoVariant="true" Tier="0" NoCopy="true">
+        <ElemsRes data="50,50,50,50,100,0" />
+    </Monsters>
+    <Monsters HashName="INC-01" Img="zombieac" Portrait="portrait-monster-cadaver3" Immunities="kfSleep kfCharm" WpSfx="FS_FX_216_v02" WpMissSfx="FS_FX_204_v01" DeathSfx="FS_FX_217_v01" Passive0="BLAD-P2" Passive1="VAR-SKE-P2" Counter="GADG-C1" CanTame="false" ExtraRace="kUndead" NoVariant="true" Tier="3">
+        <ElemsRes data="25,25,25,25,125,-25" />
+    </Monsters>
+    <Monsters HashName="INC-02" Img="zombieac" Portrait="portrait-monster-cadaver3" Immunities="kfSleep kfCharm" WpSfx="FS_FX_216_v02" WpMissSfx="FS_FX_204_v01" DeathSfx="FS_FX_217_v01" Passive0="BLAD-P2" Passive1="VAR-SKE-P2" Counter="GADG-C1" CanTame="false" ExtraRace="kUndead" NoVariant="true" Tier="3">
+        <ElemsRes data="25,25,25,25,125,-25" />
+    </Monsters>
+    <Monsters HashName="EVO-01" Img="malcubusab" Portrait="portrait-monster-malcubus2" Style="kMagic" WpHeight="1.5" Move2="kfFly" Immunities="kfCharm kfBerserk" WpSfx="FS_FX_109_v03" WpMissSfx="FS_FX_110_v01" DeathSfx="FS_FX_232_v01" Counter="DRA-01-C1" CanTame="false" NoVariant="true" ExtraRace="kDemon">
+        <ElemsRes data="50,25,0,-25,75,75" />
+    </Monsters>
+    <Monsters HashName="EVO-02" Img="bzzerkab" Portrait="portrait-monster-bzzerk2" Immunities="kfRoot kfCharm kfSleep" WpSfx="FS_FX_212_v01" WpMissSfx="FS_FX_204_v01" DeathSfx="FS_FX_213_v02" Passive0="KNI-02-P1" Passive1="VAR-AER-P2" Counter="LORD-C1" CanTame="false" NoVariant="true" Tier="2">
+        <ElemsRes data="50,25,50,25,50,25" />
+    </Monsters>
+    <Monsters HashName="EVO-03" Img="evilkawa" Portrait="portrait-story-evilkawa" NoUpgrade="true" Immunities="kfCharm kfBerserk kfSleep kfMute" WpSfx="FS_FX_003_v03" WpMissSfx="FS_FX_204_v01" DeathSfx="FS_FX_208_v02" Counter="WRAN-C1" CanTame="false" Tier="0">
+        <ElemsRes data="25,-25,0,50,100,100" />
+    </Monsters>
+    <Monsters HashName="EVO-04" Img="blardgerACEyes" Portrait="portrait-monster-blardger3" WpHeight="2.5" Move2="kfFly" Immunities="kfCharm kfBerserk kfSleep kfBlind" WpSfx="FS_FX_214_v01" WpMissSfx="FS_FX_204_v01" DeathSfx="FS_FX_215_v01" Counter="MERC-C1" CanTame="false" Tier="3">
+        <ExtraImg data="BlardgerACHairPiece" />
+        <ElemsRes data="0,75,0,75,0,75" />
+    </Monsters>
+
+
+    <Monsters HashName="TER-01" Img="ghostgirl" Portrait="portrait-monster-ghostgirl" WpHeight="2" Immunities="kfAll" Move1="kfFloat" Flags="kfNoFloatVisuals" WpSfx="FS_FX_214_v01" WpMissSfx="FS_FX_204_v01" DeathSfx="FS_FX_215_v01" Counter="BLA-02-C1" CanTame="false" ExtraRace="kUndead" NoVariant="true" Tier="0">
+    <ElemsRes data="50,0,-25,0,25,0" />
+  </Monsters>
 </XMLMonsters>
